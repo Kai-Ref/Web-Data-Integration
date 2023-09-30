@@ -16,3 +16,7 @@ Web Data Integration Project
 
 ### Football
 - https://www.kaggle.com/datasets/stefanoleone992/ea-sports-fc-24-complete-player-dataset
+- https://www.kaggle.com/datasets/hugomathien/soccer
+- ( https://www.kaggle.com/datasets/ramjasmaurya/footballsoccer-clubs-ranking )
+- ( https://www.kaggle.com/datasets/tadhgfitzgerald/fifa-international-soccer-mens-ranking-1993now )
+- { Note Kai: I/We could also scrape transfermarkt.com for further soccer data, as I did it before and this wouldn't take too long for me :)}
