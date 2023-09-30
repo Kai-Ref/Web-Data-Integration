@@ -15,3 +15,4 @@ Web Data Integration Project
 - https://www.kaggle.com/datasets/rakkesharv/spotify-top-10000-streamed-songs
 
 ### Football
+- https://www.kaggle.com/datasets/stefanoleone992/ea-sports-fc-24-complete-player-dataset
