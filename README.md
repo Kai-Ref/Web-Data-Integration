@@ -20,4 +20,5 @@ Web Data Integration Project
 - ( https://www.kaggle.com/datasets/ramjasmaurya/footballsoccer-clubs-ranking ) - looks okay, names only variable to match
 - ( https://www.kaggle.com/datasets/tadhgfitzgerald/fifa-international-soccer-mens-ranking-1993now ) - only national teams, not really useful
 - { Note Kai: I/We could also scrape transfermarkt.com for further soccer data, as I did it before and this wouldn't take too long for me :)} {Note Fabian: We may could use this dataset cause its from transfermarket: https://data.world/dcereijo/player-scores }
+- https://query.data.world/s/ztmg6y5ofjehjfxevkj4mtbhwmd5z2?dws=00000 (club table from data set that Fabian suggested - direct download link) - looks useful, adds club level info but also weird club format
 - (https://query.data.world/s/ixikrqyypwrxygt3rytcqm4x7ctnl2?dws=00000 (added by Jan)) (this data set contains stadiums, capacity, city, country, country population and most importantly, the home club BUT one issue is that club names are often shortened (e.g. Waldhof Mannheim is only "Waldhof", 1.FC Köln is only "Köln"))
