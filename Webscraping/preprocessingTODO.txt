@@ -1,0 +1,3 @@
+- rename mv entries to a consistent format
+- add id maybe
+- insert the club names where the ids are
