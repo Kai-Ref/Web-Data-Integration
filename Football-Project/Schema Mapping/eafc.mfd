@@ -259,7 +259,7 @@
 								</entry>
 							</entry>
 						</root>
-						<text type="csv" encoding="1000" byteorder="1" byteordermark="0" inputinstance="..\Web-Data-Integration\Football-Project\data\eafc24_preprocessed.csv">
+						<text type="csv" encoding="1000" byteorder="1" byteordermark="0" inputinstance="..\data\eafc24_preprocessed.csv">
 							<settings separator="," quote="&quot;" firstrownames="true" removeempty="true">
 								<names root="eafc24_preprocessed" block="Rows">
 									<field0 name="player_id" type="integer"/>
