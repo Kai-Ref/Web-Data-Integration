@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="players">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="player" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="id" type="xs:string"/>
+							<xs:element name="name" type="xs:string"/>
+							<xs:element name="birthdate" type="xs:string"/>
+							<xs:element name="age" type="xs:byte"/>
+							<xs:element name="nationality" type="xs:string"/>
+							<xs:element name="positions">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="position" maxOccurs="unbounded" type="xs:string"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="jersey_number" type="xs:byte"/>
+							<xs:element name="club" type="xs:string"/>
+							<xs:element name="league" type="xs:string"/>
+							<xs:element name="weight" type="xs:byte"/>
+							<xs:element name="height" type="xs:short"/>
+							<xs:element name="preferred_foot" type="xs:string"/>
+							<xs:element name="current_market_value" type="xs:decimal"/>
+							<xs:element name="wage" type="xs:decimal"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>
