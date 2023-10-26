@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Edited with Altova MapForce 2023r2 -->
+<mapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="22">
+	<resources/>
+	<component name="defaultmap" uid="1" editable="1" blackbox="0">
+		<properties SelectedLanguage="builtin"/>
+		<structure>
+			<children>
+				<component name="auto-number" library="core" uid="6" kind="5">
+					<sources>
+						<datapoint/>
+						<datapoint pos="1" key="6"/>
+						<datapoint/>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="3"/>
+					</targets>
+					<view ltx="414" lty="17" rbx="542" rby="102"/>
+				</component>
+				<component name="constant" library="core" uid="4" kind="2">
+					<targets>
+						<datapoint pos="0" key="5"/>
+					</targets>
+					<view ltx="326" lty="17" rbx="382" rby="33"/>
+					<data>
+						<constant value="1000" datatype="decimal"/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="5" kind="2">
+					<targets>
+						<datapoint pos="0" key="1"/>
+					</targets>
+					<view ltx="562" lty="17" rbx="626" rby="33"/>
+					<data>
+						<constant value="eafc_" datatype="string"/>
+					</data>
+				</component>
+				<component name="lowercase" library="lang" uid="10" kind="5">
+					<sources>
+						<datapoint pos="0" key="12"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="13"/>
+					</targets>
+					<view ltx="531" lty="403" rbx="603" rby="440"/>
+				</component>
+				<component name="concat" library="core" uid="7" kind="5" growable="1" growablebasename="value">
+					<sources>
+						<datapoint pos="0" key="2"/>
+						<datapoint pos="1" key="4"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="7"/>
+					</targets>
+					<view ltx="654" lty="17" rbx="729" rby="71"/>
+				</component>
+				<component name="constant" library="core" uid="25" kind="2">
+					<targets>
+						<datapoint pos="0" key="45"/>
+					</targets>
+					<view ltx="374" lty="502" rbx="465" rby="518"/>
+					<data>
+						<constant value="[Y]-[M]-[D]" datatype="string"/>
+					</data>
+				</component>
+				<component name="parse-date" library="core" uid="24" kind="5">
+					<sources>
+						<datapoint pos="0" key="60"/>
+						<datapoint pos="1" key="61"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="62"/>
+					</targets>
+					<view ltx="530" lty="466" rbx="606" rby="519"/>
+				</component>
+				<component name="eafc24_preprocessed" library="text" uid="3" kind="16">
+					<properties/>
+					<view ltx="8" lty="66" rbx="245" rby="418"/>
+					<data>
+						<root>
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="1" expanded="1">
+								<entry name="document" ns="1" expanded="1">
+									<entry name="Rows" outkey="14" expanded="1">
+										<entry name="short_name" outkey="15"/>
+										<entry name="player_positions" outkey="64"/>
+										<entry name="value_eur" outkey="16"/>
+										<entry name="wage_eur" outkey="17"/>
+										<entry name="age" outkey="18"/>
+										<entry name="dob" outkey="19"/>
+										<entry name="height_cm" outkey="20"/>
+										<entry name="weight_kg" outkey="21"/>
+										<entry name="club_name" outkey="22"/>
+										<entry name="league_name" outkey="23"/>
+										<entry name="club_jersey_number" outkey="24"/>
+										<entry name="nationality_name" outkey="25"/>
+										<entry name="preferred_foot" outkey="26"/>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<text type="csv" encoding="1000" byteorder="1" byteordermark="0" inputinstance="..\Web-Data-Integration\Football-Project\eafc24_preprocessed.csv">
+							<settings separator="," quote="&quot;" firstrownames="true" removeempty="true">
+								<names root="eafc24_preprocessed" block="Rows">
+									<field0 name="player_id" type="integer"/>
+									<field1 name="fifa_version" type="decimal"/>
+									<field2 name="short_name" type="string"/>
+									<field3 name="long_name" type="string"/>
+									<field4 name="player_positions" type="string"/>
+									<field5 name="overall" type="string"/>
+									<field6 name="value_eur" type="decimal"/>
+									<field7 name="wage_eur" type="decimal"/>
+									<field8 name="age" type="integer"/>
+									<field9 name="dob" type="string"/>
+									<field10 name="height_cm" type="integer"/>
+									<field11 name="weight_kg" type="integer"/>
+									<field12 name="club_name" type="string"/>
+									<field13 name="league_id" type="string"/>
+									<field14 name="league_name" type="string"/>
+									<field15 name="club_jersey_number" type="decimal"/>
+									<field16 name="nationality_name" type="string"/>
+									<field17 name="preferred_foot" type="string"/>
+								</names>
+							</settings>
+						</text>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="26" kind="2">
+					<targets>
+						<datapoint pos="0" key="81"/>
+					</targets>
+					<view ltx="234" lty="627" rbx="276" rby="643"/>
+					<data>
+						<constant value="," datatype="string"/>
+					</data>
+				</component>
+				<component name="tokenize" library="core" uid="30" kind="5">
+					<sources>
+						<datapoint pos="0" key="82"/>
+						<datapoint pos="1" key="83"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="70"/>
+					</targets>
+					<view ltx="346" lty="591" rbx="432" rby="644"/>
+				</component>
+				<component name="replace" library="lang" uid="40" kind="5">
+					<sources>
+						<datapoint pos="0" key="65"/>
+						<datapoint pos="1" key="66"/>
+						<datapoint pos="2" key="67"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="76"/>
+					</targets>
+					<view ltx="469" lty="590" rbx="559" rby="659"/>
+				</component>
+				<component name="constant" library="core" uid="41" kind="2">
+					<targets>
+						<datapoint pos="0" key="68"/>
+					</targets>
+					<view ltx="374" lty="643" rbx="418" rby="659"/>
+					<data>
+						<constant value="[" datatype="string"/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="42" kind="2">
+					<targets>
+						<datapoint pos="0" key="69"/>
+					</targets>
+					<view ltx="374" lty="665" rbx="414" rby="681"/>
+					<data>
+						<constant datatype="string"/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="44" kind="2">
+					<targets>
+						<datapoint pos="0" key="74"/>
+					</targets>
+					<view ltx="498" lty="679" rbx="542" rby="695"/>
+					<data>
+						<constant value="]" datatype="string"/>
+					</data>
+				</component>
+				<component name="replace" library="lang" uid="43" kind="5">
+					<sources>
+						<datapoint pos="0" key="73"/>
+						<datapoint pos="1" key="71"/>
+						<datapoint pos="2" key="72"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="84"/>
+					</targets>
+					<view ltx="582" lty="590" rbx="672" rby="659"/>
+				</component>
+				<component name="constant" library="core" uid="47" kind="2">
+					<targets>
+						<datapoint pos="0" key="85"/>
+					</targets>
+					<view ltx="642" lty="678" rbx="685" rby="694"/>
+					<data>
+						<constant value="&apos;" datatype="string"/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="45" kind="2">
+					<targets>
+						<datapoint pos="0" key="75"/>
+					</targets>
+					<view ltx="501" lty="695" rbx="541" rby="711"/>
+					<data>
+						<constant datatype="string"/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="48" kind="2">
+					<targets>
+						<datapoint pos="0" key="80"/>
+					</targets>
+					<view ltx="645" lty="695" rbx="685" rby="711"/>
+					<data>
+						<constant datatype="string"/>
+					</data>
+				</component>
+				<component name="replace" library="lang" uid="46" kind="5">
+					<sources>
+						<datapoint pos="0" key="77"/>
+						<datapoint pos="1" key="78"/>
+						<datapoint pos="2" key="79"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="86"/>
+					</targets>
+					<view ltx="692" lty="590" rbx="782" rby="659"/>
+				</component>
+				<component name="target_schema_new" library="xml" uid="22" kind="14">
+					<properties XSLTDefaultOutput="1"/>
+					<view ltx="906" lty="66" rbx="1187" rby="433"/>
+					<data>
+						<root>
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="1" expanded="1">
+								<entry name="document" ns="1" expanded="1" casttotargettypemode="cast-in-subtree">
+									<entry name="players" expanded="1">
+										<entry name="player" inpkey="46" expanded="1">
+											<entry name="id" inpkey="47"/>
+											<entry name="name" inpkey="48"/>
+											<entry name="birthdate" inpkey="49"/>
+											<entry name="age" inpkey="50"/>
+											<entry name="nationality" inpkey="51"/>
+											<entry name="positions" expanded="1">
+												<entry name="position" inpkey="63"/>
+											</entry>
+											<entry name="jersey_number" inpkey="52"/>
+											<entry name="club" inpkey="53"/>
+											<entry name="league" inpkey="54"/>
+											<entry name="weight" inpkey="55"/>
+											<entry name="height" inpkey="56"/>
+											<entry name="preferred_foot" inpkey="57"/>
+											<entry name="current_market_value" inpkey="58"/>
+											<entry name="wage" inpkey="59"/>
+										</entry>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<document schema="target_schema_new.xsd" instanceroot="{}players" inputinstance="target_schema_new.xml" outputinstance="target_schema_new.xml"/>
+					</data>
+				</component>
+				<component name="normalize-space" library="core" uid="28" kind="5">
+					<sources>
+						<datapoint pos="0" key="87"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="88"/>
+					</targets>
+					<view ltx="797" lty="590" rbx="899" rby="627"/>
+				</component>
+			</children>
+			<graph directed="1">
+				<edges/>
+				<vertices>
+					<vertex vertexkey="1">
+						<edges>
+							<edge vertexkey="2"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="3">
+						<edges>
+							<edge vertexkey="4"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="5">
+						<edges>
+							<edge vertexkey="6"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="26">
+						<edges>
+							<edge vertexkey="12"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="14">
+						<edges>
+							<edge vertexkey="46"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="7">
+						<edges>
+							<edge vertexkey="47"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="15">
+						<edges>
+							<edge vertexkey="48"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="62">
+						<edges>
+							<edge vertexkey="49"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="18">
+						<edges>
+							<edge vertexkey="50"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="25">
+						<edges>
+							<edge vertexkey="51"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="24">
+						<edges>
+							<edge vertexkey="52"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="22">
+						<edges>
+							<edge vertexkey="53"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="23">
+						<edges>
+							<edge vertexkey="54"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="21">
+						<edges>
+							<edge vertexkey="55"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="20">
+						<edges>
+							<edge vertexkey="56"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="13">
+						<edges>
+							<edge vertexkey="57"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="16">
+						<edges>
+							<edge vertexkey="58"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="17">
+						<edges>
+							<edge vertexkey="59"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="19">
+						<edges>
+							<edge vertexkey="60"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="45">
+						<edges>
+							<edge vertexkey="61"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="88">
+						<edges>
+							<edge vertexkey="63"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="70">
+						<edges>
+							<edge vertexkey="65"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="68">
+						<edges>
+							<edge vertexkey="66"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="69">
+						<edges>
+							<edge vertexkey="67"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="74">
+						<edges>
+							<edge vertexkey="71"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="75">
+						<edges>
+							<edge vertexkey="72"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="76">
+						<edges>
+							<edge vertexkey="73"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="84">
+						<edges>
+							<edge vertexkey="77"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="85">
+						<edges>
+							<edge vertexkey="78"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="80">
+						<edges>
+							<edge vertexkey="79"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="64">
+						<edges>
+							<edge vertexkey="82"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="81">
+						<edges>
+							<edge vertexkey="83"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="86">
+						<edges>
+							<edge vertexkey="87"/>
+						</edges>
+					</vertex>
+				</vertices>
+			</graph>
+		</structure>
+	</component>
+</mapping>
