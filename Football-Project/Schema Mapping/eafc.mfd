@@ -74,63 +74,6 @@
 					</targets>
 					<view ltx="530" lty="466" rbx="606" rby="519"/>
 				</component>
-				<component name="eafc24_preprocessed" library="text" uid="3" kind="16">
-					<properties/>
-					<view ltx="8" lty="66" rbx="245" rby="418"/>
-					<data>
-						<root>
-							<header>
-								<namespaces>
-									<namespace/>
-									<namespace uid="http://www.altova.com/mapforce"/>
-								</namespaces>
-							</header>
-							<entry name="FileInstance" ns="1" expanded="1">
-								<entry name="document" ns="1" expanded="1">
-									<entry name="Rows" outkey="14" expanded="1">
-										<entry name="short_name" outkey="15"/>
-										<entry name="player_positions" outkey="64"/>
-										<entry name="value_eur" outkey="16"/>
-										<entry name="wage_eur" outkey="17"/>
-										<entry name="age" outkey="18"/>
-										<entry name="dob" outkey="19"/>
-										<entry name="height_cm" outkey="20"/>
-										<entry name="weight_kg" outkey="21"/>
-										<entry name="club_name" outkey="22"/>
-										<entry name="league_name" outkey="23"/>
-										<entry name="club_jersey_number" outkey="24"/>
-										<entry name="nationality_name" outkey="25"/>
-										<entry name="preferred_foot" outkey="26"/>
-									</entry>
-								</entry>
-							</entry>
-						</root>
-						<text type="csv" encoding="1000" byteorder="1" byteordermark="0" inputinstance="..\Web-Data-Integration\Football-Project\eafc24_preprocessed.csv">
-							<settings separator="," quote="&quot;" firstrownames="true" removeempty="true">
-								<names root="eafc24_preprocessed" block="Rows">
-									<field0 name="player_id" type="integer"/>
-									<field1 name="fifa_version" type="decimal"/>
-									<field2 name="short_name" type="string"/>
-									<field3 name="long_name" type="string"/>
-									<field4 name="player_positions" type="string"/>
-									<field5 name="overall" type="string"/>
-									<field6 name="value_eur" type="decimal"/>
-									<field7 name="wage_eur" type="decimal"/>
-									<field8 name="age" type="integer"/>
-									<field9 name="dob" type="string"/>
-									<field10 name="height_cm" type="integer"/>
-									<field11 name="weight_kg" type="integer"/>
-									<field12 name="club_name" type="string"/>
-									<field13 name="league_id" type="string"/>
-									<field14 name="league_name" type="string"/>
-									<field15 name="club_jersey_number" type="decimal"/>
-									<field16 name="nationality_name" type="string"/>
-									<field17 name="preferred_foot" type="string"/>
-								</names>
-							</settings>
-						</text>
-					</data>
-				</component>
 				<component name="constant" library="core" uid="26" kind="2">
 					<targets>
 						<datapoint pos="0" key="81"/>
@@ -139,16 +82,6 @@
 					<data>
 						<constant value="," datatype="string"/>
 					</data>
-				</component>
-				<component name="tokenize" library="core" uid="30" kind="5">
-					<sources>
-						<datapoint pos="0" key="82"/>
-						<datapoint pos="1" key="83"/>
-					</sources>
-					<targets>
-						<datapoint pos="0" key="70"/>
-					</targets>
-					<view ltx="346" lty="591" rbx="432" rby="644"/>
 				</component>
 				<component name="replace" library="lang" uid="40" kind="5">
 					<sources>
@@ -237,8 +170,27 @@
 					</targets>
 					<view ltx="692" lty="590" rbx="782" rby="659"/>
 				</component>
+				<component name="normalize-space" library="core" uid="28" kind="5">
+					<sources>
+						<datapoint pos="0" key="87"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="88"/>
+					</targets>
+					<view ltx="797" lty="590" rbx="899" rby="627"/>
+				</component>
+				<component name="tokenize" library="core" uid="30" kind="5">
+					<sources>
+						<datapoint pos="0" key="82"/>
+						<datapoint pos="1" key="83"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="70"/>
+					</targets>
+					<view ltx="346" lty="591" rbx="432" rby="644"/>
+				</component>
 				<component name="target_schema_new" library="xml" uid="22" kind="14">
-					<properties XSLTDefaultOutput="1"/>
+					<properties XSLTTargetEncoding="UTF-8" XSLTDefaultOutput="1"/>
 					<view ltx="906" lty="66" rbx="1187" rby="433"/>
 					<data>
 						<root>
@@ -276,14 +228,62 @@
 						<document schema="target_schema_new.xsd" instanceroot="{}players" inputinstance="target_schema_new.xml" outputinstance="target_schema_new.xml"/>
 					</data>
 				</component>
-				<component name="normalize-space" library="core" uid="28" kind="5">
-					<sources>
-						<datapoint pos="0" key="87"/>
-					</sources>
-					<targets>
-						<datapoint pos="0" key="88"/>
-					</targets>
-					<view ltx="797" lty="590" rbx="899" rby="627"/>
+				<component name="eafc24_preprocessed" library="text" uid="3" kind="16">
+					<properties/>
+					<view ltx="8" lty="66" rbx="245" rby="418"/>
+					<data>
+						<root>
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="1" expanded="1">
+								<entry name="document" ns="1" expanded="1">
+									<entry name="Rows" outkey="14" expanded="1">
+										<entry name="short_name" outkey="15"/>
+										<entry name="player_positions" outkey="64"/>
+										<entry name="value_eur" outkey="16"/>
+										<entry name="wage_eur" outkey="17"/>
+										<entry name="age" outkey="18"/>
+										<entry name="dob" outkey="19"/>
+										<entry name="height_cm" outkey="20"/>
+										<entry name="weight_kg" outkey="21"/>
+										<entry name="club_name" outkey="22"/>
+										<entry name="league_name" outkey="23"/>
+										<entry name="club_jersey_number" outkey="24"/>
+										<entry name="nationality_name" outkey="25"/>
+										<entry name="preferred_foot" outkey="26"/>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<text type="csv" encoding="1000" byteorder="1" byteordermark="0" inputinstance="..\Web-Data-Integration\Football-Project\data\eafc24_preprocessed.csv">
+							<settings separator="," quote="&quot;" firstrownames="true" removeempty="true">
+								<names root="eafc24_preprocessed" block="Rows">
+									<field0 name="player_id" type="integer"/>
+									<field1 name="fifa_version" type="decimal"/>
+									<field2 name="short_name" type="string"/>
+									<field3 name="long_name" type="string"/>
+									<field4 name="player_positions" type="string"/>
+									<field5 name="overall" type="string"/>
+									<field6 name="value_eur" type="decimal"/>
+									<field7 name="wage_eur" type="decimal"/>
+									<field8 name="age" type="integer"/>
+									<field9 name="dob" type="string"/>
+									<field10 name="height_cm" type="integer"/>
+									<field11 name="weight_kg" type="integer"/>
+									<field12 name="club_name" type="string"/>
+									<field13 name="league_id" type="string"/>
+									<field14 name="league_name" type="string"/>
+									<field15 name="club_jersey_number" type="decimal"/>
+									<field16 name="nationality_name" type="string"/>
+									<field17 name="preferred_foot" type="string"/>
+								</names>
+							</settings>
+						</text>
+					</data>
 				</component>
 			</children>
 			<graph directed="1">
