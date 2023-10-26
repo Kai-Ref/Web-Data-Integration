@@ -8,78 +8,37 @@
 			<children>
 				<component name="constant" library="core" uid="4" kind="2">
 					<targets>
-						<datapoint pos="0" key="3"/>
+						<datapoint pos="0" key="6"/>
 					</targets>
-					<view ltx="381" lty="89" rbx="437" rby="107"/>
+					<view ltx="342" lty="-10" rbx="398" rby="8"/>
 					<data>
 						<constant value="1000" datatype="decimal"/>
 					</data>
 				</component>
-				<component name="auto-number" library="core" uid="7" kind="5">
-					<sources>
-						<datapoint/>
-						<datapoint pos="1" key="4"/>
-						<datapoint/>
-						<datapoint/>
-					</sources>
+				<component name="constant" library="core" uid="5" kind="2">
 					<targets>
-						<datapoint pos="0" key="5"/>
-					</targets>
-					<view ltx="477" lty="54" rbx="610" rby="147"/>
-				</component>
-				<component name="concat" library="core" uid="6" kind="5" growable="1" growablebasename="value">
-					<sources>
 						<datapoint pos="0" key="2"/>
-						<datapoint pos="1" key="6"/>
-					</sources>
-					<targets>
-						<datapoint pos="0" key="7"/>
 					</targets>
-					<view ltx="637" lty="72" rbx="714" rby="131"/>
-				</component>
-				<component name="tm" library="text" uid="3" kind="16">
-					<properties/>
-					<view ltx="37" lty="154" rbx="299" rby="354"/>
+					<view ltx="598" lty="-61" rbx="657" rby="-43"/>
 					<data>
-						<root>
-							<header>
-								<namespaces>
-									<namespace/>
-									<namespace uid="http://www.altova.com/mapforce"/>
-								</namespaces>
-							</header>
-							<entry name="FileInstance" ns="1" expanded="1">
-								<entry name="document" ns="1" expanded="1">
-									<entry name="Rows" outkey="14" expanded="1">
-										<entry name="player_name" outkey="15"/>
-										<entry name="Birthday" outkey="16"/>
-										<entry name="Number" outkey="17"/>
-										<entry name="current_mv_id" outkey="18"/>
-										<entry name="team" outkey="19"/>
-										<entry name="nationality_id" outkey="20"/>
-										<entry name="main_position" outkey="21"/>
-									</entry>
-								</entry>
-							</entry>
-						</root>
-						<text type="csv" encoding="1000" byteorder="1" byteordermark="0" inputinstance="..\..\Webscraping\players_df_preprocessed.csv">
-							<settings separator="," quote="&quot;" firstrownames="true" removeempty="true">
-								<names root="tm" block="Rows">
-									<field0 name="player_name" type="string"/>
-									<field1 name="Birthday" type="string"/>
-									<field2 name="Number" type="integer"/>
-									<field3 name="current_mv_id" type="decimal"/>
-									<field4 name="team" type="string"/>
-									<field5 name="nationality_id" type="string"/>
-									<field6 name="main_position" type="string"/>
-								</names>
-							</settings>
-						</text>
+						<constant value="tm_" datatype="string"/>
 					</data>
 				</component>
-				<component name="target_schema_wage" library="xml" uid="2" kind="14">
-					<properties XSLTTargetEncoding="UTF-8" XSLTDefaultOutput="1"/>
-					<view ltx="944" lty="131" rbx="1311" rby="431"/>
+				<component name="auto-number" library="core" uid="6" kind="5">
+					<sources>
+						<datapoint/>
+						<datapoint pos="1" key="7"/>
+						<datapoint/>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="4"/>
+					</targets>
+					<view ltx="438" lty="-45" rbx="571" rby="48"/>
+				</component>
+				<component name="target_schema_new" library="xml" uid="2" kind="14">
+					<properties XSLTDefaultOutput="1"/>
+					<view ltx="781" lty="20" rbx="1076" rby="404"/>
 					<data>
 						<root scrollposition="1">
 							<header>
@@ -91,138 +50,180 @@
 							<entry name="FileInstance" ns="1" expanded="1">
 								<entry name="document" ns="1" expanded="1" casttotargettypemode="cast-in-subtree">
 									<entry name="players" expanded="1">
-										<entry name="player" inpkey="22" expanded="1">
-											<entry name="id" inpkey="23"/>
-											<entry name="name" inpkey="24"/>
-											<entry name="birthdate" inpkey="25"/>
-											<entry name="nationality" inpkey="26"/>
-											<entry name="position" inpkey="27"/>
-											<entry name="jersey_number" inpkey="28"/>
-											<entry name="club" inpkey="29"/>
-											<entry name="current_market_value" inpkey="30"/>
+										<entry name="player" inpkey="14" expanded="1">
+											<entry name="id" inpkey="15"/>
+											<entry name="name" inpkey="16"/>
+											<entry name="birthdate" inpkey="17"/>
+											<entry name="nationality" inpkey="18"/>
+											<entry name="positions" expanded="1">
+												<entry name="position" inpkey="19"/>
+											</entry>
+											<entry name="jersey_number" inpkey="20"/>
+											<entry name="club" inpkey="21"/>
+											<entry name="current_market_value" inpkey="22"/>
 										</entry>
 									</entry>
 								</entry>
 							</entry>
 						</root>
-						<document schema="target_schema_wage.xsd" instanceroot="{}players" outputinstance="target_schema_wage.xml"/>
+						<document schema="target_schema_new.xsd" instanceroot="{}players" inputinstance="target_schema_new.xml" outputinstance="target_schema_new.xml"/>
 					</data>
 				</component>
-				<component name="constant" library="core" uid="5" kind="2">
+				<component name="concat" library="core" uid="7" kind="5" growable="1" growablebasename="value">
+					<sources>
+						<datapoint pos="0" key="3"/>
+						<datapoint pos="1" key="5"/>
+					</sources>
 					<targets>
 						<datapoint pos="0" key="1"/>
 					</targets>
-					<view ltx="637" lty="38" rbx="696" rby="56"/>
+					<view ltx="598" lty="-27" rbx="675" rby="32"/>
+				</component>
+				<component name="constant" library="core" uid="8" kind="2">
+					<targets>
+						<datapoint pos="0" key="9"/>
+					</targets>
+					<view ltx="245" lty="384" rbx="289" rby="402"/>
 					<data>
-						<constant value="tm_" datatype="string"/>
+						<constant value="," datatype="string"/>
 					</data>
 				</component>
-				<component name="replace" library="lang" uid="8" kind="5">
+				<component name="tm" library="text" uid="3" kind="16">
+					<properties/>
+					<view ltx="61" lty="78" rbx="334" rby="278"/>
+					<data>
+						<root>
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="1" expanded="1">
+								<entry name="document" ns="1" expanded="1">
+									<entry name="Rows" outkey="23" expanded="1">
+										<entry name="player_name" outkey="24"/>
+										<entry name="Birthday" outkey="25"/>
+										<entry name="number" outkey="26"/>
+										<entry name="current_mv" outkey="27"/>
+										<entry name="team" outkey="28"/>
+										<entry name="nationality" outkey="29"/>
+										<entry name="fifa_positions_1" outkey="30"/>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<text type="csv" encoding="1000" byteorder="1" byteordermark="0" inputinstance="..\..\Webscraping\players_df_preprocessed_1.csv">
+							<settings separator="," quote="&quot;" firstrownames="true" removeempty="true">
+								<names root="tm" block="Rows">
+									<field0 name="player_name" type="string"/>
+									<field1 name="Birthday" type="string"/>
+									<field2 name="number" type="integer"/>
+									<field3 name="current_mv" type="decimal"/>
+									<field4 name="team" type="string"/>
+									<field5 name="nationality" type="string"/>
+									<field6 name="fifa_positions_1" type="string"/>
+								</names>
+							</settings>
+						</text>
+					</data>
+				</component>
+				<component name="tokenize" library="core" uid="9" kind="5">
 					<sources>
 						<datapoint pos="0" key="11"/>
 						<datapoint pos="1" key="10"/>
-						<datapoint pos="2" key="9"/>
 					</sources>
 					<targets>
 						<datapoint pos="0" key="8"/>
 					</targets>
-					<view ltx="433" lty="345" rbx="525" rby="420"/>
+					<view ltx="357" lty="348" rbx="445" rby="405"/>
 				</component>
-				<component name="constant" library="core" uid="9" kind="2">
+				<component name="normalize-space" library="core" uid="10" kind="5">
+					<sources>
+						<datapoint pos="0" key="13"/>
+					</sources>
 					<targets>
 						<datapoint pos="0" key="12"/>
 					</targets>
-					<view ltx="323" lty="412" rbx="369" rby="430"/>
-					<data>
-						<constant value="-" datatype="string"/>
-					</data>
-				</component>
-				<component name="constant" library="core" uid="10" kind="2">
-					<targets>
-						<datapoint pos="0" key="13"/>
-					</targets>
-					<view ltx="323" lty="449" rbx="361" rby="467"/>
-					<data>
-						<constant value="0" datatype="decimal"/>
-					</data>
+					<view ltx="533" lty="387" rbx="638" rby="426"/>
 				</component>
 			</children>
 			<graph directed="1">
 				<edges/>
 				<vertices>
-					<vertex vertexkey="1">
+					<vertex vertexkey="2">
 						<edges>
-							<edge vertexkey="2"/>
+							<edge vertexkey="3"/>
 						</edges>
 					</vertex>
-					<vertex vertexkey="3">
+					<vertex vertexkey="4">
 						<edges>
-							<edge vertexkey="4"/>
+							<edge vertexkey="5"/>
 						</edges>
 					</vertex>
-					<vertex vertexkey="5">
+					<vertex vertexkey="6">
 						<edges>
-							<edge vertexkey="6"/>
+							<edge vertexkey="7"/>
 						</edges>
 					</vertex>
-					<vertex vertexkey="13">
-						<edges>
-							<edge vertexkey="9"/>
-						</edges>
-					</vertex>
-					<vertex vertexkey="12">
+					<vertex vertexkey="9">
 						<edges>
 							<edge vertexkey="10"/>
 						</edges>
 					</vertex>
-					<vertex vertexkey="17">
+					<vertex vertexkey="30">
 						<edges>
 							<edge vertexkey="11"/>
 						</edges>
 					</vertex>
-					<vertex vertexkey="14">
-						<edges>
-							<edge vertexkey="22"/>
-						</edges>
-					</vertex>
-					<vertex vertexkey="7">
-						<edges>
-							<edge vertexkey="23"/>
-						</edges>
-					</vertex>
-					<vertex vertexkey="15">
-						<edges>
-							<edge vertexkey="24"/>
-						</edges>
-					</vertex>
-					<vertex vertexkey="16">
-						<edges>
-							<edge vertexkey="25"/>
-						</edges>
-					</vertex>
-					<vertex vertexkey="20">
-						<edges>
-							<edge vertexkey="26"/>
-						</edges>
-					</vertex>
-					<vertex vertexkey="21">
-						<edges>
-							<edge vertexkey="27"/>
-						</edges>
-					</vertex>
 					<vertex vertexkey="8">
 						<edges>
-							<edge vertexkey="28"/>
+							<edge vertexkey="13"/>
 						</edges>
 					</vertex>
-					<vertex vertexkey="19">
+					<vertex vertexkey="23">
 						<edges>
-							<edge vertexkey="29"/>
+							<edge vertexkey="14"/>
 						</edges>
 					</vertex>
-					<vertex vertexkey="18">
+					<vertex vertexkey="1">
 						<edges>
-							<edge vertexkey="30"/>
+							<edge vertexkey="15"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="24">
+						<edges>
+							<edge vertexkey="16"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="25">
+						<edges>
+							<edge vertexkey="17"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="29">
+						<edges>
+							<edge vertexkey="18"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="12">
+						<edges>
+							<edge vertexkey="19"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="26">
+						<edges>
+							<edge vertexkey="20"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="28">
+						<edges>
+							<edge vertexkey="21"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="27">
+						<edges>
+							<edge vertexkey="22"/>
 						</edges>
 					</vertex>
 				</vertices>
