@@ -1,0 +1,483 @@
+df1,df2,name1,birthdate1,name2,birthdate2,nat1,nat2,club1,club2,score,match
+tm_3874,fm_4166,Brian Plat,2000-04-05,Brian Plat,2000-04-05,Netherlands,NED,FC Volendam,FC Volendam,1.0,True
+tm_9797,fm_12385,George Long,1993-11-05,George Long,1993-11-05,England,ENG,Norwich City,Millwall,1.0,True
+tm_1577,fm_1603,Sebastian Anderson,2002-08-08,Sebastian Anderson,2002-08-08,United States,USA,Colorado Rapids,Colorado,1.0,True
+tm_7984,fm_2308,Manuel Riemann,1988-09-09,Manuel Riemann,1988-09-09,Germany,GER,VfL Bochum,VfL Bochum,1.0,True
+tm_8815,fm_6930,Giorgio Altare,1998-08-09,Giorgio Altare,1998-08-09,Italy,ITA,Cagliari Calcio,Cagliari,1.0,True
+tm_7688,fm_1859,Jonas Wind,1999-02-07,Jonas Wind,1999-02-07,Denmark,DEN,VfL Wolfsburg,VfL Wolfsburg,1.0,True
+tm_10447,fm_3604,Keke Topp,2004-03-25,Keke Topp,2004-03-25,Germany,GER,FC Schalke 04,Schalke 04,1.0,True
+tm_7810,fm_1834,Michael Gregoritsch,1994-04-18,Michael Gregoritsch,1994-04-18,Austria,AUT,SC Freiburg,SC Freiburg,1.0,True
+tm_2149,fm_1174,Kai Wagner,1997-02-15,Kai Wagner,1997-02-15,Germany,GER,Philadelphia Union,Philadelphia,1.0,True
+tm_2658,fm_3428,Abdoulaye Kamara,2004-11-06,Abdoulaye Kamara,2004-11-06,France,GUI,Borussia Dortmund II,Borussia Dortmund,1.0,True
+tm_2795,fm_2474,Calogero Rizzuto,1992-01-05,Calogero Rizzuto,1992-01-05,Germany,GER,1.FC Saarbrücken,1. FC Saarbrücken,1.0,True
+tm_1764,fm_3151,Jonas Nietfeld,1994-01-15,Jonas Nietfeld,1994-01-15,Germany,GER,Hallescher FC,Hallescher FC,1.0,True
+tm_1303,fm_1750,Matteo Campagna,2004-06-27,Matteo Campagna,2004-06-27,Canada,CAN,Vancouver Whitecaps FC,Vancouver,1.0,True
+tm_3498,fm_2853,Ricardo Pepi,2003-01-09,Ricardo Pepi,2003-01-09,United States,USA,PSV Eindhoven,FC Groningen,1.0,True
+tm_7045,fm_11262,Martin Ødegaard,1998-12-17,Martin Ødegaard,1998-12-17,Norway,NOR,Arsenal FC,Arsenal,1.0,True
+tm_3882,fm_3964,Joey Antonioli,2003-12-15,Joey Antonioli,2003-12-15,Netherlands,NED,FC Volendam,FC Volendam,1.0,True
+tm_8741,fm_6205,Miguel Veloso,1986-05-11,Miguel Veloso,1986-05-11,Portugal,POR,Pisa Sporting Club,Verona,1.0,True
+tm_5397,fm_15923,Rafael Brito,2002-01-19,Rafael Brito,2002-01-19,Portugal,POR,Casa Pia AC,MRT,1.0,True
+tm_8261,fm_16152,Baptiste Roux,1999-11-26,Baptiste Roux,1999-11-26,France,FRA,EA Guingamp,EA Guingamp,1.0,True
+tm_7989,fm_2277,Keven Schlotterbeck,1997-04-28,Keven Schlotterbeck,1997-04-28,Germany,GER,SC Freiburg,SC Freiburg,1.0,True
+tm_6595,fm_14804,Hamari Traoré,1992-01-27,Hamari Traoré,1992-01-27,Mali,MLI,Real Sociedad,Rennes,1.0,True
+tm_5597,fm_14916,Terem Moffi,1999-05-25,Terem Moffi,1999-05-25,Nigeria,NGA,OGC Nice,FC Lorient,1.0,True
+tm_10535,fm_2483,Marcel Hartel,1996-01-19,Marcel Hartel,1996-01-19,Germany,GER,FC St. Pauli,St. Pauli,1.0,True
+tm_2142,fm_1060,Andre Blake,1990-11-21,Andre Blake,1990-11-21,Jamaica,JAM,Philadelphia Union,Philadelphia,1.0,True
+tm_6265,fm_6245,Roberto Pereyra,1991-01-07,Roberto Pereyra,1991-01-07,Argentina,ARG,Udinese Calcio,Udinese,1.0,True
+tm_10623,fm_3306,Marlon Ritter,1994-10-15,Marlon Ritter,1994-10-15,Germany,GER,1.FC Kaiserslautern,Kaiserslautern,1.0,True
+tm_1543,fm_1327,Shane O'Neill,1993-09-02,Shane O'Neill,1993-09-02,United States,USA,Toronto FC,Toronto FC,1.0,True
+tm_3748,fm_3610,Ragnar Oratmangoen,1998-01-21,Ragnar Oratmangoen,1998-01-21,Netherlands,NED,,FC Groningen,1.0,True
+tm_10633,fm_3728,Richmond Tachie,1999-04-21,Richmond Tachie,1999-04-21,Germany,GER,1.FC Kaiserslautern,Paderborn,1.0,True
+tm_3963,fm_1893,Bryan Heynen,1997-02-06,Bryan Heynen,1997-02-06,Belgium,BEL,KRC Genk,KRC Genk,1.0,True
+tm_1346,fm_1415,Jefferson Savarino,1996-11-11,Jefferson Savarino,1996-11-11,Venezuela,VEN,Real Salt Lake City,Real Salt Lake,1.0,True
+tm_9343,fm_14890,Juan Otero,1995-05-26,Juan Otero,1995-05-26,Colombia,COL,,S. Gijón,1.0,True
+tm_5130,fm_15236,João Mendes,1994-10-21,João Mendes,1994-10-21,Portugal,POR,Vitória Guimarães SC,Chaves,1.0,True
+tm_3922,fm_1886,Simon Mignolet,1988-03-06,Simon Mignolet,1988-03-06,Belgium,BEL,Club Brugge KV,Club Brugge,1.0,True
+tm_6465,fm_6472,Elio Capradossi,1996-03-11,Elio Capradossi,1996-03-11,Italy,ITA,Cagliari Calcio,Cagliari,1.0,True
+tm_1647,fm_1159,Pedro Santos,1988-04-22,Pedro Santos,1988-04-22,Portugal,POR,D.C. United,Columbus,1.0,True
+tm_5983,fm_6137,Pierre Kalulu,2000-06-05,Pierre Kalulu,2000-06-05,France,FRA,AC Milan,Milan,1.0,True
+tm_8495,fm_16153,Lucas Buades,1997-12-28,Lucas Buades,1997-12-28,France,FRA,Rodez AF,Rodez AF,1.0,True
+tm_7648,fm_2003,Benjamin Henrichs,1997-02-23,Benjamin Henrichs,1997-02-23,Germany,GER,RB Leipzig,RB Leipzig,1.0,True
+tm_1135,fm_1202,Júnior Urso,1989-03-10,Júnior Urso,1989-03-10,Brazil,BRA,Orlando City SC,Orlando City,1.0,True
+tm_7351,fm_11300,Idrissa Gueye,1989-09-26,Idrissa Gueye,1989-09-26,Senegal,SEN,Everton FC,Everton,1.0,True
+tm_6254,fm_7388,Axel Guessand,2004-11-06,Axel Guessand,2004-11-06,France,FRA,Udinese Calcio,Udinese,1.0,True
+tm_7066,fm_11402,Marc Cucurella,1998-07-22,Marc Cucurella,1998-07-22,Spain,ESP,Chelsea FC,Chelsea,1.0,True
+tm_6809,fm_14379,David Soria,1993-04-04,David Soria,1993-04-04,Spain,ESP,Getafe CF,Getafe,1.0,True
+tm_4235,fm_2566,Marco Kana,2002-08-08,Marco Kana,2002-08-08,Belgium,BEL,RSC Anderlecht,RSC Anderlecht,1.0,True
+tm_5687,fm_16841,Bastien Meupiyou,2006-03-19,Bastien Meupiyou,2006-03-19,France,FRA,FC Nantes,FC Nantes,1.0,True
+tm_7995,fm_2399,Danilo Soares,1991-10-29,Danilo Soares,1991-10-29,Brazil,BRA,VfL Bochum,VfL Bochum,1.0,True
+tm_10384,fm_2000,Robert Glatzel,1994-01-08,Robert Glatzel,1994-01-08,Germany,GER,Hamburger SV,HSV,1.0,True
+tm_2156,fm_1371,Leon Flach,2001-02-28,Leon Flach,2001-02-28,United States,USA,Philadelphia Union,Philadelphia,1.0,True
+tm_1621,fm_1264,Corey Baird,1996-01-30,Corey Baird,1996-01-30,United States,USA,Houston Dynamo FC,Houston,1.0,True
+tm_5560,fm_14220,Jordan Veretout,1993-03-01,Jordan Veretout,1993-03-01,France,FRA,Olympique Marseille,OM,1.0,True
+tm_9569,fm_14853,Jokin Ezkieta,1996-08-17,Jokin Ezkieta,1996-08-17,Spain,ESP,Racing Santander,R. Santander,1.0,True
+tm_1290,fm_1098,Yimmi Chará,1991-04-02,Yimmi Chará,1991-04-02,Colombia,COL,Portland Timbers,Portland,1.0,True
+tm_8990,fm_7335,Michael Venturi,1999-01-23,Michael Venturi,1999-01-23,Italy,ITA,Cosenza Calcio,Cosenza,1.0,True
+tm_1036,fm_1535,Sam Junqua,1996-11-09,Sam Junqua,1996-11-09,United States,USA,FC Dallas,Houston,1.0,True
+tm_6388,fm_6964,Nicolò Cambiaghi,2000-12-28,Nicolò Cambiaghi,2000-12-28,Italy,ITA,Atalanta BC,Empoli,1.0,True
+tm_10264,fm_12129,Ben Wiles,1999-04-17,Ben Wiles,1999-04-17,England,ENG,Huddersfield Town,Rotherham,1.0,True
+tm_5395,fm_15333,Gaizka Larrazabal,1997-12-17,Gaizka Larrazabal,1997-12-17,Spain,ESP,Casa Pia AC,Zaragoza,1.0,True
+tm_6973,fm_15594,Luis Rioja,1993-10-16,Luis Rioja,1993-10-16,Spain,ESP,Deportivo Alavés,Alavés,1.0,True
+tm_10363,fm_2706,Guilherme Ramos,1997-08-11,Guilherme Ramos,1997-08-11,Portugal,POR,Hamburger SV,Arminia Bielefeld,1.0,True
+tm_9473,fm_15893,Marc Martínez,1990-04-04,Marc Martínez,1990-04-04,Spain,ESP,FC Cartagena,Cartagena,1.0,True
+tm_5041,fm_14584,Ricardo Esgaio,1993-05-16,Ricardo Esgaio,1993-05-16,Portugal,POR,Sporting CP,Sporting CP,1.0,True
+tm_4673,fm_9754,Gökhan Töre,1992-01-20,Gökhan Töre,1992-01-20,Turkey,TUR,Konyaspor,Adana D.S.,1.0,True
+tm_6120,fm_6063,Luis Alberto,1992-09-28,Luis Alberto,1992-09-28,Spain,ESP,SS Lazio,Lazio,1.0,True
+tm_2199,fm_1193,Stefan Frei,1986-04-20,Stefan Frei,1986-04-20,United States,SUI,Seattle Sounders FC,Seattle,1.0,True
+tm_8751,fm_6492,Marco D'Alessandro,1991-02-17,Marco D'Alessandro,1991-02-17,Italy,ITA,AC Monza,Brianza,1.0,True
+tm_10439,fm_2703,Blendi Idrizi,1998-05-02,Blendi Idrizi,1998-05-02,Kosovo,KOS,FC Schalke 04,Regensburg,1.0,True
+tm_6145,fm_6410,Fabiano Parisi,2000-11-09,Fabiano Parisi,2000-11-09,Italy,ITA,ACF Fiorentina,Empoli,1.0,True
+tm_6162,fm_6243,Jonathan Ikoné,1998-05-02,Jonathan Ikoné,1998-05-02,France,FRA,ACF Fiorentina,Fiorentina,1.0,True
+tm_6628,fm_14253,Fernando,1987-07-25,Fernando,1987-07-25,Brazil,BRA,Sevilla FC,Sevilla,1.0,True
+tm_3012,fm_10125,Nyasha Mushekwi,1987-08-21,Nyasha Mushekwi,1987-08-21,Zimbabwe,ZIM,Zhejiang FC,Zhejiang,1.0,True
+tm_10248,fm_11985,Lee Nicholls,1992-10-05,Lee Nicholls,1992-10-05,England,ENG,Huddersfield Town,Huddersfield,1.0,True
+tm_2123,fm_1350,Ryan Hollingshead,1991-04-16,Ryan Hollingshead,1991-04-16,United States,USA,Los Angeles FC,LAFC,1.0,True
+tm_6434,fm_6488,Kastriot Dermaku,1992-01-15,Kastriot Dermaku,1992-01-15,Albania,ALB,US Lecce,Salento,1.0,True
+tm_4286,fm_2949,David Bates,1996-10-05,David Bates,1996-10-05,Scotland,SCO,KV Mechelen,KV Mechelen,1.0,True
+tm_7552,fm_12190,Carlton Morris,1995-12-16,Carlton Morris,1995-12-16,England,ENG,Luton Town,Luton,1.0,True
+tm_5233,fm_18118,Raúl Parra,1999-11-26,Raúl Parra,1999-11-26,Spain,ESP,GD Estoril Praia,Mirandés,1.0,True
+tm_2482,fm_2056,Virgil Misidjan,1993-07-24,Virgil Misidjan,1993-07-24,Netherlands,NED,Al-Tai FC,FC Twente,1.0,True
+tm_10449,fm_2838,Florian Kastenmeier,1997-06-28,Florian Kastenmeier,1997-06-28,Germany,GER,Fortuna Düsseldorf,Düsseldorf,1.0,True
+tm_3954,fm_4110,Vic Chambaere,2003-01-10,Vic Chambaere,2003-01-10,Belgium,BEL,KRC Genk,KRC Genk,1.0,True
+tm_10573,fm_2748,Benjamin Goller,1999-01-01,Benjamin Goller,1999-01-01,Germany,GER,1.FC Nuremberg,SV Werder,1.0,True
+tm_4873,fm_9793,Ömürcan Artan,1999-07-27,Ömürcan Artan,1999-07-27,Turkey,TUR,Gaziantep FK,Gaziantep FK,1.0,True
+tm_7220,fm_1839,Moussa Diaby,1999-07-07,Moussa Diaby,1999-07-07,France,FRA,Aston Villa,Bayer 04,1.0,True
+tm_1713,fm_3784,Baran Mogultay,2004-05-18,Baran Mogultay,2004-05-18,Germany,GER,MSV Duisburg,MSV Duisburg,1.0,True
+tm_5794,fm_2764,Joseph Okumu,1997-05-26,Joseph Okumu,1997-05-26,Kenya,KEN,Stade Reims,AA Gent,1.0,True
+tm_3067,fm_10056,Peter Zulj,1993-06-09,Peter Zulj,1993-06-09,Austria,AUT,Changchun Yatai,Changchun,1.0,True
+tm_9730,fm_11517,Marc Albrighton,1989-11-18,Marc Albrighton,1989-11-18,England,ENG,Leicester City,Leicester,1.0,True
+tm_9171,fm_8355,Vittorio Agostinelli,2002-02-21,Vittorio Agostinelli,2002-02-21,Italy,ITA,ACF Fiorentina,Reggina,1.0,True
+tm_4685,fm_16304,Nuno Lima,2001-03-16,Nuno Lima,2001-03-16,Portugal,POR,Alanyaspor,P. Ferreira,1.0,True
+tm_7043,fm_11279,Jorginho,1991-12-20,Jorginho,1991-12-20,Italy,ITA,Arsenal FC,Chelsea,1.0,True
+tm_4620,fm_14696,Adam Buksa,1996-07-12,Adam Buksa,1996-07-12,Poland,POL,RC Lens,RC Lens,1.0,True
+tm_1733,fm_2754,Marco Hiller,1997-02-20,Marco Hiller,1997-02-20,Germany,GER,TSV 1860 Munich,1860 München,1.0,True
+tm_9124,fm_6749,Luca Maniero,1995-06-12,Luca Maniero,1995-06-12,Italy,ITA,AS Cittadella,Cittadella,1.0,True
+tm_4428,fm_9487,Mert Günok,1989-03-01,Mert Günok,1989-03-01,Turkey,TUR,Besiktas JK,Beşiktaş,1.0,True
+tm_1761,fm_3128,Sven Müller,1996-02-16,Sven Müller,1996-02-16,Germany,GER,Hallescher FC,Dynamo Dresden,1.0,True
+tm_4107,fm_2506,Gustaf Nilsson,1997-05-23,Gustaf Nilsson,1997-05-23,Sweden,SWE,Royale Union Saint-Gilloise,Union SG,1.0,True
+tm_3691,fm_2130,Jonathan de Guzmán,1987-09-13,Jonathan de Guzmán,1987-09-13,Netherlands,NED,Sparta Rotterdam,Sparta Rotterdam,1.0,True
+tm_7107,fm_11869,Shola Shoretire,2004-02-02,Shola Shoretire,2004-02-02,England,ENG,Manchester United,Man UFC,1.0,True
+tm_3862,fm_2376,Mario Engels,1993-10-22,Mario Engels,1993-10-22,Germany,GER,Heracles Almelo,Sparta Rotterdam,1.0,True
+tm_2183,fm_1307,Keaton Parks,1997-08-06,Keaton Parks,1997-08-06,United States,USA,New York City FC,NYCFC,1.0,True
+tm_1047,fm_1277,Alan Velasco,2002-07-27,Alan Velasco,2002-07-27,Argentina,ARG,FC Dallas,FC Dallas,1.0,True
+tm_7291,fm_11354,Joël Veltman,1992-01-15,Joël Veltman,1992-01-15,Netherlands,NED,Brighton & Hove Albion,Brighton,1.0,True
+tm_9231,fm_14913,Anaitz Arbilla,1987-05-15,Anaitz Arbilla,1987-05-15,Spain,ESP,SD Eibar,Eibar,1.0,True
+tm_2155,fm_1539,Jesús Bueno,1999-04-15,Jesús Bueno,1999-04-15,Venezuela,VEN,Philadelphia Union,Philadelphia,1.0,True
+tm_10565,fm_2289,Johannes Geis,1993-08-17,Johannes Geis,1993-08-17,Germany,GER,1.FC Nuremberg,Nürnberg,1.0,True
+tm_2760,fm_3138,Jonas Kersken,2000-09-01,Jonas Kersken,2000-09-01,Germany,GER,Borussia Mönchengladbach,SV Meppen,1.0,True
+tm_7025,fm_11267,Jack Grealish,1995-09-10,Jack Grealish,1995-09-10,England,ENG,Manchester City,Man City,1.0,True
+tm_6294,fm_6556,Stefano Sabelli,1993-01-13,Stefano Sabelli,1993-01-13,Italy,ITA,Genoa CFC,Genoa,1.0,True
+tm_6309,fm_14556,Benoît Costil,1987-07-03,Benoît Costil,1987-07-03,France,FRA,US Salernitana 1919,AJ Auxerre,1.0,True
+tm_6642,fm_14361,Pepe Reina,1982-08-31,Pepe Reina,1982-08-31,Spain,ESP,Villarreal CF,Villarreal,1.0,True
+tm_5174,fm_15452,Tiago Esgaio,1995-08-01,Tiago Esgaio,1995-08-01,Portugal,POR,SC Braga,Arouca,1.0,True
+tm_6060,fm_11398,Diego Llorente,1993-08-16,Diego Llorente,1993-08-16,Spain,ESP,Leeds United,Leeds,1.0,True
+tm_5092,fm_15713,Dani Morer,1998-02-05,Dani Morer,1998-02-05,Spain,ESP,FC Famalicão,F.C. Andorra,1.0,True
+tm_2175,fm_1721,Nico Benalcázar,2001-06-06,Nico Benalcázar,2001-06-06,United States,USA,New York City FC,NYCFC,1.0,True
+tm_1958,fm_3351,Erik Majetschak,2000-03-01,Erik Majetschak,2000-03-01,Germany,GER,FC Erzgebirge Aue,Erzgebirge Aue,1.0,True
+tm_7794,fm_3437,Max Rosenfelder,2003-02-10,Max Rosenfelder,2003-02-10,Germany,GER,SC Freiburg,SC Freiburg II,1.0,True
+tm_5210,fm_14551,Kanya Fujimoto,1999-07-01,Kanya Fujimoto,1999-07-01,Japan,JPN,Gil Vicente FC,Gil Vicente,1.0,True
+tm_7911,fm_2064,Anthony Caci,1997-07-01,Anthony Caci,1997-07-01,France,FRA,1.FSV Mainz 05,Mainz 05,1.0,True
+tm_7155,fm_11357,Pierre-Emile Højbjerg,1995-08-05,Pierre-Emile Højbjerg,1995-08-05,Denmark,DEN,Tottenham Hotspur,Tottenham,1.0,True
+tm_7314,fm_11551,Ben Mee,1989-09-21,Ben Mee,1989-09-21,England,ENG,Brentford FC,Brentford,1.0,True
+tm_7715,fm_1977,Sheraldo Becker,1995-02-09,Sheraldo Becker,1995-02-09,Suriname,SUR,1.FC Union Berlin,Union Berlin,1.0,True
+tm_4979,fm_14465,Morato,2001-06-30,Morato,2001-06-30,Brazil,BRA,SL Benfica,Benfica,1.0,True
+tm_10065,fm_12323,Jack Bonham,1993-09-14,Jack Bonham,1993-09-14,Ireland,IRL,Stoke City,Stoke,1.0,True
+tm_6831,fm_14536,Jaime Mata,1988-10-24,Jaime Mata,1988-10-24,Spain,ESP,Getafe CF,Getafe,1.0,True
+tm_6993,fm_15095,Javi Muñoz,1995-02-28,Javi Muñoz,1995-02-28,Spain,ESP,UD Las Palmas,Eibar,1.0,True
+tm_9949,fm_11862,Jack Clarke,2000-11-23,Jack Clarke,2000-11-23,England,ENG,Sunderland AFC,Sunderland,1.0,True
+tm_8278,fm_15826,Mehdi Merghem,1997-07-19,Mehdi Merghem,1997-07-19,France,FRA,EA Guingamp,EA Guingamp,1.0,True
+tm_1316,fm_1297,Pedro Vite,2002-03-09,Pedro Vite,2002-03-09,Ecuador,ECU,Vancouver Whitecaps FC,Vancouver,1.0,True
+tm_6833,fm_14944,Dominik Greif,1997-04-06,Dominik Greif,1997-04-06,Slovakia,SVK,RCD Mallorca,Mallorca,1.0,True
+tm_2803,fm_3272,Julius Biada,1992-11-03,Julius Biada,1992-11-03,Germany,GER,1.FC Saarbrücken,1. FC Saarbrücken,1.0,True
+tm_6351,fm_6154,Roberto Gagliardini,1994-04-07,Roberto Gagliardini,1994-04-07,Italy,ITA,AC Monza,Inter,1.0,True
+tm_6612,fm_14672,Carlos Fernández,1996-05-22,Carlos Fernández,1996-05-22,Spain,ESP,Real Sociedad,Real San Sebastián,1.0,True
+tm_9210,fm_15973,Nicolás Fernández Mercau,2000-01-11,Nicolás Fernández Mercau,2000-01-11,Argentina,ARG,Elche CF,Elche,1.0,True
+tm_5504,fm_14968,Ismail Jakobs,1999-08-17,Ismail Jakobs,1999-08-17,Senegal,SEN,AS Monaco,AS Monaco,1.0,True
+tm_7537,fm_11958,Reece Burke,1996-09-02,Reece Burke,1996-09-02,England,ENG,Luton Town,Luton,1.0,True
+tm_7909,fm_2118,Stefan Bell,1991-08-24,Stefan Bell,1991-08-24,Germany,GER,1.FSV Mainz 05,Mainz 05,1.0,True
+tm_5029,fm_14279,Antonio Adán,1987-05-13,Antonio Adán,1987-05-13,Spain,ESP,Sporting CP,Sporting CP,1.0,True
+tm_9205,fm_14864,Diego González,1995-01-28,Diego González,1995-01-28,Spain,ESP,Elche CF,Elche,1.0,True
+tm_7599,fm_3436,Ole Pohlmann,2001-04-05,Ole Pohlmann,2001-04-05,Germany,GER,Borussia Dortmund,Borussia Dortmund II,1.0,True
+tm_3412,fm_14270,Otávio,1995-02-09,Otávio,1995-02-09,Portugal,POR,Al-Nassr FC,FC Porto,1.0,True
+tm_6279,fm_7266,Vivaldo Semedo,2005-01-28,Vivaldo Semedo,2005-01-28,Portugal,POR,Udinese Calcio,Udinese,1.0,True
+tm_6361,fm_6285,Gianluca Caprari,1993-07-30,Gianluca Caprari,1993-07-30,Italy,ITA,AC Monza,Brianza,1.0,True
+tm_3794,fm_4707,Pim Saathof,2003-12-28,Pim Saathof,2003-12-28,Netherlands,NED,Go Ahead Eagles,Go Ahead Eagles,1.0,True
+tm_7902,fm_2146,Robin Zentner,1994-10-28,Robin Zentner,1994-10-28,Germany,GER,1.FSV Mainz 05,Mainz 05,1.0,True
+tm_7248,fm_11445,Michail Antonio,1990-03-28,Michail Antonio,1990-03-28,Jamaica,JAM,West Ham United,West Ham,1.0,True
+tm_5157,fm_16791,Berna,2003-09-15,Berna,2003-09-15,Portugal,POR,Boavista FC,BVT,1.0,True
+tm_9631,fm_16353,Mathis Lachuer,2000-08-31,Mathis Lachuer,2000-08-31,France,FRA,CD Mirandés,Amiens SC,1.0,True
+tm_3957,fm_2467,Mujaid Sadick,2000-03-14,Mujaid Sadick,2000-03-14,Spain,ESP,KRC Genk,KRC Genk,1.0,True
+tm_7330,fm_11668,Mikkel Damsgaard,2000-07-03,Mikkel Damsgaard,2000-07-03,Denmark,DEN,Brentford FC,Brentford,1.0,True
+tm_7637,fm_1805,Péter Gulácsi,1990-05-06,Péter Gulácsi,1990-05-06,Hungary,HUN,RB Leipzig,RB Leipzig,1.0,True
+tm_1333,fm_1760,Zack Farnsworth,2002-07-13,Zack Farnsworth,2002-07-13,United States,USA,Real Salt Lake City,Real Salt Lake,1.0,True
+tm_9923,fm_11963,Matt Phillips,1991-03-13,Matt Phillips,1991-03-13,Scotland,SCO,West Bromwich Albion,West Brom,1.0,True
+tm_4057,fm_2047,Laurent Depoitre,1988-12-07,Laurent Depoitre,1988-12-07,Belgium,BEL,KAA Gent,AA Gent,1.0,True
+tm_8405,fm_15899,Arial Mendy,1994-11-07,Arial Mendy,1994-11-07,Senegal,SEN,Grenoble Foot 38,Clermont,1.0,True
+tm_1367,fm_1582,D.J. Taylor,1997-08-26,D.J. Taylor,1997-08-26,United States,USA,Minnesota United FC,Minnesota,1.0,True
+tm_4070,fm_2487,Gilles Dewaele,1996-02-13,Gilles Dewaele,1996-02-13,Belgium,BEL,Standard Liège,Standard,1.0,True
+tm_4272,fm_5207,Amadou Keita,2001-10-28,Amadou Keita,2001-10-28,Guinea,GUI,KAS Eupen,Eupen,1.0,True
+tm_9252,fm_14838,Javi Sánchez,1997-03-14,Javi Sánchez,1997-03-14,Spain,ESP,Real Valladolid CF,Valladolid,1.0,True
+tm_6965,fm_14808,Andoni Gorosabel,1996-08-04,Andoni Gorosabel,1996-08-04,Spain,ESP,Deportivo Alavés,Real San Sebastián,1.0,True
+tm_1265,fm_1572,Jacen Russell-Rowe,2002-09-13,Jacen Russell-Rowe,2002-09-13,Canada,CAN,Columbus Crew,Columbus,1.0,True
+tm_6687,fm_14317,Borja Iglesias,1993-01-17,Borja Iglesias,1993-01-17,Spain,ESP,Real Betis Balompié,Real Hispalis,1.0,True
+tm_4080,fm_2305,Kamal Sowah,2000-01-09,Kamal Sowah,2000-01-09,Ghana,GHA,Club Brugge KV,Club Brugge,1.0,True
+tm_4463,fm_9799,Rayyan Baniya,1999-02-18,Rayyan Baniya,1999-02-18,Turkey,TUR,Trabzonspor,Fatih Karagümrük,1.0,True
+tm_1131,fm_1742,Alex Freeman,2004-08-09,Alex Freeman,2004-08-09,United States,USA,Orlando City SC,Orlando City,1.0,True
+tm_5720,fm_15375,Thomas Delaine,1992-03-24,Thomas Delaine,1992-03-24,France,FRA,RC Strasbourg Alsace,Strasbourg,1.0,True
+tm_4595,fm_10097,Naldo,1988-08-25,Naldo,1988-08-25,Brazil,BRA,Antalyaspor,Al-Taawoun,1.0,True
+tm_10000,fm_11872,Romaine Sawyers,1991-11-02,Romaine Sawyers,1991-11-02,St. Kitts & Nevis,SKN,Cardiff City,Cardiff,1.0,True
+tm_9432,fm_15091,Jérémy Mellot,1994-03-28,Jérémy Mellot,1994-03-28,France,FRA,CD Tenerife,Tenerife,1.0,True
+tm_5625,fm_14619,Wuilker Fariñez,1998-02-15,Wuilker Fariñez,1998-02-15,Venezuela,VEN,RC Lens,RC Lens,1.0,True
+tm_1457,fm_11620,Ashley Westwood,1990-04-01,Ashley Westwood,1990-04-01,England,ENG,Charlotte FC,Burnley,1.0,True
+tm_8073,fm_16677,Davy Rouyard,1999-08-17,Davy Rouyard,1999-08-17,Guadeloupe,GLP,FC Girondins Bordeaux,Bordeaux,1.0,True
+tm_4064,fm_1937,Konstantinos Laifis,1993-05-19,Konstantinos Laifis,1993-05-19,Cyprus,CYP,Standard Liège,Standard,1.0,True
+tm_9333,fm_14534,Roque Mesa,1989-06-07,Roque Mesa,1989-06-07,Spain,ESP,Sporting Gijón,Valladolid,1.0,True
+tm_1349,fm_1656,Maikel Chang,1991-04-18,Maikel Chang,1991-04-18,Cuba,CUB,Real Salt Lake City,Real Salt Lake,1.0,True
+tm_6756,fm_15310,Kike Barja,1997-04-01,Kike Barja,1997-04-01,Spain,ESP,CA Osasuna,Atlético Pamplona,1.0,True
+tm_5630,fm_15322,Jonathan Gradit,1992-11-24,Jonathan Gradit,1992-11-24,France,FRA,RC Lens,RC Lens,1.0,True
+tm_9504,fm_14382,Jonathan Silva,1994-06-29,Jonathan Silva,1994-06-29,Argentina,ARG,Getafe CF,Granada,1.0,True
+tm_8770,fm_7129,Alessio Buttaro,2002-09-10,Alessio Buttaro,2002-09-10,Italy,ITA,Palermo FC,Palermo,1.0,True
+tm_4949,fm_9515,Simon Deli,1991-10-27,Simon Deli,1991-10-27,Cote d'Ivoire,CIV,Istanbulspor,Adana D.S.,1.0,True
+tm_1000,fm_1492,Roman Celentano,2000-09-14,Roman Celentano,2000-09-14,United States,USA,FC Cincinnati,Cincinnati,1.0,True
+tm_8791,fm_7039,Matteo Solini,1993-03-09,Matteo Solini,1993-03-09,Italy,ITA,Como 1907,Como,1.0,True
+tm_5866,fm_16097,Yanis Begraoui,2001-07-04,Yanis Begraoui,2001-07-04,Morocco,FRA,FC Toulouse,Toulouse FC,1.0,True
+tm_8013,fm_2212,Lys Mousset,1996-02-08,Lys Mousset,1996-02-08,France,FRA,VfL Bochum,VfL Bochum,1.0,True
+tm_7092,fm_11383,Jonny Evans,1988-01-03,Jonny Evans,1988-01-03,Northern Ireland,NIR,Manchester United,Leicester,1.0,True
+tm_6914,fm_14905,Joseba Zaldua,1992-06-24,Joseba Zaldua,1992-06-24,Spain,ESP,Cádiz CF,Cádiz,1.0,True
+tm_4375,fm_6287,Kaan Ayhan,1994-11-10,Kaan Ayhan,1994-11-10,Turkey,TUR,Galatasaray,Sassuolo,1.0,True
+tm_3574,fm_13245,Adrian Blake,2005-07-15,Adrian Blake,2005-07-15,England,ENG,FC Utrecht,Watford,1.0,True
+tm_10094,fm_11953,Simon Moore,1990-05-19,Simon Moore,1990-05-19,England,ENG,Coventry City,Coventry,1.0,True
+tm_5333,fm_16584,Magrão,2000-05-15,Magrão,2000-05-15,Brazil,BRA,Rio Ave FC,Rio Ave,1.0,True
+tm_7556,fm_1766,Manuel Neuer,1986-03-27,Manuel Neuer,1986-03-27,Germany,GER,Bayern Munich,FC Bayern,1.0,True
+tm_7639,fm_2260,Leopold Zingerle,1994-04-10,Leopold Zingerle,1994-04-10,Germany,GER,RB Leipzig,Paderborn,1.0,True
+tm_6837,fm_15552,Antonio Raíllo,1991-10-08,Antonio Raíllo,1991-10-08,Spain,ESP,RCD Mallorca,Mallorca,1.0,True
+tm_8988,fm_6927,Andrea Meroni,1997-01-09,Andrea Meroni,1997-01-09,Italy,ITA,Cosenza Calcio,Cosenza,1.0,True
+tm_10548,fm_2547,Christian Mathenia,1992-03-31,Christian Mathenia,1992-03-31,Germany,GER,1.FC Nuremberg,Nürnberg,1.0,True
+tm_2726,fm_5876,Marco Wörner,2004-09-25,Marco Wörner,2004-09-25,Germany,GER,SC Freiburg II,SC Freiburg,1.0,True
+tm_9406,fm_16104,Martí Vilà,1999-05-26,Martí Vilà,1999-05-26,Spain,ESP,FC Andorra,F.C. Andorra,1.0,True
+tm_4065,fm_4234,Lucas Noubi,2005-01-15,Lucas Noubi,2005-01-15,Belgium,BEL,Standard Liège,Standard,1.0,True
+tm_3742,fm_14899,Loreintz Rosier,1998-08-14,Loreintz Rosier,1998-08-14,France,FRA,Fortuna Sittard,Estoril Praia,1.0,True
+tm_4316,fm_14917,Youssouf Koné,1995-07-05,Youssouf Koné,1995-07-05,Mali,MLI,RWD Molenbeek,AC Ajaccio,1.0,True
+tm_6828,fm_14340,Borja Mayoral,1997-04-05,Borja Mayoral,1997-04-05,Spain,ESP,Getafe CF,Getafe,1.0,True
+tm_6508,fm_6569,Luca Garritano,1994-02-11,Luca Garritano,1994-02-11,Italy,ITA,Frosinone Calcio,Frosinone,1.0,True
+tm_7855,fm_4249,Aaron Zehnter,2004-10-31,Aaron Zehnter,2004-10-31,Germany,GER,FC Augsburg,FC Augsburg,1.0,True
+tm_7876,fm_3669,Dennis Seimen,2005-12-01,Dennis Seimen,2005-12-01,Germany,GER,VfB Stuttgart,VfB Stuttgart,1.0,True
+tm_5914,fm_16200,Issa Soumaré,2000-10-10,Issa Soumaré,2000-10-10,Senegal,SEN,Le Havre AC,QRM,1.0,True
+tm_4205,fm_4284,Boris Popović,2000-02-26,Boris Popović,2000-02-26,Serbia,SRB,Cercle Brugge,Cercle Brugge,1.0,True
+tm_4142,fm_2651,Nick Gillekens,1995-07-05,Nick Gillekens,1995-07-05,Belgium,BEL,KVC Westerlo,Westerlo,1.0,True
+tm_7584,fm_3033,Alexander Meyer,1991-04-13,Alexander Meyer,1991-04-13,Germany,GER,Borussia Dortmund,Borussia Dortmund,1.0,True
+tm_7605,fm_1850,Donyell Malen,1999-01-19,Donyell Malen,1999-01-19,Netherlands,NED,Borussia Dortmund,Borussia Dortmund,1.0,True
+tm_10408,fm_2356,Myziane Maolida,1999-02-14,Myziane Maolida,1999-02-14,France,FRA,Hertha BSC,Hertha Berlin,1.0,True
+tm_5313,fm_16271,Matheus Pereira,2000-12-21,Matheus Pereira,2000-12-21,Brazil,BRA,FC Vizela,VIZ,1.0,True
+tm_4125,fm_3548,Marco Ilaimaharitra,1995-07-26,Marco Ilaimaharitra,1995-07-26,Madagascar,MAD,RSC Charleroi,Charleroi,1.0,True
+tm_2107,fm_16080,Xande Silva,1997-03-16,Xande Silva,1997-03-16,Portugal,POR,,Dijon FCO,1.0,True
+tm_5626,fm_15527,Jean-Louis Leca,1985-09-21,Jean-Louis Leca,1985-09-21,France,FRA,RC Lens,RC Lens,1.0,True
+tm_9334,fm_14548,Giovanni Zarfino,1991-08-10,Giovanni Zarfino,1991-10-08,Uruguay,URU,Sporting Gijón,S. Gijón,1.0,True
+tm_5201,fm_7033,Leonardo Buta,2002-06-05,Leonardo Buta,2002-06-05,Portugal,POR,Udinese Calcio,Udinese,1.0,True
+tm_8826,fm_6445,Gianluca Busio,2002-05-28,Gianluca Busio,2002-05-28,United States,USA,Venezia FC,Venezia,1.0,True
+tm_4473,fm_10055,Berat Özdemir,1998-05-23,Berat Özdemir,1998-05-23,Turkey,TUR,Al-Ettifaq FC,Al-Ettifaq,1.0,True
+tm_9422,fm_15568,Pablo Moreno,2002-05-03,Pablo Moreno,2002-05-03,Spain,ESP,FC Andorra,MRT,1.0,True
+tm_7250,fm_14383,Odysseas Vlachodimos,1994-04-26,Odysseas Vlachodimos,1994-04-26,Greece,GRE,Nottingham Forest,Benfica,1.0,True
+tm_8785,fm_6728,Mauro Vigorito,1990-05-22,Mauro Vigorito,1990-05-22,Italy,ITA,Como 1907,Como,1.0,True
+tm_6216,fm_6221,Joshua Zirkzee,2001-05-22,Joshua Zirkzee,2001-05-22,Netherlands,NED,Bologna FC 1909,Bologna,1.0,True
+tm_9500,fm_15254,Mohamed Djetei,1994-08-18,Mohamed Djetei,1994-08-18,Cameroon,CMR,Albacete Balompié,Albacete,1.0,True
+tm_10181,fm_12231,Andre Dozzell,1999-05-02,Andre Dozzell,1999-05-02,England,ENG,Queens Park Rangers,QPR,1.0,True
+tm_9919,fm_12011,Adam Reach,1993-02-03,Adam Reach,1993-02-03,England,ENG,West Bromwich Albion,West Brom,1.0,True
+tm_1330,fm_1738,Andrew Brody,1995-05-03,Andrew Brody,1995-05-03,United States,USA,Real Salt Lake City,Real Salt Lake,1.0,True
+tm_1103,fm_1448,Jhojan Valencia,1996-07-27,Jhojan Valencia,1996-07-27,Colombia,COL,Austin FC,Austin FC,1.0,True
+tm_1856,fm_3034,Berkan Taz,1998-12-19,Berkan Taz,1998-12-19,Germany,GER,SV Waldhof Mannheim,SV Waldhof Mannheim,1.0,True
+tm_9108,fm_6981,Daouda Peeters,1999-01-26,Daouda Peeters,1999-01-26,Belgium,BEL,,Juventus,1.0,True
+tm_7380,fm_11386,Ryan Christie,1995-02-22,Ryan Christie,1995-02-22,Scotland,SCO,AFC Bournemouth,Bournemouth,1.0,True
+tm_4485,fm_14227,Nicolas Pépé,1995-05-29,Nicolas Pépé,1995-05-29,Cote d'Ivoire,CIV,Trabzonspor,OGC Nice,1.0,True
+tm_1655,fm_1610,Logan Ketterer,1993-11-09,Logan Ketterer,1993-11-09,United States,USA,CF Montréal,CF Montréal,1.0,True
+tm_4781,fm_9787,Levent Mercan,2000-12-10,Levent Mercan,2000-12-10,Turkey,GER,Fatih Karagümrük,Fatih Karagümrük,1.0,True
+tm_7321,fm_11437,Christian Nørgaard,1994-03-10,Christian Nørgaard,1994-03-10,Denmark,DEN,Brentford FC,Brentford,1.0,True
+tm_3540,fm_1848,Riechedly Bazoer,1996-10-12,Riechedly Bazoer,1996-10-12,Netherlands,NED,AZ Alkmaar,AZ,1.0,True
+tm_6290,fm_6370,Mattia Bani,1993-12-10,Mattia Bani,1993-12-10,Italy,ITA,Genoa CFC,Genoa,1.0,True
+tm_10683,fm_2484,David Kinsombi,1995-12-12,David Kinsombi,1995-12-12,Germany,GER,SC Paderborn 07,Sandhausen,1.0,True
+tm_1576,fm_1324,Keegan Rosenberry,1993-12-11,Keegan Rosenberry,1993-12-11,United States,USA,Colorado Rapids,Colorado,1.0,True
+tm_9439,fm_15039,Roberto López,2000-04-24,Roberto López,2000-04-24,Spain,ESP,Real Sociedad,Mirandés,1.0,True
+tm_9456,fm_15579,Juanjo Nieto,1994-10-03,Juanjo Nieto,1994-10-03,Spain,ESP,SD Huesca,Almería,1.0,True
+tm_10833,fm_3067,Lars Kehl,2002-04-08,Lars Kehl,2002-04-08,Germany,GER,VfL Osnabrück,SC Freiburg II,1.0,True
+tm_4146,fm_3859,Pietro Perdichizzi,1992-12-16,Pietro Perdichizzi,1992-12-16,Belgium,BEL,KVC Westerlo,Westerlo,1.0,True
+tm_1321,fm_1333,Brian White,1996-02-03,Brian White,1996-02-03,United States,USA,Vancouver Whitecaps FC,Vancouver,1.0,True
+tm_10116,fm_12563,David Cornell,1991-03-28,David Cornell,1991-03-28,Wales,WAL,Preston North End,Preston,1.0,True
+tm_8453,fm_16162,Antoine Batisse,1995-01-13,Antoine Batisse,1995-01-13,France,FRA,Pau FC,Pau FC,1.0,True
+tm_8883,fm_6654,Tom van de Looi,1999-07-02,Tom van de Looi,1999-07-02,Netherlands,NED,Brescia Calcio,Brescia,1.0,True
+tm_6623,fm_14288,Marcos Acuña,1991-10-28,Marcos Acuña,1991-10-28,Argentina,ARG,Sevilla FC,Sevilla,1.0,True
+tm_3464,fm_3897,Antoni Milambo,2005-04-03,Antoni Milambo,2005-04-03,Netherlands,NED,Feyenoord Rotterdam,Feyenoord,1.0,True
+tm_3484,fm_9534,Patrick van Aanholt,1990-08-29,Patrick van Aanholt,1990-08-29,Netherlands,NED,Galatasaray,Galatasaray,1.0,True
+tm_8947,fm_6637,Manolo Portanova,2000-06-02,Manolo Portanova,2000-06-02,Italy,ITA,Genoa CFC,Genoa,1.0,True
+tm_4044,fm_15422,Noah Fadiga,1999-12-03,Noah Fadiga,1999-12-03,Senegal,SEN,KAA Gent,Brest,1.0,True
+tm_7586,fm_1781,Niklas Süle,1995-09-03,Niklas Süle,1995-09-03,Germany,GER,Borussia Dortmund,Borussia Dortmund,1.0,True
+tm_3377,fm_10225,Abdullah Otayf,1992-08-03,Abdullah Otayf,1992-08-03,Saudi Arabia,KSA,Al-Ahli SFC,Al-Hilal (KSA),1.0,True
+tm_6028,fm_1846,Marcus Thuram,1997-08-06,Marcus Thuram,1997-08-06,France,FRA,Inter Milan,Borussia M'gladbach,1.0,True
+tm_7734,fm_2253,Joe Scally,2002-12-31,Joe Scally,2002-12-31,United States,USA,Borussia Mönchengladbach,Borussia M'gladbach,1.0,True
+tm_2737,fm_4134,Ryan Malone,1992-08-11,Ryan Malone,1992-08-11,United States,USA,FC Ingolstadt 04,Hansa Rostock,1.0,True
+tm_10092,fm_12447,Ben Wilson,1992-08-09,Ben Wilson,1992-08-09,England,ENG,Coventry City,Coventry,1.0,True
+tm_5329,fm_16313,Samuel Essende,1998-01-23,Samuel Essende,1998-01-23,France,FRA,SM Caen,SM Caen,1.0,True
+tm_6165,fm_6561,M'Bala Nzola,1996-08-18,M'Bala Nzola,1996-08-18,Angola,ANG,ACF Fiorentina,Spezia,1.0,True
+tm_10271,fm_12567,Patrick Jones,2003-06-09,Patrick Jones,2003-06-09,Wales,WAL,Huddersfield Town,Huddersfield,1.0,True
+tm_6076,fm_6053,Paulo Dybala,1993-11-15,Paulo Dybala,1993-11-15,Argentina,ARG,AS Roma,Capitoline,1.0,True
+tm_5393,fm_14887,Leonardo Lelo,2000-03-30,Leonardo Lelo,2000-03-30,Portugal,POR,Casa Pia AC,Casa Pia,1.0,True
+tm_8074,fm_17273,Alane Bedfian,2005-06-25,Alane Bedfian,2005-06-25,France,FRA,,Bordeaux,1.0,True
+tm_5562,fm_16972,Emran Soglo,2005-07-11,Emran Soglo,2005-07-11,England,FRA,Olympique Marseille,OM,1.0,True
+tm_6853,fm_1895,Cyle Larin,1995-04-17,Cyle Larin,1995-04-17,Canada,CAN,RCD Mallorca,Club Brugge,1.0,True
+tm_4853,fm_2997,Ömer Beyaz,2003-08-29,Ömer Beyaz,2003-08-29,Turkey,TUR,VfB Stuttgart,Magdeburg,1.0,True
+tm_6816,fm_14919,Diego Rico,1993-02-23,Diego Rico,1993-02-23,Spain,ESP,Real Sociedad,Real San Sebastián,1.0,True
+tm_1315,fm_1124,Ryan Gauld,1995-12-16,Ryan Gauld,1995-12-16,Scotland,SCO,Vancouver Whitecaps FC,Vancouver,1.0,True
+tm_10212,fm_12436,Mark Sykes,1997-08-04,Mark Sykes,1997-08-04,Ireland,IRL,Bristol City,Bristol City,1.0,True
+tm_2963,fm_9352,Souza,1989-02-11,Souza,1989-02-11,Brazil,BRA,Beijing Guoan,Beşiktaş,1.0,True
+tm_2441,fm_10295,Abdulrahman Al-Obaid,1993-04-30,Abdulrahman Al-Obaid,1993-04-30,Saudi Arabia,KSA,Damac FC,Al-Ettifaq,1.0,True
+tm_7027,fm_12157,Oscar Bobb,2003-07-12,Oscar Bobb,2003-07-12,Norway,NOR,Manchester City,Man City,1.0,True
+tm_7708,fm_4367,Aljoscha Kemlein,2004-08-02,Aljoscha Kemlein,2004-08-02,Germany,GER,1.FC Union Berlin,Union Berlin,1.0,True
+tm_6474,fm_6118,Nahitan Nández,1995-12-28,Nahitan Nández,1995-12-28,Uruguay,URU,Cagliari Calcio,Cagliari,1.0,True
+tm_4006,fm_2095,Colin Coosemans,1992-08-03,Colin Coosemans,1992-08-03,Belgium,BEL,RSC Anderlecht,RSC Anderlecht,1.0,True
+tm_5267,fm_14819,Carlinhos,1994-06-22,Carlinhos,1994-06-22,Brazil,BRA,Portimonense SC,PTM,1.0,True
+tm_4011,fm_11462,Ludwig Augustinsson,1994-04-21,Ludwig Augustinsson,1994-04-21,Sweden,SWE,Sevilla FC,Aston Villa,1.0,True
+tm_1360,fm_1267,Bakaye Dibassy,1989-08-11,Bakaye Dibassy,1989-08-11,Mali,MLI,Minnesota United FC,Minnesota,1.0,True
+tm_1029,fm_1498,Jimmy Maurer,1988-10-14,Jimmy Maurer,1988-10-14,United States,USA,FC Dallas,FC Dallas,1.0,True
+tm_3688,fm_3252,Djevencio van der Kust,2001-04-30,Djevencio van der Kust,2001-04-30,Suriname,SUR,Sparta Rotterdam,FC Utrecht,1.0,True
+tm_5074,fm_14304,Ricardo Horta,1994-09-15,Ricardo Horta,1994-09-15,Portugal,POR,SC Braga,BRG,1.0,True
+tm_9297,fm_16015,Leo Román,2000-07-06,Leo Román,2000-07-06,Spain,ESP,Real Oviedo,Mallorca,1.0,True
+tm_10518,fm_2667,Armindo Sieb,2003-02-17,Armindo Sieb,2003-02-17,Germany,GER,SpVgg Greuther Fürth,Fürth,1.0,True
+tm_7377,fm_11942,Gavin Kilkenny,2000-02-01,Gavin Kilkenny,2000-02-01,Ireland,IRL,AFC Bournemouth,Stoke,1.0,True
+tm_8710,fm_7103,Gerard Yepes,2002-08-25,Gerard Yepes,2002-08-25,Spain,ESP,UC Sampdoria,Sampdoria,1.0,True
+tm_9001,fm_6868,Mateusz Praszelik,2000-09-26,Mateusz Praszelik,2000-09-26,Poland,POL,Hellas Verona,Verona,1.0,True
+tm_2741,fm_2468,Leon Guwara,1996-06-28,Leon Guwara,1996-06-28,The Gambia,GAM,FC Ingolstadt 04,Regensburg,1.0,True
+tm_7931,fm_5418,Jonas Nickisch,2004-05-21,Jonas Nickisch,2004-05-21,Germany,GER,1.FC Köln,RB Leipzig,1.0,True
+tm_1789,fm_3204,Felix Gebhardt,2002-03-01,Felix Gebhardt,2002-03-01,Germany,GER,SSV Jahn Regensburg,Hallescher FC,1.0,True
+tm_8412,fm_16876,Bachirou Yaméogo,2004-08-19,Bachirou Yaméogo,2004-08-19,Burkina Faso,BFA,Grenoble Foot 38,Grenoble,1.0,True
+tm_10084,fm_15766,André Vidigal,1998-08-17,André Vidigal,1998-08-17,Portugal,POR,Stoke City,MRT,1.0,True
+tm_3619,fm_3861,Simon Olsson,1997-09-14,Simon Olsson,1997-09-14,Sweden,SWE,SC Heerenveen,sc Heerenveen,1.0,True
+tm_6559,fm_14170,Ferran Torres,2000-02-29,Ferran Torres,2000-02-29,Spain,ESP,FC Barcelona,Barcelona,1.0,True
+tm_1096,fm_1573,Kipp Keller,2000-07-14,Kipp Keller,2000-07-14,United States,USA,Austin FC,Austin FC,1.0,True
+tm_7666,fm_3996,Philipp Schulze,2003-01-29,Philipp Schulze,2003-01-29,Germany,GER,VfL Wolfsburg,VfL Wolfsburg,1.0,True
+tm_2112,fm_1349,Maxime Crépeau,1994-05-11,Maxime Crépeau,1994-05-11,Canada,CAN,Los Angeles FC,LAFC,1.0,True
+tm_1080,fm_9660,Tyler Boyd,1994-12-30,Tyler Boyd,1994-12-30,United States,USA,Los Angeles Galaxy,Beşiktaş,1.0,True
+tm_10021,fm_11976,Krystian Bielik,1998-01-04,Krystian Bielik,1998-01-04,Poland,POL,Birmingham City,Birmingham,1.0,True
+tm_7815,fm_9470,Attila Szalai,1998-01-20,Attila Szalai,1998-01-20,Hungary,HUN,TSG 1899 Hoffenheim,Fenerbahçe,1.0,True
+tm_2746,fm_2741,Lukas Fröde,1995-01-23,Lukas Fröde,1995-01-23,Germany,GER,FC Ingolstadt 04,Hansa Rostock,1.0,True
+tm_8084,fm_16429,Yohan Cassubie,2000-10-18,Yohan Cassubie,2000-10-18,France,FRA,FC Girondins Bordeaux,Niort,1.0,True
+tm_5867,fm_16377,Frank Magri,1999-09-04,Frank Magri,1999-09-04,France,FRA,FC Toulouse,SC Bastia,1.0,True
+tm_7384,fm_15374,Dango Ouattara,2002-02-11,Dango Ouattara,2002-02-11,Burkina Faso,BFA,AFC Bournemouth,FC Lorient,1.0,True
+tm_9069,fm_6447,Michele Camporese,1992-05-19,Michele Camporese,1992-05-19,Italy,ITA,Feralpisalò,Reggina,1.0,True
+tm_10635,fm_2820,Nils-Jonathan Körber,1996-11-13,Nils-Jonathan Körber,1996-11-13,Germany,GER,FC Hansa Rostock,Hansa Rostock,1.0,True
+tm_6338,fm_6839,Eugenio Lamanna,1989-08-07,Eugenio Lamanna,1989-08-07,Italy,ITA,AC Monza,Brianza,1.0,True
+tm_10117,fm_12054,Jordan Storey,1997-09-02,Jordan Storey,1997-09-02,England,ENG,Preston North End,Preston,1.0,True
+tm_8016,fm_3887,Alexander Brunst,1995-07-07,Alexander Brunst,1995-07-07,Germany,GER,SV Darmstadt 98,Darmstadt,1.0,True
+tm_1286,fm_16237,Antony,2001-09-08,Antony,2001-09-08,Brazil,BRA,Portland Timbers,Arouca,1.0,True
+tm_7080,fm_2141,Noni Madueke,2002-03-10,Noni Madueke,2002-03-10,England,ENG,Chelsea FC,PSV,1.0,True
+tm_8007,fm_3283,Moritz-Broni Kwarteng,1998-04-28,Moritz-Broni Kwarteng,1998-04-28,Germany,GER,VfL Bochum,Magdeburg,1.0,True
+tm_9995,fm_14297,Aaron Ramsey,1990-12-26,Aaron Ramsey,1990-12-26,Wales,WAL,Cardiff City,OGC Nice,1.0,True
+tm_5738,fm_16457,Dominique Youfeigane,2000-02-07,Dominique Youfeigane,2000-02-07,Central African Republic,FRA,FC Lorient,EA Guingamp,1.0,True
+tm_9589,fm_15129,Andrés Martín,1999-07-11,Andrés Martín,1999-07-11,Spain,ESP,Rayo Vallecano,Vallecano,1.0,True
+tm_6205,fm_6396,Nikola Moro,1998-03-12,Nikola Moro,1998-03-12,Croatia,CRO,Bologna FC 1909,Bologna,1.0,True
+tm_7008,fm_11410,Zack Steffen,1995-04-02,Zack Steffen,1995-04-02,United States,USA,Manchester City,Middlesbrough,1.0,True
+tm_8058,fm_2783,Kevin Sessa,2000-07-06,Kevin Sessa,2000-07-06,Germany,GER,1.FC Heidenheim 1846,Heidenheim,1.0,True
+tm_6812,fm_15011,Gastón Álvarez,2000-03-24,Gastón Álvarez,2000-03-24,Uruguay,URU,Getafe CF,Getafe,1.0,True
+tm_2078,fm_1296,Robbie Robinson,1998-12-17,Robbie Robinson,1998-12-17,United States,CHI,Inter Miami CF,Inter Miami,1.0,True
+tm_9944,fm_12440,Jobe Bellingham,2005-09-23,Jobe Bellingham,2005-09-23,England,ENG,Sunderland AFC,Birmingham,1.0,True
+tm_6464,fm_6993,Alberto Dossena,1998-10-13,Alberto Dossena,1998-10-13,Italy,ITA,Cagliari Calcio,Cagliari,1.0,True
+tm_1033,fm_1508,Sebastien Ibeagha,1992-01-21,Sebastien Ibeagha,1992-01-21,United States,USA,FC Dallas,LAFC,1.0,True
+tm_6992,fm_15016,Enzo Loiodice,2000-11-27,Enzo Loiodice,2000-11-27,France,FRA,UD Las Palmas,Las Palmas,1.0,True
+tm_3602,fm_14824,Mitchell van Bergen,1999-08-27,Mitchell van Bergen,1999-08-27,Netherlands,NED,Twente Enschede FC,Reims,1.0,True
+tm_8957,fm_9408,Emiliano Viviano,1985-12-01,Emiliano Viviano,1985-12-01,Italy,ITA,Ascoli Calcio,Fatih Karagümrük,1.0,True
+tm_6617,fm_14364,Tanguy Nianzou,2002-06-07,Tanguy Nianzou,2002-06-07,France,FRA,Sevilla FC,Sevilla,1.0,True
+tm_1388,fm_1329,Tim Parker,1993-02-23,Tim Parker,1993-02-23,United States,USA,St. Louis CITY SC,Houston,1.0,True
+tm_10675,fm_2915,Calvin Brackelmann,1999-08-22,Calvin Brackelmann,1999-08-22,Germany,GER,SC Paderborn 07,FC Ingolstadt 04,1.0,True
+tm_8452,fm_16668,Noé Sow,1998-12-18,Noé Sow,1998-12-18,France,FRA,Pau FC,Pau FC,1.0,True
+tm_1447,fm_1577,Adilson Malanda,2001-10-29,Adilson Malanda,2001-10-29,France,FRA,Charlotte FC,Charlotte FC,1.0,True
+tm_10289,fm_11705,Jeff Hendrick,1992-01-31,Jeff Hendrick,1992-01-31,Ireland,IRL,Newcastle United,Reading,1.0,True
+tm_7558,fm_2742,Sven Ulreich,1988-08-03,Sven Ulreich,1988-08-03,Germany,GER,Bayern Munich,FC Bayern,1.0,True
+tm_8033,fm_2382,Marvin Mehlem,1997-09-11,Marvin Mehlem,1997-09-11,Germany,GER,SV Darmstadt 98,Darmstadt,1.0,True
+tm_2111,fm_1574,Miguel Berry,1997-09-16,Miguel Berry,1997-09-16,Spain,ESP,Atlanta United FC,D.C. United,1.0,True
+tm_2683,fm_3280,Kyrylo Melichenko,1999-06-07,Kyrylo Melichenko,1999-06-07,Ukraine,UKR,SG Dynamo Dresden,Dynamo Dresden,1.0,True
+tm_10741,fm_3746,Leon Jensen,1997-05-19,Leon Jensen,1997-05-19,Germany,GER,Karlsruher SC,KSC,1.0,True
+tm_5629,fm_15197,Facundo Medina,1999-05-28,Facundo Medina,1999-05-28,Argentina,ARG,RC Lens,RC Lens,1.0,True
+tm_1683,fm_2662,Tim Knipping,1992-11-24,Tim Knipping,1992-11-24,Germany,GER,SV Sandhausen,Dynamo Dresden,1.0,True
+tm_6702,fm_14249,Ander Herrera,1989-08-14,Ander Herrera,1989-08-14,Spain,ESP,Athletic Bilbao,A. Bilbao,1.0,True
+tm_7591,fm_2365,Marius Wolf,1995-05-27,Marius Wolf,1995-05-27,Germany,GER,Borussia Dortmund,Borussia Dortmund,1.0,True
+tm_10414,fm_2227,Smail Prevljak,1995-05-10,Smail Prevljak,1995-05-10,Bosnia-Herzegovina,BIH,Hertha BSC,Eupen,1.0,True
+tm_10349,fm_13511,Ciaran McGuckin,2003-12-30,Ciaran McGuckin,2003-12-30,Northern Ireland,NIR,Rotherham United,Rotherham,1.0,True
+tm_5271,fm_16715,Hélio Varela,2002-05-03,Hélio Varela,2002-05-03,Portugal,POR,Portimonense SC,PTM,1.0,True
+tm_10014,fm_12108,Marc Roberts,1990-07-26,Marc Roberts,1990-07-26,England,ENG,Birmingham City,Birmingham,1.0,True
+tm_10509,fm_3368,Simon Asta,2001-01-25,Simon Asta,2001-01-25,Germany,GER,SpVgg Greuther Fürth,Fürth,1.0,True
+tm_6362,fm_6250,Dany Mota,1998-05-02,Dany Mota,1998-05-02,Portugal,POR,AC Monza,Brianza,1.0,True
+tm_8724,fm_6821,Manuel De Luca,1998-07-17,Manuel De Luca,1998-07-17,Italy,ITA,UC Sampdoria,Sampdoria,1.0,True
+tm_5377,fm_14942,Issah Abass,1998-09-26,Issah Abass,1998-09-26,Ghana,GHA,GD Chaves,Chaves,1.0,True
+tm_3868,fm_3935,Xavier Mbuyamba,2001-12-31,Xavier Mbuyamba,2001-12-31,Netherlands,NED,FC Volendam,FC Volendam,1.0,True
+tm_6244,fm_6298,Grégoire Defrel,1991-06-17,Grégoire Defrel,1991-06-17,France,FRA,US Sassuolo,Sassuolo,1.0,True
+tm_1039,fm_1362,Ema Twumasi,1997-05-18,Ema Twumasi,1997-05-18,Ghana,GHA,FC Dallas,FC Dallas,1.0,True
+tm_4181,fm_16327,Scotty Sadzoute,1998-04-29,Scotty Sadzoute,1998-04-29,France,FRA,Oud-Heverlee Leuven,Nîmes,1.0,True
+tm_10428,fm_3134,Ibrahima Cissé,2001-02-15,Ibrahima Cissé,2001-02-15,Mali,MLI,FC Schalke 04,Schalke 04,1.0,True
+tm_10111,fm_9484,Haji Wright,1998-03-27,Haji Wright,1998-03-27,United States,USA,Coventry City,Antalyaspor,1.0,True
+tm_9980,fm_12167,Isaiah Jones,1999-06-26,Isaiah Jones,1999-06-26,England,ENG,Middlesbrough FC,Middlesbrough,1.0,True
+tm_7340,fm_11530,Ben Godfrey,1998-01-15,Ben Godfrey,1998-01-15,England,ENG,Everton FC,Everton,1.0,True
+tm_8300,fm_15299,Paul Lasne,1989-01-16,Paul Lasne,1989-01-16,France,FRA,Paris FC,Paris FC,1.0,True
+tm_10698,fm_15063,Julian Pollersbeck,1994-08-16,Julian Pollersbeck,1994-08-16,Germany,GER,1.FC Magdeburg,OL,1.0,True
+tm_7039,fm_11388,Takehiro Tomiyasu,1998-11-05,Takehiro Tomiyasu,1998-11-05,Japan,JPN,Arsenal FC,Arsenal,1.0,True
+tm_9491,fm_15380,David Ferreiro,1988-04-01,David Ferreiro,1988-04-01,Spain,ESP,FC Cartagena,Cartagena,1.0,True
+tm_4288,fm_2091,Boli Bolingoli,1995-07-01,Boli Bolingoli,1995-07-01,Belgium,COD,KV Mechelen,KV Mechelen,1.0,True
+tm_7336,fm_11348,Jordan Pickford,1994-03-07,Jordan Pickford,1994-03-07,England,ENG,Everton FC,Everton,1.0,True
+tm_10722,fm_2508,Mohammed El Hankouri,1997-07-01,Mohammed El Hankouri,1997-07-01,Morocco,NED,1.FC Magdeburg,Magdeburg,1.0,True
+tm_3943,fm_2653,Antonio Nusa,2005-04-17,Antonio Nusa,2005-04-17,Norway,NOR,Club Brugge KV,Club Brugge,1.0,True
+tm_2208,fm_1240,Álex Roldán,1996-07-28,Álex Roldán,1996-07-28,El Salvador,SLV,Seattle Sounders FC,Seattle,1.0,True
+tm_10614,fm_2276,Kevin Kraus,1992-08-12,Kevin Kraus,1992-08-12,Germany,GER,1.FC Kaiserslautern,Kaiserslautern,1.0,True
+tm_1850,fm_2947,Laurent Jans,1992-08-05,Laurent Jans,1992-08-05,Luxembourg,LUX,SV Waldhof Mannheim,SV Waldhof Mannheim,1.0,True
+tm_2188,fm_1089,Santiago Rodríguez,2000-01-08,Santiago Rodríguez,2000-01-08,Uruguay,URU,New York City FC,NYCFC,1.0,True
+tm_1248,fm_1423,Josh Williams,1988-04-18,Josh Williams,1988-04-18,United States,USA,Columbus Crew,Columbus,1.0,True
+tm_4033,fm_2717,Paul Nardi,1994-05-18,Paul Nardi,1994-05-18,France,FRA,KAA Gent,AA Gent,1.0,True
+tm_9337,fm_14758,Christian Rivera,1997-07-09,Christian Rivera,1997-07-09,Spain,ESP,Sporting Gijón,S. Gijón,1.0,True
+tm_1500,fm_1592,Serge Ngoma,2005-07-09,Serge Ngoma,2005-07-09,United States,USA,New York Red Bulls,New York,1.0,True
+tm_6639,fm_14365,Rafa Mir,1997-06-18,Rafa Mir,1997-06-18,Spain,ESP,Sevilla FC,Sevilla,1.0,True
+tm_8918,fm_6567,Luca Tremolada,1991-11-25,Luca Tremolada,1991-11-25,Italy,ITA,Modena FC,Modena,1.0,True
+tm_7004,fm_15446,Marc Cardona,1995-07-08,Marc Cardona,1995-07-08,Spain,ESP,UD Las Palmas,Las Palmas,1.0,True
+tm_1106,fm_1108,Alexander Ring,1991-04-09,Alexander Ring,1991-04-09,Finland,FIN,Austin FC,Austin FC,1.0,True
+tm_3534,fm_3426,Maxim Dekker,2004-04-21,Maxim Dekker,2004-04-21,Netherlands,NED,AZ Alkmaar,AZ,1.0,True
+tm_8001,fm_3354,Patrick Osterhage,2000-02-01,Patrick Osterhage,2000-02-01,Germany,GER,VfL Bochum,VfL Bochum,1.0,True
+tm_5593,fm_14816,Sofiane Diop,2000-06-09,Sofiane Diop,2000-06-09,France,FRA,OGC Nice,OGC Nice,1.0,True
+tm_4944,fm_9667,David Jensen,1992-03-25,David Jensen,1992-03-25,Denmark,DEN,Istanbulspor,İstanbulspor,1.0,True
+tm_10046,fm_12239,Callum Brittain,1998-03-12,Callum Brittain,1998-03-12,England,ENG,Blackburn Rovers,Blackburn,1.0,True
+tm_10041,fm_12393,Hayden Carter,1999-12-17,Hayden Carter,1999-12-17,England,ENG,Blackburn Rovers,Blackburn,1.0,True
+tm_8646,fm_6599,Cristian Ansaldi,1986-09-20,Cristian Ansaldi,1986-09-20,Argentina,ARG,Parma Calcio 1913,Parma,1.0,True
+tm_8779,fm_6635,Roberto Insigne,1994-05-11,Roberto Insigne,1994-05-11,Italy,ITA,Palermo FC,Frosinone,1.0,True
+tm_6785,fm_15115,Juan Carlos,1988-01-20,Juan Carlos,1988-01-20,Spain,ESP,Girona FC,Girona,1.0,True
+tm_10638,fm_3141,Jonas David,2000-03-08,Jonas David,2000-03-08,Germany,GER,Hamburger SV,HSV,1.0,True
+tm_1586,fm_1536,Sam Nicholson,1995-01-20,Sam Nicholson,1995-01-20,Scotland,SCO,Colorado Rapids,Colorado,1.0,True
+tm_1794,fm_3080,Robin Ziegele,1997-03-13,Robin Ziegele,1997-03-13,Germany,GER,SSV Jahn Regensburg,FSV Zwickau,1.0,True
+tm_9891,fm_11915,Scott Twine,1999-07-14,Scott Twine,1999-07-14,England,ENG,Burnley FC,Burnley,1.0,True
+tm_6467,fm_6503,Tommaso Augello,1994-08-30,Tommaso Augello,1994-08-30,Italy,ITA,Cagliari Calcio,Sampdoria,1.0,True
+tm_6931,fm_15179,Chris Ramos,1997-01-18,Chris Ramos,1997-01-18,Spain,ESP,Cádiz CF,Lugo,1.0,True
+tm_10703,fm_3122,Daniel Heber,1994-07-04,Daniel Heber,1994-07-04,Germany,GER,1.FC Magdeburg,RW Essen,1.0,True
+tm_8720,fm_9620,Fabio Borini,1991-03-29,Fabio Borini,1991-03-29,Italy,ITA,UC Sampdoria,Fatih Karagümrük,1.0,True
+tm_10702,fm_2342,Cristiano Piccini,1992-09-26,Cristiano Piccini,1992-09-26,Italy,ITA,1.FC Magdeburg,Magdeburg,1.0,True
+tm_7383,fm_14350,Justin Kluivert,1999-05-05,Justin Kluivert,1999-05-05,Netherlands,NED,AFC Bournemouth,Valencia,1.0,True
+tm_9387,fm_15085,Iker Undabarrena,1995-05-18,Iker Undabarrena,1995-05-18,Spain,ESP,CD Leganés,Leganés,1.0,True
+tm_1416,fm_1323,Kortne Ford,1996-01-26,Kortne Ford,1996-01-26,United States,USA,Sporting Kansas City,Sporting KC,1.0,True
+tm_10583,fm_2680,Timo Becker,1997-03-25,Timo Becker,1997-03-25,Germany,GER,Holstein Kiel,Kiel,1.0,True
+tm_3344,fm_10256,Abdulelah Al-Malki,1994-10-11,Abdulelah Al-Malki,1994-10-11,Saudi Arabia,KSA,Al-Hilal SFC,Al-Hilal (KSA),1.0,True
+tm_7094,fm_11521,Tyrell Malacia,1999-08-17,Tyrell Malacia,1999-08-17,Netherlands,NED,Manchester United,Man UFC,1.0,True
+tm_2330,fm_10481,Sultan Mandash,1994-10-17,Sultan Mandash,1994-10-17,Saudi Arabia,KSA,Al-Fayha FC,Al-Fayha,1.0,True
+tm_5505,fm_15651,Vanderson,2001-06-21,Vanderson,2001-06-21,Brazil,BRA,AS Monaco,AS Monaco,1.0,True
+tm_4728,fm_9638,Miguel Cardoso,1994-06-19,Miguel Cardoso,1994-06-19,Portugal,POR,Kayserispor,Kayserispor,1.0,True
+tm_6391,fm_6264,Francesco Caputo,1987-08-06,Francesco Caputo,1987-08-06,Italy,ITA,FC Empoli,Sampdoria,1.0,True
+tm_7112,fm_11699,Amad Diallo,2002-07-11,Amad Diallo,2002-07-11,Cote d'Ivoire,CIV,Manchester United,Sunderland,1.0,True
+tm_8134,fm_16276,Ismaël Boura,2000-08-14,Ismaël Boura,2000-08-14,France,FRA,ESTAC Troyes,RC Lens,1.0,True
+tm_9977,fm_11950,Morgan Rogers,2002-07-26,Morgan Rogers,2002-07-26,England,ENG,Middlesbrough FC,Man City,1.0,True
+tm_6072,fm_7465,Riccardo Pagano,2004-11-28,Riccardo Pagano,2004-11-28,Italy,ITA,AS Roma,Capitoline,1.0,True
+tm_4541,fm_9409,Badou Ndiaye,1990-10-27,Badou Ndiaye,1990-10-27,Senegal,SEN,Adana Demirspor,Adana D.S.,1.0,True
+tm_7622,fm_1969,Timothy Fosu-Mensah,1998-01-02,Timothy Fosu-Mensah,1998-01-02,Netherlands,NED,Bayer 04 Leverkusen,Bayer 04,1.0,True
+tm_4263,fm_5001,Luca Chavet,2004-01-11,Luca Chavet,2004-01-11,Belgium,BEL,KAS Eupen,Eupen,1.0,True
+tm_6204,fm_6136,Lorenzo De Silvestri,1988-05-23,Lorenzo De Silvestri,1988-05-23,Italy,ITA,Bologna FC 1909,Bologna,1.0,True
+tm_8199,fm_9361,Zinedine Ferhat,1993-03-01,Zinedine Ferhat,1993-03-01,Algeria,ALG,Angers SCO,Alanyaspor,1.0,True
+tm_7189,fm_11680,Sean Longstaff,1997-10-30,Sean Longstaff,1997-10-30,England,ENG,Newcastle United,Newcastle,1.0,True
+tm_9193,fm_15047,José Gragera,2000-05-14,José Gragera,2000-05-14,Spain,ESP,RCD Espanyol Barcelona,S. Gijón,1.0,True
+tm_3455,fm_3666,Quilindschy Hartman,2001-11-14,Quilindschy Hartman,2001-11-14,Netherlands,NED,Feyenoord Rotterdam,Feyenoord,1.0,True
+tm_1932,fm_3176,Rico Preißinger,1996-07-21,Rico Preißinger,1996-07-21,Germany,GER,Preußen Münster,FC Ingolstadt 04,1.0,True
+tm_8940,fm_2219,Filippo Melegoni,1999-02-18,Filippo Melegoni,1999-02-18,Italy,ITA,Genoa CFC,Standard,1.0,True
+tm_6953,fm_14406,José Callejón,1987-02-11,José Callejón,1987-02-11,Spain,ESP,Granada CF,Granada,1.0,True
+tm_9660,fm_15810,Javier Avilés,1997-08-17,Javier Avilés,1997-08-17,Spain,ESP,CD Leganés,Leganés,1.0,True
+tm_5779,fm_15178,Jordan Ferri,1992-03-12,Jordan Ferri,1992-03-12,France,FRA,Montpellier HSC,Montpellier,1.0,True
+tm_6532,fm_14155,Federico Valverde,1998-07-22,Federico Valverde,1998-07-22,Uruguay,URU,Real Madrid,R. Madrid,1.0,True
+tm_8739,fm_6460,Ádám Nagy,1995-06-17,Ádám Nagy,1995-06-17,Hungary,HUN,Pisa Sporting Club,Pisa,1.0,True
+tm_10073,fm_2486,Ki-Jana Hoever,2002-01-18,Ki-Jana Hoever,2002-01-18,Netherlands,NED,Wolverhampton Wanderers,PSV,1.0,True
+tm_6044,fm_6153,Weston McKennie,1998-08-28,Weston McKennie,1998-08-28,United States,USA,Juventus FC,Juventus,1.0,True
+tm_2247,fm_10264,Hattan Bahebri,1992-07-16,Hattan Bahebri,1992-07-16,Saudi Arabia,KSA,Al-Shabab FC,Al-Shabab,1.0,True
+tm_1119,fm_1515,Mason Stajduhar,1997-12-02,Mason Stajduhar,1997-12-02,United States,USA,Orlando City SC,Orlando City,1.0,True
+tm_9929,fm_11988,Daniel Ballard,1999-09-22,Daniel Ballard,1999-09-22,Northern Ireland,NIR,Sunderland AFC,Sunderland,1.0,True
+tm_10790,fm_2671,Jannis Nikolaou,1993-07-31,Jannis Nikolaou,1993-07-31,Germany,GER,Eintracht Braunschweig,Braunschweig,1.0,True
+tm_3651,fm_3301,Thomas Buitink,2000-06-14,Thomas Buitink,2000-06-14,Netherlands,NED,Vitesse Arnhem,Vitesse,1.0,True
+tm_5489,fm_14151,Ousmane Dembélé,1997-05-15,Ousmane Dembélé,1997-05-15,France,FRA,Paris Saint-Germain,Barcelona,1.0,True
+tm_9564,fm_17328,Víctor Moreno,2005-09-30,Víctor Moreno,2005-09-30,Spain,ESP,Villarreal CF B,Villarreal,1.0,True
+tm_10443,fm_1996,Kenan Karaman,1994-03-05,Kenan Karaman,1994-03-05,Turkey,TUR,FC Schalke 04,Schalke 04,1.0,True
+tm_10660,fm_3700,Christian Kinsombi,1999-08-24,Christian Kinsombi,1999-08-24,Germany,GER,FC Hansa Rostock,Sandhausen,1.0,True
+tm_8503,fm_16410,Florian Escales,1996-02-03,Florian Escales,1996-02-03,France,FRA,FC Annecy,FC Annecy,1.0,True
+tm_6096,fm_6795,Nadir Zortea,1999-06-19,Nadir Zortea,1999-06-19,Italy,ITA,Atalanta BC,Atalanta,1.0,True
+tm_8182,fm_16318,Ousmane Camara,2003-03-06,Ousmane Camara,2003-03-06,France,FRA,Angers SCO,Angers SCO,1.0,True
+tm_3932,fm_4094,Kyriani Sabbe,2005-01-26,Kyriani Sabbe,2005-01-26,Belgium,BEL,Club Brugge KV,Club Brugge,1.0,True
+tm_7464,fm_14146,Matheus Cunha,1999-05-27,Matheus Cunha,1999-05-27,Brazil,BRA,Wolverhampton Wanderers,A. Madrid,1.0,True
+tm_7531,fm_11783,Thomas Kaminski,1992-10-23,Thomas Kaminski,1992-10-23,Belgium,BEL,Luton Town,Blackburn,1.0,True
+tm_8900,fm_6694,Andrea Seculin,1990-07-14,Andrea Seculin,1990-07-14,Italy,ITA,Modena FC,Modena,1.0,True
+tm_1088,fm_11794,Billy Sharp,1986-02-05,Billy Sharp,1986-02-05,England,ENG,Los Angeles Galaxy,Sheff Utd,1.0,True
+tm_1970,fm_3126,Philipp Klewin,1993-09-30,Philipp Klewin,1993-09-30,Germany,GER,VfB Lübeck,Erzgebirge Aue,1.0,True
+tm_9771,fm_11586,Liam Cooper,1991-08-30,Liam Cooper,1991-08-30,Scotland,SCO,Leeds United,Leeds,1.0,True
+tm_6706,fm_14199,Iker Muniain,1992-12-19,Iker Muniain,1992-12-19,Spain,ESP,Athletic Bilbao,A. Bilbao,1.0,True
+tm_10728,fm_4187,Max Weiß,2004-06-15,Max Weiß,2004-06-15,Germany,GER,Karlsruher SC,KSC,1.0,True
+tm_5989,fm_6162,Davide Calabria,1996-12-06,Davide Calabria,1996-12-06,Italy,ITA,AC Milan,Milan,1.0,True
+tm_7897,fm_2862,Jamie Leweling,2001-02-26,Jamie Leweling,2001-02-26,Germany,GER,1.FC Union Berlin,Union Berlin,1.0,True
+tm_3392,fm_11248,Aymeric Laporte,1994-05-27,Aymeric Laporte,1994-05-27,Spain,ESP,Al-Nassr FC,Man City,1.0,True
+tm_8324,fm_15531,Julien Masson,1998-06-18,Julien Masson,1998-06-18,France,FRA,Valenciennes FC,VAFC,1.0,True
+tm_9005,fm_6515,Francesco Forte,1993-05-01,Francesco Forte,1993-05-01,Italy,ITA,Ascoli Calcio,Benevento,1.0,True
+tm_1590,fm_1188,Jonathan Lewis,1997-06-04,Jonathan Lewis,1997-06-04,United States,USA,Colorado Rapids,Colorado,1.0,True
+tm_7448,fm_11748,Craig Dawson,1990-05-06,Craig Dawson,1990-05-06,England,ENG,Wolverhampton Wanderers,West Ham,1.0,True
+tm_10568,fm_3592,Taylan Duman,1997-07-30,Taylan Duman,1997-07-30,Germany,GER,1.FC Nuremberg,Nürnberg,1.0,True
+tm_4019,fm_14204,Thomas Delaney,1991-09-03,Thomas Delaney,1991-09-03,Denmark,DEN,Sevilla FC,Sevilla,1.0,True
+tm_6067,fm_6122,Bryan Cristante,1995-03-03,Bryan Cristante,1995-03-03,Italy,ITA,AS Roma,Capitoline,1.0,True
+tm_4017,fm_2657,Majeed Ashimeru,1997-10-10,Majeed Ashimeru,1997-10-10,Ghana,GHA,RSC Anderlecht,RSC Anderlecht,1.0,True
+tm_5001,fm_14679,Cláudio Ramos,1991-11-16,Cláudio Ramos,1991-11-16,Portugal,POR,FC Porto,FC Porto,1.0,True
+tm_2087,fm_1051,Brad Guzan,1984-09-09,Brad Guzan,1984-09-09,United States,USA,Atlanta United FC,Atlanta United,1.0,True
+tm_1765,fm_3238,Niklas Landgraf,1996-03-01,Niklas Landgraf,1996-03-01,Germany,GER,Hallescher FC,Hallescher FC,1.0,True
+tm_8384,fm_16219,Christophe Vincent,1992-11-08,Christophe Vincent,1992-11-08,France,FRA,SC Bastia,SC Bastia,1.0,True
+tm_5350,fm_14742,Emmanuel Boateng,1996-05-23,Emmanuel Boateng,1996-05-23,Ghana,GHA,Rio Ave FC,Rio Ave,1.0,True
+tm_9907,fm_11949,Kyle Bartley,1991-05-22,Kyle Bartley,1991-05-22,England,ENG,West Bromwich Albion,West Brom,1.0,True
+tm_8743,fm_6519,Idrissa Touré,1998-04-29,Idrissa Touré,1998-04-29,Germany,GER,Pisa Sporting Club,Pisa,1.0,True
+tm_10040,fm_12193,Dominic Hyam,1995-12-20,Dominic Hyam,1995-12-20,Scotland,SCO,Blackburn Rovers,Blackburn,1.0,True
+tm_8847,fm_6844,Giacomo Ricci,1996-09-02,Giacomo Ricci,1996-09-02,Italy,ITA,SSC Bari,Bari,1.0,True
+tm_6170,fm_6449,Alessandro Buongiorno,1999-06-06,Alessandro Buongiorno,1999-06-06,Italy,ITA,Torino FC,Torino,1.0,True
+tm_4184,fm_3758,Joren Dom,1989-11-29,Joren Dom,1989-11-29,Belgium,BEL,Oud-Heverlee Leuven,OHL,1.0,True
+tm_7517,fm_11878,James McAtee,2002-10-18,James McAtee,2002-10-18,England,ENG,Manchester City,Sheff Utd,1.0,True
+tm_7440,fm_11484,Carlos Vinícius,1995-03-25,Carlos Vinícius,1995-03-25,Brazil,BRA,Fulham FC,Fulham,1.0,True
+tm_5803,fm_17206,Valentin Atangana Edoa,2005-08-25,Valentin Atangana Edoa,2005-08-25,France,FRA,Stade Reims,Reims,1.0,True
+tm_1381,fm_11412,Teemu Pukki,1990-03-29,Teemu Pukki,1990-03-29,Finland,FIN,Minnesota United FC,Norwich,1.0,True
+tm_8379,fm_16376,Dylan Tavares,1996-08-30,Dylan Tavares,1996-08-30,Cape Verde,CPV,SC Bastia,SC Bastia,1.0,True
+tm_6689,fm_14195,Unai Simón,1997-06-11,Unai Simón,1997-06-11,Spain,ESP,Athletic Bilbao,A. Bilbao,1.0,True
+tm_1623,fm_1353,Ifunanyachi Achara,1997-09-28,Ifunanyachi Achara,1997-09-28,Nigeria,NGA,Houston Dynamo FC,Toronto FC,1.0,True
+tm_8875,fm_6232,Davide Adorni,1992-08-09,Davide Adorni,1992-08-09,Italy,ITA,Brescia Calcio,Brescia,1.0,True
+tm_8118,fm_16214,Dylan Chambost,1997-08-19,Dylan Chambost,1997-08-19,France,FRA,AS Saint-Étienne,ASSE,1.0,True
+tm_10110,fm_11935,Kasey Palmer,1996-11-09,Kasey Palmer,1996-11-09,Jamaica,JAM,Coventry City,Coventry,1.0,True
+tm_5880,fm_15664,Yohann Magnin,1997-06-21,Yohann Magnin,1997-06-21,France,FRA,Clermont Foot 63,Clermont,1.0,True
+tm_6382,fm_7199,Jacopo Fazzini,2003-03-16,Jacopo Fazzini,2003-03-16,Italy,ITA,FC Empoli,Empoli,1.0,True
+tm_7705,fm_2199,Rani Khedira,1994-01-27,Rani Khedira,1994-01-27,Germany,GER,1.FC Union Berlin,Union Berlin,1.0,True
+tm_8018,fm_2143,Christoph Zimmermann,1993-01-12,Christoph Zimmermann,1993-01-12,Germany,GER,SV Darmstadt 98,Darmstadt,1.0,True
+tm_8276,fm_15753,Jonathan Iglesias,1988-12-17,Jonathan Iglesias,1988-12-17,Uruguay,URU,EA Guingamp,Paris FC,1.0,True
