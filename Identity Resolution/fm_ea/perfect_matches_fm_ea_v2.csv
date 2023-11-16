@@ -1,49 +1,129 @@
 df1,df2,name1,birthdate1,name2,birthdate2,nat1,nat2,club1,club2,score,match
-fm_14800,eafc_6506,Iñaki Peña,1999-03-02,Iñaki Peña,1999-03-02,ESP,Spain,Barcelona,FC Barcelona,1.0,True
-fm_10252,eafc_11407,Yin Hongbo,1989-10-30,Yin Hongbo,1989-10-30,CHN,China PR,Meizhou,Meizhou Hakka,1.0,True
-fm_6271,eafc_6519,Arthur Cabral,1998-04-25,Arthur Cabral,1998-04-25,BRA,Brazil,Fiorentina,Benfica,1.0,True
-fm_10990,eafc_11682,Yan Yu,2002-11-03,Yan Yu,2002-11-03,CHN,China PR,Beijing,Beijing Guoan,1.0,True
-fm_10656,eafc_11354,Yang Yihu,1991-09-16,Yang Yihu,1991-09-16,CHN,China PR,Meizhou,Meizhou Hakka,1.0,True
-fm_16031,eafc_8640,Oier Luengo,1997-11-11,Oier Luengo,1997-11-11,ESP,Spain,Oviedo,Real Oviedo,1.0,True
-fm_15462,eafc_5424,Oriol Busquets,1999-01-20,Oriol Busquets,1999-01-20,ESP,Spain,Arouca,Arouca,1.0,True
-fm_10558,eafc_11434,Zhang Wentao,1993-04-14,Zhang Wentao,1993-04-14,CHN,China PR,WH Three Towns,Wuhan Three Towns,1.0,True
-fm_14650,eafc_5794,Manu Vallejo,1997-02-14,Manu Vallejo,1997-02-14,ESP,Spain,Girona,Real Zaragoza,1.0,True
-fm_10425,eafc_11436,Cui Wei,1994-08-16,Cui Wei,1994-08-16,CHN,China PR,Meizhou,Meizhou Hakka,1.0,True
-fm_14929,eafc_9386,José Marsà,2002-03-04,José Marsà,2002-03-04,ESP,Spain,Sporting CP,FC Andorra,1.0,True
-fm_6990,eafc_7692,Leandro Sanca,2000-01-04,Leandro Sanca,2000-01-04,POR,Portugal,Spezia,Chaves,1.0,True
-fm_14533,eafc_6503,Adrià Pedrosa,1998-05-13,Adrià Pedrosa,1998-05-13,ESP,Spain,Espanyol,Sevilla,1.0,True
-fm_10617,eafc_11427,Ye Chugui,1994-09-08,Ye Chugui,1994-09-08,CHN,China PR,GZ City,Meizhou Hakka,1.0,True
-fm_14174,eafc_5927,João Félix,1999-11-10,João Félix,1999-11-10,POR,Portugal,A. Madrid,FC Barcelona,1.0,True
-fm_15487,eafc_9758,Clayton,1999-01-11,Clayton,1999-01-11,BRA,Brazil,Casa Pia,Casa Pia,1.0,True
-fm_6998,eafc_9358,Mario Gila,2000-08-29,Mario Gila,2000-08-29,ESP,Spain,Lazio,Lazio,1.0,True
-fm_15891,eafc_4592,João Graça,1995-06-18,João Graça,1995-06-18,POR,Portugal,Rio Ave,Rio Ave,1.0,True
-fm_14225,eafc_3266,Dani Ceballos,1996-08-07,Dani Ceballos,1996-08-07,ESP,Spain,R. Madrid,Real Madrid,1.0,True
-fm_15631,eafc_1567,Sergi Enrich,1990-02-26,Sergi Enrich,1990-02-26,ESP,Spain,Oviedo,Real Zaragoza,1.0,True
-fm_10161,eafc_2377,Romarinho,1990-12-12,Romarinho,1990-12-12,BRA,Brazil,Al-Ittihad,Al Ittihad,1.0,True
-fm_14277,eafc_5017,Luiz Felipe,1997-03-22,Luiz Felipe,1997-03-22,ITA,Italy,Real Hispalis,Al Ittihad,1.0,True
-fm_1247,eafc_5958,João Moutinho,1998-01-12,João Moutinho,1998-01-12,POR,Portugal,Orlando City,Spezia,1.0,True
-fm_10962,eafc_11630,He Youzu,1998-10-26,He Youzu,1998-10-26,CHN,China PR,CZ Mighty Lions,Cangzhou Mighty Lions,1.0,True
-fm_14379,eafc_3403,David Soria,1993-04-04,David Soria,1993-04-04,ESP,Spain,Getafe,Getafe,1.0,True
-fm_16047,eafc_6038,Álex Domínguez,1998-07-30,Álex Domínguez,1998-07-30,ESP,Spain,Las Palmas,Toulouse,1.0,True
-fm_10679,eafc_11605,Niu Ziyi,1999-09-21,Niu Ziyi,1999-09-21,CHN,China PR,Henan,Henan,1.0,True
-fm_12609,eafc_6303,Vitinho,1999-07-23,Vitinho,1999-07-23,BRA,Brazil,Burnley,Burnley,1.0,True
-fm_15702,eafc_7639,Fali Candé,1998-01-24,Fali Candé,1998-01-24,GNB,Guinea Bissau,FC Metz,Metz,1.0,True
-fm_10734,eafc_11578,Han Dong,2001-03-02,Han Dong,2001-03-02,CHN,China PR,Henan,Henan,1.0,True
-fm_16546,eafc_8872,Naim García,2002-06-11,Naim García,2002-06-11,ESP,Spain,Leganés,Leganés,1.0,True
-fm_14887,eafc_9453,Leonardo Lelo,2000-03-30,Leonardo Lelo,2000-03-30,POR,Portugal,Casa Pia,Casa Pia,1.0,True
-fm_15129,eafc_6489,Andrés Martín,1999-07-11,Andrés Martín,1999-07-11,ESP,Spain,Vallecano,Racing Santander,1.0,True
-fm_15569,eafc_9145,Gonçalo Borges,2001-03-29,Gonçalo Borges,2001-03-29,POR,Portugal,FC Porto,Porto,1.0,True
-fm_14264,eafc_2662,Alex Telles,1992-12-15,Alex Telles,1992-12-15,BRA,Brazil,Sevilla,Al Nassr,1.0,True
+fm_10366,eafc_11500,Yang Shuai,1997-01-28,Yang Shuai,1997-01-28,CHN,China PR,Henan,Henan,1.0,True
+fm_16226,eafc_8450,Ekain,1994-04-29,Ekain,1994-04-29,ESP,Spain,Ibiza,Racing Santander,1.0,True
 fm_10247,eafc_11544,Zhu Chenjie,2000-08-23,Zhu Chenjie,2000-08-23,CHN,China PR,SH Shenhua,Shanghai Shenhua,1.0,True
+fm_14252,eafc_2695,João Mário,1993-01-19,João Mário,1993-01-19,POR,Portugal,Benfica,Benfica,1.0,True
+fm_6990,eafc_7692,Leandro Sanca,2000-01-04,Leandro Sanca,2000-01-04,POR,Portugal,Spezia,Chaves,1.0,True
 fm_10458,eafc_11399,Lin Chuangyi,1993-01-28,Lin Chuangyi,1993-01-28,CHN,China PR,CZ Mighty Lions,Cangzhou Mighty Lions,1.0,True
-fm_14752,eafc_1590,Ignasi Miquel,1992-09-28,Ignasi Miquel,1992-09-28,ESP,Spain,Granada,Granada,1.0,True
-fm_11263,eafc_2380,Fabinho,1993-10-23,Fabinho,1993-10-23,BRA,Brazil,Liverpool,Al Ittihad,1.0,True
+fm_15578,eafc_6304,Elady,1990-07-13,Elady,1990-07-13,ESP,Spain,Tenerife,Tenerife,1.0,True
+fm_14554,eafc_2685,Rony Lopes,1995-12-28,Rony Lopes,1995-12-28,POR,Portugal,Troyes,Sporting Braga,1.0,True
+fm_1304,eafc_1713,Ilie Sánchez,1990-11-21,Ilie Sánchez,1990-11-21,ESP,Spain,LAFC,Los Angeles FC,1.0,True
+fm_14345,eafc_3761,Nuno Santos,1995-02-13,Nuno Santos,1995-02-13,POR,Portugal,Sporting CP,Sporting CP,1.0,True
 fm_14542,eafc_6666,Fran Navarro,1998-02-03,Fran Navarro,1998-02-03,ESP,Spain,Gil Vicente,Porto,1.0,True
-fm_10652,eafc_11541,Zhao Jianfei,1999-01-21,Zhao Jianfei,1999-01-21,CHN,China PR,Shandong,Shandong Taishan,1.0,True
+fm_11460,eafc_2482,Emerson,1994-08-03,Emerson,1994-08-03,ITA,Italy,West Ham,West Ham United,1.0,True
+fm_14308,eafc_4300,Renato Sanches,1997-08-18,Renato Sanches,1997-08-18,POR,Portugal,PSG,Roma,1.0,True
+fm_1322,eafc_2136,Luís Martins,1992-06-10,Luís Martins,1992-06-10,POR,Portugal,Vancouver,Vancouver Whitecaps,1.0,True
+fm_10489,eafc_11412,Zhang Xiaobin,1993-10-23,Zhang Xiaobin,1993-10-23,CHN,China PR,WH Three Towns,Wuhan Three Towns,1.0,True
+fm_16090,eafc_7449,Paulo Estrela,1999-02-20,Paulo Estrela,1999-02-20,POR,Portugal,PTM,Portimonense,1.0,True
 fm_10202,eafc_1597,Anselmo,1989-02-20,Anselmo,1989-02-20,BRA,Brazil,Al-Wehda,Al Wahda,1.0,True
-fm_15212,eafc_7268,Robert Navarro,2002-04-12,Robert Navarro,2002-04-12,ESP,Spain,Real San Sebastián,Cádiz,1.0,True
 fm_15380,eafc_2092,David Ferreiro,1988-04-01,David Ferreiro,1988-04-01,ESP,Spain,Cartagena,FC Cartagena,1.0,True
-fm_14223,eafc_5760,Pau Torres,1997-01-16,Pau Torres,1997-01-16,ESP,Spain,Villarreal,Aston Villa,1.0,True
+fm_14312,eafc_5370,Pepê,1997-02-24,Pepê,1997-02-24,BRA,Brazil,FC Porto,Porto,1.0,True
+fm_14225,eafc_3266,Dani Ceballos,1996-08-07,Dani Ceballos,1996-08-07,ESP,Spain,R. Madrid,Real Madrid,1.0,True
+fm_6998,eafc_9358,Mario Gila,2000-08-29,Mario Gila,2000-08-29,ESP,Spain,Lazio,Lazio,1.0,True
+fm_15569,eafc_9145,Gonçalo Borges,2001-03-29,Gonçalo Borges,2001-03-29,POR,Portugal,FC Porto,Porto,1.0,True
+fm_14929,eafc_9386,José Marsà,2002-03-04,José Marsà,2002-03-04,ESP,Spain,Sporting CP,FC Andorra,1.0,True
+fm_16054,eafc_8785,Filipe Relvas,1999-09-20,Filipe Relvas,1999-09-20,POR,Portugal,PTM,Portimonense,1.0,True
+fm_10638,eafc_11425,Gan Rui,1985-01-11,Gan Rui,1985-01-11,CHN,China PR,CD Rongcheng,Chengdu Rongcheng,1.0,True
+fm_16403,eafc_8971,Luiz Henrique,2001-01-02,Luiz Henrique,2001-01-02,BRA,Brazil,Real Hispalis,Real Betis,1.0,True
+fm_15508,eafc_6625,Jaume Grau,1997-05-05,Jaume Grau,1997-05-05,ESP,Spain,Zaragoza,Real Zaragoza,1.0,True
+fm_14277,eafc_5017,Luiz Felipe,1997-03-22,Luiz Felipe,1997-03-22,ITA,Italy,Real Hispalis,Al Ittihad,1.0,True
+fm_10161,eafc_2377,Romarinho,1990-12-12,Romarinho,1990-12-12,BRA,Brazil,Al-Ittihad,Al Ittihad,1.0,True
+fm_1167,eafc_5865,Carlos Coronel,1996-12-29,Carlos Coronel,1996-12-29,BRA,Brazil,New York,New York RB,1.0,True
+fm_15631,eafc_1567,Sergi Enrich,1990-02-26,Sergi Enrich,1990-02-26,ESP,Spain,Oviedo,Real Zaragoza,1.0,True
+fm_15891,eafc_4592,João Graça,1995-06-18,João Graça,1995-06-18,POR,Portugal,Rio Ave,Rio Ave,1.0,True
+fm_6106,eafc_5802,Rafael Leão,1999-06-10,Rafael Leão,1999-06-10,POR,Portugal,Milan,Milan,1.0,True
+fm_10634,eafc_11617,Yang Zihao,2001-01-07,Yang Zihao,2001-01-07,CHN,China PR,Tianjin,Tianjin Jinmen Tiger,1.0,True
+fm_10617,eafc_11427,Ye Chugui,1994-09-08,Ye Chugui,1994-09-08,CHN,China PR,GZ City,Meizhou Hakka,1.0,True
+fm_15487,eafc_9758,Clayton,1999-01-11,Clayton,1999-01-11,BRA,Brazil,Casa Pia,Casa Pia,1.0,True
+fm_16273,eafc_8840,Fran Delgado,2001-07-11,Fran Delgado,2001-07-11,ESP,Spain,Real Hispalis,Farense,1.0,True
+fm_14901,eafc_4970,Fran Beltrán,1999-02-03,Fran Beltrán,1999-02-03,ESP,Spain,Vigo,Celta de Vigo,1.0,True
+fm_6250,eafc_4690,Dany Mota,1998-05-02,Dany Mota,1998-05-02,POR,Portugal,Brianza,Monza,1.0,True
+fm_6278,eafc_7369,Matheus Henrique,1997-12-19,Matheus Henrique,1997-12-19,BRA,Brazil,Sassuolo,Sassuolo,1.0,True
+fm_10308,eafc_11305,Yi Teng,1990-02-20,Yi Teng,1990-02-20,CHN,China PR,GZ City,Changchun Yatai,1.0,True
+fm_14845,eafc_6532,Óscar Gil,1998-04-26,Óscar Gil,1998-04-26,ESP,Spain,Espanyol,Espanyol,1.0,True
+fm_15116,eafc_5830,Aitor Ruibal,1996-03-22,Aitor Ruibal,1996-03-22,ESP,Spain,Real Hispalis,Real Betis,1.0,True
+fm_10380,eafc_11393,Zhang Wei,1993-03-28,Zhang Wei,1993-03-28,CHN,China PR,Tianjin,Qingdao Hainiu,1.0,True
+fm_15402,eafc_4380,Waldo,1995-08-17,Waldo,1995-08-17,ESP,Spain,Tenerife,Tenerife,1.0,True
+fm_14837,eafc_6164,Gonzalo Verdú,1988-10-21,Gonzalo Verdú,1988-10-21,ESP,Spain,Elche,FC Cartagena,1.0,True
+fm_6271,eafc_6519,Arthur Cabral,1998-04-25,Arthur Cabral,1998-04-25,BRA,Brazil,Fiorentina,Benfica,1.0,True
+fm_1387,eafc_3685,Sergio Santos,1994-09-04,Sergio Santos,1994-09-04,BRA,Brazil,Cincinnati,Cincinnati,1.0,True
+fm_16237,eafc_8796,Antony,2001-09-08,Antony,2001-09-08,BRA,Brazil,Arouca,Portland Timbers,1.0,True
+fm_16031,eafc_8640,Oier Luengo,1997-11-11,Oier Luengo,1997-11-11,ESP,Spain,Oviedo,Real Oviedo,1.0,True
+fm_16394,eafc_6623,João Valido,2000-03-03,João Valido,2000-03-03,POR,Portugal,Arouca,Arouca,1.0,True
+fm_10406,eafc_11375,Zhao Yuhao,1993-04-07,Zhao Yuhao,1993-04-07,CHN,China PR,Henan,Henan,1.0,True
+fm_10490,eafc_11523,Ma Xingyu,1989-11-04,Ma Xingyu,1989-11-04,CHN,China PR,Henan,Qingdao Hainiu,1.0,True
+fm_10986,eafc_11598,Bai Yang,1998-03-06,Bai Yang,1998-03-06,CHN,China PR,Beijing,Beijing Guoan,1.0,True
+fm_10566,eafc_11369,Chang Feiya,1993-02-03,Chang Feiya,1993-02-03,CHN,China PR,GZ City,Tianjin Jinmen Tiger,1.0,True
+fm_11968,eafc_11317,Lucas João,1993-09-04,Lucas João,1993-09-04,ANG,Angola,Reading,Shanghai Port,1.0,True
+fm_14301,eafc_4975,Reinildo,1994-01-21,Reinildo,1994-01-21,MOZ,Mozambique,A. Madrid,Atlético Madrid,1.0,True
+fm_16051,eafc_2998,Dani Calvo,1994-04-01,Dani Calvo,1994-04-01,ESP,Spain,Oviedo,Real Oviedo,1.0,True
+fm_18230,eafc_10040,Diego Méndez,2003-08-29,Diego Méndez,2003-08-29,ESP,Spain,Vallecano,Rayo Vallecano,1.0,True
+fm_15509,eafc_3313,José León,1995-02-03,José León,1995-02-03,ESP,Spain,Tenerife,Tenerife,1.0,True
+fm_10899,eafc_11706,Fei Ernanduo,2001-07-20,Fei Ernanduo,2001-07-20,CHN,China PR,SH Shenhua,Shanghai Shenhua,1.0,True
+fm_16047,eafc_6038,Álex Domínguez,1998-07-30,Álex Domínguez,1998-07-30,ESP,Spain,Las Palmas,Toulouse,1.0,True
+fm_15874,eafc_9866,Martim Tavares,2003-11-10,Martim Tavares,2003-11-10,POR,Portugal,BVT,Boavista,1.0,True
+fm_18048,eafc_10035,Pablo Marín,2003-07-03,Pablo Marín,2003-07-03,ESP,Spain,Real San Sebastián,Real Sociedad,1.0,True
+fm_10425,eafc_11436,Cui Wei,1994-08-16,Cui Wei,1994-08-16,CHN,China PR,Meizhou,Meizhou Hakka,1.0,True
+fm_10913,eafc_11620,Shi Yan,2002-05-30,Shi Yan,2002-05-30,CHN,China PR,Tianjin,Tianjin Jinmen Tiger,1.0,True
+fm_11392,eafc_1153,Willian,1988-08-09,Willian,1988-08-09,BRA,Brazil,Fulham,Fulham,1.0,True
+fm_10187,eafc_1919,Igor Coronado,1992-08-18,Igor Coronado,1992-08-18,BRA,Brazil,Al-Ittihad,Al Ittihad,1.0,True
 fm_14603,eafc_5432,Óscar,1998-06-28,Óscar,1998-06-28,ESP,Spain,Vigo,Getafe,1.0,True
+fm_14176,eafc_3652,Marcos Llorente,1995-01-30,Marcos Llorente,1995-01-30,ESP,Spain,A. Madrid,Atlético Madrid,1.0,True
+fm_14922,eafc_7453,Javi Martínez,1999-12-22,Javi Martínez,1999-12-22,ESP,Spain,Albacete,Huesca,1.0,True
+fm_15212,eafc_7268,Robert Navarro,2002-04-12,Robert Navarro,2002-04-12,ESP,Spain,Real San Sebastián,Cádiz,1.0,True
+fm_10572,eafc_11295,Zhang Chi,1987-07-08,Zhang Chi,1987-07-08,CHN,China PR,Shandong,Shandong Taishan,1.0,True
+fm_10132,eafc_6629,Gerson Rodrigues,1995-06-20,Gerson Rodrigues,1995-06-20,LUX,Luxembourg,Al-Wehda,Sivasspor,1.0,True
+fm_11455,eafc_2435,Ricardo Pereira,1993-10-06,Ricardo Pereira,1993-10-06,POR,Portugal,Leicester,Leicester City,1.0,True
+fm_14752,eafc_1590,Ignasi Miquel,1992-09-28,Ignasi Miquel,1992-09-28,ESP,Spain,Granada,Granada,1.0,True
+fm_14379,eafc_3403,David Soria,1993-04-04,David Soria,1993-04-04,ESP,Spain,Getafe,Getafe,1.0,True
+fm_14754,eafc_5498,Tete Morente,1996-12-04,Tete Morente,1996-12-04,ESP,Spain,Elche,Elche,1.0,True
+fm_14533,eafc_6503,Adrià Pedrosa,1998-05-13,Adrià Pedrosa,1998-05-13,ESP,Spain,Espanyol,Sevilla,1.0,True
+fm_1247,eafc_5958,João Moutinho,1998-01-12,João Moutinho,1998-01-12,POR,Portugal,Orlando City,Spezia,1.0,True
+fm_10305,eafc_11368,Tang Miao,1990-10-16,Tang Miao,1990-10-16,CHN,China PR,GZ City,Chengdu Rongcheng,1.0,True
+fm_14887,eafc_9453,Leonardo Lelo,2000-03-30,Leonardo Lelo,2000-03-30,POR,Portugal,Casa Pia,Casa Pia,1.0,True
+fm_14800,eafc_6506,Iñaki Peña,1999-03-02,Iñaki Peña,1999-03-02,ESP,Spain,Barcelona,FC Barcelona,1.0,True
 fm_1836,eafc_3115,Angeliño,1997-01-04,Angeliño,1997-01-04,ESP,Spain,Hoffenheim,Galatasaray,1.0,True
+fm_10693,eafc_11508,Su Yuanjie,1995-04-14,Su Yuanjie,1995-04-14,CHN,China PR,Tianjin,Tianjin Jinmen Tiger,1.0,True
+fm_11360,eafc_3765,Nélson Semedo,1993-11-16,Nélson Semedo,1993-11-16,POR,Portugal,Wolves,Wolverhampton Wanderers,1.0,True
+fm_10679,eafc_11605,Niu Ziyi,1999-09-21,Niu Ziyi,1999-09-21,CHN,China PR,Henan,Henan,1.0,True
+fm_14419,eafc_3082,Munir,1995-09-01,Munir,1995-09-01,MAR,Morocco,Getafe,Las Palmas,1.0,True
+fm_12609,eafc_6303,Vitinho,1999-07-23,Vitinho,1999-07-23,BRA,Brazil,Burnley,Burnley,1.0,True
+fm_10252,eafc_11407,Yin Hongbo,1989-10-30,Yin Hongbo,1989-10-30,CHN,China PR,Meizhou,Meizhou Hakka,1.0,True
+fm_11038,eafc_11547,Li Shenyuan,1997-10-02,Li Shenyuan,1997-10-02,CHN,China PR,SH Port,Shanghai Port,1.0,True
+fm_14223,eafc_5760,Pau Torres,1997-01-16,Pau Torres,1997-01-16,ESP,Spain,Villarreal,Aston Villa,1.0,True
+fm_14751,eafc_9472,Alexsandro Ribeiro,1999-08-09,Alexsandro Ribeiro,1999-08-09,BRA,Brazil,LOSC,Lille,1.0,True
+fm_10962,eafc_11630,He Youzu,1998-10-26,He Youzu,1998-10-26,CHN,China PR,CZ Mighty Lions,Cangzhou Mighty Lions,1.0,True
+fm_14648,eafc_6570,Fran García,1999-08-14,Fran García,1999-08-14,ESP,Spain,Vallecano,Real Madrid,1.0,True
+fm_16575,eafc_8842,Manu Morillo,2003-08-14,Manu Morillo,2003-08-14,ESP,Spain,Real Hispalis,Real Betis,1.0,True
+fm_15702,eafc_7639,Fali Candé,1998-01-24,Fali Candé,1998-01-24,GNB,Guinea Bissau,FC Metz,Metz,1.0,True
+fm_10656,eafc_11354,Yang Yihu,1991-09-16,Yang Yihu,1991-09-16,CHN,China PR,Meizhou,Meizhou Hakka,1.0,True
+fm_6225,eafc_1796,Juan Jesus,1991-06-10,Juan Jesus,1991-06-10,BRA,Brazil,Parthenope,Napoli,1.0,True
+fm_16546,eafc_8872,Naim García,2002-06-11,Naim García,2002-06-11,ESP,Spain,Leganés,Leganés,1.0,True
+fm_14765,eafc_2321,Rubén Sobrino,1992-06-01,Rubén Sobrino,1992-06-01,ESP,Spain,Cádiz,Cádiz,1.0,True
+fm_14195,eafc_4316,Unai Simón,1997-06-11,Unai Simón,1997-06-11,ESP,Spain,A. Bilbao,Athletic Club,1.0,True
+fm_6149,eafc_1870,Felipe Anderson,1993-04-15,Felipe Anderson,1993-04-15,BRA,Brazil,Lazio,Lazio,1.0,True
+fm_10990,eafc_11682,Yan Yu,2002-11-03,Yan Yu,2002-11-03,CHN,China PR,Beijing,Beijing Guoan,1.0,True
+fm_15129,eafc_6489,Andrés Martín,1999-07-11,Andrés Martín,1999-07-11,ESP,Spain,Vallecano,Racing Santander,1.0,True
+fm_11198,eafc_11673,Yang Ruiqi,2004-02-08,Yang Ruiqi,2004-02-08,CHN,China PR,Shandong,Shandong Taishan,1.0,True
+fm_11263,eafc_2380,Fabinho,1993-10-23,Fabinho,1993-10-23,BRA,Brazil,Liverpool,Al Ittihad,1.0,True
+fm_16829,eafc_11099,Jeremy,2005-03-19,Jeremy,2005-03-19,ESP,Spain,R. Santander,Racing Santander,1.0,True
+fm_15715,eafc_7124,Dani Fernández,1997-04-30,Dani Fernández,1997-04-30,ESP,Spain,R. Santander,Racing Santander,1.0,True
+fm_14174,eafc_5927,João Félix,1999-11-10,João Félix,1999-11-10,POR,Portugal,A. Madrid,FC Barcelona,1.0,True
+fm_14650,eafc_5794,Manu Vallejo,1997-02-14,Manu Vallejo,1997-02-14,ESP,Spain,Girona,Real Zaragoza,1.0,True
+fm_14203,eafc_1985,Héctor Bellerín,1995-03-19,Héctor Bellerín,1995-03-19,ESP,Spain,Barcelona,Real Betis,1.0,True
+fm_10734,eafc_11578,Han Dong,2001-03-02,Han Dong,2001-03-02,CHN,China PR,Henan,Henan,1.0,True
+fm_15533,eafc_3486,Jairo,1993-10-22,Jairo,1993-10-22,ESP,Spain,Cartagena,FC Cartagena,1.0,True
+fm_14179,eafc_4731,Marcão,1996-06-05,Marcão,1996-06-05,BRA,Brazil,Sevilla,Sevilla,1.0,True
+fm_10558,eafc_11434,Zhang Wentao,1993-04-14,Zhang Wentao,1993-04-14,CHN,China PR,WH Three Towns,Wuhan Three Towns,1.0,True
 fm_14468,eafc_1107,Joselu,1990-03-27,Joselu,1990-03-27,ESP,Spain,Espanyol,Real Madrid,1.0,True
+fm_14670,eafc_7191,Fer Niño,2000-10-24,Fer Niño,2000-10-24,ESP,Spain,Villarreal,Burgos,1.0,True
+fm_14840,eafc_7120,Riccieli,1998-09-17,Riccieli,1998-09-17,BRA,Brazil,Famalicão,Famalicão,1.0,True
+fm_14170,eafc_5758,Ferran Torres,2000-02-29,Ferran Torres,2000-02-29,ESP,Spain,Barcelona,FC Barcelona,1.0,True
+fm_6375,eafc_5693,Junior Messias,1991-05-13,Junior Messias,1991-05-13,BRA,Brazil,Milan,Genoa,1.0,True
+fm_15462,eafc_5424,Oriol Busquets,1999-01-20,Oriol Busquets,1999-01-20,ESP,Spain,Arouca,Arouca,1.0,True
+fm_10652,eafc_11541,Zhao Jianfei,1999-01-21,Zhao Jianfei,1999-01-21,CHN,China PR,Shandong,Shandong Taishan,1.0,True
+fm_15703,eafc_5021,Pol Valentín,1997-02-21,Pol Valentín,1997-02-21,ESP,Spain,S. Gijón,Sheffield Wednesday,1.0,True
+fm_14270,eafc_2452,Otávio,1995-02-09,Otávio,1995-02-09,POR,Portugal,FC Porto,Al Nassr,1.0,True
+fm_10397,eafc_11496,Zhang Gong,1992-04-10,Zhang Gong,1992-04-10,CHN,China PR,GZ City,Chengdu Rongcheng,1.0,True
+fm_14264,eafc_2662,Alex Telles,1992-12-15,Alex Telles,1992-12-15,BRA,Brazil,Sevilla,Al Nassr,1.0,True
+fm_10318,eafc_11373,Luo Jing,1993-11-04,Luo Jing,1993-11-04,CHN,China PR,CZ Mighty Lions,Wuhan Three Towns,1.0,True
