@@ -12,7 +12,7 @@ import de.uni_mannheim.informatik.dws.winter.model.Matchable;
  * @author Oliver Lehmberg (oli@dwslab.de)
  * 
  */
-public class FM implements Matchable {
+public class Fm implements Matchable {
 
 	/*
 	 * example entry <movie> <id>academy_awards_2</id> <title>True Grit</title>
@@ -36,7 +36,7 @@ public class FM implements Matchable {
 	private int wage;
 	
 
-	public FM(String identifier, String provenance) {
+	public Fm(String identifier, String provenance) {
 		id = identifier;
 		this.provenance = provenance;
 		setPositions(new LinkedList<>());

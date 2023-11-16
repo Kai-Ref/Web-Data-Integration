@@ -31,23 +31,23 @@ import de.uni_mannheim.informatik.dws.winter.model.io.XMLMatchableReader;
  * @author Oliver Lehmberg (oli@dwslab.de)
  * 
  */
-public class TmXMLReader extends XMLMatchableReader<Tm, Attribute>  {
+public class FmXMLReader extends XMLMatchableReader<Fm, Attribute>  {
 
 	/* (non-Javadoc)
 	 * @see de.uni_mannheim.informatik.wdi.model.io.XMLMatchableReader#initialiseDataset(de.uni_mannheim.informatik.wdi.model.DataSet)
 	 */
 	@Override
-	protected void initialiseDataset(DataSet<Tm, Attribute> dataset) {
+	protected void initialiseDataset(DataSet<Fm, Attribute> dataset) {
 		super.initialiseDataset(dataset);
 		
 	}
 	
 	@Override
-	public Tm createModelFromElement(Node node, String provenanceInfo) {
+	public Fm createModelFromElement(Node node, String provenanceInfo) {
 		String id = getValueFromChildElement(node, "id");
 
 		// create the object with id and provenance information
-		Tm player = new Tm(id, provenanceInfo);
+		Fm player = new Fm(id, provenanceInfo);
 
 		// fill the attributes
 		player.setName(getValueFromChildElement(node, "name"));
