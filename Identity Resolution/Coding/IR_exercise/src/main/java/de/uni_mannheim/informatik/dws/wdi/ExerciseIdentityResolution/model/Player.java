@@ -54,8 +54,8 @@ public class Player implements Matchable {
 
 	@Override
 	public boolean equals(Object obj) {
-		if(obj instanceof Movie){
-			return this.getIdentifier().equals(((Movie) obj).getIdentifier());
+		if(obj instanceof Player){
+			return this.getIdentifier().equals(((Player) obj).getIdentifier());
 		}else
 			return false;
 	}

@@ -63,8 +63,8 @@ public class Fc implements Matchable {
 
 	@Override
 	public boolean equals(Object obj) {
-		if(obj instanceof Movie){
-			return this.getIdentifier().equals(((Movie) obj).getIdentifier());
+		if(obj instanceof Fc){
+			return this.getIdentifier().equals(((Fc) obj).getIdentifier());
 		}else
 			return false;
 	}
