@@ -92,7 +92,7 @@ tm_8223,fm_16688,Owen Gene,2003-03-19,Owen Géné,2003-03-19,France,FRA,Amiens S
 tm_3335,fm_10314,Ali Al-Boleahi,1989-11-21,Ali Al-Bulayhi,1989-11-21,Saudi Arabia,KSA,Al-Hilal SFC,Al-Hilal (KSA),0.8499999999999999,True
 tm_1107,fm_1564,Sofiane Djeffal,1999-04-09,Sofiane Djeffal,1999-04-19,France,FRA,Austin FC,D.C. United,0.85,True
 tm_8507,fm_16502,Kévin Mouanga,2000-07-24,Kévin Mouanga,2000-07-27,France,FRA,FC Annecy,FC Annecy,0.85,True
-tm_10705,fm_4250,Belal Halbouni,1999-12-29,Belal Halbouni,1999-12-30,Syria,SYR,1.FC Magdeburg,Magdeburg,0.85,True 
+tm_10705,fm_4250,Belal Halbouni,1999-12-29,Belal Halbouni,1999-12-30,Syria,SYR,1.FC Magdeburg,Magdeburg,0.85,True
 tm_6729,fm_2603,Selim Amallah,1996-11-15,Selim Amallah,1996-11-16,Morocco,MAR,Real Valladolid CF,Standard,0.85,True
 tm_10089,fm_14437,Wesley Moraes,1996-11-24,Wesley Moraes,1996-11-26,Brazil,BRA,Stoke City,Levante,0.85,True
 tm_4909,fm_16322,Iron Gomis,1999-11-09,Iron Gomis,1999-11-08,France,FRA,Kasimpasa,Amiens SC,0.85,True
@@ -121,7 +121,7 @@ tm_6506,fm_6831,Karlo Lulic,1996-05-10,Karlo Lulić,1996-05-10,Croatia,CRO,Frosi
 tm_3689,fm_2946,Saïd Bakari,1994-09-22,Said Bakari,1994-09-22,Comoros,COM,Sparta Rotterdam,RKC Waalwijk,0.9363636363636363,True
 tm_4782,fm_9953,Emir Tintis,2004-01-12,Emir Tintiş,2004-01-12,Turkey,TUR,Fatih Karagümrük,Fatih Karagümrük,0.9363636363636363,True
 tm_10767,fm_3441,Semih Sahin,1999-12-22,Semih Şahin,1999-12-22,Germany,GER,SV 07 Elversberg,SV Elversberg,0.9363636363636363,True
-tm_7128,fm_2075,Wataru Endo,1993-02-09,Wataru Endô,1993-02-09,Japan,JPN,Liverpool FC,VfB Stuttgart,0.9363636363636363,True 
+tm_7128,fm_2075,Wataru Endo,1993-02-09,Wataru Endô,1993-02-09,Japan,JPN,Liverpool FC,VfB Stuttgart,0.9363636363636363,True
 tm_8544,fm_16416,Kevin Tapoko,1994-04-13,Kévin Tapoko,1994-04-13,France,FRA,Stade Lavallois,Stade Lavallois,0.9416666666666667,True
 tm_1965,fm_3585,Omar Sijaric,2001-11-02,Omar Sijarić,2001-11-02,Germany,MNE,FC Erzgebirge Aue,Erzgebirge Aue,0.9416666666666667,True
 tm_1510,fm_1463,Carlos Terán,2000-09-24,Carlos Teran,2000-09-24,Colombia,COL,Chicago Fire FC,Chicago,0.9416666666666667,True
@@ -148,10 +148,10 @@ tm_1023,fm_1216,Brandon Vazquez,1998-10-14,Brandon Vázquez,1998-10-14,United St
 tm_4353,fm_2788,Frederic Ananou,1997-09-20,Fredéric Ananou,1997-09-20,Togo,TOG,Sint-Truidense VV,Hansa Rostock,0.9533333333333334,True
 tm_6969,fm_15845,Carlos Benavidez,1998-03-30,Carlos Benavídez,1998-03-30,Uruguay,URU,Deportivo Alavés,Alavés,0.95625,True
 tm_5634,fm_15538,Massadio Haidara,1992-12-02,Massadio Haïdara,1992-12-02,Mali,MLI,RC Lens,RC Lens,0.95625,True
-tm_2747,fm_3881,Benjamin Kanuric,2003-02-26,Benjamin Kanurić,2003-02-26,Austria,AUT,FC Ingolstadt 04,Arminia Bielefeld,0.95625, True
-tm_9369,fm_15732,Mohamed Bouldini,1995-11-27,Mohammed Bouldini,1995-11-27,Morocco,MAR,Levante UD,Levante,0.9588235294117646, True
-tm_1291,fm_1145,Jaroslaw Niezgoda,1995-03-15,Jarosław Niezgoda,1995-03-15,Poland,POL,Portland Timbers,Portland,0.9588235294117646, True
-tm_4886,fm_9710,Mustafa Eskihellac,1997-05-05,Mustafa Eskihellaç,1997-05-05,Turkey,TUR,Gaziantep FK,Gaziantep FK,0.961111111111111, True
-tm_8075,fm_17290,Grégoire Swiderski,2005-10-05,Grégoire Świderski,2005-10-05,France,FRA,,Bordeaux,0.961111111111111, True
-tm_8457,fm_16358,Jean Lambert Evan's,1998-12-17,Jean-Lambert Evan's,1998-12-17,France,FRA,Pau FC,Pau FC,0.963157894736842, True
-tm_9803,fm_11727,Dimitrios Giannoulis,1995-10-17,Dimitris Giannoulis,1995-10-17,Greece,GRE,Norwich City,Norwich,0.9649999999999999, True
+tm_2747,fm_3881,Benjamin Kanuric,2003-02-26,Benjamin Kanurić,2003-02-26,Austria,AUT,FC Ingolstadt 04,Arminia Bielefeld,0.95625,True
+tm_9369,fm_15732,Mohamed Bouldini,1995-11-27,Mohammed Bouldini,1995-11-27,Morocco,MAR,Levante UD,Levante,0.9588235294117646,True
+tm_1291,fm_1145,Jaroslaw Niezgoda,1995-03-15,Jarosław Niezgoda,1995-03-15,Poland,POL,Portland Timbers,Portland,0.9588235294117646,True
+tm_4886,fm_9710,Mustafa Eskihellac,1997-05-05,Mustafa Eskihellaç,1997-05-05,Turkey,TUR,Gaziantep FK,Gaziantep FK,0.961111111111111,True
+tm_8075,fm_17290,Grégoire Swiderski,2005-10-05,Grégoire Świderski,2005-10-05,France,FRA,,Bordeaux,0.961111111111111,True
+tm_8457,fm_16358,Jean Lambert Evan's,1998-12-17,Jean-Lambert Evan's,1998-12-17,France,FRA,Pau FC,Pau FC,0.963157894736842,True
+tm_9803,fm_11727,Dimitrios Giannoulis,1995-10-17,Dimitris Giannoulis,1995-10-17,Greece,GRE,Norwich City,Norwich,0.9649999999999999,True

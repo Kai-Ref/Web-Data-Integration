@@ -1,69 +1,159 @@
 df1,df2,name1,birthdate1,name2,birthdate2,nat1,nat2,club1,club2,score,match
-eafc_3678,tm_4214,Leonardo Lopes,1998-11-30,Leonardo Lopes,1998-11-30,Portugal,Portugal,Cercle Brugge,Cercle Brugge,1.0,True
-eafc_8888,tm_5230,Tiago Araújo,2001-03-27,Tiago Araújo,2001-03-27,Portugal,Portugal,Estoril,GD Estoril Praia,1.0,True
-eafc_5730,tm_9679,Fran Manzanara,1996-09-12,Fran Manzanara,1996-09-12,Spain,Spain,Racing Ferrol,Racing Ferrol,1.0,True
+eafc_1131,tm_6055,Rui Patrício,1988-02-15,Rui Patrício,1988-02-15,Portugal,Portugal,Roma,AS Roma,1.0,True
+eafc_2250,tm_5471,Marquinhos,1994-05-14,Marquinhos,1994-05-14,Brazil,Brazil,Paris Saint Germain,Paris Saint-Germain,1.0,True
+eafc_10188,tm_5398,Beni,2002-05-21,Beni,2002-05-21,Angola,Angola,Casa Pia,Casa Pia AC,1.0,True
+eafc_7692,tm_5381,Leandro Sanca,2000-01-04,Leandro Sanca,2000-01-04,Portugal,Guinea-Bissau,Chaves,GD Chaves,1.0,True
+eafc_8402,tm_3693,Metinho,2003-04-23,Metinho,2003-04-23,Brazil,Brazil,Sparta Rotterdam,ESTAC Troyes,1.0,True
+eafc_9525,tm_5259,Gonçalo Costa,2000-02-18,Gonçalo Costa,2000-02-18,Portugal,Portugal,Portimonense,Portimonense SC,1.0,True
 eafc_8978,tm_9610,Arnau Ortiz,2001-10-29,Arnau Ortiz,2001-10-29,Spain,Spain,Eldense,Girona FC,1.0,True
-eafc_8475,tm_4413,Miguel Crespo,1996-09-11,Miguel Crespo,1996-09-11,Portugal,Portugal,Fenerbahçe,Fenerbahce,1.0,True
+eafc_2851,tm_5187,Jason,1994-07-06,Jason,1994-07-06,Spain,Spain,Arouca,FC Arouca,1.0,True
+eafc_2107,tm_2401,Djaniny,1991-03-21,Djaniny,1991-03-21,Cape Verde Islands,Cape Verde,Al Fateh,Al-Fateh SC,1.0,True
+eafc_1000,tm_5199,Rúben Fernandes,1986-05-06,Rúben Fernandes,1986-05-06,Portugal,Portugal,Gil Vicente,Gil Vicente FC,1.0,True
+eafc_10707,tm_5357,Hugo Souza,1999-01-31,Hugo Souza,1999-01-31,Brazil,Brazil,Chaves,,1.0,True
+eafc_11000,tm_9574,Juan Gutiérrez,2000-01-28,Juan Gutiérrez,2000-01-28,Spain,Spain,Racing Santander,Racing Santander,1.0,True
 eafc_3085,tm_6915,Iza Carcelén,1993-04-23,Iza Carcelén,1993-04-23,Spain,Spain,Cádiz,Cádiz CF,1.0,True
-eafc_1651,tm_5001,Cláudio Ramos,1991-11-16,Cláudio Ramos,1991-11-16,Portugal,Portugal,Porto,FC Porto,1.0,True
-eafc_2183,tm_5138,César,1992-01-27,César,1992-01-27,Brazil,Brazil,Boavista,Boavista FC,1.0,True
-eafc_9631,tm_5334,Lucas Flores,2002-07-04,Lucas Flores,2002-07-04,Brazil,Brazil,Rio Ave,Rio Ave FC,1.0,True
-eafc_2433,tm_4642,Garry Rodrigues,1990-11-27,Garry Rodrigues,1990-11-27,Cape Verde Islands,Cape Verde,Ankaragücü,MKE Ankaragücü,1.0,True
-eafc_4485,tm_1196,Judson,1993-05-25,Judson,1993-05-25,Brazil,Brazil,San Jose Earthquakes,San Jose Earthquakes,1.0,True
-eafc_6027,tm_9507,Carlos Isaac,1998-04-30,Carlos Isaac,1998-04-30,Spain,Spain,Albacete,Albacete Balompié,1.0,True
-eafc_10249,tm_9363,Carlos Álvarez,2003-08-06,Carlos Álvarez,2003-08-06,Spain,Spain,Levante,Levante UD,1.0,True
-eafc_4948,tm_6499,Pol Lirola,1997-08-13,Pol Lirola,1997-08-13,Spain,Spain,Frosinone,Olympique Marseille,1.0,True
-eafc_5170,tm_5330,Jardel,1997-09-20,Jardel,1997-09-20,Portugal,Guinea-Bissau,Vizela,FC Vizela,1.0,True
-eafc_1169,tm_5375,Rúben Ribeiro,1987-08-01,Rúben Ribeiro,1987-08-01,Portugal,Portugal,Chaves,GD Chaves,1.0,True
-eafc_9362,tm_5054,Rodrigo Ribeiro,2005-04-28,Rodrigo Ribeiro,2005-04-28,Portugal,Portugal,Sporting CP,Sporting CP,1.0,True
-eafc_10246,tm_5219,Depú,2000-01-08,Depú,2000-01-08,Angola,Angola,Gil Vicente,Gil Vicente FC,1.0,True
-eafc_3516,tm_9525,Grego Sierra,1993-03-05,Grego Sierra,1993-03-05,Spain,Spain,Burgos,Burgos CF,1.0,True
+eafc_3955,tm_6566,Mario Hermoso,1995-06-18,Mario Hermoso,1995-06-18,Spain,Spain,Atlético Madrid,Atlético de Madrid,1.0,True
 eafc_9022,tm_6588,Unai Marrero,2001-10-09,Unai Marrero,2001-10-09,Spain,Spain,Real Sociedad,Real Sociedad,1.0,True
-eafc_8836,tm_9627,Diego Moreno,2001-06-21,Diego Moreno,2001-06-21,Spain,Spain,Mirandés,CA Osasuna,1.0,True
-eafc_3452,tm_9481,Iván Calero,1995-04-21,Iván Calero,1995-04-21,Spain,Spain,FC Cartagena,FC Cartagena,1.0,True
-eafc_5368,tm_9534,Dani Ojeda,1994-12-03,Dani Ojeda,1994-12-03,Spain,Spain,Burgos,Burgos CF,1.0,True
-eafc_2090,tm_6658,Denis Suárez,1994-01-06,Denis Suárez,1994-01-06,Spain,Spain,Villarreal,Villarreal CF,1.0,True
-eafc_2775,tm_5004,Fábio Cardoso,1994-04-19,Fábio Cardoso,1994-04-19,Portugal,Portugal,Porto,FC Porto,1.0,True
-eafc_9722,tm_9255,David Torres,2003-03-05,David Torres,2003-03-05,Spain,Spain,Real Valladolid,Real Valladolid CF,1.0,True
-eafc_5040,tm_7214,Douglas Luiz,1998-05-09,Douglas Luiz,1998-05-09,Brazil,Brazil,Aston Villa,Aston Villa,1.0,True
-eafc_11281,tm_3097,Fran Mérida,1990-03-04,Fran Mérida,1990-03-04,Spain,Spain,Tianjin Jinmen Tiger,Tianjin Jinmen Tiger,1.0,True
+eafc_3507,tm_5063,Adrián Marín,1997-01-09,Adrián Marín,1997-01-09,Spain,Spain,Sporting Braga,SC Braga,1.0,True
+eafc_1577,tm_6688,Willian José,1991-11-23,Willian José,1991-11-23,Brazil,Brazil,Real Betis,Real Betis Balompié,1.0,True
+eafc_9408,tm_9413,Iván Gil,2000-01-18,Iván Gil,2000-01-18,Spain,Spain,FC Andorra,FC Andorra,1.0,True
+eafc_7369,tm_6230,Matheus Henrique,1997-12-19,Matheus Henrique,1997-12-19,Brazil,Brazil,Sassuolo,US Sassuolo,1.0,True
+eafc_1651,tm_5001,Cláudio Ramos,1991-11-16,Cláudio Ramos,1991-11-16,Portugal,Portugal,Porto,FC Porto,1.0,True
+eafc_9910,tm_3886,Diego Gustavo,2004-06-19,Diego Gustavo,2004-06-19,Brazil,Brazil,FC Volendam,FC Volendam,1.0,True
+eafc_9200,tm_6091,Éderson,1999-07-07,Éderson,1999-07-07,Brazil,Brazil,Atalanta,Atalanta BC,1.0,True
+eafc_7842,tm_6887,Pep Chavarría,1998-04-10,Pep Chavarría,1998-04-10,Spain,Spain,Rayo Vallecano,Rayo Vallecano,1.0,True
+eafc_3025,tm_7204,Diego Carlos,1993-03-15,Diego Carlos,1993-03-15,Brazil,Brazil,Aston Villa,Aston Villa,1.0,True
+eafc_9145,tm_5022,Gonçalo Borges,2001-03-29,Gonçalo Borges,2001-03-29,Portugal,Portugal,Porto,FC Porto,1.0,True
 eafc_8017,tm_8981,Pablo Rodríguez,2001-08-04,Pablo Rodríguez,2001-08-04,Spain,Spain,Ascoli,US Lecce,1.0,True
 eafc_2068,tm_9269,Iván Sánchez,1992-09-23,Iván Sánchez,1992-09-23,Spain,Spain,Real Valladolid,Real Valladolid CF,1.0,True
-eafc_10437,tm_9367,Andrés García,2003-02-07,Andrés García,2003-02-07,Spain,Spain,Levante,Levante UD,1.0,True
-eafc_2662,tm_3397,Alex Telles,1992-12-15,Alex Telles,1992-12-15,Brazil,Brazil,Al Nassr,Al-Nassr FC,1.0,True
-eafc_8837,tm_9419,Iker Benito,2002-08-10,Iker Benito,2002-08-10,Spain,Spain,FC Andorra,CA Osasuna,1.0,True
-eafc_8401,tm_6860,Kaiky,2004-01-12,Kaiky,2004-01-12,Brazil,Brazil,Almería,UD Almería,1.0,True
-eafc_8820,tm_6775,Hugo Sotelo,2003-12-19,Hugo Sotelo,2003-12-19,Spain,Spain,Celta de Vigo,Celta de Vigo,1.0,True
-eafc_3935,tm_3763,Manel Royo,1994-02-28,Manel Royo,1994-02-28,Spain,Spain,Almere City,Almere City FC,1.0,True
-eafc_3954,tm_9222,Josan,1989-12-03,Josan,1989-12-03,Spain,Spain,Elche,Elche CF,1.0,True
-eafc_2217,tm_6339,Pablo Marí,1993-08-31,Pablo Marí,1993-08-31,Spain,Spain,Monza,AC Monza,1.0,True
-eafc_7818,tm_7962,Dudu,1999-02-10,Dudu,1999-02-10,Germany,Germany,Werder Bremen,SV Werder Bremen,1.0,True
-eafc_1107,tm_6541,Joselu,1990-03-27,Joselu,1990-03-27,Spain,Spain,Real Madrid,RCD Espanyol Barcelona,1.0,True
-eafc_5850,tm_5057,Tiago Sá,1995-01-11,Tiago Sá,1995-01-11,Portugal,Portugal,Sporting Braga,SC Braga,1.0,True
-eafc_8477,tm_5017,André Franco,1998-04-12,André Franco,1998-04-12,Portugal,Portugal,Porto,FC Porto,1.0,True
-eafc_2953,tm_3767,Álvaro Peña,1991-10-24,Álvaro Peña,1991-10-24,Spain,Spain,Almere City,Almere City FC,1.0,True
-eafc_2208,tm_6753,Moi Gómez,1994-06-23,Moi Gómez,1994-06-23,Spain,Spain,Osasuna,CA Osasuna,1.0,True
-eafc_2923,tm_5008,Wendell,1993-07-20,Wendell,1993-07-20,Brazil,Brazil,Porto,FC Porto,1.0,True
-eafc_3955,tm_6566,Mario Hermoso,1995-06-18,Mario Hermoso,1995-06-18,Spain,Spain,Atlético Madrid,Atlético de Madrid,1.0,True
-eafc_2250,tm_5471,Marquinhos,1994-05-14,Marquinhos,1994-05-14,Brazil,Brazil,Paris Saint Germain,Paris Saint-Germain,1.0,True
-eafc_9145,tm_5022,Gonçalo Borges,2001-03-29,Gonçalo Borges,2001-03-29,Portugal,Portugal,Porto,FC Porto,1.0,True
-eafc_10188,tm_5398,Beni,2002-05-21,Beni,2002-05-21,Angola,Angola,Casa Pia,Casa Pia AC,1.0,True
-eafc_7931,tm_3378,Gabri Veiga,2002-05-27,Gabri Veiga,2002-05-27,Spain,Spain,Al Ahli Jeddah,Al-Ahli SFC,1.0,True
-eafc_2965,tm_3636,Mica Pinto,1993-06-04,Mica Pinto,1993-06-04,Luxembourg,Luxembourg,Vitesse,Vitesse Arnhem,1.0,True
-eafc_7842,tm_6887,Pep Chavarría,1998-04-10,Pep Chavarría,1998-04-10,Spain,Spain,Rayo Vallecano,Rayo Vallecano,1.0,True
-eafc_2851,tm_5187,Jason,1994-07-06,Jason,1994-07-06,Spain,Spain,Arouca,FC Arouca,1.0,True
-eafc_6375,tm_9246,Stoichkov,1993-11-05,Stoichkov,1993-11-05,Spain,Spain,SD Eibar,SD Eibar,1.0,True
-eafc_4316,tm_6689,Unai Simón,1997-06-11,Unai Simón,1997-06-11,Spain,Spain,Athletic Club,Athletic Bilbao,1.0,True
-eafc_1131,tm_6055,Rui Patrício,1988-02-15,Rui Patrício,1988-02-15,Portugal,Portugal,Roma,AS Roma,1.0,True
-eafc_5190,tm_2207,Nouhou,1997-06-23,Nouhou,1997-06-23,Cameroon,Cameroon,Seattle Sounders,Seattle Sounders FC,1.0,True
-eafc_4649,tm_4494,Léo Duarte,1996-07-17,Léo Duarte,1996-07-17,Brazil,Brazil,İstanbul Başakşehir,Basaksehir FK,1.0,True
-eafc_7022,tm_5088,Francisco Moura,1999-08-16,Francisco Moura,1999-08-16,Portugal,Portugal,Famalicão,FC Famalicão,1.0,True
-eafc_7639,tm_5925,Fali Candé,1998-01-24,Fali Candé,1998-01-24,Guinea Bissau,Guinea-Bissau,Metz,FC Metz,1.0,True
-eafc_8971,tm_6684,Luiz Henrique,2001-01-02,Luiz Henrique,2001-01-02,Brazil,Brazil,Real Betis,Real Betis Balompié,1.0,True
+eafc_9631,tm_5334,Lucas Flores,2002-07-04,Lucas Flores,2002-07-04,Brazil,Brazil,Rio Ave,Rio Ave FC,1.0,True
+eafc_1076,tm_5353,Ukra,1988-03-16,Ukra,1988-03-16,Portugal,Portugal,Rio Ave,Rio Ave FC,1.0,True
+eafc_7343,tm_9408,Migue Leal,1997-02-01,Migue Leal,1997-02-01,Spain,Spain,FC Andorra,FC Andorra,1.0,True
+eafc_2183,tm_5138,César,1992-01-27,César,1992-01-27,Brazil,Brazil,Boavista,Boavista FC,1.0,True
+eafc_2155,tm_2214,João Paulo,1991-03-08,João Paulo,1991-03-08,Brazil,Brazil,Seattle Sounders,Seattle Sounders FC,1.0,True
+eafc_1713,tm_2128,Ilie Sánchez,1990-11-21,Ilie Sánchez,1990-11-21,Spain,Spain,Los Angeles FC,Los Angeles FC,1.0,True
+eafc_1029,tm_6620,Sergio Ramos,1986-03-30,Sergio Ramos,1986-03-30,Spain,Spain,Sevilla,Sevilla FC,1.0,True
 eafc_5525,tm_7010,Rúben Dias,1997-05-14,Rúben Dias,1997-05-14,Portugal,Portugal,Manchester City,Manchester City,1.0,True
-eafc_7911,tm_6026,Carlos Augusto,1999-01-07,Carlos Augusto,1999-01-07,Brazil,Brazil,Inter,AC Monza,1.0,True
-eafc_9408,tm_9413,Iván Gil,2000-01-18,Iván Gil,2000-01-18,Spain,Spain,FC Andorra,FC Andorra,1.0,True
-eafc_2157,tm_6878,Léo Baptistão,1992-08-26,Léo Baptistão,1992-08-26,Brazil,Brazil,Almería,UD Almería,1.0,True
-eafc_5023,tm_7004,Marc Cardona,1995-07-08,Marc Cardona,1995-07-08,Spain,Spain,Las Palmas,UD Las Palmas,1.0,True
-eafc_3625,tm_6906,David Gil,1994-01-11,David Gil,1994-01-11,Spain,Spain,Cádiz,Cádiz CF,1.0,True
+eafc_7216,tm_9195,Nico Melamed,2001-04-11,Nico Melamed,2001-04-11,Spain,Spain,Espanyol,RCD Espanyol Barcelona,1.0,True
+eafc_7912,tm_9453,Rubén Pulido,2000-09-02,Rubén Pulido,2000-09-02,Spain,Spain,Huesca,SD Huesca,1.0,True
+eafc_5091,tm_9661,Josué Dorrio,1994-03-03,Josué Dorrio,1994-03-03,Spain,Spain,Amorebieta,SD Amorebieta,1.0,True
+eafc_8401,tm_6860,Kaiky,2004-01-12,Kaiky,2004-01-12,Brazil,Brazil,Almería,UD Almería,1.0,True
+eafc_2923,tm_5008,Wendell,1993-07-20,Wendell,1993-07-20,Brazil,Brazil,Porto,FC Porto,1.0,True
+eafc_3453,tm_6630,Joan Jordán,1994-07-06,Joan Jordán,1994-07-06,Spain,Spain,Sevilla,Sevilla FC,1.0,True
+eafc_7448,tm_5481,Vitinha,2000-02-13,Vitinha,2000-02-13,Portugal,Portugal,Paris Saint Germain,Paris Saint-Germain,1.0,True
+eafc_7818,tm_7962,Dudu,1999-02-10,Dudu,1999-02-10,Germany,Germany,Werder Bremen,SV Werder Bremen,1.0,True
+eafc_3678,tm_4214,Leonardo Lopes,1998-11-30,Leonardo Lopes,1998-11-30,Portugal,Portugal,Cercle Brugge,Cercle Brugge,1.0,True
+eafc_7215,tm_5437,Bruno Duarte,1996-03-24,Bruno Duarte,1996-03-24,Brazil,Brazil,Farense,SC Farense,1.0,True
+eafc_7836,tm_5278,Kewin,1995-01-25,Kewin,1995-01-25,Brazil,Brazil,Moreirense,Moreirense FC,1.0,True
+eafc_5366,tm_6942,Wilson Manafá,1994-07-23,Wilson Manafá,1994-07-23,Portugal,Portugal,Granada,Granada CF,1.0,True
+eafc_8819,tm_9641,Alan Godoy,2003-05-04,Alan Godoy,2003-05-04,Spain,Spain,Mirandés,Deportivo Alavés,1.0,True
+eafc_6268,tm_5130,João Mendes,1994-10-21,João Mendes,1994-10-21,Portugal,Portugal,Vitória SC,Vitória Guimarães SC,1.0,True
+eafc_3452,tm_9481,Iván Calero,1995-04-21,Iván Calero,1995-04-21,Spain,Spain,FC Cartagena,FC Cartagena,1.0,True
+eafc_8837,tm_9419,Iker Benito,2002-08-10,Iker Benito,2002-08-10,Spain,Spain,FC Andorra,CA Osasuna,1.0,True
+eafc_5368,tm_9534,Dani Ojeda,1994-12-03,Dani Ojeda,1994-12-03,Spain,Spain,Burgos,Burgos CF,1.0,True
+eafc_5695,tm_6994,Fabio González,1997-02-12,Fabio González,1997-02-12,Spain,Spain,Las Palmas,UD Las Palmas,1.0,True
+eafc_10095,tm_4987,João Neves,2004-09-27,João Neves,2004-09-27,Portugal,Portugal,Benfica,SL Benfica,1.0,True
+eafc_9471,tm_5333,Magrão,2000-05-15,Magrão,2000-05-15,Brazil,Brazil,Rio Ave,Rio Ave FC,1.0,True
+eafc_1718,tm_6552,Oriol Romeu,1991-09-24,Oriol Romeu,1991-09-24,Spain,Spain,FC Barcelona,FC Barcelona,1.0,True
+eafc_4316,tm_6689,Unai Simón,1997-06-11,Unai Simón,1997-06-11,Spain,Spain,Athletic Club,Athletic Bilbao,1.0,True
+eafc_2965,tm_3636,Mica Pinto,1993-06-04,Mica Pinto,1993-06-04,Luxembourg,Luxembourg,Vitesse,Vitesse Arnhem,1.0,True
+eafc_7510,tm_5384,Lucas Paes,1997-12-07,Lucas Paes,1997-12-07,Brazil,Brazil,Casa Pia,Casa Pia AC,1.0,True
 eafc_1330,tm_4675,Nélson Oliveira,1991-08-08,Nélson Oliveira,1991-08-08,Portugal,Portugal,Konyaspor,Konyaspor,1.0,True
+eafc_6737,tm_4391,Tetê,2000-02-15,Tetê,2000-02-15,Brazil,Brazil,Galatasaray,Galatasaray,1.0,True
+eafc_2217,tm_6339,Pablo Marí,1993-08-31,Pablo Marí,1993-08-31,Spain,Spain,Monza,AC Monza,1.0,True
+eafc_4457,tm_1061,Tony Alfaro,1993-06-15,Tony Alfaro,1993-06-15,Mexico,Mexico,LA Galaxy,Los Angeles Galaxy,1.0,True
+eafc_5190,tm_2207,Nouhou,1997-06-23,Nouhou,1997-06-23,Cameroon,Cameroon,Seattle Sounders,Seattle Sounders FC,1.0,True
+eafc_8477,tm_5017,André Franco,1998-04-12,André Franco,1998-04-12,Portugal,Portugal,Porto,FC Porto,1.0,True
+eafc_5040,tm_7214,Douglas Luiz,1998-05-09,Douglas Luiz,1998-05-09,Brazil,Brazil,Aston Villa,Aston Villa,1.0,True
+eafc_3254,tm_6468,Paulo Azzi,1994-07-15,Paulo Azzi,1994-07-15,Brazil,Brazil,Cagliari,Cagliari Calcio,1.0,True
+eafc_1758,tm_7098,Casemiro,1992-02-23,Casemiro,1992-02-23,Brazil,Brazil,Manchester United,Manchester United,1.0,True
+eafc_10664,tm_5450,Hevertton,2001-02-01,Hevertton,2001-02-01,Brazil,Brazil,Estrela Amadora,CF Estrela Amadora SAD,1.0,True
+eafc_3236,tm_9516,Juanma García,1993-02-20,Juanma García,1993-02-20,Spain,Spain,Albacete,Albacete Balompié,1.0,True
+eafc_7125,tm_5045,Daniel Bragança,1999-05-27,Daniel Bragança,1999-05-27,Portugal,Portugal,Sporting CP,Sporting CP,1.0,True
+eafc_4334,tm_1234,Fafà Picault,1991-02-23,Fafà Picault,1991-02-23,Haiti,Haiti,Nashville SC,Nashville SC,1.0,True
+eafc_3954,tm_9222,Josan,1989-12-03,Josan,1989-12-03,Spain,Spain,Elche,Elche CF,1.0,True
+eafc_3899,tm_9435,Àlex Corredera,1996-03-19,Àlex Corredera,1996-03-19,Spain,Spain,Tenerife,CD Tenerife,1.0,True
+eafc_10246,tm_5219,Depú,2000-01-08,Depú,2000-01-08,Angola,Angola,Gil Vicente,Gil Vicente FC,1.0,True
+eafc_8888,tm_5230,Tiago Araújo,2001-03-27,Tiago Araújo,2001-03-27,Portugal,Portugal,Estoril,GD Estoril Praia,1.0,True
+eafc_4441,tm_9266,Joni Montiel,1998-09-03,Joni Montiel,1998-09-03,Spain,Spain,Real Valladolid,Rayo Vallecano,1.0,True
+eafc_2157,tm_6878,Léo Baptistão,1992-08-26,Léo Baptistão,1992-08-26,Brazil,Brazil,Almería,UD Almería,1.0,True
+eafc_6682,tm_1128,Rafael Santos,1998-02-05,Rafael Santos,1998-02-05,Brazil,Brazil,Orlando City,Orlando City SC,1.0,True
+eafc_2883,tm_6700,Dani García,1990-05-24,Dani García,1990-05-24,Spain,Spain,Athletic Club,Athletic Bilbao,1.0,True
+eafc_10189,tm_9354,Álex Valle,2004-04-25,Álex Valle,2004-04-25,Spain,Spain,Levante,FC Barcelona,1.0,True
+eafc_4002,tm_9339,Fran Villalba,1998-05-11,Fran Villalba,1998-05-11,Spain,Spain,Sporting Gijón,Sporting Gijón,1.0,True
+eafc_2208,tm_6753,Moi Gómez,1994-06-23,Moi Gómez,1994-06-23,Spain,Spain,Osasuna,CA Osasuna,1.0,True
+eafc_6145,tm_9584,Iñigo Vicente,1998-01-06,Iñigo Vicente,1998-01-06,Spain,Spain,Racing Santander,Racing Santander,1.0,True
+eafc_7911,tm_6026,Carlos Augusto,1999-01-07,Carlos Augusto,1999-01-07,Brazil,Brazil,Inter,AC Monza,1.0,True
+eafc_10437,tm_9367,Andrés García,2003-02-07,Andrés García,2003-02-07,Spain,Spain,Levante,Levante UD,1.0,True
+eafc_5738,tm_9772,Junior Firpo,1996-08-22,Junior Firpo,1996-08-22,Spain,Dominican Republic,Leeds United,Leeds United,1.0,True
+eafc_5170,tm_5330,Jardel,1997-09-20,Jardel,1997-09-20,Portugal,Guinea-Bissau,Vizela,FC Vizela,1.0,True
+eafc_1107,tm_6541,Joselu,1990-03-27,Joselu,1990-03-27,Spain,Spain,Real Madrid,RCD Espanyol Barcelona,1.0,True
+eafc_10011,tm_7127,Stefan Bajcetic,2004-10-22,Stefan Bajcetic,2004-10-22,Spain,Spain,Liverpool,Liverpool FC,1.0,True
+eafc_7074,tm_5343,Costinha,2000-03-26,Costinha,2000-03-26,Portugal,Portugal,Rio Ave,Rio Ave FC,1.0,True
+eafc_2433,tm_4642,Garry Rodrigues,1990-11-27,Garry Rodrigues,1990-11-27,Cape Verde Islands,Cape Verde,Ankaragücü,MKE Ankaragücü,1.0,True
+eafc_3625,tm_6906,David Gil,1994-01-11,David Gil,1994-01-11,Spain,Spain,Cádiz,Cádiz CF,1.0,True
+eafc_11281,tm_3097,Fran Mérida,1990-03-04,Fran Mérida,1990-03-04,Spain,Spain,Tianjin Jinmen Tiger,Tianjin Jinmen Tiger,1.0,True
+eafc_7129,tm_5335,Patrick William,1997-06-03,Patrick William,1997-06-03,Brazil,Brazil,Rio Ave,Rio Ave FC,1.0,True
+eafc_8420,tm_6766,Carlos Domínguez,2001-02-11,Carlos Domínguez,2001-02-11,Spain,Spain,Celta de Vigo,Celta de Vigo,1.0,True
+eafc_2744,tm_5374,João Pedro,1993-04-03,João Pedro,1993-04-03,Portugal,Portugal,Chaves,GD Chaves,1.0,True
+eafc_1794,tm_6525,Nacho Fernández,1990-01-18,Nacho Fernández,1990-01-18,Spain,Spain,Real Madrid,Real Madrid,1.0,True
+eafc_11080,tm_5404,Jajá,2001-04-15,Jajá,2001-04-15,Brazil,Brazil,Casa Pia,,1.0,True
+eafc_7808,tm_5173,Weverson,2000-07-05,Weverson,2000-07-05,Brazil,Brazil,Arouca,FC Arouca,1.0,True
+eafc_8541,tm_9618,Ramón Juan,1999-12-10,Ramón Juan,1999-12-10,Spain,Spain,Mirandés,CD Mirandés,1.0,True
+eafc_10228,tm_9576,Mario García,2003-10-02,Mario García,2003-10-02,Spain,Spain,Racing Santander,,1.0,True
+eafc_1590,tm_6936,Ignasi Miquel,1992-09-28,Ignasi Miquel,1992-09-28,Spain,Spain,Granada,Granada CF,1.0,True
+eafc_8769,tm_6671,Abner,2000-05-27,Abner,2000-05-27,Brazil,Brazil,Real Betis,Real Betis Balompié,1.0,True
+eafc_10249,tm_9363,Carlos Álvarez,2003-08-06,Carlos Álvarez,2003-08-06,Spain,Spain,Levante,Levante UD,1.0,True
+eafc_10803,tm_9318,Alemão,1998-04-01,Alemão,1998-04-01,Brazil,Brazil,Real Oviedo,,1.0,True
+eafc_10443,tm_9668,David Castro,1995-10-09,David Castro,1995-10-09,Spain,Spain,Racing Ferrol,Racing Ferrol,1.0,True
+eafc_6885,tm_6947,Sergio Ruiz,1994-12-16,Sergio Ruiz,1994-12-16,Spain,Spain,Granada,Granada CF,1.0,True
+eafc_10819,tm_5261,Guga,2003-10-23,Guga,2003-10-23,Portugal,Portugal,Portimonense,Portimonense SC,1.0,True
+eafc_7639,tm_5925,Fali Candé,1998-01-24,Fali Candé,1998-01-24,Guinea Bissau,Guinea-Bissau,Metz,FC Metz,1.0,True
+eafc_9949,tm_5120,Zé Carlos,2001-10-30,Zé Carlos,2001-10-30,Portugal,Portugal,Vitória SC,Vitória Guimarães SC,1.0,True
+eafc_7839,tm_5255,Pedrão,1997-05-03,Pedrão,1997-05-03,Brazil,Brazil,Portimonense,Portimonense SC,1.0,True
+eafc_8488,tm_9711,Koldo Obieta,1993-10-08,Koldo Obieta,1993-10-08,Spain,Spain,Alcorcón,AD Alcorcón,1.0,True
+eafc_9362,tm_5054,Rodrigo Ribeiro,2005-04-28,Rodrigo Ribeiro,2005-04-28,Portugal,Portugal,Sporting CP,Sporting CP,1.0,True
+eafc_2775,tm_5004,Fábio Cardoso,1994-04-19,Fábio Cardoso,1994-04-19,Portugal,Portugal,Porto,FC Porto,1.0,True
+eafc_8774,tm_5186,Miguel Puche,2001-04-30,Miguel Puche,2001-04-30,Spain,Spain,Arouca,FC Arouca,1.0,True
+eafc_6027,tm_9507,Carlos Isaac,1998-04-30,Carlos Isaac,1998-04-30,Spain,Spain,Albacete,Albacete Balompié,1.0,True
+eafc_8257,tm_6793,Arnau Martínez,2003-04-25,Arnau Martínez,2003-04-25,Spain,Spain,Girona,Girona FC,1.0,True
+eafc_8971,tm_6684,Luiz Henrique,2001-01-02,Luiz Henrique,2001-01-02,Brazil,Brazil,Real Betis,Real Betis Balompié,1.0,True
+eafc_11440,tm_3324,Romário Baldé,1996-12-25,Romário Baldé,1996-12-25,Guinea Bissau,Guinea-Bissau,Nantong Zhiyun,Nantong Zhiyun,1.0,True
+eafc_10178,tm_5126,Gonçalo Nogueira,2003-12-28,Gonçalo Nogueira,2003-12-28,Portugal,Portugal,Vitória SC,Vitória Guimarães SC,1.0,True
+eafc_1567,tm_9295,Sergi Enrich,1990-02-26,Sergi Enrich,1990-02-26,Spain,Spain,Real Zaragoza,Real Zaragoza,1.0,True
+eafc_2953,tm_3767,Álvaro Peña,1991-10-24,Álvaro Peña,1991-10-24,Spain,Spain,Almere City,Almere City FC,1.0,True
+eafc_5463,tm_6421,Jordi Mboula,1999-03-16,Jordi Mboula,1999-03-16,Spain,Spain,Hellas Verona,Hellas Verona,1.0,True
+eafc_4284,tm_4767,Gustavo Sauer,1993-04-30,Gustavo Sauer,1993-04-30,Brazil,Brazil,Rizespor,,1.0,True
+eafc_4281,tm_5039,Matheus Reis,1995-02-18,Matheus Reis,1995-02-18,Brazil,Brazil,Sporting CP,Sporting CP,1.0,True
+eafc_1379,tm_9425,Tomeu Nadal,1989-02-08,Tomeu Nadal,1989-02-08,Spain,Spain,Tenerife,CD Tenerife,1.0,True
+eafc_4593,tm_6558,Raphinha,1996-12-14,Raphinha,1996-12-14,Brazil,Brazil,FC Barcelona,FC Barcelona,1.0,True
+eafc_5850,tm_5057,Tiago Sá,1995-01-11,Tiago Sá,1995-01-11,Portugal,Portugal,Sporting Braga,SC Braga,1.0,True
+eafc_5333,tm_4401,Rodrigo Becão,1996-01-19,Rodrigo Becão,1996-01-19,Brazil,Brazil,Fenerbahçe,Fenerbahce,1.0,True
+eafc_7022,tm_5088,Francisco Moura,1999-08-16,Francisco Moura,1999-08-16,Portugal,Portugal,Famalicão,FC Famalicão,1.0,True
+eafc_6666,tm_5025,Fran Navarro,1998-02-03,Fran Navarro,1998-02-03,Spain,Spain,Porto,FC Porto,1.0,True
+eafc_5023,tm_7004,Marc Cardona,1995-07-08,Marc Cardona,1995-07-08,Spain,Spain,Las Palmas,UD Las Palmas,1.0,True
+eafc_3516,tm_9525,Grego Sierra,1993-03-05,Grego Sierra,1993-03-05,Spain,Spain,Burgos,Burgos CF,1.0,True
+eafc_4948,tm_6499,Pol Lirola,1997-08-13,Pol Lirola,1997-08-13,Spain,Spain,Frosinone,Olympique Marseille,1.0,True
+eafc_4649,tm_4494,Léo Duarte,1996-07-17,Léo Duarte,1996-07-17,Brazil,Brazil,İstanbul Başakşehir,Basaksehir FK,1.0,True
+eafc_2082,tm_6805,Portu,1992-05-21,Portu,1992-05-21,Spain,Spain,Girona,Girona FC,1.0,True
+eafc_5329,tm_1179,Daniel,1994-05-06,Daniel,1994-05-06,Brazil,Brazil,San Jose Earthquakes,San Jose Earthquakes,1.0,True
+eafc_2662,tm_3397,Alex Telles,1992-12-15,Alex Telles,1992-12-15,Brazil,Brazil,Al Nassr,Al-Nassr FC,1.0,True
+eafc_10958,tm_9691,Lucas Anacker,1996-09-22,Lucas Anacker,1996-09-22,Brazil,Brazil,Alcorcón,AD Alcorcón,1.0,True
+eafc_3935,tm_3763,Manel Royo,1994-02-28,Manel Royo,1994-02-28,Spain,Spain,Almere City,Almere City FC,1.0,True
+eafc_6375,tm_9246,Stoichkov,1993-11-05,Stoichkov,1993-11-05,Spain,Spain,SD Eibar,SD Eibar,1.0,True
+eafc_4692,tm_5483,Carlos Soler,1997-01-02,Carlos Soler,1997-01-02,Spain,Spain,Paris Saint Germain,Paris Saint-Germain,1.0,True
+eafc_2634,tm_5041,Ricardo Esgaio,1993-05-16,Ricardo Esgaio,1993-05-16,Portugal,Portugal,Sporting CP,Sporting CP,1.0,True
+eafc_3629,tm_9197,Pere Milla,1992-09-23,Pere Milla,1992-09-23,Spain,Spain,Espanyol,RCD Espanyol Barcelona,1.0,True
+eafc_5730,tm_9679,Fran Manzanara,1996-09-12,Fran Manzanara,1996-09-12,Spain,Spain,Racing Ferrol,Racing Ferrol,1.0,True
+eafc_9722,tm_9255,David Torres,2003-03-05,David Torres,2003-03-05,Spain,Spain,Real Valladolid,Real Valladolid CF,1.0,True
+eafc_8475,tm_4413,Miguel Crespo,1996-09-11,Miguel Crespo,1996-09-11,Portugal,Portugal,Fenerbahçe,Fenerbahce,1.0,True
+eafc_8820,tm_6775,Hugo Sotelo,2003-12-19,Hugo Sotelo,2003-12-19,Spain,Spain,Celta de Vigo,Celta de Vigo,1.0,True
+eafc_8836,tm_9627,Diego Moreno,2001-06-21,Diego Moreno,2001-06-21,Spain,Spain,Mirandés,CA Osasuna,1.0,True
+eafc_1169,tm_5375,Rúben Ribeiro,1987-08-01,Rúben Ribeiro,1987-08-01,Portugal,Portugal,Chaves,GD Chaves,1.0,True
+eafc_2090,tm_6658,Denis Suárez,1994-01-06,Denis Suárez,1994-01-06,Spain,Spain,Villarreal,Villarreal CF,1.0,True
+eafc_10035,tm_6604,Pablo Marín,2003-07-03,Pablo Marín,2003-07-03,Spain,Spain,Real Sociedad,,1.0,True
+eafc_1683,tm_9474,Raúl Lizoain,1991-01-27,Raúl Lizoain,1991-01-27,Spain,Spain,FC Cartagena,FC Andorra,1.0,True
+eafc_7931,tm_3378,Gabri Veiga,2002-05-27,Gabri Veiga,2002-05-27,Spain,Spain,Al Ahli Jeddah,Al-Ahli SFC,1.0,True
+eafc_4485,tm_1196,Judson,1993-05-25,Judson,1993-05-25,Brazil,Brazil,San Jose Earthquakes,San Jose Earthquakes,1.0,True
+eafc_2330,tm_6631,Óliver Torres,1994-11-10,Óliver Torres,1994-11-10,Spain,Spain,Sevilla,Sevilla FC,1.0,True
+eafc_5693,tm_6304,Junior Messias,1991-05-13,Junior Messias,1991-05-13,Brazil,Brazil,Genoa,AC Milan,1.0,True
