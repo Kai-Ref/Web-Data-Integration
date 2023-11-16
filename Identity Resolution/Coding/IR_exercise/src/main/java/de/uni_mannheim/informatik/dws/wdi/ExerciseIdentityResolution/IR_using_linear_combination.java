@@ -7,6 +7,8 @@ import org.slf4j.Logger;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking.MovieBlockingKeyByTitleGenerator;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.MovieDateComparator2Years;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.MovieTitleComparatorJaccard;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Fc;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.FcXMLReader;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Fm;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.FmXMLReader;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Movie;
@@ -58,16 +60,20 @@ public class IR_using_linear_combination
 		
 		HashedDataSet<Tm, Attribute> dataTm = new HashedDataSet<>();
 		new TmXMLReader().loadFromXML(new File("data/input/tm_final.xml"), "/players/player", dataTm);
+		
 		HashedDataSet<Fm, Attribute> dataFm = new HashedDataSet<>();
 		new FmXMLReader().loadFromXML(new File("data/input/fm23_final.xml"), "/players/player", dataFm);
 		
-		System.out.println("*\tContent of dataTm\t*");
+		HashedDataSet<Fc, Attribute> dataFc = new HashedDataSet<>();
+		new FcXMLReader().loadFromXML(new File("data/input/eafc_final.xml"), "/players/player", dataFc);
+		
+		
+		System.out.println("*\tContent of dataFm\t*");
 		int i = 0;
-		for (Fm fm : dataFm.get()) {
-		    System.out.println("Record: " + fm.toString()); // or print specific attributes
+		for (Fc fc : dataFc.get()) {
+		    System.out.println("Record: " + fc.toString()); // or print specific attributes
 		    i++;
 		    System.out.println(i);
-
 		}
 
 		// load the gold standard (test set)

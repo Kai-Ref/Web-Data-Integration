@@ -12,7 +12,7 @@ import de.uni_mannheim.informatik.dws.winter.model.Matchable;
  * @author Oliver Lehmberg (oli@dwslab.de)
  * 
  */
-public class Fm implements Matchable {
+public class Fc implements Matchable {
 
 	/*
 	 * example entry <movie> <id>academy_awards_2</id> <title>True Grit</title>
@@ -33,10 +33,13 @@ public class Fm implements Matchable {
 	private String club;
 	private int height;
 	private String preferred_foot;
+	private int current_market_value;
 	private int wage;
+	private int jersey_number;
+
 	
 
-	public Fm(String identifier, String provenance) {
+	public Fc(String identifier, String provenance) {
 		id = identifier;
 		this.provenance = provenance;
 		setPositions(new LinkedList<>());
@@ -154,11 +157,30 @@ public class Fm implements Matchable {
 		this.wage = wage;
 	}
 	
-	@Override
-	public String toString() {
-	    return "Tm attribute1=" + name;
+
+	public int getCurrent_market_value() {
+		return current_market_value;
+	}
+
+	public void setCurrent_market_value(int current_market_value) {
+		this.current_market_value = current_market_value;
+	}
+
+	public int getJersey_number() {
+		return jersey_number;
+	}
+
+	public void setJersey_number(int jersey_number) {
+		this.jersey_number = jersey_number;
 	}
 	
+	
+	
+	@Override
+	public String toString() {
+	    return "Fc attribute1=" + name;
+	}
+
 	
 	
 }

@@ -121,7 +121,7 @@ public class Tm implements Matchable {
 	
 	@Override
 	public String toString() {
-	    return "Tm [attribute1=" + name;
+	    return "Tm attribute1=" + name;
 	}
 	
 	
