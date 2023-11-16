@@ -119,6 +119,11 @@ public class Tm implements Matchable {
 		this.positions = positions;
 	}
 	
+	@Override
+	public String toString() {
+	    return "Tm [attribute1=" + name;
+	}
+	
 	
 	
 }

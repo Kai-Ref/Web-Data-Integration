@@ -7,8 +7,12 @@ import org.slf4j.Logger;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking.MovieBlockingKeyByTitleGenerator;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.MovieDateComparator2Years;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.MovieTitleComparatorJaccard;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Fm;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.FmXMLReader;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Movie;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.MovieXMLReader;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Tm;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.TmXMLReader;
 import de.uni_mannheim.informatik.dws.winter.matching.MatchingEngine;
 import de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator;
 import de.uni_mannheim.informatik.dws.winter.matching.algorithms.MaximumBipartiteMatchingAlgorithm;
@@ -51,6 +55,20 @@ public class IR_using_linear_combination
 		new MovieXMLReader().loadFromXML(new File("data/input/academy_awards.xml"), "/movies/movie", dataAcademyAwards);
 		HashedDataSet<Movie, Attribute> dataActors = new HashedDataSet<>();
 		new MovieXMLReader().loadFromXML(new File("data/input/actors.xml"), "/movies/movie", dataActors);
+		
+		HashedDataSet<Tm, Attribute> dataTm = new HashedDataSet<>();
+		new TmXMLReader().loadFromXML(new File("data/input/tm_final.xml"), "/players/player", dataTm);
+		HashedDataSet<Fm, Attribute> dataFm = new HashedDataSet<>();
+		new FmXMLReader().loadFromXML(new File("data/input/fm23_final.xml"), "/players/player", dataFm);
+		
+		System.out.println("*\tContent of dataTm\t*");
+		int i = 0;
+		for (Fm fm : dataFm.get()) {
+		    System.out.println("Record: " + fm.toString()); // or print specific attributes
+		    i++;
+		    System.out.println(i);
+
+		}
 
 		// load the gold standard (test set)
 		logger.info("*\tLoading gold standard\t*");

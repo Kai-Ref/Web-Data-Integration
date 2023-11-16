@@ -154,6 +154,11 @@ public class Fm implements Matchable {
 		this.wage = wage;
 	}
 	
+	@Override
+	public String toString() {
+	    return "Tm [attribute1=" + name;
+	}
+	
 	
 	
 }
