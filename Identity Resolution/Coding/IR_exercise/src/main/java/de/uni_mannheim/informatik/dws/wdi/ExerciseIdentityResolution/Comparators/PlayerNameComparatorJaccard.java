@@ -19,6 +19,7 @@ import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
 import de.uni_mannheim.informatik.dws.winter.similarity.string.TokenizingJaccardSimilarity;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Fm;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Movie;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Player;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Tm;
 
 /**
@@ -29,7 +30,7 @@ import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Tm;
  * @author Oliver Lehmberg (oli@dwslab.de)
  * 
  */
-public class PlayerNameComparatorJaccard implements Comparator<Tm, Fm> {
+public class PlayerNameComparatorJaccard implements Comparator<Player, Attribute> {
 
 	private static final long serialVersionUID = 1L;
 	private TokenizingJaccardSimilarity sim = new TokenizingJaccardSimilarity();
@@ -38,9 +39,9 @@ public class PlayerNameComparatorJaccard implements Comparator<Tm, Fm> {
 
 	@Override
 	public double compare(
-			Tm record1,
-			Tm record2,
-			Correspondence<Fm, Matchable> schemaCorrespondences) {
+			Player record1,
+			Player record2,
+			Correspondence<Attribute, Matchable> schemaCorrespondences) {
 		
 		String s1 = record1.getName();
 		String s2 = record2.getName();
