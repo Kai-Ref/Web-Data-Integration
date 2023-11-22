@@ -16,41 +16,74 @@ import de.uni_mannheim.informatik.dws.winter.matching.rules.comparators.Comparat
 import de.uni_mannheim.informatik.dws.winter.model.Correspondence;
 import de.uni_mannheim.informatik.dws.winter.model.Matchable;
 import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
-import de.uni_mannheim.informatik.dws.winter.similarity.date.YearSimilarity;
-import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Movie;
+import de.uni_mannheim.informatik.dws.winter.similarity.string.TokenizingJaccardSimilarity;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Player;
 
 /**
- * {@link Comparator} for {@link Movie}s based on the {@link Movie#getDate()}
- * value, with a maximal difference of 2 years.
+ * {@link Comparator} for {@link Movie}s based on the
+ * {@link Movie#getDirector()} values, and their
+ * {@link TokenizingJaccardSimilarity} similarity, with a lower casing
+ * beforehand.
  * 
+ * @author Robert Meusel (robert@dwslab.de)
  * @author Oliver Lehmberg (oli@dwslab.de)
  * 
  */
-public class MovieDateComparator2Years implements Comparator<Movie, Attribute> {
+public class PlayerClubComparatorLowerCaseJaccard implements Comparator<Player, Attribute> {
 
 	private static final long serialVersionUID = 1L;
-	private YearSimilarity sim = new YearSimilarity(2);
+	TokenizingJaccardSimilarity sim = new TokenizingJaccardSimilarity();
 	
 	private ComparatorLogger comparisonLog;
 
 	@Override
 	public double compare(
-			Movie record1,
-			Movie record2,
+			Player record1,
+			Player record2,
 			Correspondence<Attribute, Matchable> schemaCorrespondences) {
-    	
-    	double similarity = sim.calculate(record1.getDate(), record2.getDate());
-    	
+		
+		// preprocessing
+		String s1 = record1.getClub();
+		String s2 = record2.getClub();
+		
 		if(this.comparisonLog != null){
 			this.comparisonLog.setComparatorName(getClass().getName());
+			this.comparisonLog.setRecord1Value(s1);
+			this.comparisonLog.setRecord2Value(s2);
+		}
 		
-			this.comparisonLog.setRecord1Value(record1.getDate().toString());
-			this.comparisonLog.setRecord2Value(record2.getDate().toString());
+		if (s1 != null) {
+			s1 = s1.toLowerCase();
+		} else {
+			s1 = "";
+		}
+		
+		if (s2 != null) {
+			s2 = s2.toLowerCase();
+		} else {
+			s2 = "";
+		}
+		
+		// calculate similarity
+		double similarity = sim.calculate(s1, s2);
+		
+		// postprocessing
+		int postSimilarity = 0;
+		if (similarity <= 0.3) {
+			postSimilarity = 0;
+		}
+
+		postSimilarity *= similarity;
+		
+		if(this.comparisonLog != null){
+			this.comparisonLog.setRecord1PreprocessedValue(s1);
+			this.comparisonLog.setRecord2PreprocessedValue(s2);
     	
 			this.comparisonLog.setSimilarity(Double.toString(similarity));
+			this.comparisonLog.setPostprocessedSimilarity(Double.toString(postSimilarity));
 		}
-		return similarity;
-
+		
+		return postSimilarity;
 	}
 
 	@Override

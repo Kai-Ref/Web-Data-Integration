@@ -12,7 +12,7 @@
 
 package de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking;
 
-import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Movie;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Player;
 import de.uni_mannheim.informatik.dws.winter.matching.blockers.generators.BlockingKeyGenerator;
 import de.uni_mannheim.informatik.dws.winter.matching.blockers.generators.RecordBlockingKeyGenerator;
 import de.uni_mannheim.informatik.dws.winter.model.Correspondence;
@@ -29,8 +29,8 @@ import de.uni_mannheim.informatik.dws.winter.processing.Processable;
  * @author Oliver Lehmberg (oli@dwslab.de)
  * 
  */
-public class MovieBlockingKeyByDecadeGenerator extends
-		RecordBlockingKeyGenerator<Movie, Attribute> {
+public class PlayerBlockingKeyByDecadeGenerator extends
+		RecordBlockingKeyGenerator<Player, Attribute> {
 
 	private static final long serialVersionUID = 1L;
 
@@ -39,9 +39,9 @@ public class MovieBlockingKeyByDecadeGenerator extends
 	 * @see de.uni_mannheim.informatik.wdi.matching.blocking.generators.BlockingKeyGenerator#generateBlockingKeys(de.uni_mannheim.informatik.wdi.model.Matchable, de.uni_mannheim.informatik.wdi.model.Result, de.uni_mannheim.informatik.wdi.processing.DatasetIterator)
 	 */
 	@Override
-	public void generateBlockingKeys(Movie record, Processable<Correspondence<Attribute, Matchable>> correspondences,
-			DataIterator<Pair<String, Movie>> resultCollector) {
-		resultCollector.next(new Pair<>(Integer.toString(record.getDate().getYear() / 10), record));
+	public void generateBlockingKeys(Player record, Processable<Correspondence<Attribute, Matchable>> correspondences,
+			DataIterator<Pair<String, Player>> resultCollector) {
+		resultCollector.next(new Pair<>(Integer.toString(record.getBirthdate().getYear() / 10), record));
 	}
 
 }

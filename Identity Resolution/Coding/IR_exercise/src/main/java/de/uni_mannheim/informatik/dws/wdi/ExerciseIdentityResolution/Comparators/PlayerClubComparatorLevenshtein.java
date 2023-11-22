@@ -17,7 +17,7 @@ import de.uni_mannheim.informatik.dws.winter.model.Correspondence;
 import de.uni_mannheim.informatik.dws.winter.model.Matchable;
 import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
 import de.uni_mannheim.informatik.dws.winter.similarity.string.LevenshteinSimilarity;
-import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Movie;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Player;
 
 /**
  * {@link Comparator} for {@link Movie}s based on the
@@ -27,7 +27,7 @@ import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Movie
  * @author Oliver Lehmberg (oli@dwslab.de)
  * 
  */
-public class MovieDirectorComparatorLevenshtein implements Comparator<Movie, Attribute> {
+public class PlayerClubComparatorLevenshtein implements Comparator<Player, Attribute> {
 
 	private static final long serialVersionUID = 1L;
 	private LevenshteinSimilarity sim = new LevenshteinSimilarity();
@@ -36,12 +36,12 @@ public class MovieDirectorComparatorLevenshtein implements Comparator<Movie, Att
 
 	@Override
 	public double compare(
-			Movie record1,
-			Movie record2,
+			Player record1,
+			Player record2,
 			Correspondence<Attribute, Matchable> schemaCorrespondences) {
 		
-		String s1 = record1.getDirector();
-		String s2 = record2.getDirector();
+		String s1 = record1.getClub();
+		String s2 = record2.getClub();
     	
     	double similarity = sim.calculate(s1, s2);
     	
