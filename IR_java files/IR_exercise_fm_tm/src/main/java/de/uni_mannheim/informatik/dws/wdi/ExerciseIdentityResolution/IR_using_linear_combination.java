@@ -58,16 +58,14 @@ public class IR_using_linear_combination
 		matchingRule.activateDebugReport("data/output/debugResultsMatchingRule.csv", 1000, gsTest);
 		
 		// add comparators
-		matchingRule.addComparator(new PlayerNameComparatorJaccard(), 0.8);
-		
-		
+		matchingRule.addComparator(new PlayerNameComparatorJaccard(), 0.2);
 		//matchingRule.addComparator(new PlayerNameReverseComparator(), 0.3);
-		matchingRule.addComparator(new PlayerBirthdateComparator(), 0.2);
+		matchingRule.addComparator(new PlayerBirthdateComparator(), 0.8);
 		
 
 		// create a blocker (blocking strategy)
 		StandardRecordBlocker<Player, Attribute> nameblocker = new StandardRecordBlocker<Player, Attribute>(new PlayerBlockingKeyByNameGenerator());
-		StandardRecordBlocker<Player, Attribute> yearblocker = new StandardRecordBlocker<Player, Attribute>(new PlayerBlockingKeyByBirthyearGenerator());
+		//StandardRecordBlocker<Player, Attribute> yearblocker = new StandardRecordBlocker<Player, Attribute>(new PlayerBlockingKeyByBirthyearGenerator());
 		//StandardRecordBlocker<Player, Attribute> decadeblocker = new StandardRecordBlocker<Player, Attribute>(new PlayerBlockingKeyByDecadeGenerator());
 
 		//NoBlocker<Player, Attribute> blocker = new NoBlocker<>();
