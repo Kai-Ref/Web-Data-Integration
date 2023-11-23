@@ -68,10 +68,10 @@ public class IR_using_linear_combination
 		matchingRule.activateDebugReport("data/output/debugResultsMatchingRule.csv", 1000, gsTest);
 		
 		// add comparators
-		matchingRule.addComparator(new PlayerNameComparatorJaccard(), 0.5);
+		//matchingRule.addComparator(new PlayerNameComparatorJaccard(), 0.5);
 //		matchingRule.addComparator(new PlayerClubComparatorLowerCaseJaccard(), 0.1);
 //		matchingRule.addComparator(new PlayerNameComparatorEqual(), 0.3);
-		matchingRule.addComparator(new PlayerBirthdateComparator2Years(), 0.5);
+		matchingRule.addComparator(new PlayerBirthdateComparator2Years(), 1);
 		//matchingRule.addComparator(new PlayerBirthdateComparator10Years());
 //		matchingRule.addComparator(new PlayerClubComparatorJaccard());
 //		matchingRule.addComparator(new PlayerClubComparatorLevenshtein());
