@@ -29,7 +29,7 @@ import de.uni_mannheim.informatik.dws.winter.processing.Processable;
  * @author Oliver Lehmberg (oli@dwslab.de)
  * 
  */
-public class PlayerBlockingKeyByDecadeGenerator extends
+public class MovieBlockingKeyByDecadeGenerator extends
 		RecordBlockingKeyGenerator<Player, Attribute> {
 
 	private static final long serialVersionUID = 1L;
