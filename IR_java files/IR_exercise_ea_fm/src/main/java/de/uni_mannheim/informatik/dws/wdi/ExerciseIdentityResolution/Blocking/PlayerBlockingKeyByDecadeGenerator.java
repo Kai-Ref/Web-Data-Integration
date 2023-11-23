@@ -12,7 +12,7 @@
 
 package de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking;
 
-import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Movie;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Player;
 import de.uni_mannheim.informatik.dws.winter.matching.blockers.generators.BlockingKeyGenerator;
 import de.uni_mannheim.informatik.dws.winter.matching.blockers.generators.RecordBlockingKeyGenerator;
 import de.uni_mannheim.informatik.dws.winter.model.Correspondence;
@@ -24,14 +24,13 @@ import de.uni_mannheim.informatik.dws.winter.processing.Processable;
 
 /**
  * {@link BlockingKeyGenerator} for {@link Movie}s, which generates a blocking
- * key based on the year.
+ * key based on the decade. E.g. 1999--&gt;199, 2014 --&gt; 201
  * 
- * @author Robert Meusel (robert@dwslab.de)
  * @author Oliver Lehmberg (oli@dwslab.de)
  * 
  */
-public class MovieBlockingKeyByYearGenerator extends
-		RecordBlockingKeyGenerator<Movie, Attribute> {
+public class PlayerBlockingKeyByDecadeGenerator extends
+		RecordBlockingKeyGenerator<Player, Attribute> {
 
 	private static final long serialVersionUID = 1L;
 
@@ -40,9 +39,9 @@ public class MovieBlockingKeyByYearGenerator extends
 	 * @see de.uni_mannheim.informatik.wdi.matching.blocking.generators.BlockingKeyGenerator#generateBlockingKeys(de.uni_mannheim.informatik.wdi.model.Matchable, de.uni_mannheim.informatik.wdi.model.Result, de.uni_mannheim.informatik.wdi.processing.DatasetIterator)
 	 */
 	@Override
-	public void generateBlockingKeys(Movie record, Processable<Correspondence<Attribute, Matchable>> correspondences,
-			DataIterator<Pair<String, Movie>> resultCollector) {
-		resultCollector.next(new Pair<>(Integer.toString(record.getDate().getYear()), record));
+	public void generateBlockingKeys(Player record, Processable<Correspondence<Attribute, Matchable>> correspondences,
+			DataIterator<Pair<String, Player>> resultCollector) {
+		resultCollector.next(new Pair<>(Integer.toString(record.getBirthdate().getYear() / 10), record));
 	}
 
 }

@@ -17,7 +17,7 @@ import de.uni_mannheim.informatik.dws.winter.model.Correspondence;
 import de.uni_mannheim.informatik.dws.winter.model.Matchable;
 import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
 import de.uni_mannheim.informatik.dws.winter.similarity.string.TokenizingJaccardSimilarity;
-import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Movie;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Player;
 
 /**
  * {@link Comparator} for {@link Movie}s based on the
@@ -29,7 +29,7 @@ import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Movie
  * @author Oliver Lehmberg (oli@dwslab.de)
  * 
  */
-public class MovieDirectorComparatorLowerCaseJaccard implements Comparator<Movie, Attribute> {
+public class PlayerClubComparatorLowerCaseJaccard implements Comparator<Player, Attribute> {
 
 	private static final long serialVersionUID = 1L;
 	TokenizingJaccardSimilarity sim = new TokenizingJaccardSimilarity();
@@ -38,13 +38,13 @@ public class MovieDirectorComparatorLowerCaseJaccard implements Comparator<Movie
 
 	@Override
 	public double compare(
-			Movie record1,
-			Movie record2,
+			Player record1,
+			Player record2,
 			Correspondence<Attribute, Matchable> schemaCorrespondences) {
 		
 		// preprocessing
-		String s1 = record1.getDirector();
-		String s2 = record2.getDirector();
+		String s1 = record1.getClub();
+		String s2 = record2.getClub();
 		
 		if(this.comparisonLog != null){
 			this.comparisonLog.setComparatorName(getClass().getName());

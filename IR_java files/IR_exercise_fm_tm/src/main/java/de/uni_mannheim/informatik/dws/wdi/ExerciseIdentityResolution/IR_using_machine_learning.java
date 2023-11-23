@@ -3,6 +3,10 @@ package de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution;
 import java.io.File;
 
 import org.slf4j.Logger;
+<<<<<<< HEAD:Identity Resolution/Coding/IR_exercise/src/main/java/de/uni_mannheim/informatik/dws/wdi/ExerciseIdentityResolution/IR_using_machine_learning.java
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Player;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.PlayerXMLReader;
+=======
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking.MovieBlockingKeyByDecadeGenerator;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking.MovieBlockingKeyByTitleGenerator;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking.MovieBlockingKeyByYearGenerator;
@@ -14,6 +18,7 @@ import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.MovieTitleComparatorEqual;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.MovieTitleComparatorJaccard;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.MovieTitleComparatorLevenshtein;
+>>>>>>> 392919a8a6c9c0038052370ffa0498dd47b3492d:IR_java files/IR_exercise_fm_tm/src/main/java/de/uni_mannheim/informatik/dws/wdi/ExerciseIdentityResolution/IR_using_machine_learning.java
 import de.uni_mannheim.informatik.dws.winter.matching.MatchingEngine;
 import de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator;
 import de.uni_mannheim.informatik.dws.winter.matching.algorithms.RuleLearner;
@@ -50,10 +55,11 @@ public class IR_using_machine_learning {
     {
 		// loading data
 		logger.info("*\tLoading datasets\t*");
-		HashedDataSet<Movie, Attribute> dataAcademyAwards = new HashedDataSet<>();
-		new MovieXMLReader().loadFromXML(new File("data/input/academy_awards.xml"), "/movies/movie", dataAcademyAwards);
-		HashedDataSet<Movie, Attribute> dataActors = new HashedDataSet<>();
-		new MovieXMLReader().loadFromXML(new File("data/input/actors.xml"), "/movies/movie", dataActors);
+		HashedDataSet<Player, Attribute> dataTm = new HashedDataSet<>();
+		new PlayerXMLReader().loadFromXML(new File("data/input/tm_final.xml"), "/players/player", dataTm);
+		
+		HashedDataSet<Player, Attribute> dataFm = new HashedDataSet<>();
+		new PlayerXMLReader().loadFromXML(new File("data/input/fm23_final.xml"), "/players/player", dataFm);
 		
 		// load the training set
 		MatchingGoldStandard gsTraining = new MatchingGoldStandard();
@@ -62,12 +68,12 @@ public class IR_using_machine_learning {
 		// create a matching rule
 		String options[] = new String[] { "-S" };
 		String modelType = "SimpleLogistic"; // use a logistic regression
-		WekaMatchingRule<Movie, Attribute> matchingRule = new WekaMatchingRule<>(0.7, modelType, options);
+		WekaMatchingRule<Player, Attribute> matchingRule = new WekaMatchingRule<>(0.7, modelType, options);
 		matchingRule.activateDebugReport("data/output/debugResultsMatchingRule.csv", 1000, gsTraining);
 		
 		// add comparators
-		matchingRule.addComparator(new MovieTitleComparatorEqual());
-		matchingRule.addComparator(new MovieDateComparator2Years());
+		matchingRule.addComparator(new PlayerNameComparatorEqual());
+		matchingRule.addComparator(new PlayereDateComparator2Years());
 		matchingRule.addComparator(new MovieDateComparator10Years());
 		matchingRule.addComparator(new MovieDirectorComparatorJaccard());
 		matchingRule.addComparator(new MovieDirectorComparatorLevenshtein());
@@ -78,22 +84,22 @@ public class IR_using_machine_learning {
 		
 		// train the matching rule's model
 		logger.info("*\tLearning matching rule\t*");
-		RuleLearner<Movie, Attribute> learner = new RuleLearner<>();
-		learner.learnMatchingRule(dataAcademyAwards, dataActors, null, matchingRule, gsTraining);
+		RuleLearner<Player, Attribute> learner = new RuleLearner<>();
+		learner.learnMatchingRule(dataFm, dataTm, null, matchingRule, gsTraining);
 		logger.info(String.format("Matching rule is:\n%s", matchingRule.getModelDescription()));
 		
 		// create a blocker (blocking strategy)
-		StandardRecordBlocker<Movie, Attribute> blocker = new StandardRecordBlocker<Movie, Attribute>(new MovieBlockingKeyByTitleGenerator());
+		StandardRecordBlocker<Player, Attribute> blocker = new StandardRecordBlocker<Player, Attribute>(new PlayerBlockingKeyByNameGenerator());
 //		SortedNeighbourhoodBlocker<Movie, Attribute, Attribute> blocker = new SortedNeighbourhoodBlocker<>(new MovieBlockingKeyByDecadeGenerator(), 1);
 		blocker.collectBlockSizeData("data/output/debugResultsBlocking.csv", 100);
 		
 		// Initialize Matching Engine
-		MatchingEngine<Movie, Attribute> engine = new MatchingEngine<>();
+		MatchingEngine<Player, Attribute> engine = new MatchingEngine<>();
 
 		// Execute the matching
 		logger.info("*\tRunning identity resolution\t*");
-		Processable<Correspondence<Movie, Attribute>> correspondences = engine.runIdentityResolution(
-				dataAcademyAwards, dataActors, null, matchingRule,
+		Processable<Correspondence<Player, Attribute>> correspondences = engine.runIdentityResolution(
+				dataFm, dataTm, null, matchingRule,
 				blocker);
 
 		// write the correspondences to the output file
@@ -107,7 +113,7 @@ public class IR_using_machine_learning {
 		
 		// evaluate your result
 		logger.info("*\tEvaluating result\t*");
-		MatchingEvaluator<Movie, Attribute> evaluator = new MatchingEvaluator<Movie, Attribute>();
+		MatchingEvaluator<Player, Attribute> evaluator = new MatchingEvaluator<Player, Attribute>();
 		Performance perfTest = evaluator.evaluateMatching(correspondences,
 				gsTest);
 		

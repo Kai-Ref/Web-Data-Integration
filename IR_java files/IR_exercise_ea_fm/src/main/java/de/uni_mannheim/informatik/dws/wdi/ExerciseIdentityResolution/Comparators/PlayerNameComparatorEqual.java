@@ -11,13 +11,15 @@
  */
 package de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators;
 
+
 import de.uni_mannheim.informatik.dws.winter.matching.rules.comparators.Comparator;
 import de.uni_mannheim.informatik.dws.winter.matching.rules.comparators.ComparatorLogger;
 import de.uni_mannheim.informatik.dws.winter.model.Correspondence;
 import de.uni_mannheim.informatik.dws.winter.model.Matchable;
 import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
+import de.uni_mannheim.informatik.dws.winter.similarity.EqualsSimilarity;
 import de.uni_mannheim.informatik.dws.winter.similarity.string.LevenshteinSimilarity;
-import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Movie;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Player;
 
 /**
  * {@link Comparator} for {@link Movie}s based on the {@link Movie#getTitle()}
@@ -26,25 +28,24 @@ import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Movie
  * @author Oliver Lehmberg (oli@dwslab.de)
  * 
  */
-
-public class MovieTitleComparatorLevenshtein implements Comparator<Movie, Attribute> {
+public class PlayerNameComparatorEqual implements Comparator<Player, Attribute> {
 
 	private static final long serialVersionUID = 1L;
-	private LevenshteinSimilarity sim = new LevenshteinSimilarity();
+	private EqualsSimilarity<String> sim = new EqualsSimilarity<String>();
 	
 	private ComparatorLogger comparisonLog;
 
 	@Override
 	public double compare(
-			Movie record1,
-			Movie record2,
+			Player record1,
+			Player record2,
 			Correspondence<Attribute, Matchable> schemaCorrespondences) {
 		
-		String s1 = record1.getTitle();
-		String s2 = record2.getTitle();
-		
-		double similarity = sim.calculate(s1, s2);
-		
+    	String s1 = record1.getName();
+		String s2 = record2.getName();
+    	
+    	double similarity = sim.calculate(s1, s2);
+    	
 		if(this.comparisonLog != null){
 			this.comparisonLog.setComparatorName(getClass().getName());
 		
@@ -53,10 +54,9 @@ public class MovieTitleComparatorLevenshtein implements Comparator<Movie, Attrib
     	
 			this.comparisonLog.setSimilarity(Double.toString(similarity));
 		}
-		
 		return similarity;
-		
 	}
+
 
 	@Override
 	public ComparatorLogger getComparisonLog() {

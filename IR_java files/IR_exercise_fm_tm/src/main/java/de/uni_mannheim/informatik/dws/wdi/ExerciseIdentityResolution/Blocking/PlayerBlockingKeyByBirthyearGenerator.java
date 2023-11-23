@@ -11,10 +11,7 @@
  */
 
 package de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking;
-<<<<<<< HEAD:Identity Resolution/Coding/IR_exercise/src/main/java/de/uni_mannheim/informatik/dws/wdi/ExerciseIdentityResolution/Blocking/PlayerBlockingKeyByNameGenerator.java
 
-=======
->>>>>>> 392919a8a6c9c0038052370ffa0498dd47b3492d:IR_java files/IR_exercise_ea_fm/src/main/java/de/uni_mannheim/informatik/dws/wdi/ExerciseIdentityResolution/Blocking/PlayerBlockingKeyByNameGenerator.java
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Player;
 import de.uni_mannheim.informatik.dws.winter.matching.blockers.generators.BlockingKeyGenerator;
 import de.uni_mannheim.informatik.dws.winter.matching.blockers.generators.RecordBlockingKeyGenerator;
@@ -27,24 +24,16 @@ import de.uni_mannheim.informatik.dws.winter.processing.Processable;
 
 /**
  * {@link BlockingKeyGenerator} for {@link Movie}s, which generates a blocking
- * key based on the title
+ * key based on the year.
  * 
+ * @author Robert Meusel (robert@dwslab.de)
  * @author Oliver Lehmberg (oli@dwslab.de)
  * 
  */
-public class PlayerBlockingKeyByNameGenerator extends
+public class PlayerBlockingKeyByBirthyearGenerator extends
 		RecordBlockingKeyGenerator<Player, Attribute> {
 
 	private static final long serialVersionUID = 1L;
-	private int num_first_letters;
-	
-	public PlayerBlockingKeyByNameGenerator() {
-        this(2); // Default value
-    }
-	
-	public PlayerBlockingKeyByNameGenerator(int num_first_letters) {
-		this.num_first_letters = num_first_letters;
-	}
 
 
 	/* (non-Javadoc)
@@ -53,16 +42,7 @@ public class PlayerBlockingKeyByNameGenerator extends
 	@Override
 	public void generateBlockingKeys(Player record, Processable<Correspondence<Attribute, Matchable>> correspondences,
 			DataIterator<Pair<String, Player>> resultCollector) {
-
-		String[] tokens  = record.getName().split(" ");
-
-		String blockingKeyValue = "";
-
-		for(int i = 0; i <= 2 && i < tokens.length; i++) {
-			blockingKeyValue += tokens[i].substring(0, Math.min(num_first_letters,tokens[i].length())).toUpperCase();
-		}
-
-		resultCollector.next(new Pair<>(blockingKeyValue, record));
+		resultCollector.next(new Pair<>(Integer.toString(record.getBirthdate().getYear()), record));
 	}
 
 }
