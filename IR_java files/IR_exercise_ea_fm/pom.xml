@@ -3,11 +3,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>de.uni_mannheim.informatik.dws.wdi</groupId>
-	<artifactId>IR_tm_fm</artifactId>
+	<artifactId>IR_ea_fm</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>IR_tm_fm</name>
+	<name>IR_ea_fm</name>
 	<url>http://maven.apache.org</url>
 
 	<properties>
