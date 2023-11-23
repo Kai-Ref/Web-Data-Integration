@@ -11,10 +11,6 @@
  */
 
 package de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking;
-<<<<<<< HEAD:Identity Resolution/Coding/IR_exercise/src/main/java/de/uni_mannheim/informatik/dws/wdi/ExerciseIdentityResolution/Blocking/PlayerBlockingKeyByNameGenerator.java
-
-=======
->>>>>>> 392919a8a6c9c0038052370ffa0498dd47b3492d:IR_java files/IR_exercise_ea_fm/src/main/java/de/uni_mannheim/informatik/dws/wdi/ExerciseIdentityResolution/Blocking/PlayerBlockingKeyByNameGenerator.java
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Player;
 import de.uni_mannheim.informatik.dws.winter.matching.blockers.generators.BlockingKeyGenerator;
 import de.uni_mannheim.informatik.dws.winter.matching.blockers.generators.RecordBlockingKeyGenerator;
