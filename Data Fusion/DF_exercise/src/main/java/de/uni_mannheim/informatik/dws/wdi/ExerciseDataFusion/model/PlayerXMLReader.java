@@ -68,7 +68,7 @@ String id = getValueFromChildElement(node, "id");
 	
 	// convert the date string into a DateTime object
 	try {
-		String date = getValueFromChildElement(node, "date");
+		String date = getValueFromChildElement(node, "birthdate");
 		if (date != null && !date.isEmpty()) {
 			DateTimeFormatter formatter = new DateTimeFormatterBuilder()
 			        .appendPattern("yyyy-MM-dd['T'HH:mm:ss.SSS]")
@@ -78,8 +78,10 @@ String id = getValueFromChildElement(node, "id");
 					.optionalStart().appendOffset("+HH:MM", "+00:00").optionalEnd()
 			        .toFormatter(Locale.ENGLISH);
 			LocalDateTime dt = LocalDateTime.parse(date, formatter);
-			player.setBirthdate(dt);
-		}
+	        if (dt != null) {
+	            player.setBirthdate(dt);
+	        }
+	        		}
 	} catch (Exception e) {
 		e.printStackTrace();
 	}

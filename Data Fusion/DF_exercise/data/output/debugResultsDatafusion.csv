@@ -12099,7 +12099,7 @@
 "Club","0.0","Club-{fm_14376+tm_6771}","fm_14376+tm_6771","{Vigo|Celta de Vigo}","Vigo",,
 "Name","1.0","Name-{fm_16448+tm_6775}","fm_16448+tm_6775","{Hugo Sotelo|Hugo Sotelo}","Hugo Sotelo",,
 "Name","1.0","Name-{fm_11362+tm_7119}","fm_11362+tm_7119","{Ibrahima Konaté|Ibrahima Konaté}","Ibrahima Konaté",,
-"Club","0.0","Club-{fm_1766+tm_7556}","fm_1766+tm_7556","{FC Bayern|Bayern Munich}","FC Bayern",,
+"Club","0.0","Club-{fm_1766+tm_7556}","fm_1766+tm_7556","{FC Bayern|Bayern Munich}","FC Bayern","false","FC Bayern München"
 "Nationality","0.0","Nationality-{fm_4120+tm_3749}","fm_4120+tm_3749","{NED|Netherlands}","NED",,
 "Nationality","0.0","Nationality-{fm_6295+tm_6020}","fm_6295+tm_6020","{ITA|Italy}","ITA",,
 "Nationality","0.0","Nationality-{fm_3555+tm_4086}","fm_3555+tm_4086","{LUX|Luxembourg}","LUX",,
@@ -12709,7 +12709,7 @@
 "Club","0.0","Club-{fm_2047+tm_4057}","fm_2047+tm_4057","{AA Gent|KAA Gent}","AA Gent",,
 "Name","1.0","Name-{fm_1516+tm_1061}","fm_1516+tm_1061","{Tony Alfaro|Tony Alfaro}","Tony Alfaro",,
 "Club","0.0","Club-{fm_16271+tm_5313}","fm_16271+tm_5313","{VIZ|FC Vizela}","VIZ",,
-"Name","1.0","Name-{fm_1766+tm_7556}","fm_1766+tm_7556","{Manuel Neuer|Manuel Neuer}","Manuel Neuer",,
+"Name","1.0","Name-{fm_1766+tm_7556}","fm_1766+tm_7556","{Manuel Neuer|Manuel Neuer}","Manuel Neuer","true","Manuel Neuer"
 "Name","1.0","Name-{fm_15014+tm_9568}","fm_15014+tm_9568","{Miquel Parera|Miquel Parera}","Miquel Parera",,
 "Name","1.0","Name-{fm_1987+tm_7641}","fm_1987+tm_7641","{Mohamed Simakan|Mohamed Simakan}","Mohamed Simakan",,
 "Name","1.0","Name-{fm_14984+tm_9199}","fm_14984+tm_9199","{Salvi Sánchez|Salvi Sánchez}","Salvi Sánchez",,
@@ -17775,7 +17775,7 @@
 "Club","0.0","Club-{fm_11828+tm_7331}","fm_11828+tm_7331","{Brentford|Brentford FC}","Brentford",,
 "Nationality","0.0","Nationality-{fm_6192+tm_6102}","fm_6192+tm_6102","{NGA|Nigeria}","NGA",,
 "Name","1.0","Name-{fm_6735+tm_10013}","fm_6735+tm_10013","{Emanuel Aiwu|Emanuel Aiwu}","Emanuel Aiwu",,
-"Nationality","0.0","Nationality-{fm_1766+tm_7556}","fm_1766+tm_7556","{GER|Germany}","GER",,
+"Nationality","0.0","Nationality-{fm_1766+tm_7556}","fm_1766+tm_7556","{GER|Germany}","GER","false","Germany"
 "Nationality","0.0","Nationality-{fm_15180+tm_9352}","fm_15180+tm_9352","{ESP|Spain}","ESP",,
 "Name","1.0","Name-{fm_2069+tm_7882}","fm_2069+tm_7882","{Dan-Axel Zagadou|Dan-Axel Zagadou}","Dan-Axel Zagadou",,
 "Name","1.0","Name-{fm_14287+tm_6636}","fm_14287+tm_6636","{Suso|Suso}","Suso",,

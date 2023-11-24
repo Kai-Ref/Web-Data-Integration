@@ -123,7 +123,7 @@ public class DataFusion_Main
 		logger.info("*\tEvaluating results\t*");
 		DataSet<Player, Attribute> gs = new FusibleHashedDataSet<>();
 		// CHANGE WITH NEW GS
-		new PlayerXMLReader().loadFromXML(new File("data/goldstandard/gold.xml"), "/movies/movie", gs);
+		new PlayerXMLReader().loadFromXML(new File("data/goldstandard/goldstandard.xml"), "/players/player", gs);
 
 		for(Player p : gs.get()) {
 			logger.info(String.format("gs: %s", p.getIdentifier()));
