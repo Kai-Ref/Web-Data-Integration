@@ -18,6 +18,8 @@ import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Playe
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.PlayerXMLReader;
 import de.uni_mannheim.informatik.dws.winter.matching.MatchingEngine;
 import de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator;
+import de.uni_mannheim.informatik.dws.winter.matching.blockers.NoBlocker;
+import de.uni_mannheim.informatik.dws.winter.matching.blockers.SortedNeighbourhoodBlocker;
 import de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardRecordBlocker;
 import de.uni_mannheim.informatik.dws.winter.matching.rules.LinearCombinationMatchingRule;
 import de.uni_mannheim.informatik.dws.winter.model.Correspondence;
@@ -68,32 +70,33 @@ public class IR_using_linear_combination
 		matchingRule.activateDebugReport("data/output/debugResultsMatchingRule.csv", 1000, gsTest);
 		
 		// add comparators
-		//matchingRule.addComparator(new PlayerNameComparatorJaccard(), 0.5);
+		matchingRule.addComparator(new PlayerNameComparatorJaccard(), 0.45);
 //		matchingRule.addComparator(new PlayerClubComparatorLowerCaseJaccard(), 0.1);
 //		matchingRule.addComparator(new PlayerNameComparatorEqual(), 0.3);
-		matchingRule.addComparator(new PlayerBirthdateComparator2Years(), 1);
+//		matchingRule.addComparator(new PlayerBirthdateComparator2Years(), 1);
 		//matchingRule.addComparator(new PlayerBirthdateComparator10Years());
 //		matchingRule.addComparator(new PlayerClubComparatorJaccard());
-//		matchingRule.addComparator(new PlayerClubComparatorLevenshtein());
+//		matchingRule.addComparator(new PlayerClubComparatorLevenshtein(), 0.2);
 //		matchingRule.addComparator(new PlayerNameComparatorLevenshtein());
+		matchingRule.addComparator(new PlayerBirthdateComparator(3), 0.55);
 		
 
 		// create a blocker (blocking strategy)
-		StandardRecordBlocker<Player, Attribute> blocker = new StandardRecordBlocker<Player, Attribute>(new PlayerBlockingKeyByNameGenerator());
+//		StandardRecordBlocker<Player, Attribute> blocker = new StandardRecordBlocker<Player, Attribute>(new PlayerBlockingKeyByNameGenerator());
 //		StandardRecordBlocker<Player, Attribute> blocker = new StandardRecordBlocker<Player, Attribute>(new PlayerBlockingKeyByYearGenerator());
 //		StandardRecordBlocker<Player, Attribute> blocker = new StandardRecordBlocker<Player, Attribute>(new PlayerBlockingKeyByDecadeGenerator());
-		
-		
-		
-		
-		
-		
+		SortedNeighbourhoodBlocker<Player, Attribute, Attribute> blocker = new SortedNeighbourhoodBlocker<>(new PlayerBlockingKeyByNameGenerator(1), 110);
 //		NoBlocker<Player, Attribute> blocker = new NoBlocker<>();
-		// Replace with MovieBlockingKeyByTitleGenerator with Blocker specific for Player
-//		SortedNeighbourhoodBlocker<Player, Attribute, Attribute> blocker = new SortedNeighbourhoodBlocker<>(new MovieBlockingKeyByTitleGenerator(), 1);
 		blocker.setMeasureBlockSizes(true);
 		//Write debug results to file:
 		blocker.collectBlockSizeData("data/output/debugResultsBlocking.csv", 100);
+		
+		
+		
+		
+		
+		// Replace with MovieBlockingKeyByTitleGenerator with Blocker specific for Player
+//		SortedNeighbourhoodBlocker<Player, Attribute, Attribute> blocker = new SortedNeighbourhoodBlocker<>(new MovieBlockingKeyByTitleGenerator(), 1);
 		
 		// Initialize Matching Engine
 		MatchingEngine<Player, Attribute> engine = new MatchingEngine<>();
@@ -129,5 +132,7 @@ public class IR_using_linear_combination
 				"Recall: %.4f",	perfTest.getRecall()));
 		logger.info(String.format(
 				"F1: %.4f",perfTest.getF1()));
+
+
     }
 }
