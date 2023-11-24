@@ -1,0 +1,109 @@
+df1,df2,name1,birthdate1,name2,birthdate2,nat1,nat2,club1,club2,score,match
+eafc_9294,tm_4262,D. Gore,26.09.2004,Jan Gorenc,26.07.1999,England,Slovenia,Manchester United,KAS Eupen,0.41,False
+eafc_3453,tm_6630,Joan Jordán,1994-07-06,Joan Jordán,1994-07-06,Spain,Spain,Sevilla,Sevilla FC,1.0,True
+eafc_10842,tm_8451,Joan Puig,2002-11-16,Felix Lange,2004-03-13,Spain,Germany,Espanyol,VfL Wolfsburg,,False
+eafc_3899,tm_9435,Àlex Corredera,1996-03-19,Àlex Corredera,1996-03-19,Spain,Spain,Tenerife,CD Tenerife,1.0,True
+eafc_11601,tm_9887,Yao Xuchen,1999-09-11,Marlon Ritter,1994-10-15,China PR,Germany,Cangzhou Mighty Lions,1.FC Kaiserslautern,,False
+eafc_7839,tm_5255,Pedrão,1997-05-03,Pedrão,1997-05-03,Brazil,Brazil,Portimonense,Portimonense SC,1.0,True
+eafc_4027,tm_6387,Simão Donatinho,29.02.1996,Viktor Kovalenko,14.02.1996,Brazil,Ukraine,Corinthians,Atalanta BC,0.45625,False
+eafc_8333,tm_2253,A. Radif,2003-01-20,Jardel,1997-09-20,Saudi Arabia,Guinea-Bissau,Al Shabab,FC Vizela,,False
+eafc_4210,tm_4849,Luis Couprins,2000-02-29,Kagan Moradaoglu,2003-01-10,Brazil,Turkey,Athletico Paranaense,Trabzonspor,,False
+eafc_2731,tm_7615,J. Tah,1996-02-11,Lohann Doucet,2002-09-14,Germany,France,Bayer 04 Leverkusen,FC Nantes,,False
+eafc_2744,tm_5374,João Pedro,1993-04-03,João Pedro,1993-04-03,Portugal,Portugal,Chaves,GD Chaves,1.0,True
+eafc_8493,tm_9580,Aldasoro,05.06.1999,Aritz Aldasoro,05.06.1999,Spain,Spain,Racing Santander,Racing Santander,0.7,True
+eafc_8019,tm_5716,S. Sow,2002-07-04,Nino Galovic,1992-07-06,Guinea,Croatia,Strasbourg,FC Arouca,,False
+eafc_8017,tm_8981,Pablo Rodríguez,2001-08-04,Pablo Rodríguez,2001-08-04,Spain,Spain,Ascoli,US Lecce,1.0,True
+eafc_4834,tm_2697,P. Menzel,18.08.1998,Tony Menzel,06.03.2005,Germany,Germany,Austria Klagenfurt,SG Dynamo Dresden,0.445454545,False
+eafc_2941,tm_6671,Abner,30.05.1996,Abner,27.05.2000,Brazil,Brazil,RWDM,Real Betis Balompié,0.76,False
+eafc_4206,tm_2584,Oswaldinato,1992-02-29,Ali Ahmed,2000-10-10,Brazil,Canada,Flamengo,Vancouver Whitecaps FC,,False
+eafc_2157,tm_6878,Léo Baptistão,1992-08-26,Léo Baptistão,1992-08-26,Brazil,Brazil,Almería,UD Almería,1.0,True
+eafc_2608,tm_3419,A. Al Jadaani,1991-10-06,Yacouba Barry,2002-11-25,Saudi Arabia,France,Al Ittihad,FC Annecy,,False
+eafc_4593,tm_6558,Raphinha,1996-12-14,Raphinha,1996-12-14,Brazil,Brazil,FC Barcelona,FC Barcelona,1.0,True
+eafc_4991,tm_9030,Marlion Rolim,1992-02-29,Ibrahim Pehlivan,1993-08-21,Brazil,Turkey,Bragantino,Caykur Rizespor,,False
+eafc_2713,tm_2556,T. Al Absi,22.02.1993,Talal Al-Absi,22.02.1993,Saudi Arabia,Saudi Arabia,Al Hazem,Al-Hazem SC,0.730769231,True
+eafc_9976,tm_6152,R. Smajić,02.05.2004,Lorenzo Amatucci,05.02.2004,Bosnia and Herzegovina,Italy,FC Köln,ACF Fiorentina,0.43125,False
+eafc_9466,tm_3709,S. Seymor,04.01.2002,Serano Seymor,04.01.2002,Netherlands,Netherlands,Excelsior,Excelsior Rotterdam,0.730769231,True
+eafc_3109,tm_6715,Jaume,1990-11-05,Tiago Sá,1995-01-11,Spain,Portugal,Valencia,SC Braga,,False
+eafc_4948,tm_6499,Pol Lirola,1997-08-13,Pol Lirola,1997-08-13,Spain,Spain,Frosinone,Olympique Marseille,1.0,True
+eafc_7529,tm_1032,N. Tafari,23.03.1997,Nkosi Tafari,23.03.1997,United States,United States,Dallas,FC Dallas,0.766666667,True
+eafc_4154,tm_1448,Germano Cuba,1996-02-29,Nicola Sansone,1991-09-10,Brazil,Italy,Palmeiras,US Lecce,,False
+eafc_1651,tm_5001,Cláudio Ramos,1991-11-16,Cláudio Ramos,1991-11-16,Portugal,Portugal,Porto,FC Porto,1.0,True
+eafc_5900,tm_1552,B. Servania,12.03.1999,Brandon Servania,12.03.1999,United States,United States,Toronto,Toronto FC,0.7375,True
+eafc_9757,tm_5011,D. Grujčić,1999-05-19,Tiago Araújo,2001-03-27,Austria,Portugal,Austria Lustenau,GD Estoril Praia,,False
+eafc_5347,tm_1864,P. Sohm,02.11.1991,Pascal Sohm,02.11.1991,Germany,Germany,Waldhof Mannheim,SV Waldhof Mannheim,0.681818182,True
+eafc_8954,tm_1378,B. Hlongwane,20.06.2000,Bongokuhle Hlongwane,20.06.2000,South Africa,South Africa,Minnesota United,Minnesota United FC,0.685,True
+eafc_11687,tm_3280,Wang Jianming,1993-07-04,Ylber Ramadani,1996-04-12,Chinese Taipei,Albania,Qingdao Hainiu,US Lecce,,False
+eafc_9956,tm_6775,Hugo Redón,2003-04-19,Szymon Zurkowski,1997-09-25,Spain,Poland,Levante,Spezia Calcio,,False
+eafc_5630,tm_9394,Miguel,1999-09-03,Federico Dionisi,1987-06-16,Spain,Italy,Leganés,Ternana Calcio,,False
+eafc_7925,tm_1564,M. Ilić,1998-02-03,Nkosi Tafari,1997-03-23,Serbia,United States,Colorado Rapids,FC Dallas,,False
+eafc_1076,tm_5353,Ukra,1988-03-16,Ukra,1988-03-16,Portugal,Portugal,Rio Ave,Rio Ave FC,1.0,True
+eafc_11158,tm_1697,D. Lokaj,24.01.2005,Diamant Lokaj,24.01.2005,Kosovo,Kosovo,Sandhausen,SV Sandhausen,0.676923077,True
+eafc_9309,tm_5638,A. Diouf,17.05.2003,Andy Diouf,17.05.2003,France,France,Lens,RC Lens,0.79,True
+eafc_6860,tm_4975,A. Trubin,01.08.2001,Anatoliy Trubin,01.08.2001,Ukraine,Ukraine,Benfica,SL Benfica,0.673333333,True
+eafc_4895,tm_4777,I. Drešević,1997-01-24,Elias Bördner,2002-02-18,Kosovo,Germany,Fatih Karagümrük,FC Viktoria Köln,,False
+eafc_1839,tm_4213,H. Van Der Bruggen,01.04.1993,Hannes Van Der Bruggen,01.04.1993,Belgium,Belgium,Cercle Brugge,Cercle Brugge,0.840909091,True
+eafc_8414,tm_10481,B. Ezeh,2001-06-23,Reda Khadra,2001-07-04,Germany,Germany,Hannover 96,Stade Reims,,False
+eafc_10261,tm_4348,O. Gloukh,01.04.2004,Alouis Diriken,01.04.2004,Israel,Belgium,Salzburg,Sint-Truidense VV,0.4,False
+eafc_10437,tm_9367,Andrés García,2003-02-07,Andrés García,2003-02-07,Spain,Spain,Levante,Levante UD,1.0,True
+eafc_8839,tm_8325,Pablo Valencia,2001-03-16,Liberato Cacace,2000-09-27,Spain,New Zealand,Osasuna,FC Empoli,,False
+eafc_10090,tm_5300,Hernâni Infande,2001-04-03,Patrick Kammerbauer,1997-02-11,Portugal,Germany,Moreirense,SC Verl,,False
+eafc_9735,tm_7797,M. Fuseini,2002-05-16,Adam Wharton,2004-06-02,Ghana,England,Sturm Graz,Blackburn Rovers,,False
+eafc_5730,tm_9679,Fran Manzanara,1996-09-12,Fran Manzanara,1996-09-12,Spain,Spain,Racing Ferrol,Racing Ferrol,1.0,True
+eafc_4031,tm_8533,Peter Abradanel,29.02.1984,Peter Ouaneh,04.04.1998,Brazil,France,América Mineiro,Stade Lavallois,0.42,False
+eafc_4448,tm_5258,M. Seck,1996-02-23,Jackson,1999-04-24,Senegal,Brazil,Portimonense,Istanbulspor,,False
+eafc_5394,tm_2243,H. Al Qahtani,1994-12-20,Quaresma,1996-08-22,Saudi Arabia,Brazil,Al Shabab,FC Arouca,,False
+eafc_3935,tm_3763,Manel Royo,1994-02-28,Manel Royo,1994-02-28,Spain,Spain,Almere City,Almere City FC,1.0,True
+eafc_10261,tm_4348,O. Gloukh,2004-04-01,Jérôme Gondorf,1988-06-26,Israel,Germany,Salzburg,Karlsruher SC,,False
+eafc_1562,tm_5019,A. Yarmolenko,1989-10-23,Pietro Pellegri,2001-03-17,Ukraine,Italy,Dynamo Kyiv,Torino FC,,False
+eafc_2851,tm_5187,Jason,1994-07-06,Jason,1994-07-06,Spain,Spain,Arouca,FC Arouca,1.0,True
+eafc_7951,tm_6913,L. Miguel,2001-03-24,Fabian Tait,1993-02-10,Netherlands,Italy,Sporting Gijón,FC Südtirol,,False
+eafc_2180,tm_5462,Bigas,1990-09-15,Héctor Herrera,1990-04-19,Spain,Mexico,Elche,Houston Dynamo FC,,False
+eafc_11410,tm_3237,Zhong Jinbao,25.11.1994,Chong Zhang,25.11.1987,China PR,China,Qingdao Hainiu,Dalian Professional,0.441666667,False
+eafc_4728,tm_10544,J. Eggestein,08.05.1998,Johannes Eggestein,08.05.1998,Germany,Germany,St. Pauli,FC St. Pauli,0.727777778,True
+eafc_10309,tm_1040,H. Endeley,09.10.2001,Herbert Endeley,09.10.2001,United States,United States,Dallas,FC Dallas,0.72,True
+eafc_3025,tm_7204,Diego Carlos,1993-03-15,Diego Carlos,1993-03-15,Brazil,Brazil,Aston Villa,Aston Villa,1.0,True
+eafc_8246,tm_5316,H. Al Ali,2002-02-10,Rico Preißinger,1996-07-21,Saudi Arabia,Germany,Abha,Preußen Münster,,False
+eafc_7215,tm_5437,Bruno Duarte,1996-03-24,Bruno Duarte,1996-03-24,Brazil,Brazil,Farense,SC Farense,1.0,True
+eafc_9294,tm_4262,D. Gore,2004-09-26,Robin Roefs,2003-01-17,England,Netherlands,Manchester United,NEC Nijmegen,,False
+eafc_8601,tm_6897,Ros,1996-03-15,Óscar Duarte,1989-06-03,Spain,Costa Rica,Albacete,Al-Wehda FC,,False
+eafc_8626,tm_8663,Antoniu Roca,2002-09-05,Christian Mathenia,1992-03-31,Spain,Germany,Espanyol,1.FC Nuremberg,,False
+eafc_7831,tm_10610,J. Naschberger,25.01.2000,Niklas Heeger,07.01.2000,Austria,Germany,WSG Tirol,1.FC Kaiserslautern,0.45,False
+eafc_11340,tm_2955,Shao Puliang,06.07.1989,Shaowen Liang,12.06.2002,China PR,China,Cangzhou Mighty Lions,Beijing Guoan,0.490769231,False
+eafc_2923,tm_5008,Wendell,1993-07-20,Wendell,1993-07-20,Brazil,Brazil,Porto,FC Porto,1.0,True
+eafc_2393,tm_8819,M. Modolo,23.03.1989,Marco Modolo,23.03.1989,Italy,Italy,Venezia,Venezia FC,0.766666667,True
+eafc_11164,tm_5759,E. Kroupi,2006-06-23,Ezechiel Banzuzi,2005-02-16,France,Netherlands,Lorient,Oud-Heverlee Leuven,,False
+eafc_9771,tm_8386,J. Janneh,06.12.2002,Jocelyn Janneh,06.12.2002,Sierra Leone,Sierra Leone,Bastia,SC Bastia,0.7,True
+eafc_2775,tm_5004,Fábio Cardoso,1994-04-19,Fábio Cardoso,1994-04-19,Portugal,Portugal,Porto,FC Porto,1.0,True
+eafc_6683,tm_1401,T. Ostrák,05.02.2000,Tomás Ostrák,05.02.2000,Czech Republic,Czech Republic,Saint Louis City,St. Louis CITY SC,0.766666667,True
+eafc_4284,tm_4767,Gustavo Sauer,1993-04-30,Gustavo Sauer,1993-04-30,Brazil,Brazil,Rizespor,,1.0,True
+eafc_4677,tm_6596,Odriozola,14.12.1995,Álvaro Odriozola,14.12.1995,Spain,Spain,Real Sociedad,Real Sociedad,0.69375,True
+eafc_5453,tm_10299,F. Flecker,29.10.1995,Ashley Fletcher,02.10.1995,Austria,England,LASK Linz,Watford FC,0.476666667,False
+eafc_5023,tm_7004,Marc Cardona,1995-07-08,Marc Cardona,1995-07-08,Spain,Spain,Las Palmas,UD Las Palmas,1.0,True
+eafc_8887,tm_4119,M. Boukamir,26.01.2004,Mehdi Boukamir,26.01.2004,Belgium,Morocco,Sporting Charleroi,RSC Charleroi,0.8,True
+eafc_1718,tm_6552,Oriol Romeu,1991-09-24,Oriol Romeu,1991-09-24,Spain,Spain,FC Barcelona,FC Barcelona,1.0,True
+eafc_8774,tm_5186,Miguel Puche,2001-04-30,Miguel Puche,2001-04-30,Spain,Spain,Arouca,FC Arouca,1.0,True
+eafc_1487,tm_6265,R. Pereyra,07.01.1991,Roberto Pereyra,07.01.1991,Argentina,Argentina,Udinese,Udinese Calcio,0.72,True
+eafc_5850,tm_5057,Tiago Sá,1995-01-11,Tiago Sá,1995-01-11,Portugal,Portugal,Sporting Braga,SC Braga,1.0,True
+eafc_4316,tm_6689,Unai Simón,1997-06-11,Unai Simón,1997-06-11,Spain,Spain,Athletic Club,Athletic Bilbao,1.0,True
+eafc_11615,tm_2831,H. Ablahan,2001-04-26,Quaresma,1996-08-22,China PR,Brazil,Shanghai Port,FC Arouca,,False
+eafc_3085,tm_6915,Iza Carcelén,1993-04-23,Iza Carcelén,1993-04-23,Spain,Spain,Cádiz,Cádiz CF,1.0,True
+eafc_4244,tm_9281,Marlon Nideiro,1996-02-29,Josip Vukovic,1992-05-02,Brazil,Croatia,Flamengo,Pendikspor,,False
+eafc_11440,tm_3324,Romário Baldé,1996-12-25,Romário Baldé,1996-12-25,Guinea Bissau,Guinea-Bissau,Nantong Zhiyun,Nantong Zhiyun,1.0,True
+eafc_8488,tm_9711,Koldo Obieta,1993-10-08,Koldo Obieta,1993-10-08,Spain,Spain,Alcorcón,AD Alcorcón,1.0,True
+eafc_7918,tm_4205,B. Popovic,26.02.2000,Boris Popović,26.02.2000,Serbia,Serbia,Cercle Brugge,Cercle Brugge,0.730769231,True
+eafc_6825,tm_9849,B. Cabango,30.05.2000,Ben Cabango,30.05.2000,Wales,Wales,Swansea City,Swansea City,0.872727273,True
+eafc_8972,tm_6017,K. Asllani,09.03.2002,Kristjan Asllani,09.03.2002,Albania,Albania,Inter,Inter Milan,0.69375,True
+eafc_4299,tm_3332,H. Al Watyan,1996-08-08,Giorgio Chiellini,1984-08-14,Saudi Arabia,Italy,Al Hilal,Los Angeles FC,,False
+eafc_7206,tm_9901,J. Griffiths,05.09.2001,Josh Griffiths,05.09.2001,England,England,West Bromwich Albion,West Bromwich Albion,0.85,True
+eafc_9439,tm_10766,S. Saftig,2002-02-05,Max Kilman,1997-05-23,Germany,England,Elversberg,Wolverhampton Wanderers,,False
+eafc_11281,tm_3097,Fran Mérida,1990-03-04,Fran Mérida,1990-03-04,Spain,Spain,Tianjin Jinmen Tiger,Tianjin Jinmen Tiger,1.0,True
+eafc_3167,tm_2548,R. Al Ghamdi,06.05.1994,Raed Al-Ghamdi,06.05.1994,Saudi Arabia,Saudi Arabia,Al Raed,Al-Raed SFC,0.8,True
+eafc_11410,tm_3237,Zhong Jinbao,1994-11-25,Marc Bola,1997-12-09,China PR,England,Qingdao Hainiu,Samsunspor,,False
+eafc_2183,tm_5138,César,1992-01-27,César,1992-01-27,Brazil,Brazil,Boavista,Boavista FC,1.0,True
+eafc_1795,tm_5766,B. Lecomte,26.04.1991,Benjamin Lecomte,26.04.1991,France,France,Montpellier,Montpellier HSC,0.69375,True
+eafc_8257,tm_6793,Arnau Martínez,2003-04-25,Arnau Martínez,2003-04-25,Spain,Spain,Girona,Girona FC,1.0,True
+eafc_3157,tm_7523,O. Okungbowa,1994-05-13,Kenny Tete,1995-10-09,Austria,Netherlands,WSG Tirol,Fulham FC,,False
+eafc_6267,tm_8954,T. Rotter,27.01.1992,Stefano Pettinari,27.01.1992,Austria,Italy,Hartberg,AC Reggiana 1919,0.464705882,False
+eafc_7842,tm_6887,Pep Chavarría,1998-04-10,Pep Chavarría,1998-04-10,Spain,Spain,Rayo Vallecano,Rayo Vallecano,1.0,True
+eafc_1794,tm_6525,Nacho Fernández,1990-01-18,Nacho Fernández,1990-01-18,Spain,Spain,Real Madrid,Real Madrid,1.0,True
+eafc_11179,tm_8451,Joan Ruiz,2003-02-11,Tomás Ostrák,2000-02-05,Spain,Czech Republic,Villarreal II,St. Louis CITY SC,,False

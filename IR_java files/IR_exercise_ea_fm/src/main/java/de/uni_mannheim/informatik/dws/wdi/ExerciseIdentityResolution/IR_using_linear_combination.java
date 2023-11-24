@@ -8,6 +8,7 @@ import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking.Pl
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking.PlayerBlockingKeyByNameGenerator;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.PlayerNameComparatorJaccard;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.PlayerBirthdateComparator;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.PlayerBirthdayComparator1Day;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.PlayerAgeComparatorAbsoluteDifference;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.PlayerHeightComparatorRelativeDifference;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.PlayerLeagueComparatorEqual;

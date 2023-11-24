@@ -11,41 +11,59 @@
  */
 package de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators;
 
+import java.time.LocalDateTime;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Player;
 import de.uni_mannheim.informatik.dws.winter.matching.rules.comparators.Comparator;
 import de.uni_mannheim.informatik.dws.winter.matching.rules.comparators.ComparatorLogger;
 import de.uni_mannheim.informatik.dws.winter.model.Correspondence;
 import de.uni_mannheim.informatik.dws.winter.model.Matchable;
 import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
 import de.uni_mannheim.informatik.dws.winter.similarity.date.YearSimilarity;
-import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Player;
 
 /**
  * {@link Comparator} for {@link Movie}s based on the {@link Movie#getDate()}
- * value, with a maximal difference of 2 years.
+ * value. With a maximal difference of 10 years.
  * 
  * @author Oliver Lehmberg (oli@dwslab.de)
  * 
  */
-public class PlayerBirthdayComparator1Day implements Comparator<Player, Attribute> {
+public class PlayerBirthdateComparator implements Comparator<Player, Attribute> {
 
 	private static final long serialVersionUID = 1L;
-	private YearSimilarity sim = new YearSimilarity(2);
+	private YearSimilarity sim;
 	
 	private ComparatorLogger comparisonLog;
+	
+	public PlayerBirthdateComparator() {
+		this(2);
+	}
+	
+	public PlayerBirthdateComparator(int max_diff) {
+		sim = new YearSimilarity(max_diff);
+	}
 
 	@Override
 	public double compare(
 			Player record1,
 			Player record2,
 			Correspondence<Attribute, Matchable> schemaCorrespondences) {
+		
+		LocalDateTime birthdate1 = record1.getBirthdate();
+	    LocalDateTime birthdate2 = record2.getBirthdate();
+	    
+	    // Check if either birthdate is null
+	    if (birthdate1 == null || birthdate2 == null) {
+	        // Handle the case where either birthdate is null, e.g., by returning a default similarity value
+	        return 0.0;
+	    }
     	
-    	double similarity = sim.calculate(record1.getBirthdate(), record2.getBirthdate());
+    	double similarity = sim.calculate(birthdate1, birthdate2);
     	
 		if(this.comparisonLog != null){
 			this.comparisonLog.setComparatorName(getClass().getName());
 		
-			this.comparisonLog.setRecord1Value(record1.getBirthdate().toString());
-			this.comparisonLog.setRecord2Value(record2.getBirthdate().toString());
+			this.comparisonLog.setRecord1Value(birthdate1.toString());
+			this.comparisonLog.setRecord2Value(birthdate2.toString());
     	
 			this.comparisonLog.setSimilarity(Double.toString(similarity));
 		}
