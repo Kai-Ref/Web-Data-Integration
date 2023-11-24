@@ -16,7 +16,7 @@ import de.uni_mannheim.informatik.dws.winter.matching.rules.comparators.Comparat
 import de.uni_mannheim.informatik.dws.winter.model.Correspondence;
 import de.uni_mannheim.informatik.dws.winter.model.Matchable;
 import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
-import de.uni_mannheim.informatik.dws.winter.similarity.date.YearSimilarity;
+import de.uni_mannheim.informatik.dws.winter.similarity.date.DaySimilarity;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Player;
 
 /**
@@ -26,12 +26,16 @@ import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Playe
  * @author Oliver Lehmberg (oli@dwslab.de)
  * 
  */
-public class PlayerBirthdayComparator1Day implements Comparator<Player, Attribute> {
+public class PlayerBirthdayComparatorDay implements Comparator<Player, Attribute> {
 
 	private static final long serialVersionUID = 1L;
-	private YearSimilarity sim = new YearSimilarity(2);
+	private DaySimilarity sim;
 	
 	private ComparatorLogger comparisonLog;
+	
+	public PlayerBirthdayComparatorDay(int days) {
+		this.sim = new DaySimilarity(days);
+	}
 
 	@Override
 	public double compare(
