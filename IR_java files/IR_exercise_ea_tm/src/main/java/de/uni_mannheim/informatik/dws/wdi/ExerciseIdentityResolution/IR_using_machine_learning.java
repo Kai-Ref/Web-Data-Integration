@@ -56,73 +56,70 @@ public class IR_using_machine_learning {
 		new PlayerXMLReader().loadFromXML(new File("data/input/eafc_final.xml"), "/players/player", dataEa);
 		
 		
-		
-		// TODO: WE STILL NEED THE TRAIN AND TEST SET TO APPLY MACHINE LEARNING ALGORITHMS
-		
-		
 		// load the training set
-		//MatchingGoldStandard gsTraining = new MatchingGoldStandard();
-		//gsTraining.loadFromCSVFile(new File("data/goldstandard/gs_academy_awards_2_actors_training.csv"));
+		MatchingGoldStandard gsTraining = new MatchingGoldStandard();
+		gsTraining.loadFromCSVFile(new File("data/goldstandard/gold_standard_ea_tm_train_v2.csv"));
 
 		// create a matching rule
-		//String options[] = new String[] { "-S" };
-		//String modelType = "SimpleLogistic"; // use a logistic regression
-		//WekaMatchingRule<Movie, Attribute> matchingRule = new WekaMatchingRule<>(0.7, modelType, options);
-		//matchingRule.activateDebugReport("data/output/debugResultsMatchingRule.csv", 1000, gsTraining);
+		String options[] = new String[] { "-S" };
+		String modelType = "SimpleLogistic"; // use a logistic regression
+		WekaMatchingRule<Player, Attribute> matchingRule = new WekaMatchingRule<>(0.5, modelType, options);
+		matchingRule.activateDebugReport("data/output/debugResultsMatchingRule.csv", 1000, gsTraining);
 		
 		// add comparators
-		//matchingRule.addComparator(new PlayerNameComparatorEqual());
-		//matchingRule.addComparator(new PlayerBirthdateComparator2Years());
-		//matchingRule.addComparator(new PlayerBirthdateComparator10Years());
-		//matchingRule.addComparator(new PlayerClubComparatorJaccard());
-		//matchingRule.addComparator(new PlayerClubComparatorLevenshtein());
-		//matchingRule.addComparator(new PlayerClubComparatorLowerCaseJaccard());
-		//matchingRule.addComparator(new PlayerNameComparatorLevenshtein());
-		//matchingRule.addComparator(new MovieTitleComparatorJaccard());
+		matchingRule.addComparator(new PlayerNameComparatorJaccard());
+		matchingRule.addComparator(new PlayerClubComparatorLowerCaseJaccard());
+		matchingRule.addComparator(new PlayerNameComparatorEqual());
+//		matchingRule.addComparator(new PlayerBirthdateComparator2Years());
+//		matchingRule.addComparator(new PlayerBirthdateComparator10Years());
+		matchingRule.addComparator(new PlayerClubComparatorJaccard());
+		matchingRule.addComparator(new PlayerClubComparatorLevenshtein());
+		matchingRule.addComparator(new PlayerNameComparatorLevenshtein());
+		matchingRule.addComparator(new PlayerBirthdateComparator(3));
 		
 		
 		// train the matching rule's model
 		logger.info("*\tLearning matching rule\t*");
-		//RuleLearner<Movie, Attribute> learner = new RuleLearner<>();
-		//learner.learnMatchingRule(dataAcademyAwards, dataActors, null, matchingRule, gsTraining);
-		//logger.info(String.format("Matching rule is:\n%s", matchingRule.getModelDescription()));
+		RuleLearner<Player, Attribute> learner = new RuleLearner<>();
+		learner.learnMatchingRule(dataTm, dataEa, null, matchingRule, gsTraining);
+		logger.info(String.format("Matching rule is:\n%s", matchingRule.getModelDescription()));
 		
 		// create a blocker (blocking strategy)
 		//StandardRecordBlocker<Movie, Attribute> blocker = new StandardRecordBlocker<Movie, Attribute>(new MovieBlockingKeyByTitleGenerator());
-//		SortedNeighbourhoodBlocker<Movie, Attribute, Attribute> blocker = new SortedNeighbourhoodBlocker<>(new MovieBlockingKeyByDecadeGenerator(), 1);
-		//blocker.collectBlockSizeData("data/output/debugResultsBlocking.csv", 100);
+		SortedNeighbourhoodBlocker<Player, Attribute, Attribute> blocker = new SortedNeighbourhoodBlocker<>(new PlayerBlockingKeyByNameGenerator(1), 110);
+		blocker.collectBlockSizeData("data/output/debugResultsBlocking.csv", 100);
 		
 		// Initialize Matching Engine
-		//MatchingEngine<Movie, Attribute> engine = new MatchingEngine<>();
+		MatchingEngine<Player, Attribute> engine = new MatchingEngine<>();
 
 		// Execute the matching
 		logger.info("*\tRunning identity resolution\t*");
-		//Processable<Correspondence<Movie, Attribute>> correspondences = engine.runIdentityResolution(
-		//		dataAcademyAwards, dataActors, null, matchingRule,
-		//		blocker);
+		Processable<Correspondence<Player, Attribute>> correspondences = engine.runIdentityResolution(
+				dataTm, dataEa, null, matchingRule,
+				blocker);
 
 		// write the correspondences to the output file
-		//new CSVCorrespondenceFormatter().writeCSV(new File("data/output/academy_awards_2_actors_correspondences.csv"), correspondences);
+		new CSVCorrespondenceFormatter().writeCSV(new File("data/output/ml_correspondences.csv"), correspondences);
 
 		// load the gold standard (test set)
 		logger.info("*\tLoading gold standard\t*");
-		//MatchingGoldStandard gsTest = new MatchingGoldStandard();
-		//gsTest.loadFromCSVFile(new File(
-		//		"data/goldstandard/gs_academy_awards_2_actors_test.csv"));
+		MatchingGoldStandard gsTest = new MatchingGoldStandard();
+		gsTest.loadFromCSVFile(new File(
+				"data/goldstandard/gold_standard_ea_tm_test_v2.csv"));
 		
 		// evaluate your result
 		logger.info("*\tEvaluating result\t*");
-		//MatchingEvaluator<Movie, Attribute> evaluator = new MatchingEvaluator<Movie, Attribute>();
-		//Performance perfTest = evaluator.evaluateMatching(correspondences,
-		//		gsTest);
+		MatchingEvaluator<Player, Attribute> evaluator = new MatchingEvaluator<Player, Attribute>();
+		Performance perfTest = evaluator.evaluateMatching(correspondences,
+				gsTest);
 		
 		// print the evaluation result
-		logger.info("Academy Awards <-> Actors");
-		//logger.info(String.format(
-		//		"Precision: %.4f",perfTest.getPrecision()));
-		//logger.info(String.format(
-		//		"Recall: %.4f",	perfTest.getRecall()));
-		//logger.info(String.format(
-		//		"F1: %.4f",perfTest.getF1()));
+		logger.info("EA <-> TM");
+		logger.info(String.format(
+				"Precision: %.4f",perfTest.getPrecision()));
+		logger.info(String.format(
+				"Recall: %.4f",	perfTest.getRecall()));
+		logger.info(String.format(
+				"F1: %.4f",perfTest.getF1()));
     }
 }
