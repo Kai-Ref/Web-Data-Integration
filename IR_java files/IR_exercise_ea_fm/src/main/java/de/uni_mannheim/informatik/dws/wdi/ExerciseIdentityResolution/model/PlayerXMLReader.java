@@ -52,6 +52,7 @@ public class PlayerXMLReader extends XMLMatchableReader<Player, Attribute>  {
 		// fill the attributes
 		player.setName(getValueFromChildElement(node, "name"));
 		player.setNationality(getValueFromChildElement(node, "nationality"));
+		player.setLeague(getValueFromChildElement(node, "league"));
 		player.setClub(getValueFromChildElement(node, "club"));
 		player.setWeight(Float.parseFloat(getValueFromChildElement(node, "weight")));
 		player.setHeight(Float.parseFloat(getValueFromChildElement(node, "height")));
