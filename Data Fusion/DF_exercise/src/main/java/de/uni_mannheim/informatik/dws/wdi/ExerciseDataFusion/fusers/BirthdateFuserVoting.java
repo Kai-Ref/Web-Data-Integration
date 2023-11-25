@@ -37,7 +37,7 @@ public class BirthdateFuserVoting extends AttributeValueFuser<LocalDateTime, Pla
 	
 	@Override
 	public boolean hasValue(Player record, Correspondence<Attribute, Matchable> correspondence) {
-		return record.hasValue(Movie.DATE);
+		return record.hasValue(Player.BIRTHDATE);
 	}
 	
 	@Override
@@ -49,7 +49,7 @@ public class BirthdateFuserVoting extends AttributeValueFuser<LocalDateTime, Pla
 	public void fuse(RecordGroup<Player, Attribute> group, Player fusedRecord, Processable<Correspondence<Attribute, Matchable>> schemaCorrespondences, Attribute schemaElement) {
 		FusedValue<LocalDateTime, Player, Attribute> fused = getFusedValue(group, schemaCorrespondences, schemaElement);
 		fusedRecord.setBirthdate(fused.getValue());
-		fusedRecord.setAttributeProvenance(Movie.DATE, fused.getOriginalIds());
+		fusedRecord.setAttributeProvenance(Player.BIRTHDATE, fused.getOriginalIds());
 	}
 
 }

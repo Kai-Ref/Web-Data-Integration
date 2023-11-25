@@ -17,12 +17,12 @@ import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.evaluation.National
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.evaluation.TitleEvaluationRule;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.fusers.ActorsFuserUnion;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.fusers.BirthdateFuserVoting;
-import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.fusers.ClubFuserShortestString;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.fusers.ClubFuserLongestString;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.fusers.DateFuserFavourSource;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.fusers.DateFuserVoting;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.fusers.DirectorFuserLongestString;
-import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.fusers.NameFuserShortestString;
-import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.fusers.NationalityFuserShortestString;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.fusers.NameFuserLongestString;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.fusers.NationalityFuserLongestString;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.fusers.TitleFuserShortestString;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.model.FusibleMovieFactory;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.model.Movie;
@@ -93,12 +93,12 @@ public class DataFusion_Main
 	
 
 		// Maintain Provenance
-		// Scores (e.g. from rating)
+		// Scores (e.g. from rating) - how trustworthy is each dataset?
 		ds1.setScore(1.0);
 		ds2.setScore(2.0);
-		ds3.setScore(3.0);
+		ds3.setScore(2.0);
 
-		// Date (e.g. last update)
+		// Date (e.g. last update) - How recent is each dataset?
 		DateTimeFormatter formatter = new DateTimeFormatterBuilder()
 		        .appendPattern("yyyy-MM-dd")
 		        .parseDefaulting(ChronoField.CLOCK_HOUR_OF_DAY, 0)
@@ -106,13 +106,14 @@ public class DataFusion_Main
 		        .parseDefaulting(ChronoField.SECOND_OF_MINUTE, 0)
 		        .toFormatter(Locale.ENGLISH);
 		
-		ds1.setDate(LocalDateTime.parse("2012-01-01", formatter));
-		ds2.setDate(LocalDateTime.parse("2010-01-01", formatter));
-		ds3.setDate(LocalDateTime.parse("2008-01-01", formatter));
+		ds1.setDate(LocalDateTime.parse("2023-01-01", formatter));
+		ds2.setDate(LocalDateTime.parse("2023-01-01", formatter));
+		ds3.setDate(LocalDateTime.parse("2023-01-01", formatter));
 
 		// load correspondences
 		logger.info("*\tLoading correspondences\t*");
 		CorrespondenceSet<Player, Attribute> correspondences = new CorrespondenceSet<>();
+<<<<<<< HEAD
 		//correspondences.loadCorrespondences(new File("data/correspondences/academy_awards_2_actors_correspondences.csv"),ds1, ds2);
 //		correspondences.loadCorrespondences(new File("data/correspondences/fm_tm_correspondences.csv"),ds3, ds2);
 //		correspondences.loadCorrespondences(new File("data/correspondences/ea_fm_correspondences.csv"),ds1, ds2);
@@ -120,6 +121,13 @@ public class DataFusion_Main
 		
 		
 		
+=======
+		
+		correspondences.loadCorrespondences(new File("data/correspondences/ea_fm_correspondences.csv"),ds1, ds2);
+		correspondences.loadCorrespondences(new File("data/correspondences/ea_tm_correspondences.csv"),ds3, ds1);
+		correspondences.loadCorrespondences(new File("data/correspondences/fm_tm_correspondences.csv"),ds3, ds2);
+
+>>>>>>> 03fb4a14ad77e5029b41b0bf9d88dcb79c1b6c62
 		// write group size distribution
 		correspondences.printGroupSizeDistribution();
 		
@@ -147,10 +155,10 @@ public class DataFusion_Main
 		//strategy.addAttributeFuser(Movie.ACTORS,new ActorsFuserUnion(),new ActorsEvaluationRule());
 		
 		
-		strategy.addAttributeFuser(Player.NAME, new NameFuserShortestString(),new NameEvaluationRule());
+		strategy.addAttributeFuser(Player.NAME, new NameFuserLongestString(),new NameEvaluationRule());
 		strategy.addAttributeFuser(Player.BIRTHDATE,new BirthdateFuserVoting(), new BirthdateEvaluationRule());
-		strategy.addAttributeFuser(Player.NATIONALITY, new NationalityFuserShortestString() ,new NationalityEvaluationRule());
-		strategy.addAttributeFuser(Player.CLUB,new ClubFuserShortestString(),new ClubEvaluationRule());
+		strategy.addAttributeFuser(Player.NATIONALITY, new NationalityFuserLongestString() ,new NationalityEvaluationRule());
+		strategy.addAttributeFuser(Player.CLUB,new ClubFuserLongestString(),new ClubEvaluationRule());
 		
 		// create the fusion engine
 		DataFusionEngine<Player, Attribute> engine = new DataFusionEngine<>(strategy);

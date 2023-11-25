@@ -43,11 +43,14 @@ public class PlayerXMLFormatter extends XMLFormatter<Player> {
 		player.appendChild(createTextElementWithProvenance("nationality",
 				record.getNationality(),
 				record.getMergedAttributeProvenance(Player.NATIONALITY), doc));
+		if (record.getBirthdate() != null) {
+			
 		player.appendChild(createTextElementWithProvenance("birthdate", record
 				.getBirthdate().toString(), record
 				.getMergedAttributeProvenance(Player.BIRTHDATE), doc));
+		}
 		player.appendChild(createTextElementWithProvenance("club",
-				record.getNationality(),
+				record.getClub(),
 				record.getMergedAttributeProvenance(Player.CLUB), doc));
 		return player;
 	}

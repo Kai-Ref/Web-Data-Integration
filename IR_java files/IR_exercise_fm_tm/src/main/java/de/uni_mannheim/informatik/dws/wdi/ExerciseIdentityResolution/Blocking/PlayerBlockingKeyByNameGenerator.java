@@ -32,6 +32,15 @@ public class PlayerBlockingKeyByNameGenerator extends
 		RecordBlockingKeyGenerator<Player, Attribute> {
 
 	private static final long serialVersionUID = 1L;
+	private int num_first_letters;
+	
+	public PlayerBlockingKeyByNameGenerator() {
+        this(2); // Default value
+    }
+	
+	public PlayerBlockingKeyByNameGenerator(int num_first_letters) {
+		this.num_first_letters = num_first_letters;
+	}
 
 
 	/* (non-Javadoc)
@@ -46,7 +55,7 @@ public class PlayerBlockingKeyByNameGenerator extends
 		String blockingKeyValue = "";
 
 		for(int i = 0; i <= 2 && i < tokens.length; i++) {
-			blockingKeyValue += tokens[i].substring(0, Math.min(2,tokens[i].length())).toUpperCase();
+			blockingKeyValue += tokens[i].substring(0, Math.min(num_first_letters,tokens[i].length())).toUpperCase();
 		}
 
 		resultCollector.next(new Pair<>(blockingKeyValue, record));
