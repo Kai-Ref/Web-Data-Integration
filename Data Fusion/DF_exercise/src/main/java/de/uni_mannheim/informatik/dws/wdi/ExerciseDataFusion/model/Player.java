@@ -51,6 +51,9 @@ public class Player extends AbstractRecord<Attribute> implements Serializable {
 	private String nationality; 
 	private List<String> positions;
 	private String club; 
+	private double weight;
+	private double height;
+
 	
 	
 	public String getName() {
@@ -130,6 +133,10 @@ public class Player extends AbstractRecord<Attribute> implements Serializable {
 	public static final Attribute BIRTHDATE = new Attribute("Birthdate");
 	public static final Attribute NATIONALITY = new Attribute("Nationality");
 	public static final Attribute CLUB = new Attribute("Club");
+	public static final Attribute WEIGHT = new Attribute("Weight");
+	public static final Attribute HEIGHT = new Attribute("Height");
+
+
 	
 	@Override
 	public boolean hasValue(Attribute attribute) {
@@ -141,6 +148,10 @@ public class Player extends AbstractRecord<Attribute> implements Serializable {
 			return getBirthdate() != null;
 		else if(attribute==CLUB)
 			return getClub() != null && !getClub().isEmpty();
+		else if(attribute==WEIGHT)
+			return getWeight() !=  0.0;
+		else if(attribute==HEIGHT)
+			return getWeight() !=  0.0;
 		else
 			return false;
 	}
@@ -164,7 +175,21 @@ public class Player extends AbstractRecord<Attribute> implements Serializable {
 			return false;
 	}
 
-	
+	public double getWeight() {
+		return weight;
+	}
+
+	public void setWeight(double weight) {
+		this.weight = weight;
+	}
+
+	public double getHeight() {
+		return height;
+	}
+
+	public void setHeight(double height) {
+		this.height = height;
+	}
 	
 	
 }

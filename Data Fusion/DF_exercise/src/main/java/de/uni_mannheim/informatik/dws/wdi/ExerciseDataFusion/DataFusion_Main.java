@@ -12,18 +12,22 @@ import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.evaluation.Birthdat
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.evaluation.ClubEvaluationRule;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.evaluation.DateEvaluationRule;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.evaluation.DirectorEvaluationRule;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.evaluation.HeightEvaluationRule;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.evaluation.NameEvaluationRule;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.evaluation.NationalityEvaluationRule;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.evaluation.TitleEvaluationRule;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.evaluation.WeightEvaluationRule;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.fusers.ActorsFuserUnion;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.fusers.BirthdateFuserVoting;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.fusers.ClubFuserLongestString;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.fusers.DateFuserFavourSource;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.fusers.DateFuserVoting;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.fusers.DirectorFuserLongestString;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.fusers.HeightFuser;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.fusers.NameFuserLongestString;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.fusers.NationalityFuserLongestString;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.fusers.TitleFuserShortestString;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.fusers.WeightFuser;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.model.FusibleMovieFactory;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.model.Movie;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.model.MovieXMLFormatter;
@@ -155,6 +159,9 @@ public class DataFusion_Main
 		strategy.addAttributeFuser(Player.BIRTHDATE,new BirthdateFuserVoting(), new BirthdateEvaluationRule());
 		strategy.addAttributeFuser(Player.NATIONALITY, new NationalityFuserLongestString() ,new NationalityEvaluationRule());
 		strategy.addAttributeFuser(Player.CLUB,new ClubFuserLongestString(),new ClubEvaluationRule());
+		strategy.addAttributeFuser(Player.WEIGHT, new WeightFuser(), new WeightEvaluationRule());
+		strategy.addAttributeFuser(Player.HEIGHT, new HeightFuser(), new HeightEvaluationRule());
+
 		
 		// create the fusion engine
 		DataFusionEngine<Player, Attribute> engine = new DataFusionEngine<>(strategy);

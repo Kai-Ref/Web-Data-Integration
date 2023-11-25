@@ -28,12 +28,12 @@ public class PlayerXMLFormatter extends XMLFormatter<Player> {
 
 	@Override
 	public Element createRootElement(Document doc) {
-		return doc.createElement("movies");
+		return doc.createElement("players");
 	}
 
 	@Override
 	public Element createElementFromRecord(Player record, Document doc) {
-		Element player = doc.createElement("movie");
+		Element player = doc.createElement("player");
 
 		player.appendChild(createTextElement("id", record.getIdentifier(), doc));
 
@@ -52,6 +52,16 @@ public class PlayerXMLFormatter extends XMLFormatter<Player> {
 		player.appendChild(createTextElementWithProvenance("club",
 				record.getClub(),
 				record.getMergedAttributeProvenance(Player.CLUB), doc));
+		if (record.getWeight() != 0.0) {
+		    player.appendChild(createTextElementWithProvenance("weight",
+		            Double.toString(record.getWeight()),
+		            record.getMergedAttributeProvenance(Player.WEIGHT), doc));
+		}
+		if (record.getHeight() != 0.0) {
+		    player.appendChild(createTextElementWithProvenance("height",
+		            Double.toString(record.getHeight()),
+		            record.getMergedAttributeProvenance(Player.HEIGHT), doc));
+		}
 		return player;
 	}
 
