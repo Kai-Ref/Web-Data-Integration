@@ -5,7 +5,7 @@ import de.uni_mannheim.informatik.dws.winter.similarity.SimilarityMeasure;
 	public class CustomSimilarityMeasure extends SimilarityMeasure<Integer> {
 
 		private static final long serialVersionUID = 1L;
-		private double diff_max = 0;
+		private double diff_max = 1;
 
 		/**
 		 * Creates a new instance of the similarity measure

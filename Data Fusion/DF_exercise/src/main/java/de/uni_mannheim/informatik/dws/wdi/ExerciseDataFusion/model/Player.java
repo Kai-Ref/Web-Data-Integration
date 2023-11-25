@@ -136,7 +136,7 @@ public class Player extends AbstractRecord<Attribute> implements Serializable {
 	public static final Attribute CLUB = new Attribute("Club");
 	public static final Attribute WEIGHT = new Attribute("Weight");
 	public static final Attribute HEIGHT = new Attribute("Height");
-	public static final Attribute JERSEY_NUMBER = new Attribute("Height");
+	public static final Attribute JERSEY_NUMBER = new Attribute("Jersey_number");
 
 
 
@@ -154,7 +154,7 @@ public class Player extends AbstractRecord<Attribute> implements Serializable {
 		else if(attribute==WEIGHT)
 			return getWeight() !=  0.0;
 		else if(attribute==HEIGHT)
-			return getWeight() !=  0.0;
+			return getHeight() !=  0.0;
 		else if(attribute==JERSEY_NUMBER)
 			return getJersey_number() != 0;
 			
