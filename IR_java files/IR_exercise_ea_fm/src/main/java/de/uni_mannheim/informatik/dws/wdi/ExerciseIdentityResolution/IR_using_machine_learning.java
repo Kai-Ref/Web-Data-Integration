@@ -16,7 +16,10 @@ import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators
 
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking.PlayerBlockingKeyByNameGenerator;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Player;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Player2;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.PlayerXMLReader;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.PlayerXMLReader2;
+import de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet;
 import de.uni_mannheim.informatik.dws.winter.matching.MatchingEngine;
 import de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator;
 import de.uni_mannheim.informatik.dws.winter.matching.algorithms.RuleLearner;
@@ -24,6 +27,8 @@ import de.uni_mannheim.informatik.dws.winter.matching.blockers.SortedNeighbourho
 import de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardRecordBlocker;
 import de.uni_mannheim.informatik.dws.winter.matching.rules.WekaMatchingRule;
 import de.uni_mannheim.informatik.dws.winter.model.Correspondence;
+import de.uni_mannheim.informatik.dws.winter.model.FusibleDataSet;
+import de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet;
 import de.uni_mannheim.informatik.dws.winter.model.HashedDataSet;
 import de.uni_mannheim.informatik.dws.winter.model.MatchingGoldStandard;
 import de.uni_mannheim.informatik.dws.winter.model.Performance;
@@ -125,5 +130,20 @@ public class IR_using_machine_learning {
 				"Recall: %.4f",	perfTest.getRecall()));
 		logger.info(String.format(
 				"F1: %.4f",perfTest.getF1()));
+		
+		
+		FusibleDataSet<Player2, Attribute> ds2 = new FusibleHashedDataSet<>();
+		new PlayerXMLReader2().loadFromXML(new File("data/input/eafc_final.xml"), "/players/player", ds2);
+//		ds2.printDataSetDensityReport();
+
+		FusibleDataSet<Player2, Attribute> ds3 = new FusibleHashedDataSet<>();
+		new PlayerXMLReader2().loadFromXML(new File("data/input/fm23_final.xml"), "/players/player", ds3);
+//		ds3.printDataSetDensityReport();
+		
+		
+		CorrespondenceSet<Player2, Attribute> correspondences2 = new CorrespondenceSet<>();
+		correspondences2.loadCorrespondences(new File("data/output/ML_ea_2_fm.csv"),ds2, ds3);
+		logger.info("*\tLoading datasets 2\t*");
+		correspondences2.printGroupSizeDistribution();
     }
 }

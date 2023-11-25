@@ -72,15 +72,18 @@ public class PlayerXMLReader extends XMLMatchableReader<Player, Attribute>  {
 		// convert the date string into a DateTime object
 		try {
 			String birthdate = getValueFromChildElement(node, "birthdate");
+			DateTimeFormatter formatter = new DateTimeFormatterBuilder()
+			        .appendPattern("yyyy-MM-dd")
+			        .parseDefaulting(ChronoField.CLOCK_HOUR_OF_DAY, 0)
+			        .parseDefaulting(ChronoField.MINUTE_OF_HOUR, 0)
+			        .parseDefaulting(ChronoField.SECOND_OF_MINUTE, 0)
+			        .toFormatter(Locale.ENGLISH);
 			if (birthdate != null && !birthdate.isEmpty()) {
-				DateTimeFormatter formatter = new DateTimeFormatterBuilder()
-				        .appendPattern("yyyy-MM-dd")
-				        .parseDefaulting(ChronoField.CLOCK_HOUR_OF_DAY, 0)
-				        .parseDefaulting(ChronoField.MINUTE_OF_HOUR, 0)
-				        .parseDefaulting(ChronoField.SECOND_OF_MINUTE, 0)
-				        .toFormatter(Locale.ENGLISH);
+				
 				LocalDateTime dt = LocalDateTime.parse(birthdate, formatter);
 				player.setBirthdate(dt);
+			}else {
+				player.setBirthdate(LocalDateTime.parse("1900-01-01", formatter));
 			}
 		} catch (Exception e) {
 			e.printStackTrace();

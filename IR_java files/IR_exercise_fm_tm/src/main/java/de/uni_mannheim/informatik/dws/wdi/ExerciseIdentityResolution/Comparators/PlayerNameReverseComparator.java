@@ -54,7 +54,7 @@ public class PlayerNameReverseComparator implements Comparator<Player, Attribute
 		    s2 = reversedS2.toString().trim();
 		}
 		
-		System.out.println(s2);
+		// System.out.println(s2);
 
 		double similarity = sim.calculate(s1, s2);
 		
