@@ -50,6 +50,9 @@ dataset.addAttribute(Player.NAME);
 dataset.addAttribute(Player.BIRTHDATE);
 dataset.addAttribute(Player.NATIONALITY);
 dataset.addAttribute(Player.CLUB);
+dataset.addAttribute(Player.WEIGHT);
+dataset.addAttribute(Player.HEIGHT);
+
 
 }
 
@@ -64,9 +67,31 @@ String id = getValueFromChildElement(node, "id");
 	player.setName(getValueFromChildElement(node, "name"));
 	player.setNationality(getValueFromChildElement(node, "nationality"));
 	player.setClub(getValueFromChildElement(node, "club"));
-
-	
 	// convert the date string into a DateTime object
+	String weightString = getValueFromChildElement(node, "weight");
+	
+    if (weightString != null && !weightString.isEmpty()) {
+        try {
+            double weight = Double.parseDouble(weightString);
+            player.setWeight(weight);
+        } catch (NumberFormatException e) {
+            // Handle the exception as needed (e.g., log it or throw a more specific exception)
+            e.printStackTrace();
+        }
+    }
+    
+	String heightString = getValueFromChildElement(node, "height");
+	
+    if (heightString != null && !heightString.isEmpty()) {
+        try {
+            double height = Double.parseDouble(heightString);
+            player.setHeight(height);
+        } catch (NumberFormatException e) {
+            // Handle the exception as needed (e.g., log it or throw a more specific exception)
+            e.printStackTrace();
+        }
+    }
+    
 	try {
 		String date = getValueFromChildElement(node, "birthdate");
 		if (date != null && !date.isEmpty()) {
