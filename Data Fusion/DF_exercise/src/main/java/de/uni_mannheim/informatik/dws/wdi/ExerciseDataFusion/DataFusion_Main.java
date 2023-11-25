@@ -113,7 +113,6 @@ public class DataFusion_Main
 		// load correspondences
 		logger.info("*\tLoading correspondences\t*");
 		CorrespondenceSet<Player, Attribute> correspondences = new CorrespondenceSet<>();
-<<<<<<< HEAD
 		//correspondences.loadCorrespondences(new File("data/correspondences/academy_awards_2_actors_correspondences.csv"),ds1, ds2);
 //		correspondences.loadCorrespondences(new File("data/correspondences/fm_tm_correspondences.csv"),ds3, ds2);
 //		correspondences.loadCorrespondences(new File("data/correspondences/ea_fm_correspondences.csv"),ds1, ds2);
@@ -121,13 +120,10 @@ public class DataFusion_Main
 		
 		
 		
-=======
-		
 		correspondences.loadCorrespondences(new File("data/correspondences/ea_fm_correspondences.csv"),ds1, ds2);
 		correspondences.loadCorrespondences(new File("data/correspondences/ea_tm_correspondences.csv"),ds3, ds1);
 		correspondences.loadCorrespondences(new File("data/correspondences/fm_tm_correspondences.csv"),ds3, ds2);
 
->>>>>>> 03fb4a14ad77e5029b41b0bf9d88dcb79c1b6c62
 		// write group size distribution
 		correspondences.printGroupSizeDistribution();
 		

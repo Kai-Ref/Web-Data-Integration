@@ -112,7 +112,7 @@ public class IR_using_machine_learning {
 				blocker);
 
 		// write the correspondences to the output file
-		new CSVCorrespondenceFormatter().writeCSV(new File("data/output/Players_ML_correspondences.csv"), correspondences);
+		new CSVCorrespondenceFormatter().writeCSV(new File("data/output/correspondences_very_good_ml_fm_tm.csv"), correspondences);
 
 		// load the gold standard (test set)
 		logger.info("*\tLoading gold standard\t*");
@@ -146,7 +146,7 @@ public class IR_using_machine_learning {
 		
 		
 		CorrespondenceSet<Player2, Attribute> correspondences2 = new CorrespondenceSet<>();
-		correspondences2.loadCorrespondences(new File("data/output/Players_ML_correspondences.csv"),ds2, ds3);
+		correspondences2.loadCorrespondences(new File("data/output/correspondences_very_good_ml_fm_tm.csv"),ds2, ds3);
 		logger.info("*\tLoading datasets 2\t*");
 		correspondences2.printGroupSizeDistribution();
     }
