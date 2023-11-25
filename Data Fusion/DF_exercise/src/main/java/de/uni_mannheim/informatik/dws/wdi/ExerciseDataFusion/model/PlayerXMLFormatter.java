@@ -50,7 +50,7 @@ public class PlayerXMLFormatter extends XMLFormatter<Player> {
 				.getMergedAttributeProvenance(Player.BIRTHDATE), doc));
 		}
 		player.appendChild(createTextElementWithProvenance("club",
-				record.getNationality(),
+				record.getClub(),
 				record.getMergedAttributeProvenance(Player.CLUB), doc));
 		return player;
 	}
