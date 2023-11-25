@@ -92,28 +92,12 @@ public class DataFusion_Main
 		
 	
 
-		// Maintain Provenance
-		// Scores (e.g. from rating)
-		ds1.setScore(1.0);
-		ds2.setScore(2.0);
-		ds3.setScore(3.0);
-
-		// Date (e.g. last update)
-		DateTimeFormatter formatter = new DateTimeFormatterBuilder()
-		        .appendPattern("yyyy-MM-dd")
-		        .parseDefaulting(ChronoField.CLOCK_HOUR_OF_DAY, 0)
-		        .parseDefaulting(ChronoField.MINUTE_OF_HOUR, 0)
-		        .parseDefaulting(ChronoField.SECOND_OF_MINUTE, 0)
-		        .toFormatter(Locale.ENGLISH);
-		
-		ds1.setDate(LocalDateTime.parse("2012-01-01", formatter));
-		ds2.setDate(LocalDateTime.parse("2010-01-01", formatter));
-		ds3.setDate(LocalDateTime.parse("2008-01-01", formatter));
-
 		// load correspondences
 		logger.info("*\tLoading correspondences\t*");
 		CorrespondenceSet<Player, Attribute> correspondences = new CorrespondenceSet<>();
-		//correspondences.loadCorrespondences(new File("data/correspondences/academy_awards_2_actors_correspondences.csv"),ds1, ds2);
+		
+		correspondences.loadCorrespondences(new File("data/correspondences/ea_fm_correspondences.csv"),ds1, ds2);
+		correspondences.loadCorrespondences(new File("data/correspondences/ea_tm_correspondences.csv"),ds3, ds1);
 		correspondences.loadCorrespondences(new File("data/correspondences/fm_tm_correspondences.csv"),ds3, ds2);
 
 		// write group size distribution

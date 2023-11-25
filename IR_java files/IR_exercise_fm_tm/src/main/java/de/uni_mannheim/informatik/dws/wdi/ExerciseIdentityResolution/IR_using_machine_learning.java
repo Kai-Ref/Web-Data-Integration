@@ -54,7 +54,7 @@ public class IR_using_machine_learning {
 		gsTraining.loadFromCSVFile(new File("data/goldstandard/gs_academy_awards_2_actors_training.csv"));
 
 		// create a matching rule
-		String options[] = new String[] { "-S", "-M" };
+		String options[] = new String[] { "-S" };
 		String modelType = "SimpleLogistic"; // use a logistic regression
 		WekaMatchingRule<Player, Attribute> matchingRule = new WekaMatchingRule<>(0.7, modelType, options);
 		
