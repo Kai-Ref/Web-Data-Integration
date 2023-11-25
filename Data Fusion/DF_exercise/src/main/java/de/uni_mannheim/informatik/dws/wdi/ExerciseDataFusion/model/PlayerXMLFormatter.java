@@ -62,6 +62,11 @@ public class PlayerXMLFormatter extends XMLFormatter<Player> {
 		            Double.toString(record.getHeight()),
 		            record.getMergedAttributeProvenance(Player.HEIGHT), doc));
 		}
+		if (record.getJersey_number() != 0) {
+		    player.appendChild(createTextElementWithProvenance("jersey_number",
+		            Integer.toString(record.getJersey_number()),
+		            record.getMergedAttributeProvenance(Player.JERSEY_NUMBER), doc));
+		}
 		return player;
 	}
 

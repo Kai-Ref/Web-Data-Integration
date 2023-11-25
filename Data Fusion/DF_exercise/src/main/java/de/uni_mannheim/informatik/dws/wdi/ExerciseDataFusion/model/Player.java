@@ -53,6 +53,7 @@ public class Player extends AbstractRecord<Attribute> implements Serializable {
 	private String club; 
 	private double weight;
 	private double height;
+	private int jersey_number;
 
 	
 	
@@ -135,6 +136,8 @@ public class Player extends AbstractRecord<Attribute> implements Serializable {
 	public static final Attribute CLUB = new Attribute("Club");
 	public static final Attribute WEIGHT = new Attribute("Weight");
 	public static final Attribute HEIGHT = new Attribute("Height");
+	public static final Attribute JERSEY_NUMBER = new Attribute("Height");
+
 
 
 	
@@ -152,7 +155,9 @@ public class Player extends AbstractRecord<Attribute> implements Serializable {
 			return getWeight() !=  0.0;
 		else if(attribute==HEIGHT)
 			return getWeight() !=  0.0;
-		else
+		else if(attribute==JERSEY_NUMBER)
+			return getJersey_number() != 0;
+			
 			return false;
 	}
 
@@ -189,6 +194,14 @@ public class Player extends AbstractRecord<Attribute> implements Serializable {
 
 	public void setHeight(double height) {
 		this.height = height;
+	}
+
+	public int getJersey_number() {
+		return jersey_number;
+	}
+
+	public void setJersey_number(int jersey_number) {
+		this.jersey_number = jersey_number;
 	}
 	
 	

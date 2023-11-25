@@ -13,6 +13,7 @@ import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.evaluation.ClubEval
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.evaluation.DateEvaluationRule;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.evaluation.DirectorEvaluationRule;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.evaluation.HeightEvaluationRule;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.evaluation.Jersey_numberEvaluationRule;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.evaluation.NameEvaluationRule;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.evaluation.NationalityEvaluationRule;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.evaluation.TitleEvaluationRule;
@@ -24,6 +25,7 @@ import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.fusers.DateFuserFav
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.fusers.DateFuserVoting;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.fusers.DirectorFuserLongestString;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.fusers.HeightFuser;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.fusers.Jersey_numberFuser;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.fusers.NameFuserLongestString;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.fusers.NationalityFuserLongestString;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.fusers.TitleFuserShortestString;
@@ -45,6 +47,8 @@ import de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet;
 import de.uni_mannheim.informatik.dws.winter.model.RecordGroupFactory;
 import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
 import de.uni_mannheim.informatik.dws.winter.utils.WinterLogManager;
+import edu.stanford.nlp.pipeline.CustomAnnotationSerializer;
+
 import org.slf4j.Logger;
 
 public class DataFusion_Main 
@@ -120,19 +124,23 @@ public class DataFusion_Main
 		//correspondences.loadCorrespondences(new File("data/correspondences/academy_awards_2_actors_correspondences.csv"),ds1, ds2);
 //		correspondences.loadCorrespondences(new File("data/correspondences/fm_tm_correspondences.csv"),ds3, ds2);
 //		correspondences.loadCorrespondences(new File("data/correspondences/ea_fm_correspondences.csv"),ds1, ds2);
-		correspondences.loadCorrespondences(new File("data/correspondences/ea_tm_ml_correspondences.csv"),ds3, ds1);
+		//correspondences.loadCorrespondences(new File("data/correspondences/ea_tm_ml_correspondences.csv"),ds3, ds1);
 		
 		
 		
-		correspondences.loadCorrespondences(new File("data/correspondences/ea_fm_correspondences.csv"),ds1, ds2);
-		correspondences.loadCorrespondences(new File("data/correspondences/ea_tm_correspondences.csv"),ds3, ds1);
-		correspondences.loadCorrespondences(new File("data/correspondences/fm_tm_correspondences.csv"),ds3, ds2);
+		//correspondences.loadCorrespondences(new File("data/correspondences/ea_fm_correspondences.csv"),ds1, ds2);
+		//correspondences.loadCorrespondences(new File("data/correspondences/ea_tm_correspondences.csv"),ds3, ds1);
+		//correspondences.loadCorrespondences(new File("data/correspondences/fm_tm_correspondences.csv"),ds3, ds2);
+		
+		correspondences.loadCorrespondences(new File("data/correspondences/Correspondences_very_good_ML_ea_2_fm.csv"),ds1, ds2);
+		correspondences.loadCorrespondences(new File("data/correspondences/correspondences_very_good_ml_tm_ea.csv"),ds3, ds1);
+		correspondences.loadCorrespondences(new File("data/correspondences/correspondences_very_good_ml_fm_tm.csv"),ds3, ds2);
 
 		// write group size distribution
 		correspondences.printGroupSizeDistribution();
 		
 		
-		/*
+		
 		// load the gold standard
 		logger.info("*\tEvaluating results\t*");
 		DataSet<Player, Attribute> gs = new FusibleHashedDataSet<>();
@@ -148,12 +156,6 @@ public class DataFusion_Main
 		// write debug results to file
 		strategy.activateDebugReport("data/output/debugResultsDatafusion.csv", -1, gs);
 		
-		// add attribute fusers
-		//strategy.addAttributeFuser(Movie.TITLE, new TitleFuserShortestString(),new TitleEvaluationRule());
-		//strategy.addAttributeFuser(Movie.DIRECTOR,new DirectorFuserLongestString(), new DirectorEvaluationRule());
-		//strategy.addAttributeFuser(Movie.DATE, new DateFuserFavourSource(),new DateEvaluationRule());
-		//strategy.addAttributeFuser(Movie.ACTORS,new ActorsFuserUnion(),new ActorsEvaluationRule());
-		
 		
 		strategy.addAttributeFuser(Player.NAME, new NameFuserLongestString(),new NameEvaluationRule());
 		strategy.addAttributeFuser(Player.BIRTHDATE,new BirthdateFuserVoting(), new BirthdateEvaluationRule());
@@ -161,6 +163,8 @@ public class DataFusion_Main
 		strategy.addAttributeFuser(Player.CLUB,new ClubFuserLongestString(),new ClubEvaluationRule());
 		strategy.addAttributeFuser(Player.WEIGHT, new WeightFuser(), new WeightEvaluationRule());
 		strategy.addAttributeFuser(Player.HEIGHT, new HeightFuser(), new HeightEvaluationRule());
+		strategy.addAttributeFuser(Player.JERSEY_NUMBER, new Jersey_numberFuser(), new Jersey_numberEvaluationRule());
+
 
 		
 		// create the fusion engine
@@ -185,6 +189,6 @@ public class DataFusion_Main
 		double accuracy = evaluator.evaluate(fusedDataSet, gs, null);
 
 		logger.info(String.format("*\tAccuracy: %.2f", accuracy));
-		*/
+		
     }
 }

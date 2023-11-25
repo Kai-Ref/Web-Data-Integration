@@ -52,6 +52,8 @@ dataset.addAttribute(Player.NATIONALITY);
 dataset.addAttribute(Player.CLUB);
 dataset.addAttribute(Player.WEIGHT);
 dataset.addAttribute(Player.HEIGHT);
+dataset.addAttribute(Player.JERSEY_NUMBER);
+
 
 
 }
@@ -86,6 +88,18 @@ String id = getValueFromChildElement(node, "id");
         try {
             double height = Double.parseDouble(heightString);
             player.setHeight(height);
+        } catch (NumberFormatException e) {
+            // Handle the exception as needed (e.g., log it or throw a more specific exception)
+            e.printStackTrace();
+        }
+    }
+    
+	String jersey_numberString = getValueFromChildElement(node, "jersey_number");
+	
+    if (jersey_numberString != null && !jersey_numberString.isEmpty()) {
+        try {
+            int jersey_number = Integer.parseInt(jersey_numberString);
+            player.setJersey_number(jersey_number);
         } catch (NumberFormatException e) {
             // Handle the exception as needed (e.g., log it or throw a more specific exception)
             e.printStackTrace();
