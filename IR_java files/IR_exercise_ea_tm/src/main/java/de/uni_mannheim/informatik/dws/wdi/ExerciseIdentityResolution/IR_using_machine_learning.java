@@ -13,7 +13,10 @@ import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators
 //import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.PlayerNameComparatorJaccard;
 //import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.PlayerClubComparatorLowerCaseJaccard;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Player;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Player2;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.PlayerXMLReader;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.PlayerXMLReader2;
+import de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet;
 import de.uni_mannheim.informatik.dws.winter.matching.MatchingEngine;
 import de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator;
 import de.uni_mannheim.informatik.dws.winter.matching.algorithms.RuleLearner;
@@ -21,6 +24,8 @@ import de.uni_mannheim.informatik.dws.winter.matching.blockers.SortedNeighbourho
 import de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardRecordBlocker;
 import de.uni_mannheim.informatik.dws.winter.matching.rules.WekaMatchingRule;
 import de.uni_mannheim.informatik.dws.winter.model.Correspondence;
+import de.uni_mannheim.informatik.dws.winter.model.FusibleDataSet;
+import de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet;
 import de.uni_mannheim.informatik.dws.winter.model.HashedDataSet;
 import de.uni_mannheim.informatik.dws.winter.model.MatchingGoldStandard;
 import de.uni_mannheim.informatik.dws.winter.model.Performance;
@@ -28,6 +33,8 @@ import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
 import de.uni_mannheim.informatik.dws.winter.model.io.CSVCorrespondenceFormatter;
 import de.uni_mannheim.informatik.dws.winter.processing.Processable;
 import de.uni_mannheim.informatik.dws.winter.utils.WinterLogManager;
+
+import de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet;
 
 public class IR_using_machine_learning {
 	
@@ -61,8 +68,9 @@ public class IR_using_machine_learning {
 		gsTraining.loadFromCSVFile(new File("data/goldstandard/gold_standard_ea_tm_train_v2.csv"));
 
 		// create a matching rule
-		String options[] = new String[] { "-S" };
-		String modelType = "SimpleLogistic"; // use a logistic regression
+		String options[] = new String[] {};//{ "-S" };
+//		String modelType = "SimpleLogistic"; // use a logistic regression
+		String modelType = "NaiveBayesMultinomial";
 		WekaMatchingRule<Player, Attribute> matchingRule = new WekaMatchingRule<>(0.5, modelType, options);
 		matchingRule.activateDebugReport("data/output/debugResultsMatchingRule.csv", 1000, gsTraining);
 		
@@ -76,6 +84,7 @@ public class IR_using_machine_learning {
 		matchingRule.addComparator(new PlayerClubComparatorLevenshtein());
 		matchingRule.addComparator(new PlayerNameComparatorLevenshtein());
 		matchingRule.addComparator(new PlayerBirthdateComparator(3));
+		matchingRule.addComparator(new PlayerJerseyNumberComparatorEqual());
 		
 		
 		// train the matching rule's model
@@ -121,5 +130,20 @@ public class IR_using_machine_learning {
 				"Recall: %.4f",	perfTest.getRecall()));
 		logger.info(String.format(
 				"F1: %.4f",perfTest.getF1()));
+		
+		FusibleDataSet<Player2, Attribute> ds2 = new FusibleHashedDataSet<>();
+		new PlayerXMLReader2().loadFromXML(new File("data/input/eafc_final.xml"), "/players/player", ds2);
+//		ds2.printDataSetDensityReport();
+
+		FusibleDataSet<Player2, Attribute> ds3 = new FusibleHashedDataSet<>();
+		new PlayerXMLReader2().loadFromXML(new File("data/input/tm_final.xml"), "/players/player", ds3);
+//		ds3.printDataSetDensityReport();
+		logger.info("*\tLoading datasets\t*");
+		
+		
+		CorrespondenceSet<Player2, Attribute> correspondences2 = new CorrespondenceSet<>();
+		correspondences2.loadCorrespondences(new File("data/output/ml_correspondences.csv"),ds3, ds2);
+		logger.info("*\tLoading datasets\t*");
+		correspondences2.printGroupSizeDistribution();
     }
 }
