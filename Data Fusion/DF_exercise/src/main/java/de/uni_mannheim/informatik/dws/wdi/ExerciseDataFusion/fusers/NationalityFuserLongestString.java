@@ -14,6 +14,7 @@ package de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.fusers;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.model.Movie;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.model.Player;
 import de.uni_mannheim.informatik.dws.winter.datafusion.AttributeValueFuser;
+import de.uni_mannheim.informatik.dws.winter.datafusion.conflictresolution.string.LongestString;
 import de.uni_mannheim.informatik.dws.winter.datafusion.conflictresolution.string.ShortestString;
 import de.uni_mannheim.informatik.dws.winter.model.Correspondence;
 import de.uni_mannheim.informatik.dws.winter.model.FusedValue;
@@ -28,11 +29,11 @@ import de.uni_mannheim.informatik.dws.winter.processing.Processable;
  * @author Oliver Lehmberg (oli@dwslab.de)
  * 
  */
-public class NameFuserShortestString extends
+public class NationalityFuserLongestString extends
 		AttributeValueFuser<String, Player, Attribute> {
 
-	public NameFuserShortestString() {
-		super(new ShortestString<Player, Attribute>());
+	public NationalityFuserLongestString() {
+		super(new LongestString<Player, Attribute>());
 	}
 
 	@Override
@@ -42,20 +43,20 @@ public class NameFuserShortestString extends
 		FusedValue<String, Player, Attribute> fused = getFusedValue(group, schemaCorrespondences, schemaElement);
 
 		// set the value for the fused record
-		fusedRecord.setName(fused.getValue());
+		fusedRecord.setNationality(fused.getValue());
 
 		// add provenance info
-		fusedRecord.setAttributeProvenance(Player.NAME, fused.getOriginalIds());
+		fusedRecord.setAttributeProvenance(Player.NATIONALITY, fused.getOriginalIds());
 	}
 
 	@Override
 	public boolean hasValue(Player record, Correspondence<Attribute, Matchable> correspondence) {
-		return record.hasValue(Player.NAME);
+		return record.hasValue(Player.NATIONALITY);
 	}
 
 	@Override
 	public String getValue(Player record, Correspondence<Attribute, Matchable> correspondence) {
-		return record.getName();
+		return record.getNationality();
 	}
 
 }
