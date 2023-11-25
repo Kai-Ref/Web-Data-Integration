@@ -16,23 +16,31 @@ import de.uni_mannheim.informatik.dws.winter.matching.rules.comparators.Comparat
 import de.uni_mannheim.informatik.dws.winter.model.Correspondence;
 import de.uni_mannheim.informatik.dws.winter.model.Matchable;
 import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
-import de.uni_mannheim.informatik.dws.winter.similarity.string.LevenshteinSimilarity;
+import de.uni_mannheim.informatik.dws.winter.similarity.numeric.PercentageSimilarity;
+import de.uni_mannheim.informatik.dws.winter.similarity.string.TokenizingJaccardSimilarity;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Fm;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Player;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Tm;
 
 /**
- * {@link Comparator} for {@link Movie}s based on the
- * {@link Movie#getDirector()} values, and their {@link LevenshteinSimilarity}
- * similarity.
+ * {@link Comparator} for {@link Movie}s based on the {@link Movie#getTitle()}
+ * value and their {@link TokenizingJaccardSimilarity} value.
  * 
+ * @author Robert Meusel (robert@dwslab.de)
  * @author Oliver Lehmberg (oli@dwslab.de)
  * 
  */
-public class PlayerClubComparatorLevenshtein implements Comparator<Player, Attribute> {
+public class PlayerHeightComparatorRelativeDifference implements Comparator<Player, Attribute> {
 
 	private static final long serialVersionUID = 1L;
-	private LevenshteinSimilarity sim = new LevenshteinSimilarity();
+	private PercentageSimilarity sim;
 	
 	private ComparatorLogger comparisonLog;
+	
+	public PlayerHeightComparatorRelativeDifference(double max_percental_difference) {
+		super();
+		sim = new PercentageSimilarity(max_percental_difference);
+	}
 
 	@Override
 	public double compare(
@@ -40,19 +48,20 @@ public class PlayerClubComparatorLevenshtein implements Comparator<Player, Attri
 			Player record2,
 			Correspondence<Attribute, Matchable> schemaCorrespondences) {
 		
-		String s1 = record1.getClub();
-		String s2 = record2.getClub();
-    	
-    	double similarity = sim.calculate(s1, s2);
+		double s1 = record1.getHeight();
+		double s2 = record2.getHeight();
+		
+		double similarity = sim.calculate(s1, s2);
     	
 		if(this.comparisonLog != null){
 			this.comparisonLog.setComparatorName(getClass().getName());
 		
-			this.comparisonLog.setRecord1Value(s1);
-			this.comparisonLog.setRecord2Value(s2);
+			// this.comparisonLog.setRecord1Value(s1);
+			// this.comparisonLog.setRecord2Value(s2);
     	
 			this.comparisonLog.setSimilarity(Double.toString(similarity));
 		}
+		
 		return similarity;
 	}
 
@@ -65,6 +74,5 @@ public class PlayerClubComparatorLevenshtein implements Comparator<Player, Attri
 	public void setComparisonLog(ComparatorLogger comparatorLog) {
 		this.comparisonLog = comparatorLog;
 	}
-
 
 }

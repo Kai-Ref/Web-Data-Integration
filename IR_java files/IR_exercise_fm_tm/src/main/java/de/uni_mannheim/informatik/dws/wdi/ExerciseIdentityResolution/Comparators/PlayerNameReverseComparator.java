@@ -27,7 +27,7 @@ import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Playe
  * 
  */
 
-public class PlayerNameComparatorLevenshtein implements Comparator<Player, Attribute> {
+public class PlayerNameReverseComparator implements Comparator<Player, Attribute> {
 
 	private static final long serialVersionUID = 1L;
 	private LevenshteinSimilarity sim = new LevenshteinSimilarity();
@@ -43,6 +43,19 @@ public class PlayerNameComparatorLevenshtein implements Comparator<Player, Attri
 		String s1 = record1.getName();
 		String s2 = record2.getName();
 		
+		// Check if s1 has two words
+		if (s1.split("\\s+").length == 2) {
+		    // Reverse the order of words in s2
+		    String[] wordsInS2 = s2.split("\\s+");
+		    StringBuilder reversedS2 = new StringBuilder();
+		    for (int i = wordsInS2.length - 1; i >= 0; i--) {
+		        reversedS2.append(wordsInS2[i]).append(" ");
+		    }
+		    s2 = reversedS2.toString().trim();
+		}
+		
+		// System.out.println(s2);
+
 		double similarity = sim.calculate(s1, s2);
 		
 		if(this.comparisonLog != null){

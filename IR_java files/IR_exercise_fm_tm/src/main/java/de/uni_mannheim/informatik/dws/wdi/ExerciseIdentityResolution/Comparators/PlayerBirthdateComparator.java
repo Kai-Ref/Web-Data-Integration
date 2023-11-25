@@ -17,10 +17,6 @@ import de.uni_mannheim.informatik.dws.winter.model.Correspondence;
 import de.uni_mannheim.informatik.dws.winter.model.Matchable;
 import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
 import de.uni_mannheim.informatik.dws.winter.similarity.date.YearSimilarity;
-
-import java.time.LocalDateTime;
-import java.time.temporal.ChronoUnit;
-
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Player;
 
 /**
@@ -32,51 +28,47 @@ import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Playe
  */
 public class PlayerBirthdateComparator implements Comparator<Player, Attribute> {
 
-    private static final long serialVersionUID = 1L;
+	private static final long serialVersionUID = 1L;
+	private YearSimilarity sim;
+	
+	private ComparatorLogger comparisonLog;
+	
+	public PlayerBirthdateComparator() {
+		this(2);
+	}
+	
+	public PlayerBirthdateComparator(int max_diff) {
+		sim = new YearSimilarity(max_diff);
+	}
 
-    private ComparatorLogger comparisonLog;
+	@Override
+	public double compare(
+			Player record1,
+			Player record2,
+			Correspondence<Attribute, Matchable> schemaCorrespondences) {
+    	
+    	double similarity = sim.calculate(record1.getBirthdate(), record2.getBirthdate());
+    	
+		if(this.comparisonLog != null){
+			this.comparisonLog.setComparatorName(getClass().getName());
+		
+			this.comparisonLog.setRecord1Value(record1.getBirthdate().toString());
+			this.comparisonLog.setRecord2Value(record2.getBirthdate().toString());
+    	
+			this.comparisonLog.setSimilarity(Double.toString(similarity));
+		}
+		return similarity;
 
-    @Override
-    public double compare(
-            Player record1,
-            Player record2,
-            Correspondence<Attribute, Matchable> schemaCorrespondences) {
+	}
 
-        // Integrate the calculate method directly here
-        LocalDateTime birthdate1 = record1.getBirthdate();
-        LocalDateTime birthdate2 = record2.getBirthdate();
+	@Override
+	public ComparatorLogger getComparisonLog() {
+		return this.comparisonLog;
+	}
 
-        // Check for null values
-        if (birthdate1 == null || birthdate2 == null) {
-            return 0.0;
-        }
+	@Override
+	public void setComparisonLog(ComparatorLogger comparatorLog) {
+		this.comparisonLog = comparatorLog;
+	}
 
-        double similarity = calculate(birthdate1, birthdate2);
-
-        if (this.comparisonLog != null) {
-            this.comparisonLog.setComparatorName(getClass().getName());
-
-            this.comparisonLog.setRecord1Value(birthdate1.toString());
-            this.comparisonLog.setRecord2Value(birthdate2.toString());
-
-            this.comparisonLog.setSimilarity(Double.toString(similarity));
-        }
-        return similarity;
-    }
-
-    @Override
-    public ComparatorLogger getComparisonLog() {
-        return this.comparisonLog;
-    }
-
-    @Override
-    public void setComparisonLog(ComparatorLogger comparatorLog) {
-        this.comparisonLog = comparatorLog;
-    }
-
-    private double calculate(LocalDateTime first, LocalDateTime second) {
-        long diff = Math.abs(ChronoUnit.DAYS.between(first, second));
-        double norm = Math.min((double) diff / (double) 1, 1.0);
-        return 1 - norm;
-    }
 }
