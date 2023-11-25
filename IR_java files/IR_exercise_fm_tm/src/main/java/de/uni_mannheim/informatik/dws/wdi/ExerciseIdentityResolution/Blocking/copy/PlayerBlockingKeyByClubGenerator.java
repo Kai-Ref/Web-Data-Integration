@@ -10,7 +10,7 @@
  * See the License for the specific language governing permissions and limitations under the License.
  */
 
-package de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking;
+package de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking.copy;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Player;
 import de.uni_mannheim.informatik.dws.winter.matching.blockers.generators.BlockingKeyGenerator;
 import de.uni_mannheim.informatik.dws.winter.matching.blockers.generators.RecordBlockingKeyGenerator;
@@ -28,17 +28,17 @@ import de.uni_mannheim.informatik.dws.winter.processing.Processable;
  * @author Oliver Lehmberg (oli@dwslab.de)
  * 
  */
-public class PlayerBlockingKeyByNameGenerator extends
+public class PlayerBlockingKeyByClubGenerator extends
 		RecordBlockingKeyGenerator<Player, Attribute> {
 
 	private static final long serialVersionUID = 1L;
 	private int num_first_letters;
 	
-	public PlayerBlockingKeyByNameGenerator() {
-        this(2); // Default value
-    }
+	public PlayerBlockingKeyByClubGenerator() {
+		this(2);
+	}
 	
-	public PlayerBlockingKeyByNameGenerator(int num_first_letters) {
+	public PlayerBlockingKeyByClubGenerator(int num_first_letters) {
 		this.num_first_letters = num_first_letters;
 	}
 
@@ -50,7 +50,7 @@ public class PlayerBlockingKeyByNameGenerator extends
 	public void generateBlockingKeys(Player record, Processable<Correspondence<Attribute, Matchable>> correspondences,
 			DataIterator<Pair<String, Player>> resultCollector) {
 
-		String[] tokens  = record.getName().split(" ");
+		String[] tokens  = record.getClub().split(" ");
 
 		String blockingKeyValue = "";
 

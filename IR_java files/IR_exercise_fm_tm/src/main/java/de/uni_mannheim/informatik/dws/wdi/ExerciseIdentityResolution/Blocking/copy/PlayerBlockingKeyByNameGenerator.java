@@ -10,7 +10,7 @@
  * See the License for the specific language governing permissions and limitations under the License.
  */
 
-package de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking;
+package de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking.copy;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Player;
 import de.uni_mannheim.informatik.dws.winter.matching.blockers.generators.BlockingKeyGenerator;
 import de.uni_mannheim.informatik.dws.winter.matching.blockers.generators.RecordBlockingKeyGenerator;

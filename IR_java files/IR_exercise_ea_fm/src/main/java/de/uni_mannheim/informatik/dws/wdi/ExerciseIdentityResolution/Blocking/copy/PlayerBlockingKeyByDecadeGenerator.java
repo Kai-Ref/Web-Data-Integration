@@ -10,7 +10,8 @@
  * See the License for the specific language governing permissions and limitations under the License.
  */
 
-package de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking;
+package de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking.copy;
+
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Player;
 import de.uni_mannheim.informatik.dws.winter.matching.blockers.generators.BlockingKeyGenerator;
 import de.uni_mannheim.informatik.dws.winter.matching.blockers.generators.RecordBlockingKeyGenerator;
@@ -23,24 +24,15 @@ import de.uni_mannheim.informatik.dws.winter.processing.Processable;
 
 /**
  * {@link BlockingKeyGenerator} for {@link Movie}s, which generates a blocking
- * key based on the title
+ * key based on the decade. E.g. 1999--&gt;199, 2014 --&gt; 201
  * 
  * @author Oliver Lehmberg (oli@dwslab.de)
  * 
  */
-public class PlayerBlockingKeyByNameGenerator extends
+public class PlayerBlockingKeyByDecadeGenerator extends
 		RecordBlockingKeyGenerator<Player, Attribute> {
 
 	private static final long serialVersionUID = 1L;
-	private int num_first_letters;
-	
-	public PlayerBlockingKeyByNameGenerator() {
-        this(2); // Default value
-    }
-	
-	public PlayerBlockingKeyByNameGenerator(int num_first_letters) {
-		this.num_first_letters = num_first_letters;
-	}
 
 
 	/* (non-Javadoc)
@@ -49,16 +41,7 @@ public class PlayerBlockingKeyByNameGenerator extends
 	@Override
 	public void generateBlockingKeys(Player record, Processable<Correspondence<Attribute, Matchable>> correspondences,
 			DataIterator<Pair<String, Player>> resultCollector) {
-
-		String[] tokens  = record.getName().split(" ");
-
-		String blockingKeyValue = "";
-
-		for(int i = 0; i <= 2 && i < tokens.length; i++) {
-			blockingKeyValue += tokens[i].substring(0, Math.min(num_first_letters,tokens[i].length())).toUpperCase();
-		}
-
-		resultCollector.next(new Pair<>(blockingKeyValue, record));
+		resultCollector.next(new Pair<>(Integer.toString(record.getBirthdate().getYear() / 10), record));
 	}
 
 }

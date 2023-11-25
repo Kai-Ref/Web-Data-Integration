@@ -16,29 +16,31 @@ import de.uni_mannheim.informatik.dws.winter.matching.rules.comparators.Comparat
 import de.uni_mannheim.informatik.dws.winter.model.Correspondence;
 import de.uni_mannheim.informatik.dws.winter.model.Matchable;
 import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
-import de.uni_mannheim.informatik.dws.winter.similarity.date.YearSimilarity;
+import de.uni_mannheim.informatik.dws.winter.similarity.numeric.AbsoluteDifferenceSimilarity;
+import de.uni_mannheim.informatik.dws.winter.similarity.numeric.PercentageSimilarity;
+import de.uni_mannheim.informatik.dws.winter.similarity.string.TokenizingJaccardSimilarity;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Fm;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Player;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Tm;
 
 /**
- * {@link Comparator} for {@link Movie}s based on the {@link Movie#getDate()}
- * value, with a maximal difference of 2 years.
+ * {@link Comparator} for {@link Movie}s based on the {@link Movie#getTitle()}
+ * value and their {@link TokenizingJaccardSimilarity} value.
  * 
+ * @author Robert Meusel (robert@dwslab.de)
  * @author Oliver Lehmberg (oli@dwslab.de)
  * 
  */
-public class PlayerBirthdateComparator implements Comparator<Player, Attribute> {
+public class PlayerAgeComparatorAbsoluteDifference implements Comparator<Player, Attribute> {
 
 	private static final long serialVersionUID = 1L;
-	private YearSimilarity sim;
+	private AbsoluteDifferenceSimilarity sim;
 	
 	private ComparatorLogger comparisonLog;
 	
-	public PlayerBirthdateComparator() {
-		this(2);
-	}
-	
-	public PlayerBirthdateComparator(int max_diff) {
-		sim = new YearSimilarity(max_diff);
+	public PlayerAgeComparatorAbsoluteDifference(double max_absolute_difference) {
+		super();
+		sim = new AbsoluteDifferenceSimilarity(max_absolute_difference);
 	}
 
 	@Override
@@ -46,19 +48,22 @@ public class PlayerBirthdateComparator implements Comparator<Player, Attribute> 
 			Player record1,
 			Player record2,
 			Correspondence<Attribute, Matchable> schemaCorrespondences) {
-    	
-    	double similarity = sim.calculate(record1.getBirthdate(), record2.getBirthdate());
+		
+		double s1 = record1.getAge();
+		double s2 = record2.getAge();
+		
+		double similarity = sim.calculate(s1, s2);
     	
 		if(this.comparisonLog != null){
 			this.comparisonLog.setComparatorName(getClass().getName());
 		
-			this.comparisonLog.setRecord1Value(record1.getBirthdate().toString());
-			this.comparisonLog.setRecord2Value(record2.getBirthdate().toString());
+			// this.comparisonLog.setRecord1Value(s1);
+			// this.comparisonLog.setRecord2Value(s2);
     	
 			this.comparisonLog.setSimilarity(Double.toString(similarity));
 		}
+		
 		return similarity;
-
 	}
 
 	@Override

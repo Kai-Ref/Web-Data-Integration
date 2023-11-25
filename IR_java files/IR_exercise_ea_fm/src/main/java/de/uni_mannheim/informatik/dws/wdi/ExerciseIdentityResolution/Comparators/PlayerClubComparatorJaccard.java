@@ -16,24 +16,25 @@ import de.uni_mannheim.informatik.dws.winter.matching.rules.comparators.Comparat
 import de.uni_mannheim.informatik.dws.winter.model.Correspondence;
 import de.uni_mannheim.informatik.dws.winter.model.Matchable;
 import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
-import de.uni_mannheim.informatik.dws.winter.similarity.string.LevenshteinSimilarity;
+import de.uni_mannheim.informatik.dws.winter.similarity.string.TokenizingJaccardSimilarity;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Player;
 
 /**
  * {@link Comparator} for {@link Movie}s based on the
- * {@link Movie#getDirector()} values, and their {@link LevenshteinSimilarity}
- * similarity.
+ * {@link Movie#getDirector()} values, and their
+ * {@link TokenizingJaccardSimilarity} similarity.
  * 
  * @author Oliver Lehmberg (oli@dwslab.de)
+ * @author Robert Meusel (robert@dwslab.de)
  * 
  */
-public class PlayerClubComparatorLevenshtein implements Comparator<Player, Attribute> {
+public class PlayerClubComparatorJaccard implements Comparator<Player, Attribute> {
 
 	private static final long serialVersionUID = 1L;
-	private LevenshteinSimilarity sim = new LevenshteinSimilarity();
+	TokenizingJaccardSimilarity sim = new TokenizingJaccardSimilarity();
 	
 	private ComparatorLogger comparisonLog;
-
+	
 	@Override
 	public double compare(
 			Player record1,
@@ -42,9 +43,18 @@ public class PlayerClubComparatorLevenshtein implements Comparator<Player, Attri
 		
 		String s1 = record1.getClub();
 		String s2 = record2.getClub();
-    	
-    	double similarity = sim.calculate(s1, s2);
-    	
+
+		// calculate similarity
+		double similarity = sim.calculate(s1, s2);
+
+		// postprocessing
+		int postSimilarity = 1;
+		if (similarity <= 0.3) {
+			postSimilarity = 0;
+		}
+
+		postSimilarity *= similarity;
+		
 		if(this.comparisonLog != null){
 			this.comparisonLog.setComparatorName(getClass().getName());
 		
@@ -52,8 +62,9 @@ public class PlayerClubComparatorLevenshtein implements Comparator<Player, Attri
 			this.comparisonLog.setRecord2Value(s2);
     	
 			this.comparisonLog.setSimilarity(Double.toString(similarity));
+			this.comparisonLog.setPostprocessedSimilarity(Double.toString(postSimilarity));
 		}
-		return similarity;
+		return postSimilarity;
 	}
 
 	@Override
@@ -65,6 +76,5 @@ public class PlayerClubComparatorLevenshtein implements Comparator<Player, Attri
 	public void setComparisonLog(ComparatorLogger comparatorLog) {
 		this.comparisonLog = comparatorLog;
 	}
-
 
 }

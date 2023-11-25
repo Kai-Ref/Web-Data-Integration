@@ -10,8 +10,9 @@
  * See the License for the specific language governing permissions and limitations under the License.
  */
 
-package de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking;
-import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Player;
+package de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking.copy;
+
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Movie;
 import de.uni_mannheim.informatik.dws.winter.matching.blockers.generators.BlockingKeyGenerator;
 import de.uni_mannheim.informatik.dws.winter.matching.blockers.generators.RecordBlockingKeyGenerator;
 import de.uni_mannheim.informatik.dws.winter.model.Correspondence;
@@ -28,34 +29,25 @@ import de.uni_mannheim.informatik.dws.winter.processing.Processable;
  * @author Oliver Lehmberg (oli@dwslab.de)
  * 
  */
-public class PlayerBlockingKeyByNameGenerator extends
-		RecordBlockingKeyGenerator<Player, Attribute> {
+public class MovieBlockingKeyByTitleGenerator extends
+		RecordBlockingKeyGenerator<Movie, Attribute> {
 
 	private static final long serialVersionUID = 1L;
-	private int num_first_letters;
-	
-	public PlayerBlockingKeyByNameGenerator() {
-        this(2); // Default value
-    }
-	
-	public PlayerBlockingKeyByNameGenerator(int num_first_letters) {
-		this.num_first_letters = num_first_letters;
-	}
 
 
 	/* (non-Javadoc)
 	 * @see de.uni_mannheim.informatik.wdi.matching.blocking.generators.BlockingKeyGenerator#generateBlockingKeys(de.uni_mannheim.informatik.wdi.model.Matchable, de.uni_mannheim.informatik.wdi.model.Result, de.uni_mannheim.informatik.wdi.processing.DatasetIterator)
 	 */
 	@Override
-	public void generateBlockingKeys(Player record, Processable<Correspondence<Attribute, Matchable>> correspondences,
-			DataIterator<Pair<String, Player>> resultCollector) {
+	public void generateBlockingKeys(Movie record, Processable<Correspondence<Attribute, Matchable>> correspondences,
+			DataIterator<Pair<String, Movie>> resultCollector) {
 
-		String[] tokens  = record.getName().split(" ");
+		String[] tokens  = record.getTitle().split(" ");
 
 		String blockingKeyValue = "";
 
 		for(int i = 0; i <= 2 && i < tokens.length; i++) {
-			blockingKeyValue += tokens[i].substring(0, Math.min(num_first_letters,tokens[i].length())).toUpperCase();
+			blockingKeyValue += tokens[i].substring(0, Math.min(2,tokens[i].length())).toUpperCase();
 		}
 
 		resultCollector.next(new Pair<>(blockingKeyValue, record));

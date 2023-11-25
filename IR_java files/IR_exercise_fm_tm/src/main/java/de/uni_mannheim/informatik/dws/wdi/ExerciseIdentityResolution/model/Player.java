@@ -26,8 +26,12 @@ public class Player implements Matchable {
 	private String name;
 	private LocalDateTime birthdate;
 	private String nationality; 
+	private String league;
 	private List<String> positions;
-	private String club; 
+	private String club;
+	private float weight;
+	private float height;
+	private float age;
 	
 
 	public Player(String identifier, String provenance) {
@@ -84,6 +88,14 @@ public class Player implements Matchable {
 	public void setNationality(String nationality) {
 		this.nationality = nationality;
 	}
+	
+	public String getLeague() {
+		return league;
+	}
+
+	public void setLeague(String league) {
+		this.league = league;
+	}
 
 	public String getClub() {
 		return club;
@@ -100,6 +112,30 @@ public class Player implements Matchable {
 
 	public void setPositions(List<String> positions) {
 		this.positions = positions;
+	}
+	
+	public float getWeight() {
+		return this.weight;
+	}
+	
+	public void setWeight(float weight) {
+		this.weight = weight;
+	}
+	
+	public float getHeight() {
+		return this.height;
+	}
+	
+	public void setHeight(float height) {
+		this.height = height;
+	}
+	
+	public float getAge() {
+		return this.age;
+	}
+	
+	public void setAge(float age) {
+		this.age = age;
 	}
 	
 	@Override

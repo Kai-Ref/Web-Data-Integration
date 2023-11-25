@@ -28,17 +28,17 @@ import de.uni_mannheim.informatik.dws.winter.processing.Processable;
  * @author Oliver Lehmberg (oli@dwslab.de)
  * 
  */
-public class PlayerBlockingKeyByNameGenerator extends
+public class PlayerBlockingKeyByLeagueGenerator extends
 		RecordBlockingKeyGenerator<Player, Attribute> {
 
 	private static final long serialVersionUID = 1L;
 	private int num_first_letters;
 	
-	public PlayerBlockingKeyByNameGenerator() {
-        this(2); // Default value
-    }
+	public PlayerBlockingKeyByLeagueGenerator() {
+		this(2);
+	}
 	
-	public PlayerBlockingKeyByNameGenerator(int num_first_letters) {
+	public PlayerBlockingKeyByLeagueGenerator(int num_first_letters) {
 		this.num_first_letters = num_first_letters;
 	}
 
@@ -49,8 +49,14 @@ public class PlayerBlockingKeyByNameGenerator extends
 	@Override
 	public void generateBlockingKeys(Player record, Processable<Correspondence<Attribute, Matchable>> correspondences,
 			DataIterator<Pair<String, Player>> resultCollector) {
-
-		String[] tokens  = record.getName().split(" ");
+		
+		String[] tokens;
+		try {
+			tokens = record.getLeague().split(" ");
+		}catch (Exception e) {
+			System.out.println(record.getName() + " has no League");
+			tokens = "".split("");
+		}
 
 		String blockingKeyValue = "";
 

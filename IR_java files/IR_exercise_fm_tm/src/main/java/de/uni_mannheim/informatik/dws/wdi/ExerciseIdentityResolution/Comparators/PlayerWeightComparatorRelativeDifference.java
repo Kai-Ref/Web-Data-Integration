@@ -11,29 +11,36 @@
  */
 package de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators;
 
-
 import de.uni_mannheim.informatik.dws.winter.matching.rules.comparators.Comparator;
 import de.uni_mannheim.informatik.dws.winter.matching.rules.comparators.ComparatorLogger;
 import de.uni_mannheim.informatik.dws.winter.model.Correspondence;
 import de.uni_mannheim.informatik.dws.winter.model.Matchable;
 import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
-import de.uni_mannheim.informatik.dws.winter.similarity.EqualsSimilarity;
-import de.uni_mannheim.informatik.dws.winter.similarity.string.LevenshteinSimilarity;
+import de.uni_mannheim.informatik.dws.winter.similarity.numeric.PercentageSimilarity;
+import de.uni_mannheim.informatik.dws.winter.similarity.string.TokenizingJaccardSimilarity;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Fm;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Player;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Tm;
 
 /**
  * {@link Comparator} for {@link Movie}s based on the {@link Movie#getTitle()}
- * value and their {@link LevenshteinSimilarity} value.
+ * value and their {@link TokenizingJaccardSimilarity} value.
  * 
+ * @author Robert Meusel (robert@dwslab.de)
  * @author Oliver Lehmberg (oli@dwslab.de)
  * 
  */
-public class PlayerNameComparatorEqual implements Comparator<Player, Attribute> {
+public class PlayerWeightComparatorRelativeDifference implements Comparator<Player, Attribute> {
 
 	private static final long serialVersionUID = 1L;
-	private EqualsSimilarity<String> sim = new EqualsSimilarity<String>();
+	private PercentageSimilarity sim;
 	
 	private ComparatorLogger comparisonLog;
+	
+	public PlayerWeightComparatorRelativeDifference(double max_percental_difference) {
+		super();
+		sim = new PercentageSimilarity(max_percental_difference);
+	}
 
 	@Override
 	public double compare(
@@ -41,22 +48,22 @@ public class PlayerNameComparatorEqual implements Comparator<Player, Attribute> 
 			Player record2,
 			Correspondence<Attribute, Matchable> schemaCorrespondences) {
 		
-    	String s1 = record1.getName();
-		String s2 = record2.getName();
-    	
-    	double similarity = sim.calculate(s1, s2);
+		double s1 = record1.getWeight();
+		double s2 = record2.getWeight();
+		
+		double similarity = sim.calculate(s1, s2);
     	
 		if(this.comparisonLog != null){
 			this.comparisonLog.setComparatorName(getClass().getName());
 		
-			this.comparisonLog.setRecord1Value(s1);
-			this.comparisonLog.setRecord2Value(s2);
+			// this.comparisonLog.setRecord1Value(s1);
+			// this.comparisonLog.setRecord2Value(s2);
     	
 			this.comparisonLog.setSimilarity(Double.toString(similarity));
 		}
+		
 		return similarity;
 	}
-
 
 	@Override
 	public ComparatorLogger getComparisonLog() {

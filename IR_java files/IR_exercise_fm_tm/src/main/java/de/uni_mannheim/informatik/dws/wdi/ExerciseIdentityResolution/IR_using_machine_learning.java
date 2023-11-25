@@ -4,13 +4,28 @@ import java.io.File;
 
 import org.slf4j.Logger;
 
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking.PlayerBlockingKeyByBirthyearGenerator;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking.PlayerBlockingKeyByNameGenerator;
+
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.PlayerNameComparatorJaccard;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.PlayerNameComparatorEqual;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.PlayerNameComparatorLevenshtein;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.PlayerNameReverseComparator;
+
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.PlayerBirthdateComparator;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.PlayerBirthdateComparator10Years;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.PlayerBirthdateComparator2Years;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.PlayerBirthdateComparatorDay;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.PlayerClubComparatorLowerCaseJaccard;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.PlayerLeagueComparatorEqual;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.PlayerBirthdateComparator;
+
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Player;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.PlayerXMLReader;
 import de.uni_mannheim.informatik.dws.winter.matching.MatchingEngine;
 import de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator;
 import de.uni_mannheim.informatik.dws.winter.matching.algorithms.RuleLearner;
+import de.uni_mannheim.informatik.dws.winter.matching.blockers.SortedNeighbourhoodBlocker;
 import de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardRecordBlocker;
 import de.uni_mannheim.informatik.dws.winter.matching.rules.WekaMatchingRule;
 import de.uni_mannheim.informatik.dws.winter.model.Correspondence;
@@ -51,7 +66,7 @@ public class IR_using_machine_learning {
 		
 		// load the training set
 		MatchingGoldStandard gsTraining = new MatchingGoldStandard();
-		gsTraining.loadFromCSVFile(new File("data/goldstandard/gs_academy_awards_2_actors_training.csv"));
+		gsTraining.loadFromCSVFile(new File("data/goldstandard/gold_standard_fm_tm_train.csv"));
 
 		// create a matching rule
 		String options[] = new String[] { "-S", "-M" };
@@ -63,13 +78,13 @@ public class IR_using_machine_learning {
 		
 		// add comparators
 		matchingRule.addComparator(new PlayerNameComparatorJaccard());
-		//matchingRule.addComparator(new PlayereDateComparator2Years());
-		//matchingRule.addComparator(new MovieDateComparator10Years());
-		//matchingRule.addComparator(new MovieDirectorComparatorJaccard());
-		//matchingRule.addComparator(new MovieDirectorComparatorLevenshtein());
-		//matchingRule.addComparator(new MovieDirectorComparatorLowerCaseJaccard());
-		//matchingRule.addComparator(new MovieTitleComparatorLevenshtein());
-		//matchingRule.addComparator(new MovieTitleComparatorJaccard());
+		// matchingRule.addComparator(new PlayerBirthdateComparator());
+		// matchingRule.addComparator(new PlayerBirthdateComparator10Years());
+		// matchingRule.addComparator(new PlayerBirthdateComparator2Years());
+		// matchingRule.addComparator(new PlayerBirthdateComparatorDay(1));
+		// matchingRule.addComparator(new PlayerNameReverseComparator());
+		// matchingRule.addComparator(new PlayerClubComparatorLowerCaseJaccard());
+		// matchingRule.addComparator(new PlayerLeagueComparatorEqual());
 		
 		
 		// train the matching rule's model
@@ -79,18 +94,18 @@ public class IR_using_machine_learning {
 		logger.info(String.format("Matching rule is:\n%s", matchingRule.getModelDescription()));
 		
 		// create a blocker (blocking strategy)
-		StandardRecordBlocker<Player, Attribute> nameblocker = new StandardRecordBlocker<Player, Attribute>(new PlayerBlockingKeyByNameGenerator());
-//		SortedNeighbourhoodBlocker<Movie, Attribute, Attribute> blocker = new SortedNeighbourhoodBlocker<>(new MovieBlockingKeyByDecadeGenerator(), 1);
-		nameblocker.collectBlockSizeData("data/output/debugResultsBlocking.csv", 100);
+		// StandardRecordBlocker<Player, Attribute> nameblocker = new StandardRecordBlocker<Player, Attribute>(new PlayerBlockingKeyByNameGenerator());
+		SortedNeighbourhoodBlocker<Player, Attribute, Attribute> blocker = new SortedNeighbourhoodBlocker<>(new PlayerBlockingKeyByBirthyearGenerator(), 100);
+		blocker.collectBlockSizeData("data/output/debugResultsBlocking.csv", 100);
 		
 		// Initialize Matching Engine
 		MatchingEngine<Player, Attribute> engine = new MatchingEngine<>();
-
+		
 		// Execute the matching
 		logger.info("*\tRunning identity resolution\t*");
 		Processable<Correspondence<Player, Attribute>> correspondences = engine.runIdentityResolution(
 				dataFm, dataTm, null, matchingRule,
-				nameblocker);
+				blocker);
 
 		// write the correspondences to the output file
 		new CSVCorrespondenceFormatter().writeCSV(new File("data/output/Players_ML_correspondences.csv"), correspondences);
@@ -99,7 +114,7 @@ public class IR_using_machine_learning {
 		logger.info("*\tLoading gold standard\t*");
 		MatchingGoldStandard gsTest = new MatchingGoldStandard();
 		gsTest.loadFromCSVFile(new File(
-				"data/goldstandard/gold_standard_fm_tm.csv"));
+				"data/goldstandard/gold_standard_fm_tm_test.csv"));
 		
 		// evaluate your result
 		logger.info("*\tEvaluating result\t*");

@@ -16,49 +16,59 @@ import de.uni_mannheim.informatik.dws.winter.matching.rules.comparators.Comparat
 import de.uni_mannheim.informatik.dws.winter.model.Correspondence;
 import de.uni_mannheim.informatik.dws.winter.model.Matchable;
 import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
-import de.uni_mannheim.informatik.dws.winter.similarity.date.YearSimilarity;
+import de.uni_mannheim.informatik.dws.winter.similarity.string.LevenshteinSimilarity;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Player;
 
 /**
- * {@link Comparator} for {@link Movie}s based on the {@link Movie#getDate()}
- * value, with a maximal difference of 2 years.
+ * {@link Comparator} for {@link Movie}s based on the {@link Movie#getTitle()}
+ * value and their {@link LevenshteinSimilarity} value.
  * 
  * @author Oliver Lehmberg (oli@dwslab.de)
  * 
  */
-public class PlayerBirthdateComparator implements Comparator<Player, Attribute> {
+
+public class PlayerNameReverseComparator implements Comparator<Player, Attribute> {
 
 	private static final long serialVersionUID = 1L;
-	private YearSimilarity sim;
+	private LevenshteinSimilarity sim = new LevenshteinSimilarity();
 	
 	private ComparatorLogger comparisonLog;
-	
-	public PlayerBirthdateComparator() {
-		this(2);
-	}
-	
-	public PlayerBirthdateComparator(int max_diff) {
-		sim = new YearSimilarity(max_diff);
-	}
 
 	@Override
 	public double compare(
 			Player record1,
 			Player record2,
 			Correspondence<Attribute, Matchable> schemaCorrespondences) {
-    	
-    	double similarity = sim.calculate(record1.getBirthdate(), record2.getBirthdate());
-    	
+		
+		String s1 = record1.getName();
+		String s2 = record2.getName();
+		
+		// Check if s1 has two words
+		if (s1.split("\\s+").length == 2) {
+		    // Reverse the order of words in s2
+		    String[] wordsInS2 = s2.split("\\s+");
+		    StringBuilder reversedS2 = new StringBuilder();
+		    for (int i = wordsInS2.length - 1; i >= 0; i--) {
+		        reversedS2.append(wordsInS2[i]).append(" ");
+		    }
+		    s2 = reversedS2.toString().trim();
+		}
+		
+		System.out.println(s2);
+
+		double similarity = sim.calculate(s1, s2);
+		
 		if(this.comparisonLog != null){
 			this.comparisonLog.setComparatorName(getClass().getName());
 		
-			this.comparisonLog.setRecord1Value(record1.getBirthdate().toString());
-			this.comparisonLog.setRecord2Value(record2.getBirthdate().toString());
+			this.comparisonLog.setRecord1Value(s1);
+			this.comparisonLog.setRecord2Value(s2);
     	
 			this.comparisonLog.setSimilarity(Double.toString(similarity));
 		}
+		
 		return similarity;
-
+		
 	}
 
 	@Override

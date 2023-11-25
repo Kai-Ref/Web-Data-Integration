@@ -11,35 +11,28 @@
  */
 package de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators;
 
+
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Player;
 import de.uni_mannheim.informatik.dws.winter.matching.rules.comparators.Comparator;
 import de.uni_mannheim.informatik.dws.winter.matching.rules.comparators.ComparatorLogger;
 import de.uni_mannheim.informatik.dws.winter.model.Correspondence;
 import de.uni_mannheim.informatik.dws.winter.model.Matchable;
 import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
 import de.uni_mannheim.informatik.dws.winter.similarity.date.YearSimilarity;
-import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Player;
 
 /**
  * {@link Comparator} for {@link Movie}s based on the {@link Movie#getDate()}
- * value, with a maximal difference of 2 years.
+ * value. With a maximal difference of 10 years.
  * 
  * @author Oliver Lehmberg (oli@dwslab.de)
  * 
  */
-public class PlayerBirthdateComparator implements Comparator<Player, Attribute> {
+public class PlayerBirthdateComparator10Years implements Comparator<Player, Attribute> {
 
 	private static final long serialVersionUID = 1L;
-	private YearSimilarity sim;
+	private YearSimilarity sim = new YearSimilarity(10);
 	
 	private ComparatorLogger comparisonLog;
-	
-	public PlayerBirthdateComparator() {
-		this(2);
-	}
-	
-	public PlayerBirthdateComparator(int max_diff) {
-		sim = new YearSimilarity(max_diff);
-	}
 
 	@Override
 	public double compare(
@@ -58,7 +51,6 @@ public class PlayerBirthdateComparator implements Comparator<Player, Attribute> 
 			this.comparisonLog.setSimilarity(Double.toString(similarity));
 		}
 		return similarity;
-
 	}
 
 	@Override
