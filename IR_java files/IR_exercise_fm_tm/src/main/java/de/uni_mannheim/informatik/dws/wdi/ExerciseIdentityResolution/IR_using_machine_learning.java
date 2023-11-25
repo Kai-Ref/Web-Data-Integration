@@ -3,26 +3,14 @@ package de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution;
 import java.io.File;
 
 import org.slf4j.Logger;
-<<<<<<< HEAD:Identity Resolution/Coding/IR_exercise/src/main/java/de/uni_mannheim/informatik/dws/wdi/ExerciseIdentityResolution/IR_using_machine_learning.java
+
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking.PlayerBlockingKeyByNameGenerator;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.PlayerNameComparatorJaccard;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Player;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.PlayerXMLReader;
-=======
-import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking.MovieBlockingKeyByDecadeGenerator;
-import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking.MovieBlockingKeyByTitleGenerator;
-import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking.MovieBlockingKeyByYearGenerator;
-import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.MovieDateComparator10Years;
-import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.MovieDateComparator2Years;
-import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.MovieDirectorComparatorJaccard;
-import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.MovieDirectorComparatorLevenshtein;
-import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.MovieDirectorComparatorLowerCaseJaccard;
-import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.MovieTitleComparatorEqual;
-import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.MovieTitleComparatorJaccard;
-import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.MovieTitleComparatorLevenshtein;
->>>>>>> 392919a8a6c9c0038052370ffa0498dd47b3492d:IR_java files/IR_exercise_fm_tm/src/main/java/de/uni_mannheim/informatik/dws/wdi/ExerciseIdentityResolution/IR_using_machine_learning.java
 import de.uni_mannheim.informatik.dws.winter.matching.MatchingEngine;
 import de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator;
 import de.uni_mannheim.informatik.dws.winter.matching.algorithms.RuleLearner;
-import de.uni_mannheim.informatik.dws.winter.matching.blockers.SortedNeighbourhoodBlocker;
 import de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardRecordBlocker;
 import de.uni_mannheim.informatik.dws.winter.matching.rules.WekaMatchingRule;
 import de.uni_mannheim.informatik.dws.winter.model.Correspondence;
@@ -66,20 +54,22 @@ public class IR_using_machine_learning {
 		gsTraining.loadFromCSVFile(new File("data/goldstandard/gs_academy_awards_2_actors_training.csv"));
 
 		// create a matching rule
-		String options[] = new String[] { "-S" };
+		String options[] = new String[] { "-S", "-M" };
 		String modelType = "SimpleLogistic"; // use a logistic regression
 		WekaMatchingRule<Player, Attribute> matchingRule = new WekaMatchingRule<>(0.7, modelType, options);
+		
 		matchingRule.activateDebugReport("data/output/debugResultsMatchingRule.csv", 1000, gsTraining);
 		
+		
 		// add comparators
-		matchingRule.addComparator(new PlayerNameComparatorEqual());
-		matchingRule.addComparator(new PlayereDateComparator2Years());
-		matchingRule.addComparator(new MovieDateComparator10Years());
-		matchingRule.addComparator(new MovieDirectorComparatorJaccard());
-		matchingRule.addComparator(new MovieDirectorComparatorLevenshtein());
-		matchingRule.addComparator(new MovieDirectorComparatorLowerCaseJaccard());
-		matchingRule.addComparator(new MovieTitleComparatorLevenshtein());
-		matchingRule.addComparator(new MovieTitleComparatorJaccard());
+		matchingRule.addComparator(new PlayerNameComparatorJaccard());
+		//matchingRule.addComparator(new PlayereDateComparator2Years());
+		//matchingRule.addComparator(new MovieDateComparator10Years());
+		//matchingRule.addComparator(new MovieDirectorComparatorJaccard());
+		//matchingRule.addComparator(new MovieDirectorComparatorLevenshtein());
+		//matchingRule.addComparator(new MovieDirectorComparatorLowerCaseJaccard());
+		//matchingRule.addComparator(new MovieTitleComparatorLevenshtein());
+		//matchingRule.addComparator(new MovieTitleComparatorJaccard());
 		
 		
 		// train the matching rule's model
@@ -89,9 +79,9 @@ public class IR_using_machine_learning {
 		logger.info(String.format("Matching rule is:\n%s", matchingRule.getModelDescription()));
 		
 		// create a blocker (blocking strategy)
-		StandardRecordBlocker<Player, Attribute> blocker = new StandardRecordBlocker<Player, Attribute>(new PlayerBlockingKeyByNameGenerator());
+		StandardRecordBlocker<Player, Attribute> nameblocker = new StandardRecordBlocker<Player, Attribute>(new PlayerBlockingKeyByNameGenerator());
 //		SortedNeighbourhoodBlocker<Movie, Attribute, Attribute> blocker = new SortedNeighbourhoodBlocker<>(new MovieBlockingKeyByDecadeGenerator(), 1);
-		blocker.collectBlockSizeData("data/output/debugResultsBlocking.csv", 100);
+		nameblocker.collectBlockSizeData("data/output/debugResultsBlocking.csv", 100);
 		
 		// Initialize Matching Engine
 		MatchingEngine<Player, Attribute> engine = new MatchingEngine<>();
@@ -100,16 +90,16 @@ public class IR_using_machine_learning {
 		logger.info("*\tRunning identity resolution\t*");
 		Processable<Correspondence<Player, Attribute>> correspondences = engine.runIdentityResolution(
 				dataFm, dataTm, null, matchingRule,
-				blocker);
+				nameblocker);
 
 		// write the correspondences to the output file
-		new CSVCorrespondenceFormatter().writeCSV(new File("data/output/academy_awards_2_actors_correspondences.csv"), correspondences);
+		new CSVCorrespondenceFormatter().writeCSV(new File("data/output/Players_ML_correspondences.csv"), correspondences);
 
 		// load the gold standard (test set)
 		logger.info("*\tLoading gold standard\t*");
 		MatchingGoldStandard gsTest = new MatchingGoldStandard();
 		gsTest.loadFromCSVFile(new File(
-				"data/goldstandard/gs_academy_awards_2_actors_test.csv"));
+				"data/goldstandard/gold_standard_fm_tm.csv"));
 		
 		// evaluate your result
 		logger.info("*\tEvaluating result\t*");

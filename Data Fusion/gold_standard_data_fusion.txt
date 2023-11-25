@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<player>
+		<id>eafc_1000</id>
+		<name>Rúben Fernandes</name>
+		<birthdate>1986-05-06</birthdate>
+		<age>37</age>
+		<nationality>Portugal</nationality>
+		<positions>
+			<position>CB</position>
+		</positions>
+		<jersey_number>26</jersey_number>
+		<club>Gil Vicente FC</club>
+		<league>Liga Portugal</league>
+		<weight>81</weight>
+		<height>187</height>
+		<preferred_foot>left</preferred_foot>
+		<current_market_value>100000</current_market_value>
+		<wage>5000</wage>
+	</player>
+	<player>
+		<id>tm_6163</id>
+		<name>Lucas Beltrán</name>
+		<birthdate>2001-03-29</birthdate>
+		<age>22</age>
+		<nationality>Argentina</nationality>
+		<positions>
+			<position>ST</position>
+		</positions>
+		<jersey_number>9</jersey_number>
+		<club>ACF Fiorentina</club>
+		<league>Serie A</league>
+		<weight>75</weight>
+		<height>176</height>
+		<preferred_foot>right</preferred_foot>
+		<current_market_value>12000000</current_market_value>
+		<wage>44000</wage>
+	</player>
+	<player>
+		<id>eafc_7280</id>
+		<name>Yunus Musah</name>
+		<birthdate>2002-11-29</birthdate>
+		<age>20</age>
+		<nationality>United States</nationality>
+		<positions>
+			<position>CM</position>
+			<position>RM</position>
+			<position>RW</position>
+			<position>CAM</position>
+		</positions>
+		<jersey_number>80</jersey_number>
+		<club>AC Milan</club>
+		<league>Serie A</league>
+		<weight>71</weight>
+		<height>178</height>
+		<preferred_foot>right</preferred_foot>
+		<current_market_value>20000000</current_market_value>
+		<wage>141000</wage>
+	</player>
+	<player>
+		<id>fm_1766</id>
+		<name>Manuel Neuer</name>
+		<birthdate>1986-03-27</birthdate>
+		<age>37</age>
+		<nationality>Germany</nationality>
+		<positions>
+			<position>GK</position>
+		</positions>
+		<jersey_number>1</jersey_number>
+		<club>FC Bayern München</club>
+		<league>Bundesliga</league>
+		<weight>93</weight>
+		<height>193</height>
+		<preferred_foot>right</preferred_foot>
+		<current_market_value>7000000</current_market_value>
+		<wage>1750000</wage>
+	</player>
+</players>
