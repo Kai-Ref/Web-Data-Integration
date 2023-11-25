@@ -138,7 +138,7 @@ def get_non_matches(
     By doing this, I try to ensure that there is no match accidentally.
     """
 
-    non_matches = result[result.score < corner_case_at_least_threshhold].copy()
+    non_matches = result[result.score < corner_case_at_least_threshhold].sample(n=n, replace=True, random_state=42).copy()
     non_matches["match"] = False
     non_matches["score"] = None
 
