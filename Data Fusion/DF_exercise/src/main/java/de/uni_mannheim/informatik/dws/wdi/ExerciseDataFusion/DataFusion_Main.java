@@ -116,13 +116,13 @@ public class DataFusion_Main
 		//correspondences.loadCorrespondences(new File("data/correspondences/academy_awards_2_actors_correspondences.csv"),ds1, ds2);
 //		correspondences.loadCorrespondences(new File("data/correspondences/fm_tm_correspondences.csv"),ds3, ds2);
 //		correspondences.loadCorrespondences(new File("data/correspondences/ea_fm_correspondences.csv"),ds1, ds2);
-		correspondences.loadCorrespondences(new File("data/correspondences/ea_tm_ml_correspondences.csv"),ds3, ds1);
+//		correspondences.loadCorrespondences(new File("data/correspondences/ea_tm_ml_correspondences.csv"),ds3, ds1);
 		
 		
 		
-		correspondences.loadCorrespondences(new File("data/correspondences/ea_fm_correspondences.csv"),ds1, ds2);
-		correspondences.loadCorrespondences(new File("data/correspondences/ea_tm_correspondences.csv"),ds3, ds1);
-		correspondences.loadCorrespondences(new File("data/correspondences/fm_tm_correspondences.csv"),ds3, ds2);
+		correspondences.loadCorrespondences(new File("data/correspondences/Correspondences_very_good_ML_ea_2_fm.csv"),ds1, ds2);
+		correspondences.loadCorrespondences(new File("data/correspondences/correspondences_very_good_ml_tm_ea.csv"),ds3, ds1);
+		correspondences.loadCorrespondences(new File("data/correspondences/correspondences_very_good_ml_fm_tm.csv"),ds2, ds3);
 
 		// write group size distribution
 		correspondences.printGroupSizeDistribution();
