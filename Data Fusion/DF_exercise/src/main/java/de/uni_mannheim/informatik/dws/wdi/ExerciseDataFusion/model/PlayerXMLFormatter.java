@@ -59,17 +59,4 @@ public class PlayerXMLFormatter extends XMLFormatter<Player> {
 		return elem;
 	}
 
-	protected Element createActorsElement(Movie record, Document doc) {
-		Element actorRoot = actorFormatter.createRootElement(doc);
-		actorRoot.setAttribute("provenance",
-				record.getMergedAttributeProvenance(Movie.ACTORS));
-
-		for (Actor a : record.getActors()) {
-			actorRoot.appendChild(actorFormatter
-					.createElementFromRecord(a, doc));
-		}
-
-		return actorRoot;
-	}
-
 }
