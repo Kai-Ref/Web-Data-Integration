@@ -9,6 +9,7 @@ import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking.Pl
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.PlayerNameComparatorJaccard;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.PlayerBirthdateComparator;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.PlayerBirthdateComparatorDay;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.PlayerNameComparatorMongeElkan;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Player;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Player2;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.PlayerXMLReader;
@@ -28,6 +29,7 @@ import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
 import de.uni_mannheim.informatik.dws.winter.model.io.CSVCorrespondenceFormatter;
 import de.uni_mannheim.informatik.dws.winter.processing.Processable;
 import de.uni_mannheim.informatik.dws.winter.utils.WinterLogManager;
+
 
 public class IR_using_linear_combination 
 {
@@ -64,10 +66,11 @@ public class IR_using_linear_combination
 		matchingRule.activateDebugReport("data/output/debugResultsMatchingRule.csv", 1000, gsTest);
 		
 		// add comparators
-		matchingRule.addComparator(new PlayerNameComparatorJaccard(), 0.5);
+		//matchingRule.addComparator(new PlayerNameComparatorJaccard(), 0.5);
+		matchingRule.addComparator(new PlayerNameComparatorMongeElkan(), 0.6);
 		//matchingRule.addComparator(new PlayerNameReverseComparator(), 0.3);
-		matchingRule.addComparator(new PlayerBirthdateComparatorDay(100), 0.5);
-		
+		matchingRule.addComparator(new PlayerBirthdateComparatorDay(5), 0.4);
+
 
 		// create a blocker (blocking strategy)
 		StandardRecordBlocker<Player, Attribute> nameblocker = new StandardRecordBlocker<Player, Attribute>(new PlayerBlockingKeyByNameGenerator(1));
