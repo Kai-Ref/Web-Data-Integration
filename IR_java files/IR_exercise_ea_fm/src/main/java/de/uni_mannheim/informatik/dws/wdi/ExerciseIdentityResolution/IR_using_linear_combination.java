@@ -10,6 +10,7 @@ import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking.Pl
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking.PlayerBlockingKeyByNameGenerator;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking.PlayerBlockingKeyByYearGenerator;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.PlayerNameComparatorJaccard;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.PlayerNameComparatorMongeElkan;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.PlayerBirthdateComparatorDay;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.PlayerBirthdateComparator;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.PlayerBirthdayComparator1Day;
@@ -18,7 +19,10 @@ import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.PlayerLeagueComparatorEqual;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.PlayerWeightComparatorRelativeDifference;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Player;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Player2;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.PlayerXMLReader;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.PlayerXMLReader2;
+import de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet;
 import de.uni_mannheim.informatik.dws.winter.matching.MatchingEngine;
 import de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator;
 import de.uni_mannheim.informatik.dws.winter.matching.blockers.NoBlocker;
@@ -26,6 +30,8 @@ import de.uni_mannheim.informatik.dws.winter.matching.blockers.SortedNeighbourho
 import de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardRecordBlocker;
 import de.uni_mannheim.informatik.dws.winter.matching.rules.LinearCombinationMatchingRule;
 import de.uni_mannheim.informatik.dws.winter.model.Correspondence;
+import de.uni_mannheim.informatik.dws.winter.model.FusibleDataSet;
+import de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet;
 import de.uni_mannheim.informatik.dws.winter.model.HashedDataSet;
 import de.uni_mannheim.informatik.dws.winter.model.MatchingGoldStandard;
 import de.uni_mannheim.informatik.dws.winter.model.Performance;
@@ -71,7 +77,9 @@ public class IR_using_linear_combination
 		
 		// add comparators
 		// Name
-		matchingRule.addComparator(new PlayerNameComparatorJaccard(), .6);
+		//matchingRule.addComparator(new PlayerNameComparatorJaccard(), .6);
+		matchingRule.addComparator(new PlayerNameComparatorMongeElkan(), 0.6);
+
 		
 		// Birthdate
 		matchingRule.addComparator(new PlayerBirthdateComparatorDay(20), .4);	// BEST
@@ -98,6 +106,7 @@ public class IR_using_linear_combination
 		// NoBlocker<Player, Attribute> blocker = new NoBlocker<>();
 		// Replace with MovieBlockingKeyByTitleGenerator with Blocker specific for Player
 		// SortedNeighbourhoodBlocker<Player, Attribute, Attribute> blocker = new SortedNeighbourhoodBlocker<>(new PlayerBlockingKeyByClubGenerator(4), 160); // BEST
+		//SortedNeighbourhoodBlocker<Player, Attribute, Attribute> blocker = new SortedNeighbourhoodBlocker<>(new PlayerBlockingKeyByNameGenerator(1), 110);
 		blocker.setMeasureBlockSizes(true);
 		//Write debug results to file:
 		blocker.collectBlockSizeData("data/output/debugResultsBlocking.csv", 100);
@@ -136,5 +145,19 @@ public class IR_using_linear_combination
 				"Recall: %.4f",	perfTest.getRecall()));
 		logger.info(String.format(
 				"F1: %.4f",perfTest.getF1()));
+		
+		FusibleDataSet<Player2, Attribute> ea_fusible = new FusibleHashedDataSet<>();
+		new PlayerXMLReader2().loadFromXML(new File("data/input/eafc_final.xml"), "/players/player", ea_fusible);
+//		ds3.printDataSetDensityReport();
+		
+		FusibleDataSet<Player2, Attribute> fm23_fusible = new FusibleHashedDataSet<>();
+		new PlayerXMLReader2().loadFromXML(new File("data/input/fm23_final.xml"), "/players/player", fm23_fusible);
+//		ds2.printDataSetDensityReport();
+
+		
+		CorrespondenceSet<Player2, Attribute> correspondences2 = new CorrespondenceSet<>();
+		correspondences2.loadCorrespondences(new File("data/output/ea_fm_correspondences.csv"),ea_fusible, fm23_fusible);
+		logger.info("*\tLoading datasets 2\t*");
+		correspondences2.printGroupSizeDistribution();
     }
 }
