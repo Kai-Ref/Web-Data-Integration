@@ -11,7 +11,7 @@ import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.PlayerNameComparatorEqual;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.PlayerNameComparatorLevenshtein;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.PlayerNameReverseComparator;
-
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.PlayerWeightComparatorRelativeDifference;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.PlayerBirthdateComparator;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.PlayerBirthdateComparator10Years;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.PlayerBirthdateComparator2Years;
@@ -71,7 +71,7 @@ public class IR_using_machine_learning {
 		
 		// load the training set
 		MatchingGoldStandard gsTraining = new MatchingGoldStandard();
-		gsTraining.loadFromCSVFile(new File("data/goldstandard/gold_standard_fm_tm_train.csv"));
+		gsTraining.loadFromCSVFile(new File("data/goldstandard/gold_standard_fm_tm_train_v3.csv"));
 
 		// create a matching rule
 		String options[] = new String[] { "-S" };
@@ -82,13 +82,18 @@ public class IR_using_machine_learning {
 		
 		// add comparators
 		matchingRule.addComparator(new PlayerNameComparatorJaccard());
-		matchingRule.addComparator(new PlayerBirthdateComparator());
+		matchingRule.addComparator(new PlayerNameReverseComparator());
+		matchingRule.addComparator(new PlayerNameComparatorLevenshtein());
+		
 		matchingRule.addComparator(new PlayerBirthdateComparator10Years());
 		matchingRule.addComparator(new PlayerBirthdateComparator2Years());
 		matchingRule.addComparator(new PlayerBirthdateComparatorDay(1));
-		matchingRule.addComparator(new PlayerNameReverseComparator());
+		matchingRule.addComparator(new PlayerBirthdateComparatorDay(100));
+		
 		matchingRule.addComparator(new PlayerClubComparatorLowerCaseJaccard());
+		
 		matchingRule.addComparator(new PlayerLeagueComparatorEqual());
+		
 		
 		
 		// train the matching rule's model
@@ -98,8 +103,8 @@ public class IR_using_machine_learning {
 		logger.info(String.format("Matching rule is:\n%s", matchingRule.getModelDescription()));
 		
 		// create a blocker (blocking strategy)
-		// StandardRecordBlocker<Player, Attribute> nameblocker = new StandardRecordBlocker<Player, Attribute>(new PlayerBlockingKeyByNameGenerator());
-		SortedNeighbourhoodBlocker<Player, Attribute, Attribute> blocker = new SortedNeighbourhoodBlocker<>(new PlayerBlockingKeyByNameGenerator(1), 100);
+		StandardRecordBlocker<Player, Attribute> blocker = new StandardRecordBlocker<Player, Attribute>(new PlayerBlockingKeyByNameGenerator(1));
+		// SortedNeighbourhoodBlocker<Player, Attribute, Attribute> blocker = new SortedNeighbourhoodBlocker<>(new PlayerBlockingKeyByNameGenerator(1), 100);
 		blocker.collectBlockSizeData("data/output/debugResultsBlocking.csv", 100);
 		
 		// Initialize Matching Engine
@@ -118,7 +123,7 @@ public class IR_using_machine_learning {
 		logger.info("*\tLoading gold standard\t*");
 		MatchingGoldStandard gsTest = new MatchingGoldStandard();
 		gsTest.loadFromCSVFile(new File(
-				"data/goldstandard/gold_standard_fm_tm_test.csv"));
+				"data/goldstandard/gold_standard_fm_tm_test_v3.csv"));
 		
 		// evaluate your result
 		logger.info("*\tEvaluating result\t*");
@@ -136,17 +141,17 @@ public class IR_using_machine_learning {
 				"F1: %.4f",perfTest.getF1()));
 		
 		
-		FusibleDataSet<Player2, Attribute> ds2 = new FusibleHashedDataSet<>();
-		new PlayerXMLReader2().loadFromXML(new File("data/input/fm23_final.xml"), "/players/player", ds2);
+		FusibleDataSet<Player2, Attribute> fm23_fusible = new FusibleHashedDataSet<>();
+		new PlayerXMLReader2().loadFromXML(new File("data/input/fm23_final.xml"), "/players/player", fm23_fusible);
 //		ds2.printDataSetDensityReport();
 
-		FusibleDataSet<Player2, Attribute> ds3 = new FusibleHashedDataSet<>();
-		new PlayerXMLReader2().loadFromXML(new File("data/input/tm_final.xml"), "/players/player", ds3);
+		FusibleDataSet<Player2, Attribute> tm_fusible = new FusibleHashedDataSet<>();
+		new PlayerXMLReader2().loadFromXML(new File("data/input/tm_final.xml"), "/players/player", tm_fusible);
 //		ds3.printDataSetDensityReport();
 		
 		
 		CorrespondenceSet<Player2, Attribute> correspondences2 = new CorrespondenceSet<>();
-		correspondences2.loadCorrespondences(new File("data/output/correspondences_very_good_ml_fm_tm.csv"),ds2, ds3);
+		correspondences2.loadCorrespondences(new File("data/output/correspondences_very_good_ml_fm_tm.csv"),fm23_fusible, tm_fusible);
 		logger.info("*\tLoading datasets 2\t*");
 		correspondences2.printGroupSizeDistribution();
     }
