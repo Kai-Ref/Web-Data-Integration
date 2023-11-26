@@ -83,8 +83,9 @@ public class IR_using_linear_combination
 //		matchingRule.addComparator(new PlayerClubComparatorJaccard());
 //		matchingRule.addComparator(new PlayerClubComparatorLevenshtein(), 0.2);
 //		matchingRule.addComparator(new PlayerNameComparatorLevenshtein());
-		matchingRule.addComparator(new PlayerBirthdateComparator(3), 0.55);
+//		matchingRule.addComparator(new PlayerBirthdateComparator(3), 0.55);
 //		matchingRule.addComparator(new PlayerJerseyNumberComparatorEqual(), 0.5);
+		matchingRule.addComparator(new PlayerBirthdateComparatorDay(5), 0.55);
 		
 
 		// create a blocker (blocking strategy)
