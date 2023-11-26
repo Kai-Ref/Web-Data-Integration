@@ -78,11 +78,11 @@ public class IR_using_linear_combination
 		// add comparators
 		// Name
 		//matchingRule.addComparator(new PlayerNameComparatorJaccard(), .6);
-		matchingRule.addComparator(new PlayerNameComparatorMongeElkan(), 0.6);
+		matchingRule.addComparator(new PlayerNameComparatorMongeElkan(), 0.5);
 
 		
 		// Birthdate
-		matchingRule.addComparator(new PlayerBirthdateComparatorDay(20), .4);	// BEST
+		matchingRule.addComparator(new PlayerBirthdateComparatorDay(10), .3);
 		
 		// Nationality
 		
@@ -95,18 +95,18 @@ public class IR_using_linear_combination
 		// matchingRule.addComparator(new PlayerAgeComparatorAbsoluteDifference(0.1), 1);		
 		
 		// Height 
-		// matchingRule.addComparator(new PlayerHeightComparatorRelativeDifference(0.1), 1);
+		 matchingRule.addComparator(new PlayerHeightComparatorRelativeDifference(0.3), 0.1);
 		
 		// Weight 
-		// matchingRule.addComparator(new PlayerWeightComparatorRelativeDifference(0.1), 0.1);
+		 matchingRule.addComparator(new PlayerWeightComparatorRelativeDifference(0.3), 0.1);
 		
 
 		// create a blocker (blocking strategy)
-		StandardRecordBlocker<Player, Attribute> blocker = new StandardRecordBlocker<Player, Attribute>(new PlayerBlockingKeyByLeagueGenerator(2));
+		//StandardRecordBlocker<Player, Attribute> blocker = new StandardRecordBlocker<Player, Attribute>(new PlayerBlockingKeyByLeagueGenerator(2));
 		// NoBlocker<Player, Attribute> blocker = new NoBlocker<>();
 		// Replace with MovieBlockingKeyByTitleGenerator with Blocker specific for Player
-		// SortedNeighbourhoodBlocker<Player, Attribute, Attribute> blocker = new SortedNeighbourhoodBlocker<>(new PlayerBlockingKeyByClubGenerator(4), 160); // BEST
-		//SortedNeighbourhoodBlocker<Player, Attribute, Attribute> blocker = new SortedNeighbourhoodBlocker<>(new PlayerBlockingKeyByNameGenerator(1), 110);
+		// SortedNeighbourhoodBlocker<Player, Attribute, Attribute> blocker = new SortedNeighbourhoodBlocker<>(new PlayerBlockingKeyByClubGenerator(4), 160);
+		SortedNeighbourhoodBlocker<Player, Attribute, Attribute> blocker = new SortedNeighbourhoodBlocker<>(new PlayerBlockingKeyByNameGenerator(1), 110);
 		blocker.setMeasureBlockSizes(true);
 		//Write debug results to file:
 		blocker.collectBlockSizeData("data/output/debugResultsBlocking.csv", 100);
