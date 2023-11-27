@@ -199,6 +199,11 @@ SortedNeighbourhoodBlocker<Player, Attribute, Attribute> blocker = new SortedNei
 [INFO ] 2023-11-26 19:29:34.878 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		5	| 	1
 [INFO ] 2023-11-26 19:29:34.878 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		6	| 	3
 
+matchingRule.addComparator(new PlayerNameComparatorMongeElkan(), 0.5);
+matchingRule.addComparator(new PlayerBirthdateComparatorDay(5), 0.5);
+NoBlocker<Player, Attribute> blocker = new NoBlocker<>();
+
+Exception in thread "main" java.lang.OutOfMemoryError: Java heap space
 
 ******************************
 TM-FM
@@ -260,7 +265,8 @@ StandardRecordBlocker<Player, Attribute> nameblocker = new StandardRecordBlocker
 
 matchingRule.addComparator(new PlayerNameComparatorMongeElkan(), 0.6);
 matchingRule.addComparator(new PlayerBirthdateComparatorDay(5), 0.4);
-StandardRecordBlocker<Player, Attribute> nameblocker = new StandardRecordBlocker<Player, Attribute>(new PlayerBlockingKeyByNameGenerator(1));[INFO ] 2023-11-26 19:18:22.250 [de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.IR_using_linear_combination] - Tm <-> Fm
+StandardRecordBlocker<Player, Attribute> nameblocker = new StandardRecordBlocker<Player, Attribute>(new PlayerBlockingKeyByNameGenerator(1));
+[INFO ] 2023-11-26 19:18:22.250 [de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.IR_using_linear_combination] - Tm <-> Fm
 [INFO ] 2023-11-26 19:18:22.251 [de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.IR_using_linear_combination] - Precision: 0,9930
 [INFO ] 2023-11-26 19:18:22.251 [de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.IR_using_linear_combination] - Recall: 0,7245
 [INFO ] 2023-11-26 19:18:22.251 [de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.IR_using_linear_combination] - F1: 0,8378
@@ -273,6 +279,13 @@ StandardRecordBlocker<Player, Attribute> nameblocker = new StandardRecordBlocker
 [INFO ] 2023-11-26 19:18:22.785 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		2	| 	6334
 [INFO ] 2023-11-26 19:18:22.785 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		3	| 	11
 [INFO ] 2023-11-26 19:18:22.786 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		4	| 	1
+
+matchingRule.addComparator(new PlayerNameComparatorMongeElkan(), 0.6);
+matchingRule.addComparator(new PlayerBirthdateComparatorDay(5), 0.4);
+StandardRecordBlocker<Player, Attribute> nameblocker = new StandardRecordBlocker<Player, Attribute>(new PlayerBlockingKeyByNameGenerator(1));
+
+Exception in thread "main" java.lang.OutOfMemoryError: Java heap space
+
 
 matchingRule.addComparator(new PlayerNameComparatorMongeElkan(), 0.6);
 matchingRule.addComparator(new PlayerBirthdateComparatorDay(5), 0.4);
@@ -404,6 +417,7 @@ matchingRule.addComparator(new PlayerNameComparatorMongeElkan(), 0.5);
 matchingRule.addComparator(new PlayerBirthdateComparatorDay(10), .3);
 matchingRule.addComparator(new PlayerHeightComparatorRelativeDifference(0.3), 0.1);
 matchingRule.addComparator(new PlayerWeightComparatorRelativeDifference(0.3), 0.1);
+SortedNeighbourhoodBlocker<Player, Attribute, Attribute> blocker = new SortedNeighbourhoodBlocker<>(new PlayerBlockingKeyByNameGenerator(1), 110);
 [INFO ] 2023-11-27 00:17:35.390 [de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.IR_using_linear_combination] - Ea <-> Fm
 [INFO ] 2023-11-27 00:17:35.390 [de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.IR_using_linear_combination] - Precision: 0,9956
 [INFO ] 2023-11-27 00:17:35.390 [de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.IR_using_linear_combination] - Recall: 0,9080
@@ -417,3 +431,11 @@ matchingRule.addComparator(new PlayerWeightComparatorRelativeDifference(0.3), 0.
 [INFO ] 2023-11-27 00:17:35.902 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		2	| 	6309
 [INFO ] 2023-11-27 00:17:35.902 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		3	| 	7
 [INFO ] 2023-11-27 00:17:35.902 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		4	| 	2
+
+matchingRule.addComparator(new PlayerNameComparatorMongeElkan(), 0.5);
+matchingRule.addComparator(new PlayerBirthdateComparatorDay(10), .3);
+matchingRule.addComparator(new PlayerHeightComparatorRelativeDifference(0.3), 0.1);
+matchingRule.addComparator(new PlayerWeightComparatorRelativeDifference(0.3), 0.1);
+NoBlocker<Player, Attribute> blocker = new NoBlocker<>();
+
+Exception in thread "main" java.lang.OutOfMemoryError: Java heap space
