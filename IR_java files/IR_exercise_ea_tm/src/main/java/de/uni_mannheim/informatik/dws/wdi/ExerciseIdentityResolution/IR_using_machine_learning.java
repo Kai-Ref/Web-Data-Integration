@@ -68,10 +68,17 @@ public class IR_using_machine_learning {
 		gsTraining.loadFromCSVFile(new File("data/goldstandard/gold_standard_ea_tm_train_v2.csv"));
 
 		// create a matching rule
-		String options[] = new String[] {};//{ "-S" };
+//		String options[] = new String[] { "-S" };
 //		String modelType = "SimpleLogistic"; // use a logistic regression
-		String modelType = "NaiveBayesMultinomial";
-		WekaMatchingRule<Player, Attribute> matchingRule = new WekaMatchingRule<>(0.5, modelType, options);
+//		String modelType = "NaiveBayesMultinomial";
+//		String modelType = "NeuralNetwork";
+		String options[] = new String[] {};//{ "-S" };
+		String modelType = "RandomForest";
+//		String modelType = "RandomTree";
+		
+		
+		
+		WekaMatchingRule<Player, Attribute> matchingRule = new WekaMatchingRule<>(0.01, modelType, options);
 		matchingRule.activateDebugReport("data/output/debugResultsMatchingRule.csv", 1000, gsTraining);
 		
 		// add comparators

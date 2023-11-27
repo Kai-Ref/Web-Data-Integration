@@ -10,13 +10,17 @@ import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking.Pl
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.PlayerNameComparatorJaccard;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.PlayerNameComparatorEqual;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.PlayerNameComparatorLevenshtein;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.PlayerNameComparatorMongeElkan;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.PlayerNameReverseComparator;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.PlayerWeightComparatorRelativeDifference;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.PlayerBirthdateComparator;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.PlayerBirthdateComparator10Years;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.PlayerBirthdateComparator2Years;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.PlayerBirthdateComparatorDay;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.PlayerClubComparatorJaccard;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.PlayerClubComparatorLevenshtein;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.PlayerClubComparatorLowerCaseJaccard;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.PlayerJerseyNumberComparatorEqual;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.PlayerLeagueComparatorEqual;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.PlayerBirthdateComparator;
 
@@ -73,10 +77,16 @@ public class IR_using_machine_learning {
 		MatchingGoldStandard gsTraining = new MatchingGoldStandard();
 		gsTraining.loadFromCSVFile(new File("data/goldstandard/gold_standard_fm_tm_train_v3.csv"));
 
-		// create a matching rule
-		String options[] = new String[] { "-S" };
-		String modelType = "SimpleLogistic"; // use a logistic regression
-		WekaMatchingRule<Player, Attribute> matchingRule = new WekaMatchingRule<>(0.7, modelType, options);
+		
+//		String options[] = new String[] { "-S" };
+		String options[] = new String[] {};//{ "-S" };
+//		String modelType = "SimpleLogistic"; // use a logistic regression
+//		String modelType = "NaiveBayesMultinomial";
+//		String modelType = "NeuralNetwork";
+//		String modelType = "NaiveBayesMultinomial";
+		String modelType = "RandomTree";
+		
+		WekaMatchingRule<Player, Attribute> matchingRule = new WekaMatchingRule<>(0.9, modelType, options);
 		
 		matchingRule.activateDebugReport("data/output/debugResultsMatchingRule.csv", 1000, gsTraining);
 		
@@ -84,13 +94,20 @@ public class IR_using_machine_learning {
 		matchingRule.addComparator(new PlayerNameComparatorJaccard());
 		matchingRule.addComparator(new PlayerNameReverseComparator());
 		matchingRule.addComparator(new PlayerNameComparatorLevenshtein());
+		matchingRule.addComparator(new PlayerNameComparatorEqual());
+		matchingRule.addComparator(new PlayerNameComparatorMongeElkan());
 		
 		matchingRule.addComparator(new PlayerBirthdateComparator10Years());
 		matchingRule.addComparator(new PlayerBirthdateComparator2Years());
 		matchingRule.addComparator(new PlayerBirthdateComparatorDay(1));
 		matchingRule.addComparator(new PlayerBirthdateComparatorDay(100));
+		matchingRule.addComparator(new PlayerBirthdateComparator(3));
+		matchingRule.addComparator(new PlayerBirthdateComparatorDay(5));
 		
 		matchingRule.addComparator(new PlayerClubComparatorLowerCaseJaccard());
+		
+		matchingRule.addComparator(new PlayerClubComparatorJaccard());
+		matchingRule.addComparator(new PlayerClubComparatorLevenshtein());
 		
 		matchingRule.addComparator(new PlayerLeagueComparatorEqual());
 		
@@ -104,7 +121,7 @@ public class IR_using_machine_learning {
 		
 		// create a blocker (blocking strategy)
 		StandardRecordBlocker<Player, Attribute> blocker = new StandardRecordBlocker<Player, Attribute>(new PlayerBlockingKeyByNameGenerator(1));
-		// SortedNeighbourhoodBlocker<Player, Attribute, Attribute> blocker = new SortedNeighbourhoodBlocker<>(new PlayerBlockingKeyByNameGenerator(1), 100);
+//		 SortedNeighbourhoodBlocker<Player, Attribute, Attribute> blocker = new SortedNeighbourhoodBlocker<>(new PlayerBlockingKeyByNameGenerator(1), 100);
 		blocker.collectBlockSizeData("data/output/debugResultsBlocking.csv", 100);
 		
 		// Initialize Matching Engine
@@ -154,5 +171,8 @@ public class IR_using_machine_learning {
 		correspondences2.loadCorrespondences(new File("data/output/correspondences_very_good_ml_fm_tm.csv"),fm23_fusible, tm_fusible);
 		logger.info("*\tLoading datasets 2\t*");
 		correspondences2.printGroupSizeDistribution();
+		int n1 = correspondences.size();
+//		int n2 = correspondences2.size();
+		logger.info("*\\tCorrespondences:"+ n1);
     }
 }
