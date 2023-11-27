@@ -1,0 +1,441 @@
+***********************
+EA-TM:
+***********************
+matchingRule.addComparator(new PlayerNameComparatorJaccard(), 0.45);
+matchingRule.addComparator(new PlayerBirthdateComparator(3), 0.55);
+SortedNeighbourhoodBlocker<Player, Attribute, Attribute> blocker = new SortedNeighbourhoodBlocker<>(new PlayerBlockingKeyByNameGenerator(1), 110);
+[INFO ] 2023-11-26 17:44:44.144 [de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.IR_using_linear_combination] - Tm <-> Ea
+[INFO ] 2023-11-26 17:44:44.145 [de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.IR_using_linear_combination] - Precision: 0,8684
+[INFO ] 2023-11-26 17:44:44.145 [de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.IR_using_linear_combination] - Recall: 0,8988
+[INFO ] 2023-11-26 17:44:44.145 [de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.IR_using_linear_combination] - F1: 0,8834
+[INFO ] 2023-11-26 17:44:44.311 [de.uni_mannheim.informatik.dws.winter.model.io.XMLMatchableReader] - Loading 10714 elements from eafc_final.xml
+[INFO ] 2023-11-26 17:44:44.524 [de.uni_mannheim.informatik.dws.winter.model.io.XMLMatchableReader] - Loading 9867 elements from tm_final.xml
+[INFO ] 2023-11-26 17:44:44.615 [de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.IR_using_linear_combination] - *	Loading datasets 2	*
+[INFO ] 2023-11-26 17:44:44.618 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - Group Size Distribtion of 7687 groups:
+[INFO ] 2023-11-26 17:44:44.618 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 	Group Size 	| Frequency 
+[INFO ] 2023-11-26 17:44:44.619 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 	————————————————————————————
+[INFO ] 2023-11-26 17:44:44.620 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		2	| 	7496
+[INFO ] 2023-11-26 17:44:44.620 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		3	| 	56
+[INFO ] 2023-11-26 17:44:44.621 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		4	| 	99
+[INFO ] 2023-11-26 17:44:44.621 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		5	| 	13
+[INFO ] 2023-11-26 17:44:44.621 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		6	| 	15
+[INFO ] 2023-11-26 17:44:44.621 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		7	| 	3
+[INFO ] 2023-11-26 17:44:44.621 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		8	| 	2
+[INFO ] 2023-11-26 17:44:44.621 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		9	| 	1
+[INFO ] 2023-11-26 17:44:44.621 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		10	| 	2
+
+matchingRule.addComparator(new PlayerNameComparatorJaccard(), 0.45);
+matchingRule.addComparator(new PlayerJerseyNumberComparatorEqual(), 0.5);
+SortedNeighbourhoodBlocker<Player, Attribute, Attribute> blocker = new SortedNeighbourhoodBlocker<>(new PlayerBlockingKeyByNameGenerator(1), 110);
+[INFO ] 2023-11-26 17:48:47.995 [de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.IR_using_linear_combination] - Tm <-> Ea
+[INFO ] 2023-11-26 17:48:47.996 [de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.IR_using_linear_combination] - Precision: 0,9541
+[INFO ] 2023-11-26 17:48:47.996 [de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.IR_using_linear_combination] - Recall: 0,4047
+[INFO ] 2023-11-26 17:48:47.997 [de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.IR_using_linear_combination] - F1: 0,5683
+[INFO ] 2023-11-26 17:48:48.470 [de.uni_mannheim.informatik.dws.winter.model.io.XMLMatchableReader] - Loading 10714 elements from eafc_final.xml
+[INFO ] 2023-11-26 17:48:48.958 [de.uni_mannheim.informatik.dws.winter.model.io.XMLMatchableReader] - Loading 9867 elements from tm_final.xml
+[INFO ] 2023-11-26 17:48:49.098 [de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.IR_using_linear_combination] - *	Loading datasets 2	*
+[INFO ] 2023-11-26 17:48:49.100 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - Group Size Distribtion of 1603 groups:
+[INFO ] 2023-11-26 17:48:49.101 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 	Group Size 	| Frequency 
+[INFO ] 2023-11-26 17:48:49.101 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 	————————————————————————————
+[INFO ] 2023-11-26 17:48:49.104 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		2	| 	1601
+[INFO ] 2023-11-26 17:48:49.104 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		3	| 	1
+[INFO ] 2023-11-26 17:48:49.105 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		4	| 	1
+********* Viele Jersey numbers stimmen nicht überein ********
+
+matchingRule.addComparator(new PlayerNameComparatorJaccard(), 0.45);
+NEW* matchingRule.addComparator(new PlayerBirthdateComparatorDay(5), 0.55);
+SortedNeighbourhoodBlocker<Player, Attribute, Attribute> blocker = new SortedNeighbourhoodBlocker<>(new PlayerBlockingKeyByNameGenerator(1), 110);
+[INFO ] 2023-11-26 18:09:21.681 [de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.IR_using_linear_combination] - Precision: 0,8953
+[INFO ] 2023-11-26 18:09:21.682 [de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.IR_using_linear_combination] - Recall: 0,8988
+[INFO ] 2023-11-26 18:09:21.682 [de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.IR_using_linear_combination] - F1: 0,8971
+[INFO ] 2023-11-26 18:09:22.155 [de.uni_mannheim.informatik.dws.winter.model.io.XMLMatchableReader] - Loading 10714 elements from eafc_final.xml
+[INFO ] 2023-11-26 18:09:22.599 [de.uni_mannheim.informatik.dws.winter.model.io.XMLMatchableReader] - Loading 9867 elements from tm_final.xml
+[INFO ] 2023-11-26 18:09:22.770 [de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.IR_using_linear_combination] - *	Loading datasets 2	*
+[INFO ] 2023-11-26 18:09:22.777 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - Group Size Distribtion of 7650 groups:
+[INFO ] 2023-11-26 18:09:22.777 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 	Group Size 	| Frequency 
+[INFO ] 2023-11-26 18:09:22.777 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 	————————————————————————————
+[INFO ] 2023-11-26 18:09:22.780 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		2	| 	7644
+[INFO ] 2023-11-26 18:09:22.781 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		3	| 	5
+[INFO ] 2023-11-26 18:09:22.781 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		4	| 	1
+
+matchingRule.addComparator(new PlayerNameComparatorJaccard(), 0.35);
+matchingRule.addComparator(new PlayerBirthdateComparatorDay(5), 0.65);
+SortedNeighbourhoodBlocker<Player, Attribute, Attribute> blocker = new SortedNeighbourhoodBlocker<>(new PlayerBlockingKeyByNameGenerator(1), 110);
+[INFO ] 2023-11-26 18:10:46.518 [de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.IR_using_linear_combination] - Tm <-> Ea
+[INFO ] 2023-11-26 18:10:46.519 [de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.IR_using_linear_combination] - Precision: 0,8640
+[INFO ] 2023-11-26 18:10:46.519 [de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.IR_using_linear_combination] - Recall: 0,9144
+[INFO ] 2023-11-26 18:10:46.519 [de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.IR_using_linear_combination] - F1: 0,8885
+[INFO ] 2023-11-26 18:10:46.735 [de.uni_mannheim.informatik.dws.winter.model.io.XMLMatchableReader] - Loading 10714 elements from eafc_final.xml
+[INFO ] 2023-11-26 18:10:47.020 [de.uni_mannheim.informatik.dws.winter.model.io.XMLMatchableReader] - Loading 9867 elements from tm_final.xml
+[INFO ] 2023-11-26 18:10:47.107 [de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.IR_using_linear_combination] - *	Loading datasets 2	*
+[INFO ] 2023-11-26 18:10:47.111 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - Group Size Distribtion of 7794 groups:
+[INFO ] 2023-11-26 18:10:47.111 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 	Group Size 	| Frequency 
+[INFO ] 2023-11-26 18:10:47.111 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 	————————————————————————————
+[INFO ] 2023-11-26 18:10:47.113 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		2	| 	7788
+[INFO ] 2023-11-26 18:10:47.113 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		3	| 	5
+[INFO ] 2023-11-26 18:10:47.113 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		4	| 	1
+
+matchingRule.addComparator(new PlayerNameComparatorJaccard(), 0.35);
+matchingRule.addComparator(new PlayerBirthdateComparatorDay(10), 0.65);
+SortedNeighbourhoodBlocker<Player, Attribute, Attribute> blocker = new SortedNeighbourhoodBlocker<>(new PlayerBlockingKeyByNameGenerator(1), 110);
+[INFO ] 2023-11-26 18:11:51.573 [de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.IR_using_linear_combination] - Tm <-> Ea
+[INFO ] 2023-11-26 18:11:51.574 [de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.IR_using_linear_combination] - Precision: 0,8577
+[INFO ] 2023-11-26 18:11:51.575 [de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.IR_using_linear_combination] - Recall: 0,9144
+[INFO ] 2023-11-26 18:11:51.575 [de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.IR_using_linear_combination] - F1: 0,8851
+[INFO ] 2023-11-26 18:11:52.062 [de.uni_mannheim.informatik.dws.winter.model.io.XMLMatchableReader] - Loading 10714 elements from eafc_final.xml
+[INFO ] 2023-11-26 18:11:52.705 [de.uni_mannheim.informatik.dws.winter.model.io.XMLMatchableReader] - Loading 9867 elements from tm_final.xml
+[INFO ] 2023-11-26 18:11:52.929 [de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.IR_using_linear_combination] - *	Loading datasets 2	*
+[INFO ] 2023-11-26 18:11:52.934 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - Group Size Distribtion of 7827 groups:
+[INFO ] 2023-11-26 18:11:52.935 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 	Group Size 	| Frequency 
+[INFO ] 2023-11-26 18:11:52.935 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 	————————————————————————————
+[INFO ] 2023-11-26 18:11:52.938 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		2	| 	7819
+[INFO ] 2023-11-26 18:11:52.938 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		3	| 	6
+[INFO ] 2023-11-26 18:11:52.938 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		4	| 	2
+
+************** NEW ***************** (MongeElkan)
+matchingRule.addComparator(new PlayerNameComparatorMongeElkan(), 0.5);
+matchingRule.addComparator(new PlayerBirthdateComparatorDay(5), 0.5);
+StandardRecordBlocker<Player, Attribute> blocker = new StandardRecordBlocker<Player, Attribute>(new PlayerBlockingKeyByNameGenerator(1));
+[INFO ] 2023-11-27 00:26:54.521 [de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.IR_using_linear_combination] - Tm <-> Ea
+[INFO ] 2023-11-27 00:26:54.521 [de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.IR_using_linear_combination] - Precision: 0,8520
+[INFO ] 2023-11-27 00:26:54.521 [de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.IR_using_linear_combination] - Recall: 0,9183
+[INFO ] 2023-11-27 00:26:54.521 [de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.IR_using_linear_combination] - F1: 0,8839
+[INFO ] 2023-11-27 00:26:54.684 [de.uni_mannheim.informatik.dws.winter.model.io.XMLMatchableReader] - Loading 10714 elements from eafc_final.xml
+[INFO ] 2023-11-27 00:26:54.836 [de.uni_mannheim.informatik.dws.winter.model.io.XMLMatchableReader] - Loading 9867 elements from tm_final.xml
+[INFO ] 2023-11-27 00:26:54.984 [de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.IR_using_linear_combination] - *	Loading datasets 2	*
+[INFO ] 2023-11-27 00:26:54.987 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - Group Size Distribtion of 8009 groups:
+[INFO ] 2023-11-27 00:26:54.987 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 	Group Size 	| Frequency 
+[INFO ] 2023-11-27 00:26:54.987 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 	————————————————————————————
+[INFO ] 2023-11-27 00:26:54.988 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		2	| 	7999
+[INFO ] 2023-11-27 00:26:54.988 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		3	| 	6
+[INFO ] 2023-11-27 00:26:54.988 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		4	| 	4
+
+matchingRule.addComparator(new PlayerNameComparatorMongeElkan(), 0.45);
+matchingRule.addComparator(new PlayerBirthdateComparatorDay(5), 0.55);
+SortedNeighbourhoodBlocker<Player, Attribute, Attribute> blocker = new SortedNeighbourhoodBlocker<>(new PlayerBlockingKeyByNameGenerator(1), 110);
+[INFO ] 2023-11-26 18:49:17.072 [de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.IR_using_linear_combination] - Tm <-> Ea
+[INFO ] 2023-11-26 18:49:17.072 [de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.IR_using_linear_combination] - Precision: 0,8379
+[INFO ] 2023-11-26 18:49:17.073 [de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.IR_using_linear_combination] - Recall: 0,9455
+[INFO ] 2023-11-26 18:49:17.073 [de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.IR_using_linear_combination] - F1: 0,8885
+[INFO ] 2023-11-26 18:49:17.300 [de.uni_mannheim.informatik.dws.winter.model.io.XMLMatchableReader] - Loading 10714 elements from eafc_final.xml
+[INFO ] 2023-11-26 18:49:17.552 [de.uni_mannheim.informatik.dws.winter.model.io.XMLMatchableReader] - Loading 9867 elements from tm_final.xml
+[INFO ] 2023-11-26 18:49:17.682 [de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.IR_using_linear_combination] - *	Loading datasets 2	*
+[INFO ] 2023-11-26 18:49:17.687 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - Group Size Distribtion of 8224 groups:
+[INFO ] 2023-11-26 18:49:17.687 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 	Group Size 	| Frequency 
+[INFO ] 2023-11-26 18:49:17.687 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 	————————————————————————————
+[INFO ] 2023-11-26 18:49:17.689 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		2	| 	8205
+[INFO ] 2023-11-26 18:49:17.689 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		3	| 	8
+[INFO ] 2023-11-26 18:49:17.689 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		4	| 	11
+********** runtime: 15s
+
+matchingRule.addComparator(new PlayerNameComparatorMongeElkan(), 0.5);
+matchingRule.addComparator(new PlayerBirthdateComparatorDay(5), 0.5);
+SortedNeighbourhoodBlocker<Player, Attribute, Attribute> blocker = new SortedNeighbourhoodBlocker<>(new PlayerBlockingKeyByNameGenerator(1), 110);
+[INFO ] 2023-11-27 00:25:02.828 [de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.IR_using_linear_combination] - Tm <-> Ea
+[INFO ] 2023-11-27 00:25:02.829 [de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.IR_using_linear_combination] - Precision: 0,8491
+[INFO ] 2023-11-27 00:25:02.829 [de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.IR_using_linear_combination] - Recall: 0,9416
+[INFO ] 2023-11-27 00:25:02.829 [de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.IR_using_linear_combination] - F1: 0,8930
+[INFO ] 2023-11-27 00:25:02.952 [de.uni_mannheim.informatik.dws.winter.model.io.XMLMatchableReader] - Loading 10714 elements from eafc_final.xml
+[INFO ] 2023-11-27 00:25:03.149 [de.uni_mannheim.informatik.dws.winter.model.io.XMLMatchableReader] - Loading 9867 elements from tm_final.xml
+[INFO ] 2023-11-27 00:25:03.217 [de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.IR_using_linear_combination] - *	Loading datasets 2	*
+[INFO ] 2023-11-27 00:25:03.220 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - Group Size Distribtion of 8189 groups:
+[INFO ] 2023-11-27 00:25:03.221 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 	Group Size 	| Frequency 
+[INFO ] 2023-11-27 00:25:03.221 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 	————————————————————————————
+[INFO ] 2023-11-27 00:25:03.221 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		2	| 	8177
+[INFO ] 2023-11-27 00:25:03.222 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		3	| 	7
+[INFO ] 2023-11-27 00:25:03.222 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		4	| 	5
+
+matchingRule.addComparator(new PlayerNameComparatorMongeElkan(), 0.55);
+matchingRule.addComparator(new PlayerBirthdateComparatorDay(5), 0.45);
+SortedNeighbourhoodBlocker<Player, Attribute, Attribute> blocker = new SortedNeighbourhoodBlocker<>(new PlayerBlockingKeyByNameGenerator(1), 110);
+[INFO ] 2023-11-27 00:23:49.140 [de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.IR_using_linear_combination] - *	Evaluating result	*
+[INFO ] 2023-11-27 00:23:49.157 [de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.IR_using_linear_combination] - Tm <-> Ea
+[INFO ] 2023-11-27 00:23:49.157 [de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.IR_using_linear_combination] - Precision: 0,8633
+[INFO ] 2023-11-27 00:23:49.157 [de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.IR_using_linear_combination] - Recall: 0,9339
+[INFO ] 2023-11-27 00:23:49.157 [de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.IR_using_linear_combination] - F1: 0,8972
+[INFO ] 2023-11-27 00:23:49.299 [de.uni_mannheim.informatik.dws.winter.model.io.XMLMatchableReader] - Loading 10714 elements from eafc_final.xml
+[INFO ] 2023-11-27 00:23:49.450 [de.uni_mannheim.informatik.dws.winter.model.io.XMLMatchableReader] - Loading 9867 elements from tm_final.xml
+[INFO ] 2023-11-27 00:23:49.520 [de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.IR_using_linear_combination] - *	Loading datasets 2	*
+[INFO ] 2023-11-27 00:23:49.523 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - Group Size Distribtion of 8075 groups:
+[INFO ] 2023-11-27 00:23:49.523 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 	Group Size 	| Frequency 
+[INFO ] 2023-11-27 00:23:49.524 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 	————————————————————————————
+[INFO ] 2023-11-27 00:23:49.524 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		2	| 	8067
+[INFO ] 2023-11-27 00:23:49.525 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		3	| 	6
+[INFO ] 2023-11-27 00:23:49.525 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		4	| 	2
+
+matchingRule.addComparator(new PlayerNameComparatorMongeElkan(), 0.6);
+matchingRule.addComparator(new PlayerBirthdateComparatorDay(5), 0.4);
+SortedNeighbourhoodBlocker<Player, Attribute, Attribute> blocker = new SortedNeighbourhoodBlocker<>(new PlayerBlockingKeyByNameGenerator(1), 110);
+[INFO ] 2023-11-26 18:50:25.233 [de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.IR_using_linear_combination] - Tm <-> Ea
+[INFO ] 2023-11-26 18:50:25.234 [de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.IR_using_linear_combination] - Precision: 0,8810
+[INFO ] 2023-11-26 18:50:25.234 [de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.IR_using_linear_combination] - Recall: 0,9222
+[INFO ] 2023-11-26 18:50:25.234 [de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.IR_using_linear_combination] - F1: 0,9011
+[INFO ] 2023-11-26 18:50:25.423 [de.uni_mannheim.informatik.dws.winter.model.io.XMLMatchableReader] - Loading 10714 elements from eafc_final.xml
+[INFO ] 2023-11-26 18:50:25.667 [de.uni_mannheim.informatik.dws.winter.model.io.XMLMatchableReader] - Loading 9867 elements from tm_final.xml
+[INFO ] 2023-11-26 18:50:25.769 [de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.IR_using_linear_combination] - *	Loading datasets 2	*
+[INFO ] 2023-11-26 18:50:25.773 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - Group Size Distribtion of 7955 groups:
+[INFO ] 2023-11-26 18:50:25.773 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 	Group Size 	| Frequency 
+[INFO ] 2023-11-26 18:50:25.773 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 	————————————————————————————
+[INFO ] 2023-11-26 18:50:25.775 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		2	| 	7947
+[INFO ] 2023-11-26 18:50:25.776 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		3	| 	6
+[INFO ] 2023-11-26 18:50:25.776 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		4	| 	2
+
+matchingRule.addComparator(new PlayerNameComparatorMongeElkan(), 0.6);
+matchingRule.addComparator(new PlayerBirthdateComparatorDay(100), 0.4);
+SortedNeighbourhoodBlocker<Player, Attribute, Attribute> blocker = new SortedNeighbourhoodBlocker<>(new PlayerBlockingKeyByNameGenerator(1), 110);
+[INFO ] 2023-11-26 19:29:34.526 [de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.IR_using_linear_combination] - Tm <-> Ea
+[INFO ] 2023-11-26 19:29:34.526 [de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.IR_using_linear_combination] - Precision: 0,8745
+[INFO ] 2023-11-26 19:29:34.526 [de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.IR_using_linear_combination] - Recall: 0,9222
+[INFO ] 2023-11-26 19:29:34.527 [de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.IR_using_linear_combination] - F1: 0,8977
+[INFO ] 2023-11-26 19:29:34.652 [de.uni_mannheim.informatik.dws.winter.model.io.XMLMatchableReader] - Loading 10714 elements from eafc_final.xml
+[INFO ] 2023-11-26 19:29:34.812 [de.uni_mannheim.informatik.dws.winter.model.io.XMLMatchableReader] - Loading 9867 elements from tm_final.xml
+[INFO ] 2023-11-26 19:29:34.874 [de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.IR_using_linear_combination] - *	Loading datasets 2	*
+[INFO ] 2023-11-26 19:29:34.876 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - Group Size Distribtion of 8017 groups:
+[INFO ] 2023-11-26 19:29:34.877 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 	Group Size 	| Frequency 
+[INFO ] 2023-11-26 19:29:34.877 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 	————————————————————————————
+[INFO ] 2023-11-26 19:29:34.878 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		2	| 	7972
+[INFO ] 2023-11-26 19:29:34.878 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		3	| 	17
+[INFO ] 2023-11-26 19:29:34.878 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		4	| 	24
+[INFO ] 2023-11-26 19:29:34.878 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		5	| 	1
+[INFO ] 2023-11-26 19:29:34.878 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		6	| 	3
+
+matchingRule.addComparator(new PlayerNameComparatorMongeElkan(), 0.5);
+matchingRule.addComparator(new PlayerBirthdateComparatorDay(5), 0.5);
+NoBlocker<Player, Attribute> blocker = new NoBlocker<>();
+
+Exception in thread "main" java.lang.OutOfMemoryError: Java heap space
+
+******************************
+TM-FM
+******************************
+matchingRule.addComparator(new PlayerNameComparatorJaccard(), 0.5);
+matchingRule.addComparator(new PlayerBirthdateComparatorDay(100), 0.5);
+StandardRecordBlocker<Player, Attribute> nameblocker = new StandardRecordBlocker<Player, Attribute>(new PlayerBlockingKeyByNameGenerator(1));
+[INFO ] 2023-11-26 19:15:49.917 [de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.IR_using_linear_combination] - Tm <-> Fm
+[INFO ] 2023-11-26 19:15:49.917 [de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.IR_using_linear_combination] - Precision: 0,9914
+[INFO ] 2023-11-26 19:15:49.917 [de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.IR_using_linear_combination] - Recall: 0,5867
+[INFO ] 2023-11-26 19:15:49.918 [de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.IR_using_linear_combination] - F1: 0,7372
+[INFO ] 2023-11-26 19:15:50.103 [de.uni_mannheim.informatik.dws.winter.model.io.XMLMatchableReader] - Loading 17439 elements from fm23_final.xml
+[INFO ] 2023-11-26 19:15:50.331 [de.uni_mannheim.informatik.dws.winter.model.io.XMLMatchableReader] - Loading 9867 elements from tm_final.xml
+[INFO ] 2023-11-26 19:15:50.390 [de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.IR_using_linear_combination] - *	Loading datasets 2	*
+[INFO ] 2023-11-26 19:15:50.392 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - Group Size Distribtion of 5887 groups:
+[INFO ] 2023-11-26 19:15:50.392 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 	Group Size 	| Frequency 
+[INFO ] 2023-11-26 19:15:50.392 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 	————————————————————————————
+[INFO ] 2023-11-26 19:15:50.393 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		2	| 	5877
+[INFO ] 2023-11-26 19:15:50.393 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		3	| 	8
+[INFO ] 2023-11-26 19:15:50.393 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		4	| 	2
+
+matchingRule.addComparator(new PlayerNameComparatorMongeElkan(), 0.6);
+matchingRule.addComparator(new PlayerBirthdateComparatorDay(100), 0.4);
+StandardRecordBlocker<Player, Attribute> nameblocker = new StandardRecordBlocker<Player, Attribute>(new PlayerBlockingKeyByNameGenerator(1));
+[INFO ] 2023-11-26 19:08:59.834 [de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.IR_using_linear_combination] - Tm <-> Fm
+[INFO ] 2023-11-26 19:08:59.835 [de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.IR_using_linear_combination] - Precision: 0,9740
+[INFO ] 2023-11-26 19:08:59.836 [de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.IR_using_linear_combination] - Recall: 0,7653
+[INFO ] 2023-11-26 19:08:59.836 [de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.IR_using_linear_combination] - F1: 0,8571
+[INFO ] 2023-11-26 19:09:00.029 [de.uni_mannheim.informatik.dws.winter.model.io.XMLMatchableReader] - Loading 17439 elements from fm23_final.xml
+[INFO ] 2023-11-26 19:09:00.237 [de.uni_mannheim.informatik.dws.winter.model.io.XMLMatchableReader] - Loading 9867 elements from tm_final.xml
+[INFO ] 2023-11-26 19:09:00.291 [de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.IR_using_linear_combination] - *	Loading datasets 2	*
+[INFO ] 2023-11-26 19:09:00.293 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - Group Size Distribtion of 6403 groups:
+[INFO ] 2023-11-26 19:09:00.293 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 	Group Size 	| Frequency 
+[INFO ] 2023-11-26 19:09:00.294 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 	————————————————————————————
+[INFO ] 2023-11-26 19:09:00.294 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		2	| 	6328
+[INFO ] 2023-11-26 19:09:00.294 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		3	| 	51
+[INFO ] 2023-11-26 19:09:00.294 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		4	| 	22
+[INFO ] 2023-11-26 19:09:00.294 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		6	| 	2
+
+matchingRule.addComparator(new PlayerNameComparatorMongeElkan(), 0.7);
+matchingRule.addComparator(new PlayerBirthdateComparatorDay(100), 0.3);
+StandardRecordBlocker<Player, Attribute> nameblocker = new StandardRecordBlocker<Player, Attribute>(new PlayerBlockingKeyByNameGenerator(1));
+[INFO ] 2023-11-26 19:12:11.469 [de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.IR_using_linear_combination] - Tm <-> Fm
+[INFO ] 2023-11-26 19:12:11.469 [de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.IR_using_linear_combination] - Precision: 0,9464
+[INFO ] 2023-11-26 19:12:11.470 [de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.IR_using_linear_combination] - Recall: 0,8112
+[INFO ] 2023-11-26 19:12:11.470 [de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.IR_using_linear_combination] - F1: 0,8736
+[INFO ] 2023-11-26 19:12:11.712 [de.uni_mannheim.informatik.dws.winter.model.io.XMLMatchableReader] - Loading 17439 elements from fm23_final.xml
+[INFO ] 2023-11-26 19:12:11.900 [de.uni_mannheim.informatik.dws.winter.model.io.XMLMatchableReader] - Loading 9867 elements from tm_final.xml
+[INFO ] 2023-11-26 19:12:11.953 [de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.IR_using_linear_combination] - *	Loading datasets 2	*
+[INFO ] 2023-11-26 19:12:11.955 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - Group Size Distribtion of 6451 groups:
+[INFO ] 2023-11-26 19:12:11.955 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 	Group Size 	| Frequency 
+[INFO ] 2023-11-26 19:12:11.955 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 	————————————————————————————
+[INFO ] 2023-11-26 19:12:11.955 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		2	| 	6279
+[INFO ] 2023-11-26 19:12:11.956 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		3	| 	112
+[INFO ] 2023-11-26 19:12:11.956 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		4	| 	48
+[INFO ] 2023-11-26 19:12:11.956 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		5	| 	7
+[INFO ] 2023-11-26 19:12:11.956 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		6	| 	4
+[INFO ] 2023-11-26 19:12:11.956 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		10	| 	1
+
+matchingRule.addComparator(new PlayerNameComparatorMongeElkan(), 0.6);
+matchingRule.addComparator(new PlayerBirthdateComparatorDay(5), 0.4);
+StandardRecordBlocker<Player, Attribute> nameblocker = new StandardRecordBlocker<Player, Attribute>(new PlayerBlockingKeyByNameGenerator(1));
+[INFO ] 2023-11-26 19:18:22.250 [de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.IR_using_linear_combination] - Tm <-> Fm
+[INFO ] 2023-11-26 19:18:22.251 [de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.IR_using_linear_combination] - Precision: 0,9930
+[INFO ] 2023-11-26 19:18:22.251 [de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.IR_using_linear_combination] - Recall: 0,7245
+[INFO ] 2023-11-26 19:18:22.251 [de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.IR_using_linear_combination] - F1: 0,8378
+[INFO ] 2023-11-26 19:18:22.463 [de.uni_mannheim.informatik.dws.winter.model.io.XMLMatchableReader] - Loading 17439 elements from fm23_final.xml
+[INFO ] 2023-11-26 19:18:22.727 [de.uni_mannheim.informatik.dws.winter.model.io.XMLMatchableReader] - Loading 9867 elements from tm_final.xml
+[INFO ] 2023-11-26 19:18:22.782 [de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.IR_using_linear_combination] - *	Loading datasets 2	*
+[INFO ] 2023-11-26 19:18:22.785 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - Group Size Distribtion of 6346 groups:
+[INFO ] 2023-11-26 19:18:22.785 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 	Group Size 	| Frequency 
+[INFO ] 2023-11-26 19:18:22.785 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 	————————————————————————————
+[INFO ] 2023-11-26 19:18:22.785 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		2	| 	6334
+[INFO ] 2023-11-26 19:18:22.785 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		3	| 	11
+[INFO ] 2023-11-26 19:18:22.786 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		4	| 	1
+
+matchingRule.addComparator(new PlayerNameComparatorMongeElkan(), 0.6);
+matchingRule.addComparator(new PlayerBirthdateComparatorDay(5), 0.4);
+StandardRecordBlocker<Player, Attribute> nameblocker = new StandardRecordBlocker<Player, Attribute>(new PlayerBlockingKeyByNameGenerator(1));
+
+Exception in thread "main" java.lang.OutOfMemoryError: Java heap space
+
+
+matchingRule.addComparator(new PlayerNameComparatorMongeElkan(), 0.6);
+matchingRule.addComparator(new PlayerBirthdateComparatorDay(5), 0.4);
+CHANGED SortedNeighbourhoodBlocker<Player, Attribute, Attribute> blocker = new SortedNeighbourhoodBlocker<>(new PlayerBlockingKeyByNameGenerator(1), 110);
+[INFO ] 2023-11-26 22:36:27.818 [de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.IR_using_linear_combination] - Tm <-> Fm
+[INFO ] 2023-11-26 22:36:27.818 [de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.IR_using_linear_combination] - Precision: 0,9858
+[INFO ] 2023-11-26 22:36:27.818 [de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.IR_using_linear_combination] - Recall: 0,7092
+[INFO ] 2023-11-26 22:36:27.819 [de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.IR_using_linear_combination] - F1: 0,8249
+[INFO ] 2023-11-26 22:36:28.127 [de.uni_mannheim.informatik.dws.winter.model.io.XMLMatchableReader] - Loading 17439 elements from fm23_final.xml
+[INFO ] 2023-11-26 22:36:28.464 [de.uni_mannheim.informatik.dws.winter.model.io.XMLMatchableReader] - Loading 9867 elements from tm_final.xml
+[INFO ] 2023-11-26 22:36:28.579 [de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.IR_using_linear_combination] - *	Loading datasets 2	*
+[INFO ] 2023-11-26 22:36:28.584 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - Group Size Distribtion of 6159 groups:
+[INFO ] 2023-11-26 22:36:28.584 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 	Group Size 	| Frequency 
+[INFO ] 2023-11-26 22:36:28.584 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 	————————————————————————————
+[INFO ] 2023-11-26 22:36:28.587 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		2	| 	6146
+[INFO ] 2023-11-26 22:36:28.587 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		3	| 	11
+[INFO ] 2023-11-26 22:36:28.588 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		4	| 	2
+
+***********************************
+EA-FM
+***********************************
+matchingRule.addComparator(new PlayerNameComparatorMongeElkan(), 0.6);
+matchingRule.addComparator(new PlayerBirthdateComparatorDay(20), .4);
+StandardRecordBlocker<Player, Attribute> blocker = new StandardRecordBlocker<Player, Attribute>(new PlayerBlockingKeyByLeagueGenerator(2));
+[INFO ] 2023-11-26 23:47:03.852 [de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.IR_using_linear_combination] - Ea <-> Fm
+[INFO ] 2023-11-26 23:47:03.853 [de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.IR_using_linear_combination] - Precision: 1,0000
+[INFO ] 2023-11-26 23:47:03.853 [de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.IR_using_linear_combination] - Recall: 0,1640
+[INFO ] 2023-11-26 23:47:03.853 [de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.IR_using_linear_combination] - F1: 0,2818
+[INFO ] 2023-11-26 23:52:25.069 [de.uni_mannheim.informatik.dws.winter.model.io.XMLMatchableReader] - Loading 10714 elements from eafc_final.xml
+[INFO ] 2023-11-26 23:52:25.404 [de.uni_mannheim.informatik.dws.winter.model.io.XMLMatchableReader] - Loading 17439 elements from fm23_final.xml
+[INFO ] 2023-11-26 23:52:25.475 [de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.IR_using_linear_combination] - *	Loading datasets 2	*
+[INFO ] 2023-11-26 23:52:25.475 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - Group Size Distribtion of 1556 groups:
+[INFO ] 2023-11-26 23:52:25.475 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 	Group Size 	| Frequency 
+[INFO ] 2023-11-26 23:52:25.476 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 	————————————————————————————
+[INFO ] 2023-11-26 23:52:25.476 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		2	| 	1551
+[INFO ] 2023-11-26 23:52:25.476 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		3	| 	3
+[INFO ] 2023-11-26 23:52:25.476 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		4	| 	2
+
+matchingRule.addComparator(new PlayerNameComparatorMongeElkan(), 0.5);
+matchingRule.addComparator(new PlayerBirthdateComparatorDay(20), 0.5);
+CHANGED SortedNeighbourhoodBlocker<Player, Attribute, Attribute> blocker = new SortedNeighbourhoodBlocker<>(new PlayerBlockingKeyByNameGenerator(1), 110);
+[INFO ] 2023-11-26 23:56:20.881 [de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.IR_using_linear_combination] - Ea <-> Fm
+[INFO ] 2023-11-26 23:56:20.882 [de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.IR_using_linear_combination] - Precision: 0,9956
+[INFO ] 2023-11-26 23:56:20.882 [de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.IR_using_linear_combination] - Recall: 0,9080
+[INFO ] 2023-11-26 23:56:20.882 [de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.IR_using_linear_combination] - F1: 0,9498
+[INFO ] 2023-11-26 23:56:21.008 [de.uni_mannheim.informatik.dws.winter.model.io.XMLMatchableReader] - Loading 10714 elements from eafc_final.xml
+[INFO ] 2023-11-26 23:56:21.274 [de.uni_mannheim.informatik.dws.winter.model.io.XMLMatchableReader] - Loading 17439 elements from fm23_final.xml
+[INFO ] 2023-11-26 23:56:21.546 [de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.IR_using_linear_combination] - *	Loading datasets 2	*
+[INFO ] 2023-11-26 23:56:21.548 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - Group Size Distribtion of 6340 groups:
+[INFO ] 2023-11-26 23:56:21.548 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 	Group Size 	| Frequency 
+[INFO ] 2023-11-26 23:56:21.548 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 	————————————————————————————
+[INFO ] 2023-11-26 23:56:21.549 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		2	| 	6321
+[INFO ] 2023-11-26 23:56:21.549 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		3	| 	14
+[INFO ] 2023-11-26 23:56:21.550 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		4	| 	5
+
+matchingRule.addComparator(new PlayerNameComparatorMongeElkan(), 0.55);
+matchingRule.addComparator(new PlayerBirthdateComparatorDay(20), 0.45);
+SortedNeighbourhoodBlocker<Player, Attribute, Attribute> blocker = new SortedNeighbourhoodBlocker<>(new PlayerBlockingKeyByNameGenerator(1), 110);
+[INFO ] 2023-11-26 23:57:15.000 [de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.IR_using_linear_combination] - Ea <-> Fm
+[INFO ] 2023-11-26 23:57:15.001 [de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.IR_using_linear_combination] - Precision: 0,9956
+[INFO ] 2023-11-26 23:57:15.001 [de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.IR_using_linear_combination] - Recall: 0,9040
+[INFO ] 2023-11-26 23:57:15.001 [de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.IR_using_linear_combination] - F1: 0,9476
+[INFO ] 2023-11-26 23:57:15.135 [de.uni_mannheim.informatik.dws.winter.model.io.XMLMatchableReader] - Loading 10714 elements from eafc_final.xml
+[INFO ] 2023-11-26 23:57:15.409 [de.uni_mannheim.informatik.dws.winter.model.io.XMLMatchableReader] - Loading 17439 elements from fm23_final.xml
+[INFO ] 2023-11-26 23:57:15.500 [de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.IR_using_linear_combination] - *	Loading datasets 2	*
+[INFO ] 2023-11-26 23:57:15.503 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - Group Size Distribtion of 6332 groups:
+[INFO ] 2023-11-26 23:57:15.503 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 	Group Size 	| Frequency 
+[INFO ] 2023-11-26 23:57:15.503 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 	————————————————————————————
+[INFO ] 2023-11-26 23:57:15.504 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		2	| 	6317
+[INFO ] 2023-11-26 23:57:15.505 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		3	| 	11
+[INFO ] 2023-11-26 23:57:15.505 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		4	| 	4
+
+matchingRule.addComparator(new PlayerNameComparatorMongeElkan(), 0.55);
+matchingRule.addComparator(new PlayerBirthdateComparatorDay(5), 0.45);
+SortedNeighbourhoodBlocker<Player, Attribute, Attribute> blocker = new SortedNeighbourhoodBlocker<>(new PlayerBlockingKeyByNameGenerator(1), 110);
+[INFO ] 2023-11-26 23:59:26.111 [de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.IR_using_linear_combination] - Ea <-> Fm
+[INFO ] 2023-11-26 23:59:26.111 [de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.IR_using_linear_combination] - Precision: 0,9956
+[INFO ] 2023-11-26 23:59:26.111 [de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.IR_using_linear_combination] - Recall: 0,8960
+[INFO ] 2023-11-26 23:59:26.111 [de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.IR_using_linear_combination] - F1: 0,9432
+[INFO ] 2023-11-26 23:59:26.276 [de.uni_mannheim.informatik.dws.winter.model.io.XMLMatchableReader] - Loading 10714 elements from eafc_final.xml
+[INFO ] 2023-11-26 23:59:26.551 [de.uni_mannheim.informatik.dws.winter.model.io.XMLMatchableReader] - Loading 17439 elements from fm23_final.xml
+[INFO ] 2023-11-26 23:59:26.648 [de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.IR_using_linear_combination] - *	Loading datasets 2	*
+[INFO ] 2023-11-26 23:59:26.650 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - Group Size Distribtion of 6289 groups:
+[INFO ] 2023-11-26 23:59:26.651 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 	Group Size 	| Frequency 
+[INFO ] 2023-11-26 23:59:26.651 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 	————————————————————————————
+[INFO ] 2023-11-26 23:59:26.652 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		2	| 	6283
+[INFO ] 2023-11-26 23:59:26.652 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		3	| 	5
+[INFO ] 2023-11-26 23:59:26.652 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		4	| 	1
+
+
+matchingRule.addComparator(new PlayerNameComparatorMongeElkan(), 0.5);
+matchingRule.addComparator(new PlayerBirthdateComparatorDay(10), .4);
+matchingRule.addComparator(new PlayerLeagueComparatorEqual(), .1);
+SortedNeighbourhoodBlocker<Player, Attribute, Attribute> blocker = new SortedNeighbourhoodBlocker<>(new PlayerBlockingKeyByNameGenerator(1), 110);
+[INFO ] 2023-11-27 00:13:48.191 [de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.IR_using_linear_combination] - Ea <-> Fm
+[INFO ] 2023-11-27 00:13:48.192 [de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.IR_using_linear_combination] - Precision: 1,0000
+[INFO ] 2023-11-27 00:13:48.192 [de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.IR_using_linear_combination] - Recall: 0,6760
+[INFO ] 2023-11-27 00:13:48.192 [de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.IR_using_linear_combination] - F1: 0,8067
+[INFO ] 2023-11-27 00:13:48.326 [de.uni_mannheim.informatik.dws.winter.model.io.XMLMatchableReader] - Loading 10714 elements from eafc_final.xml
+[INFO ] 2023-11-27 00:13:48.773 [de.uni_mannheim.informatik.dws.winter.model.io.XMLMatchableReader] - Loading 17439 elements from fm23_final.xml
+[INFO ] 2023-11-27 00:13:48.867 [de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.IR_using_linear_combination] - *	Loading datasets 2	*
+[INFO ] 2023-11-27 00:13:48.870 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - Group Size Distribtion of 4279 groups:
+[INFO ] 2023-11-27 00:13:48.870 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 	Group Size 	| Frequency 
+[INFO ] 2023-11-27 00:13:48.870 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 	————————————————————————————
+[INFO ] 2023-11-27 00:13:48.871 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		2	| 	4276
+[INFO ] 2023-11-27 00:13:48.871 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		3	| 	2
+[INFO ] 2023-11-27 00:13:48.872 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		4	| 	1
+
+matchingRule.addComparator(new PlayerNameComparatorMongeElkan(), 0.5);
+matchingRule.addComparator(new PlayerBirthdateComparatorDay(10), .3);
+matchingRule.addComparator(new PlayerHeightComparatorRelativeDifference(0.1), 0.1);
+matchingRule.addComparator(new PlayerWeightComparatorRelativeDifference(0.1), 0.1);
+SortedNeighbourhoodBlocker<Player, Attribute, Attribute> blocker = new SortedNeighbourhoodBlocker<>(new PlayerBlockingKeyByNameGenerator(1), 110);
+[INFO ] 2023-11-27 00:15:14.561 [de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.IR_using_linear_combination] - Ea <-> Fm
+[INFO ] 2023-11-27 00:15:14.562 [de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.IR_using_linear_combination] - Precision: 0,9954
+[INFO ] 2023-11-27 00:15:14.562 [de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.IR_using_linear_combination] - Recall: 0,8600
+[INFO ] 2023-11-27 00:15:14.562 [de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.IR_using_linear_combination] - F1: 0,9227
+[INFO ] 2023-11-27 00:15:14.689 [de.uni_mannheim.informatik.dws.winter.model.io.XMLMatchableReader] - Loading 10714 elements from eafc_final.xml
+[INFO ] 2023-11-27 00:15:15.063 [de.uni_mannheim.informatik.dws.winter.model.io.XMLMatchableReader] - Loading 17439 elements from fm23_final.xml
+[INFO ] 2023-11-27 00:15:15.147 [de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.IR_using_linear_combination] - *	Loading datasets 2	*
+[INFO ] 2023-11-27 00:15:15.149 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - Group Size Distribtion of 5776 groups:
+[INFO ] 2023-11-27 00:15:15.149 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 	Group Size 	| Frequency 
+[INFO ] 2023-11-27 00:15:15.149 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 	————————————————————————————
+[INFO ] 2023-11-27 00:15:15.150 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		2	| 	5770
+[INFO ] 2023-11-27 00:15:15.150 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		3	| 	4
+[INFO ] 2023-11-27 00:15:15.150 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		4	| 	2
+
+matchingRule.addComparator(new PlayerNameComparatorMongeElkan(), 0.5);
+matchingRule.addComparator(new PlayerBirthdateComparatorDay(10), .3);
+matchingRule.addComparator(new PlayerHeightComparatorRelativeDifference(0.3), 0.1);
+matchingRule.addComparator(new PlayerWeightComparatorRelativeDifference(0.3), 0.1);
+SortedNeighbourhoodBlocker<Player, Attribute, Attribute> blocker = new SortedNeighbourhoodBlocker<>(new PlayerBlockingKeyByNameGenerator(1), 110);
+[INFO ] 2023-11-27 00:17:35.390 [de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.IR_using_linear_combination] - Ea <-> Fm
+[INFO ] 2023-11-27 00:17:35.390 [de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.IR_using_linear_combination] - Precision: 0,9956
+[INFO ] 2023-11-27 00:17:35.390 [de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.IR_using_linear_combination] - Recall: 0,9080
+[INFO ] 2023-11-27 00:17:35.390 [de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.IR_using_linear_combination] - F1: 0,9498
+[INFO ] 2023-11-27 00:17:35.528 [de.uni_mannheim.informatik.dws.winter.model.io.XMLMatchableReader] - Loading 10714 elements from eafc_final.xml
+[INFO ] 2023-11-27 00:17:35.809 [de.uni_mannheim.informatik.dws.winter.model.io.XMLMatchableReader] - Loading 17439 elements from fm23_final.xml
+[INFO ] 2023-11-27 00:17:35.898 [de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.IR_using_linear_combination] - *	Loading datasets 2	*
+[INFO ] 2023-11-27 00:17:35.901 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - Group Size Distribtion of 6318 groups:
+[INFO ] 2023-11-27 00:17:35.901 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 	Group Size 	| Frequency 
+[INFO ] 2023-11-27 00:17:35.901 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 	————————————————————————————
+[INFO ] 2023-11-27 00:17:35.902 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		2	| 	6309
+[INFO ] 2023-11-27 00:17:35.902 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		3	| 	7
+[INFO ] 2023-11-27 00:17:35.902 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		4	| 	2
+
+matchingRule.addComparator(new PlayerNameComparatorMongeElkan(), 0.5);
+matchingRule.addComparator(new PlayerBirthdateComparatorDay(10), .3);
+matchingRule.addComparator(new PlayerHeightComparatorRelativeDifference(0.3), 0.1);
+matchingRule.addComparator(new PlayerWeightComparatorRelativeDifference(0.3), 0.1);
+NoBlocker<Player, Attribute> blocker = new NoBlocker<>();
+
+Exception in thread "main" java.lang.OutOfMemoryError: Java heap space

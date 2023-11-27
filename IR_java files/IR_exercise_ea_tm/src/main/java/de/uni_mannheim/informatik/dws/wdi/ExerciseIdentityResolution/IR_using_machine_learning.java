@@ -85,6 +85,8 @@ public class IR_using_machine_learning {
 		matchingRule.addComparator(new PlayerNameComparatorLevenshtein());
 		matchingRule.addComparator(new PlayerBirthdateComparator(3));
 		matchingRule.addComparator(new PlayerJerseyNumberComparatorEqual());
+		matchingRule.addComparator(new PlayerBirthdateComparatorDay(5));
+		matchingRule.addComparator(new PlayerNameComparatorMongeElkan());
 		
 		
 		// train the matching rule's model

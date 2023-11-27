@@ -9,6 +9,7 @@ import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking.Pl
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.PlayerNameComparatorJaccard;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.PlayerBirthdateComparator;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.PlayerBirthdateComparatorDay;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.PlayerNameComparatorMongeElkan;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Player;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Player2;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.PlayerXMLReader;
@@ -16,6 +17,8 @@ import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Playe
 import de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet;
 import de.uni_mannheim.informatik.dws.winter.matching.MatchingEngine;
 import de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator;
+import de.uni_mannheim.informatik.dws.winter.matching.blockers.NoBlocker;
+import de.uni_mannheim.informatik.dws.winter.matching.blockers.SortedNeighbourhoodBlocker;
 import de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardRecordBlocker;
 import de.uni_mannheim.informatik.dws.winter.matching.rules.LinearCombinationMatchingRule;
 import de.uni_mannheim.informatik.dws.winter.model.Correspondence;
@@ -28,6 +31,7 @@ import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
 import de.uni_mannheim.informatik.dws.winter.model.io.CSVCorrespondenceFormatter;
 import de.uni_mannheim.informatik.dws.winter.processing.Processable;
 import de.uni_mannheim.informatik.dws.winter.utils.WinterLogManager;
+
 
 public class IR_using_linear_combination 
 {
@@ -64,22 +68,24 @@ public class IR_using_linear_combination
 		matchingRule.activateDebugReport("data/output/debugResultsMatchingRule.csv", 1000, gsTest);
 		
 		// add comparators
-		matchingRule.addComparator(new PlayerNameComparatorJaccard(), 0.5);
+		//matchingRule.addComparator(new PlayerNameComparatorJaccard(), 0.5);
+		matchingRule.addComparator(new PlayerNameComparatorMongeElkan(), 0.6);
 		//matchingRule.addComparator(new PlayerNameReverseComparator(), 0.3);
-		matchingRule.addComparator(new PlayerBirthdateComparatorDay(100), 0.5);
-		
+		matchingRule.addComparator(new PlayerBirthdateComparatorDay(5), 0.4);
+
 
 		// create a blocker (blocking strategy)
-		StandardRecordBlocker<Player, Attribute> nameblocker = new StandardRecordBlocker<Player, Attribute>(new PlayerBlockingKeyByNameGenerator(1));
-		//StandardRecordBlocker<Player, Attribute> yearblocker = new StandardRecordBlocker<Player, Attribute>(new PlayerBlockingKeyByBirthyearGenerator());
-		//StandardRecordBlocker<Player, Attribute> decadeblocker = new StandardRecordBlocker<Player, Attribute>(new PlayerBlockingKeyByDecadeGenerator());
+//		StandardRecordBlocker<Player, Attribute> blocker = new StandardRecordBlocker<Player, Attribute>(new PlayerBlockingKeyByNameGenerator(1));
+		//StandardRecordBlocker<Player, Attribute> blocker = new StandardRecordBlocker<Player, Attribute>(new PlayerBlockingKeyByBirthyearGenerator());
+		//StandardRecordBlocker<Player, Attribute> blocker = new StandardRecordBlocker<Player, Attribute>(new PlayerBlockingKeyByDecadeGenerator());
 
-		//NoBlocker<Player, Attribute> blocker = new NoBlocker<>();
+		NoBlocker<Player, Attribute> blocker = new NoBlocker<>();
 		// Replace with MovieBlockingKeyByTitleGenerator with Blocker specific for Player
-//		SortedNeighbourhoodBlocker<Player, Attribute, Attribute> blocker = new SortedNeighbourhoodBlocker<>(new MovieBlockingKeyByTitleGenerator(), 1);
-		nameblocker.setMeasureBlockSizes(true);
+		//SortedNeighbourhoodBlocker<Player, Attribute, Attribute> blocker = new SortedNeighbourhoodBlocker<>(new PlayerBlockingKeyByNameGenerator(1), 110);
+		
+		blocker.setMeasureBlockSizes(true);
 		//Write debug results to file:
-		nameblocker.collectBlockSizeData("data/output/debugResultsBlocking.csv", 100);
+		blocker.collectBlockSizeData("data/output/debugResultsBlocking.csv", 100);
 		
 		// Initialize Matching Engine
 		MatchingEngine<Player, Attribute> engine = new MatchingEngine<>();
@@ -88,7 +94,7 @@ public class IR_using_linear_combination
 		logger.info("*\tRunning identity resolution\t*");
 		Processable<Correspondence<Player, Attribute>> correspondences = engine.runIdentityResolution(
 				dataTm, dataFm, null, matchingRule,
-				nameblocker);
+				blocker);
 
 		// Create a top-1 global matching
 //		  correspondences = engine.getTopKInstanceCorrespondences(correspondences, 1, 0.0);
