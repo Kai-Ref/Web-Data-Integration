@@ -10,26 +10,34 @@ import java.util.Locale;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.evaluation.ActorsEvaluationRule;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.evaluation.BirthdateEvaluationRule;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.evaluation.ClubEvaluationRule;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.evaluation.CurrentMarketValueEvaluationRule;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.evaluation.DateEvaluationRule;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.evaluation.DirectorEvaluationRule;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.evaluation.HeightEvaluationRule;
-import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.evaluation.Jersey_numberEvaluationRule;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.evaluation.JerseyNumberEvaluationRule;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.evaluation.LeagueEvaluationRule;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.evaluation.NameEvaluationRule;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.evaluation.NationalityEvaluationRule;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.evaluation.PrefferedFootEvaluationRule;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.evaluation.TitleEvaluationRule;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.evaluation.WageEvaluationRule;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.evaluation.WeightEvaluationRule;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.fusers.ActorsFuserUnion;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.fusers.BirthdateFuserVoting;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.fusers.ClubFuserLongestString;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.fusers.CurrentMarketValueMedian;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.fusers.DateFuserFavourSource;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.fusers.DateFuserVoting;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.fusers.DirectorFuserLongestString;
-import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.fusers.HeightFuser;
-import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.fusers.Jersey_numberFuser;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.fusers.HeightFuserAverage;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.fusers.JerseyNumberMostRecent;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.fusers.LeagueMostRecent;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.fusers.NameFuserLongestString;
-import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.fusers.NationalityFuserLongestString;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.fusers.NationalityFuserFavourSources;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.fusers.PrefferedFootMostRecent;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.fusers.TitleFuserShortestString;
-import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.fusers.WeightFuser;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.fusers.WageMedian;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.fusers.WeightFuserAverage;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.model.FusibleMovieFactory;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.model.Movie;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.model.MovieXMLFormatter;
@@ -102,8 +110,8 @@ public class DataFusion_Main
 
 		// Maintain Provenance
 		// Scores (e.g. from rating) - how trustworthy is each dataset?
-		ds1.setScore(1.0);
-		ds2.setScore(2.0);
+		ds1.setScore(1.5);
+		ds2.setScore(1.0);
 		ds3.setScore(2.0);
 
 		// Date (e.g. last update) - How recent is each dataset?
@@ -114,9 +122,9 @@ public class DataFusion_Main
 		        .parseDefaulting(ChronoField.SECOND_OF_MINUTE, 0)
 		        .toFormatter(Locale.ENGLISH);
 		
-		ds1.setDate(LocalDateTime.parse("2023-01-01", formatter));
-		ds2.setDate(LocalDateTime.parse("2023-01-01", formatter));
-		ds3.setDate(LocalDateTime.parse("2023-01-01", formatter));
+		ds1.setDate(LocalDateTime.parse("2023-09-22", formatter));
+		ds2.setDate(LocalDateTime.parse("2022-11-07", formatter));
+		ds3.setDate(LocalDateTime.parse("2023-09-01", formatter));
 
 		// load correspondences
 		logger.info("*\tLoading correspondences\t*");
@@ -134,7 +142,7 @@ public class DataFusion_Main
 		
 		correspondences.loadCorrespondences(new File("data/correspondences/Correspondences_very_good_ML_ea_2_fm.csv"),ds1, ds2);
 		correspondences.loadCorrespondences(new File("data/correspondences/correspondences_very_good_ml_tm_ea.csv"),ds3, ds1);
-		correspondences.loadCorrespondences(new File("data/correspondences/correspondences_very_good_ml_fm_tm.csv"),ds3, ds2);
+		correspondences.loadCorrespondences(new File("data/correspondences/correspondences_very_good_ml_fm_tm.csv"),ds2, ds3);
 
 		// write group size distribution
 		correspondences.printGroupSizeDistribution();
@@ -156,17 +164,19 @@ public class DataFusion_Main
 		// write debug results to file
 		strategy.activateDebugReport("data/output/debugResultsDatafusion.csv", -1, gs);
 		
-		
-		strategy.addAttributeFuser(Player.NAME, new NameFuserLongestString(),new NameEvaluationRule());
+		strategy.addAttributeFuser(Player.NAME, new NameFuserLongestString(),new NameEvaluationRule()); //Monge Elkan
 		strategy.addAttributeFuser(Player.BIRTHDATE,new BirthdateFuserVoting(), new BirthdateEvaluationRule());
-		strategy.addAttributeFuser(Player.NATIONALITY, new NationalityFuserLongestString() ,new NationalityEvaluationRule());
+		strategy.addAttributeFuser(Player.NATIONALITY, new NationalityFuserFavourSources() ,new NationalityEvaluationRule());
 		strategy.addAttributeFuser(Player.CLUB,new ClubFuserLongestString(),new ClubEvaluationRule());
-		strategy.addAttributeFuser(Player.WEIGHT, new WeightFuser(), new WeightEvaluationRule());
-		strategy.addAttributeFuser(Player.HEIGHT, new HeightFuser(), new HeightEvaluationRule());
-		strategy.addAttributeFuser(Player.JERSEY_NUMBER, new Jersey_numberFuser(), new Jersey_numberEvaluationRule());
+		strategy.addAttributeFuser(Player.WEIGHT, new WeightFuserAverage(), new WeightEvaluationRule());
+		strategy.addAttributeFuser(Player.HEIGHT, new HeightFuserAverage(), new HeightEvaluationRule());
+		strategy.addAttributeFuser(Player.JERSEY_NUMBER, new JerseyNumberMostRecent(), new JerseyNumberEvaluationRule());
+		strategy.addAttributeFuser(Player.LEAGUE, new LeagueMostRecent(), new LeagueEvaluationRule());
+		strategy.addAttributeFuser(Player.CURRENT_MARKET_VALUE, new CurrentMarketValueMedian(), new CurrentMarketValueEvaluationRule ());
+		strategy.addAttributeFuser(Player.WAGE, new WageMedian(), new WageEvaluationRule());
+		strategy.addAttributeFuser(Player.PREFERRED_FOOT, new PrefferedFootMostRecent(), new PrefferedFootEvaluationRule());
 
 
-		
 		// create the fusion engine
 		DataFusionEngine<Player, Attribute> engine = new DataFusionEngine<>(strategy);
 
@@ -185,10 +195,11 @@ public class DataFusion_Main
 
 		// evaluate
 		DataFusionEvaluator<Player, Attribute> evaluator = new DataFusionEvaluator<>(strategy, new RecordGroupFactory<Player, Attribute>());
-		
+
 		double accuracy = evaluator.evaluate(fusedDataSet, gs, null);
 
 		logger.info(String.format("*\tAccuracy: %.2f", accuracy));
+		
 		
     }
 }

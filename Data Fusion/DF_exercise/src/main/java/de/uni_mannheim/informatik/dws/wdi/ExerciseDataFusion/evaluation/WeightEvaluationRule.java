@@ -18,7 +18,7 @@ import de.uni_mannheim.informatik.dws.winter.model.Correspondence;
 import de.uni_mannheim.informatik.dws.winter.model.Matchable;
 import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
 import de.uni_mannheim.informatik.dws.winter.similarity.SimilarityMeasure;
-import de.uni_mannheim.informatik.dws.winter.similarity.numeric.AbsoluteDifferenceSimilarity;
+import de.uni_mannheim.informatik.dws.winter.similarity.numeric.PercentageSimilarity;
 import de.uni_mannheim.informatik.dws.winter.similarity.string.TokenizingJaccardSimilarity;
 
 /**
@@ -32,7 +32,7 @@ import de.uni_mannheim.informatik.dws.winter.similarity.string.TokenizingJaccard
 public class WeightEvaluationRule extends EvaluationRule<Player, Attribute> {
 	
 	// parameter of AbsoluteDifferenceSimilarity is the maximum difference. Otherwise 0 will be returned
-	SimilarityMeasure<Double> sim = new AbsoluteDifferenceSimilarity(3);
+	SimilarityMeasure<Double> sim = new PercentageSimilarity(5);
 
 	//SimilarityMeasure<String> sim = new TokenizingJaccardSimilarity();
 
@@ -40,7 +40,12 @@ public class WeightEvaluationRule extends EvaluationRule<Player, Attribute> {
 	public boolean isEqual(Player record1, Player record2, Attribute schemaElement) {
 		// the title is correct if all tokens are there, but the order does not
 		// matter
-		return sim.calculate(record1.getWeight(), record2.getWeight()) == 1.0;
+		
+		// matter
+		double weight1 = (double) record1.getWeight();
+		double weight2 = (double) record2.getWeight();
+		
+		return sim.calculate(weight1, weight2) == 1.0;
 	}
 
 	/* (non-Javadoc)

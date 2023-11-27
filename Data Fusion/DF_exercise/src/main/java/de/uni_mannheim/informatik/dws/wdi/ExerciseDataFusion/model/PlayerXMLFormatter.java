@@ -52,20 +52,40 @@ public class PlayerXMLFormatter extends XMLFormatter<Player> {
 		player.appendChild(createTextElementWithProvenance("club",
 				record.getClub(),
 				record.getMergedAttributeProvenance(Player.CLUB), doc));
-		if (record.getWeight() != 0.0) {
+		if (record.getWeight() != 0) {
 		    player.appendChild(createTextElementWithProvenance("weight",
-		            Double.toString(record.getWeight()),
+		            Integer.toString(record.getWeight()),
 		            record.getMergedAttributeProvenance(Player.WEIGHT), doc));
 		}
-		if (record.getHeight() != 0.0) {
+		if (record.getHeight() != 0) {
 		    player.appendChild(createTextElementWithProvenance("height",
-		            Double.toString(record.getHeight()),
+		            Integer.toString(record.getHeight()),
 		            record.getMergedAttributeProvenance(Player.HEIGHT), doc));
 		}
 		if (record.getJersey_number() != 0) {
 		    player.appendChild(createTextElementWithProvenance("jersey_number",
 		            Integer.toString(record.getJersey_number()),
 		            record.getMergedAttributeProvenance(Player.JERSEY_NUMBER), doc));
+		}
+		if (record.getLeague() != null) {
+		player.appendChild(createTextElementWithProvenance("league",
+				record.getLeague(),
+				record.getMergedAttributeProvenance(Player.LEAGUE), doc));
+		}
+		if (record.getCurrent_market_value() != 0) {
+		    player.appendChild(createTextElementWithProvenance("current_market_value",
+		            Integer.toString(record.getCurrent_market_value()),
+		            record.getMergedAttributeProvenance(Player.CURRENT_MARKET_VALUE), doc));
+		}
+		if (record.getWage() != 0) {
+		    player.appendChild(createTextElementWithProvenance("wage",
+		            Integer.toString(record.getWage()),
+		            record.getMergedAttributeProvenance(Player.WAGE), doc));
+		}
+		if (record.getPreferred_foot() != null) {
+		player.appendChild(createTextElementWithProvenance("preferred_foot",
+				record.getPreferred_foot(),
+				record.getMergedAttributeProvenance(Player.PREFERRED_FOOT), doc));
 		}
 		return player;
 	}
