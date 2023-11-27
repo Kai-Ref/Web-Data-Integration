@@ -5,11 +5,12 @@ import java.io.File;
 import org.slf4j.Logger;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.PlayerNameComparatorJaccard;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.PlayerNameComparatorLevenshtein;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.PlayerNameComparatorMongeElkan;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.PlayerNameComparatorJaccard;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.PlayerNameComparatorEqual;
 
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.PlayerBirthdateComparator;
-
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.PlayerBirthdateComparatorDay;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.PlayerClubComparatorLowerCaseJaccard;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.PlayerClubComparatorJaccard;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.PlayerClubComparatorLevenshtein;
@@ -85,6 +86,9 @@ public class IR_using_machine_learning {
 		matchingRule.addComparator(new PlayerClubComparatorLevenshtein());
 		matchingRule.addComparator(new PlayerNameComparatorLevenshtein());
 		matchingRule.addComparator(new PlayerBirthdateComparator(3));
+		matchingRule.addComparator(new PlayerBirthdateComparatorDay(1));
+		matchingRule.addComparator(new PlayerBirthdateComparatorDay(100));
+		matchingRule.addComparator(new PlayerNameComparatorMongeElkan());
 		
 		
 		// train the matching rule's model
