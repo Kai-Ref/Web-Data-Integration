@@ -24,7 +24,7 @@ import de.uni_mannheim.informatik.dws.winter.model.io.XMLFormatter;
  */
 public class PlayerXMLFormatter extends XMLFormatter<Player> {
 
-	ActorXMLFormatter actorFormatter = new ActorXMLFormatter();
+//	ActorXMLFormatter actorFormatter = new ActorXMLFormatter();
 
 	@Override
 	public Element createRootElement(Document doc) {

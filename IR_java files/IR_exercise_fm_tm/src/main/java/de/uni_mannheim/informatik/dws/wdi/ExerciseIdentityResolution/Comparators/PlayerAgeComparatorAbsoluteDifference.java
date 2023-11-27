@@ -19,9 +19,7 @@ import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
 import de.uni_mannheim.informatik.dws.winter.similarity.numeric.AbsoluteDifferenceSimilarity;
 import de.uni_mannheim.informatik.dws.winter.similarity.numeric.PercentageSimilarity;
 import de.uni_mannheim.informatik.dws.winter.similarity.string.TokenizingJaccardSimilarity;
-import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Fm;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Player;
-import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Tm;
 
 /**
  * {@link Comparator} for {@link Movie}s based on the {@link Movie#getTitle()}

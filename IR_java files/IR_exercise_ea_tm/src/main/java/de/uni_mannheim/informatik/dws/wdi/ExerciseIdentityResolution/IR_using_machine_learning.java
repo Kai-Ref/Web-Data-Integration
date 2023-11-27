@@ -154,5 +154,8 @@ public class IR_using_machine_learning {
 		correspondences2.loadCorrespondences(new File("data/output/ml_correspondences.csv"),ds3, ds2);
 		logger.info("*\tLoading datasets\t*");
 		correspondences2.printGroupSizeDistribution();
+		int n1 = correspondences.size();
+//		int n2 = correspondences2.size();
+		logger.info("*\\tCorrespondences:"+ n1);
     }
 }
