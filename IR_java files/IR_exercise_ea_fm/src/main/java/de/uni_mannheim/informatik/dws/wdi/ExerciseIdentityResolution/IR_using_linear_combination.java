@@ -75,37 +75,42 @@ public class IR_using_linear_combination
 				0.7);
 		matchingRule.activateDebugReport("data/output/debugResultsMatchingRule.csv", 1000, gsTest);
 		
+		
 		// add comparators
+		//BEST COMBINATION:
+		matchingRule.addComparator(new PlayerNameComparatorMongeElkan(), 0.5);
+		matchingRule.addComparator(new PlayerBirthdateComparatorDay(20), .5);
 		// Name
 		//matchingRule.addComparator(new PlayerNameComparatorJaccard(), .6);
-		matchingRule.addComparator(new PlayerNameComparatorMongeElkan(), 0.5);
+//		matchingRule.addComparator(new PlayerNameComparatorMongeElkan(), 0.5);
 
 		
 		// Birthdate
-		matchingRule.addComparator(new PlayerBirthdateComparatorDay(10), .3);
+//		matchingRule.addComparator(new PlayerBirthdateComparatorDay(10), .3);
 		
 		// Nationality
 		
 		
 		// League
-		// matchingRule.addComparator(new PlayerLeagueComparatorEqual(), 1);
+//		 matchingRule.addComparator(new PlayerLeagueComparatorEqual(), .1);
 		
 		
 		// Age
 		// matchingRule.addComparator(new PlayerAgeComparatorAbsoluteDifference(0.1), 1);		
 		
 		// Height 
-		 matchingRule.addComparator(new PlayerHeightComparatorRelativeDifference(0.3), 0.1);
+//		matchingRule.addComparator(new PlayerHeightComparatorRelativeDifference(0.3), 0.1);
 		
 		// Weight 
-		 matchingRule.addComparator(new PlayerWeightComparatorRelativeDifference(0.3), 0.1);
+//		matchingRule.addComparator(new PlayerWeightComparatorRelativeDifference(0.3), 0.1);
 		
 
 		// create a blocker (blocking strategy)
 		//StandardRecordBlocker<Player, Attribute> blocker = new StandardRecordBlocker<Player, Attribute>(new PlayerBlockingKeyByLeagueGenerator(2));
-		 NoBlocker<Player, Attribute> blocker = new NoBlocker<>();
+		StandardRecordBlocker<Player, Attribute> blocker = new StandardRecordBlocker<Player, Attribute>(new PlayerBlockingKeyByNameGenerator(1));
+//		 NoBlocker<Player, Attribute> blocker = new NoBlocker<>();
 		// Replace with MovieBlockingKeyByTitleGenerator with Blocker specific for Player
-		// SortedNeighbourhoodBlocker<Player, Attribute, Attribute> blocker = new SortedNeighbourhoodBlocker<>(new PlayerBlockingKeyByClubGenerator(4), 160);
+//		 SortedNeighbourhoodBlocker<Player, Attribute, Attribute> blocker = new SortedNeighbourhoodBlocker<>(new PlayerBlockingKeyByClubGenerator(4), 160);
 //		SortedNeighbourhoodBlocker<Player, Attribute, Attribute> blocker = new SortedNeighbourhoodBlocker<>(new PlayerBlockingKeyByNameGenerator(1), 110);
 		blocker.setMeasureBlockSizes(true);
 		//Write debug results to file:
@@ -159,5 +164,9 @@ public class IR_using_linear_combination
 		correspondences2.loadCorrespondences(new File("data/output/ea_fm_correspondences.csv"),ea_fusible, fm23_fusible);
 		logger.info("*\tLoading datasets 2\t*");
 		correspondences2.printGroupSizeDistribution();
+		
+		// Get and print the number of correspondences
+		int numberOfCorrespondences = correspondences.size();
+		System.out.println("Number of correspondences: " + numberOfCorrespondences);
     }
 }

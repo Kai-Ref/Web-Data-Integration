@@ -10,12 +10,14 @@ import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking.Pl
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.PlayerNameComparatorJaccard;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.PlayerNameComparatorEqual;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.PlayerNameComparatorLevenshtein;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.PlayerNameComparatorMongeElkan;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.PlayerNameReverseComparator;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.PlayerWeightComparatorRelativeDifference;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.PlayerBirthdateComparator;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.PlayerBirthdateComparator10Years;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.PlayerBirthdateComparator2Years;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.PlayerBirthdateComparatorDay;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.PlayerClubComparatorLevenshtein;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.PlayerClubComparatorLowerCaseJaccard;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.PlayerLeagueComparatorEqual;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.PlayerBirthdateComparator;
@@ -84,13 +86,15 @@ public class IR_using_machine_learning {
 		matchingRule.addComparator(new PlayerNameComparatorJaccard());
 		matchingRule.addComparator(new PlayerNameReverseComparator());
 		matchingRule.addComparator(new PlayerNameComparatorLevenshtein());
+		matchingRule.addComparator(new PlayerNameComparatorMongeElkan());
 		
-		matchingRule.addComparator(new PlayerBirthdateComparator10Years());
+//		matchingRule.addComparator(new PlayerBirthdateComparator10Years());
 		matchingRule.addComparator(new PlayerBirthdateComparator2Years());
 		matchingRule.addComparator(new PlayerBirthdateComparatorDay(1));
 		matchingRule.addComparator(new PlayerBirthdateComparatorDay(100));
 		
 		matchingRule.addComparator(new PlayerClubComparatorLowerCaseJaccard());
+		matchingRule.addComparator(new PlayerClubComparatorLevenshtein());
 		
 		matchingRule.addComparator(new PlayerLeagueComparatorEqual());
 		
@@ -103,8 +107,9 @@ public class IR_using_machine_learning {
 		logger.info(String.format("Matching rule is:\n%s", matchingRule.getModelDescription()));
 		
 		// create a blocker (blocking strategy)
-		StandardRecordBlocker<Player, Attribute> blocker = new StandardRecordBlocker<Player, Attribute>(new PlayerBlockingKeyByNameGenerator(1));
-		// SortedNeighbourhoodBlocker<Player, Attribute, Attribute> blocker = new SortedNeighbourhoodBlocker<>(new PlayerBlockingKeyByNameGenerator(1), 100);
+//		StandardRecordBlocker<Player, Attribute> blocker = new StandardRecordBlocker<Player, Attribute>(new PlayerBlockingKeyByNameGenerator(1));
+
+		SortedNeighbourhoodBlocker<Player, Attribute, Attribute> blocker = new SortedNeighbourhoodBlocker<>(new PlayerBlockingKeyByNameGenerator(1), 110);
 		blocker.collectBlockSizeData("data/output/debugResultsBlocking.csv", 100);
 		
 		// Initialize Matching Engine
@@ -117,7 +122,7 @@ public class IR_using_machine_learning {
 				blocker);
 
 		// write the correspondences to the output file
-		new CSVCorrespondenceFormatter().writeCSV(new File("data/output/correspondences_very_good_ml_fm_tm.csv"), correspondences);
+		new CSVCorrespondenceFormatter().writeCSV(new File("data/output/correspondences_ml_fm_tm.csv"), correspondences);
 
 		// load the gold standard (test set)
 		logger.info("*\tLoading gold standard\t*");
@@ -151,8 +156,12 @@ public class IR_using_machine_learning {
 		
 		
 		CorrespondenceSet<Player2, Attribute> correspondences2 = new CorrespondenceSet<>();
-		correspondences2.loadCorrespondences(new File("data/output/correspondences_very_good_ml_fm_tm.csv"),fm23_fusible, tm_fusible);
+		correspondences2.loadCorrespondences(new File("data/output/correspondences_ml_fm_tm.csv"),fm23_fusible, tm_fusible);
 		logger.info("*\tLoading datasets 2\t*");
 		correspondences2.printGroupSizeDistribution();
+		
+		// Get and print the number of correspondences
+		int numberOfCorrespondences = correspondences.size();
+		System.out.println("Number of correspondences: " + numberOfCorrespondences);
     }
 }

@@ -67,19 +67,24 @@ public class IR_using_linear_combination
 				0.7);
 		matchingRule.activateDebugReport("data/output/debugResultsMatchingRule.csv", 1000, gsTest);
 		
-		// add comparators
-		//matchingRule.addComparator(new PlayerNameComparatorJaccard(), 0.5);
+		
 		matchingRule.addComparator(new PlayerNameComparatorMongeElkan(), 0.6);
-		//matchingRule.addComparator(new PlayerNameReverseComparator(), 0.3);
-		matchingRule.addComparator(new PlayerBirthdateComparatorDay(5), 0.4);
-
-
-		// create a blocker (blocking strategy)
+		matchingRule.addComparator(new PlayerBirthdateComparatorDay(20), 0.4);
+		StandardRecordBlocker<Player, Attribute> blocker = new StandardRecordBlocker<Player, Attribute>(new PlayerBlockingKeyByNameGenerator(1));		
+		
+//		// add comparators
+//		//matchingRule.addComparator(new PlayerNameComparatorJaccard(), 0.5);
+//		matchingRule.addComparator(new PlayerNameComparatorMongeElkan(), 0.6);
+//		//matchingRule.addComparator(new PlayerNameReverseComparator(), 0.3);
+//		matchingRule.addComparator(new PlayerBirthdateComparatorDay(5), 0.4);
+//
+//
+//		// create a blocker (blocking strategy)
 //		StandardRecordBlocker<Player, Attribute> blocker = new StandardRecordBlocker<Player, Attribute>(new PlayerBlockingKeyByNameGenerator(1));
-		//StandardRecordBlocker<Player, Attribute> blocker = new StandardRecordBlocker<Player, Attribute>(new PlayerBlockingKeyByBirthyearGenerator());
-		//StandardRecordBlocker<Player, Attribute> blocker = new StandardRecordBlocker<Player, Attribute>(new PlayerBlockingKeyByDecadeGenerator());
+//		//StandardRecordBlocker<Player, Attribute> blocker = new StandardRecordBlocker<Player, Attribute>(new PlayerBlockingKeyByBirthyearGenerator());
+//		//StandardRecordBlocker<Player, Attribute> blocker = new StandardRecordBlocker<Player, Attribute>(new PlayerBlockingKeyByDecadeGenerator());
 
-		NoBlocker<Player, Attribute> blocker = new NoBlocker<>();
+//		NoBlocker<Player, Attribute> blocker = new NoBlocker<>();
 		// Replace with MovieBlockingKeyByTitleGenerator with Blocker specific for Player
 		//SortedNeighbourhoodBlocker<Player, Attribute, Attribute> blocker = new SortedNeighbourhoodBlocker<>(new PlayerBlockingKeyByNameGenerator(1), 110);
 		
@@ -135,5 +140,9 @@ public class IR_using_linear_combination
 		correspondences2.loadCorrespondences(new File("data/output/fm_tm_correspondences.csv"),tm_fusible, fm23_fusible);
 		logger.info("*\tLoading datasets 2\t*");
 		correspondences2.printGroupSizeDistribution();
+		
+		// Get and print the number of correspondences
+		int numberOfCorrespondences = correspondences.size();
+		System.out.println("Number of correspondences: " + numberOfCorrespondences);
     }
 }
