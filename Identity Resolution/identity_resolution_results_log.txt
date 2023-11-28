@@ -413,6 +413,7 @@ StandardRecordBlocker<Player, Attribute> blocker = new StandardRecordBlocker<Pla
 Number of correspondences: 6502
 runtime: 5s
 
+**********BEST***********
 matchingRule.addComparator(new PlayerNameComparatorMongeElkan(), 0.5);
 matchingRule.addComparator(new PlayerBirthdateComparatorDay(20), .5);
 StandardRecordBlocker<Player, Attribute> blocker = new StandardRecordBlocker<Player, Attribute>(new PlayerBlockingKeyByName(1));
@@ -431,6 +432,7 @@ StandardRecordBlocker<Player, Attribute> blocker = new StandardRecordBlocker<Pla
 [INFO ] 2023-11-28 00:00:40.754 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		4	| 	3
 Number of correspondences: 6542
 runtime: 4s
+**************************
 
 matchingRule.addComparator(new PlayerNameComparatorMongeElkan(), 0.5);
 matchingRule.addComparator(new PlayerBirthdateComparatorDay(10), 0.5);
@@ -549,7 +551,6 @@ SortedNeighbourhoodBlocker<Player, Attribute, Attribute> blocker = new SortedNei
 Number of correspondences: 6329
 runtime: 10s
 
-BEST
 matchingRule.addComparator(new PlayerNameComparatorMongeElkan(), 0.5);
 matchingRule.addComparator(new PlayerBirthdateComparatorDay(20), .3);
 matchingRule.addComparator(new PlayerHeightComparatorRelativeDifference(0.3), 0.1);
