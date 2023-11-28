@@ -154,6 +154,10 @@ public class IR_using_linear_combination
 		correspondences2.loadCorrespondences(new File("data/output/ea_tm_correspondences.csv"),ds3, ds2);
 		logger.info("*\tLoading datasets 2\t*");
 		correspondences2.printGroupSizeDistribution();
+		
+		// Get and print the number of correspondences
+		int numberOfCorrespondences = correspondences.size();
+		System.out.println("Number of correspondences: " + numberOfCorrespondences);
 
     }
 }
