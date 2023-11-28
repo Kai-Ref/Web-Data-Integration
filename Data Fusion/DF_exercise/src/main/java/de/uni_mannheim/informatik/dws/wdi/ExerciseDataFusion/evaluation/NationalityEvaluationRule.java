@@ -11,13 +11,13 @@
  */
 package de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.evaluation;
 
-import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.model.Movie;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.model.Player;
 import de.uni_mannheim.informatik.dws.winter.datafusion.EvaluationRule;
 import de.uni_mannheim.informatik.dws.winter.model.Correspondence;
 import de.uni_mannheim.informatik.dws.winter.model.Matchable;
 import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
 import de.uni_mannheim.informatik.dws.winter.similarity.SimilarityMeasure;
+import de.uni_mannheim.informatik.dws.winter.similarity.string.LevenshteinSimilarity;
 import de.uni_mannheim.informatik.dws.winter.similarity.string.TokenizingJaccardSimilarity;
 
 /**
@@ -30,7 +30,7 @@ import de.uni_mannheim.informatik.dws.winter.similarity.string.TokenizingJaccard
  */
 public class NationalityEvaluationRule extends EvaluationRule<Player, Attribute> {
 
-	SimilarityMeasure<String> sim = new TokenizingJaccardSimilarity();
+	SimilarityMeasure<String> sim = new LevenshteinSimilarity();
 
 	@Override
 	public boolean isEqual(Player record1, Player record2, Attribute schemaElement) {

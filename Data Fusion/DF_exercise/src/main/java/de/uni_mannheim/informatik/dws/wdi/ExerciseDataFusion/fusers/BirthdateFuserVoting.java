@@ -13,7 +13,6 @@ package de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.fusers;
 
 import java.time.LocalDateTime;
 
-import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.model.Movie;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.model.Player;
 import de.uni_mannheim.informatik.dws.winter.datafusion.AttributeValueFuser;
 import de.uni_mannheim.informatik.dws.winter.datafusion.conflictresolution.Voting;

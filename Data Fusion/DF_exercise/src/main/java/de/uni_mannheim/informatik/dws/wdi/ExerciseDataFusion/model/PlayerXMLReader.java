@@ -53,6 +53,13 @@ dataset.addAttribute(Player.CLUB);
 dataset.addAttribute(Player.WEIGHT);
 dataset.addAttribute(Player.HEIGHT);
 dataset.addAttribute(Player.JERSEY_NUMBER);
+dataset.addAttribute(Player.LEAGUE);
+dataset.addAttribute(Player.CURRENT_MARKET_VALUE);
+dataset.addAttribute(Player.WAGE);
+dataset.addAttribute(Player.PREFERRED_FOOT);
+
+
+
 
 
 
@@ -69,12 +76,15 @@ String id = getValueFromChildElement(node, "id");
 	player.setName(getValueFromChildElement(node, "name"));
 	player.setNationality(getValueFromChildElement(node, "nationality"));
 	player.setClub(getValueFromChildElement(node, "club"));
+	player.setLeague(getValueFromChildElement(node, "league"));
+	player.setPreferred_foot(getValueFromChildElement(node, "preferred_foot"));
+
 	// convert the date string into a DateTime object
 	String weightString = getValueFromChildElement(node, "weight");
 	
     if (weightString != null && !weightString.isEmpty()) {
         try {
-            double weight = Double.parseDouble(weightString);
+            int weight = Integer.parseInt(weightString);
             player.setWeight(weight);
         } catch (NumberFormatException e) {
             // Handle the exception as needed (e.g., log it or throw a more specific exception)
@@ -86,7 +96,7 @@ String id = getValueFromChildElement(node, "id");
 	
     if (heightString != null && !heightString.isEmpty()) {
         try {
-            double height = Double.parseDouble(heightString);
+            int height = Integer.parseInt(heightString);
             player.setHeight(height);
         } catch (NumberFormatException e) {
             // Handle the exception as needed (e.g., log it or throw a more specific exception)
@@ -98,7 +108,7 @@ String id = getValueFromChildElement(node, "id");
 	
     if (jersey_numberString != null && !jersey_numberString.isEmpty()) {
         try {
-            int jersey_number = Integer.parseInt(jersey_numberString);
+        	int jersey_number = Integer.parseInt(jersey_numberString);
             player.setJersey_number(jersey_number);
         } catch (NumberFormatException e) {
             // Handle the exception as needed (e.g., log it or throw a more specific exception)
@@ -106,24 +116,50 @@ String id = getValueFromChildElement(node, "id");
         }
     }
     
-	try {
-		String date = getValueFromChildElement(node, "birthdate");
-		if (date != null && !date.isEmpty()) {
-			DateTimeFormatter formatter = new DateTimeFormatterBuilder()
-			        .appendPattern("yyyy-MM-dd['T'HH:mm:ss.SSS]")
-			        .parseDefaulting(ChronoField.CLOCK_HOUR_OF_DAY, 0)
-			        .parseDefaulting(ChronoField.MINUTE_OF_HOUR, 0)
-					.parseDefaulting(ChronoField.SECOND_OF_MINUTE, 0)
-					.optionalStart().appendOffset("+HH:MM", "+00:00").optionalEnd()
-			        .toFormatter(Locale.ENGLISH);
-			LocalDateTime dt = LocalDateTime.parse(date, formatter);
-	        if (dt != null) {
-	            player.setBirthdate(dt);
-	        }
-	        		}
-	} catch (Exception e) {
-		e.printStackTrace();
-	}
+	String current_market_valueString = getValueFromChildElement(node, "current_market_value");
+	
+    if (current_market_valueString != null && !current_market_valueString.isEmpty()) {
+        try {
+            int current_market_value = Integer.parseInt(current_market_valueString);
+            player.setCurrent_market_value(current_market_value);
+        } catch (NumberFormatException e) {
+            // Handle the exception as needed (e.g., log it or throw a more specific exception)
+            e.printStackTrace();
+        }
+    }
+    
+	String wageString = getValueFromChildElement(node, "wage");
+	
+    if (wageString != null && !wageString.isEmpty()) {
+        try {
+            int wage = Integer.parseInt(wageString);
+            player.setWage(wage);
+        } catch (NumberFormatException e) {
+            // Handle the exception as needed (e.g., log it or throw a more specific exception)
+            e.printStackTrace();
+        }
+    }
+    
+    
+    
+    try {
+        String date = getValueFromChildElement(node, "birthdate");
+        if (date != null && !date.isEmpty()) {
+            DateTimeFormatter formatter = new DateTimeFormatterBuilder()
+                    .appendPattern("yyyy-MM-dd")
+                    .parseDefaulting(ChronoField.CLOCK_HOUR_OF_DAY, 0)
+                    .parseDefaulting(ChronoField.MINUTE_OF_HOUR, 0)
+                    .parseDefaulting(ChronoField.SECOND_OF_MINUTE, 0)
+                    .toFormatter(Locale.ENGLISH);
+            LocalDateTime dt = LocalDateTime.parse(date, formatter);
+            if (dt != null) {
+                player.setBirthdate(dt);
+            }
+        }
+    } catch (Exception e) {
+        e.printStackTrace();
+    }
+   
 	
 	return player;
 	}

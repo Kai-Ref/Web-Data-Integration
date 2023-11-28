@@ -21,6 +21,8 @@ import java.util.Map;
 
 import org.apache.commons.lang3.StringUtils;
 
+import com.github.andrewoma.dexx.collection.ArrayList;
+
 import de.uni_mannheim.informatik.dws.winter.model.AbstractRecord;
 import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
 
@@ -49,14 +51,17 @@ public class Player extends AbstractRecord<Attribute> implements Serializable {
 	private String name;
 	private LocalDateTime birthdate;
 	private String nationality; 
-	private List<String> positions;
+	private ArrayList<String> positions;
 	private String club; 
-	private double weight;
-	private double height;
+	private int weight;
+	private int height;
 	private int jersey_number;
+	private String league;
+	private int current_market_value;
+	private int wage; 
+	private String preferred_foot; 
+	
 
-	
-	
 	public String getName() {
 		return name;
 	}
@@ -91,11 +96,11 @@ public class Player extends AbstractRecord<Attribute> implements Serializable {
 	}
 
 
-	public List<String> getPositions() {
+	public ArrayList<String> getPositions() {
 		return positions;
 	}
 
-	public void setPositions(List<String> positions) {
+	public void setPositions(ArrayList<String> positions) {
 		this.positions = positions;
 	}
 		
@@ -137,8 +142,10 @@ public class Player extends AbstractRecord<Attribute> implements Serializable {
 	public static final Attribute WEIGHT = new Attribute("Weight");
 	public static final Attribute HEIGHT = new Attribute("Height");
 	public static final Attribute JERSEY_NUMBER = new Attribute("Jersey_number");
-
-
+	public static final Attribute LEAGUE = new Attribute("league");
+	public static final Attribute CURRENT_MARKET_VALUE = new Attribute("current_market_value");
+	public static final Attribute WAGE = new Attribute("wage");
+	public static final Attribute PREFERRED_FOOT = new Attribute("preferred_foot");
 
 	
 	@Override
@@ -152,11 +159,19 @@ public class Player extends AbstractRecord<Attribute> implements Serializable {
 		else if(attribute==CLUB)
 			return getClub() != null && !getClub().isEmpty();
 		else if(attribute==WEIGHT)
-			return getWeight() !=  0.0;
+			return getWeight() !=  0;
 		else if(attribute==HEIGHT)
-			return getHeight() !=  0.0;
+			return getHeight() !=  0;
 		else if(attribute==JERSEY_NUMBER)
 			return getJersey_number() != 0;
+		else if(attribute==LEAGUE)
+			return getLeague() != null;
+		else if(attribute==CURRENT_MARKET_VALUE)
+			return getCurrent_market_value() != 0;
+		else if(attribute==WAGE)
+			return getWage() != 0;
+		else if(attribute==PREFERRED_FOOT)
+			return getPreferred_foot() != null;
 			
 			return false;
 	}
@@ -180,19 +195,19 @@ public class Player extends AbstractRecord<Attribute> implements Serializable {
 			return false;
 	}
 
-	public double getWeight() {
+	public int getWeight() {
 		return weight;
 	}
 
-	public void setWeight(double weight) {
+	public void setWeight(int weight) {
 		this.weight = weight;
 	}
 
-	public double getHeight() {
+	public int getHeight() {
 		return height;
 	}
 
-	public void setHeight(double height) {
+	public void setHeight(int height) {
 		this.height = height;
 	}
 
@@ -202,6 +217,38 @@ public class Player extends AbstractRecord<Attribute> implements Serializable {
 
 	public void setJersey_number(int jersey_number) {
 		this.jersey_number = jersey_number;
+	}
+
+	public String getLeague() {
+		return league;
+	}
+
+	public void setLeague(String league) {
+		this.league = league;
+	}
+
+	public int getCurrent_market_value() {
+		return current_market_value;
+	}
+
+	public void setCurrent_market_value(int current_market_value) {
+		this.current_market_value = current_market_value;
+	}
+
+	public int getWage() {
+		return wage;
+	}
+
+	public void setWage(int wage) {
+		this.wage = wage;
+	}
+
+	public String getPreferred_foot() {
+		return preferred_foot;
+	}
+
+	public void setPreferred_foot(String preferred_foot) {
+		this.preferred_foot = preferred_foot;
 	}
 	
 	
