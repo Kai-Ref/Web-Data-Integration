@@ -97,9 +97,7 @@ public class IR_using_linear_combination
 //		NoBlocker<Player, Attribute> blocker = new NoBlocker<>();
 		blocker.setMeasureBlockSizes(true);
 		//Write debug results to file:
-		blocker.collectBlockSizeData("data/output/debugResultsBlocking.csv", 100);
-		
-		
+		blocker.collectBlockSizeData("data/output/debugResultsBlocking.csv", 100);	
 		
 		
 		

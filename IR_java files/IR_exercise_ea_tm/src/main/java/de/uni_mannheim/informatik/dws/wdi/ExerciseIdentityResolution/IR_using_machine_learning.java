@@ -157,5 +157,6 @@ public class IR_using_machine_learning {
 		int n1 = correspondences.size();
 //		int n2 = correspondences2.size();
 		logger.info("*\\tCorrespondences:"+ n1);
+	
     }
 }
