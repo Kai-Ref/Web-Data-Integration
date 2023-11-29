@@ -75,10 +75,8 @@ public class IR_using_machine_learning {
 		String options[] = new String[] {};//{ "-S" };
 		String modelType = "RandomForest";
 //		String modelType = "RandomTree";
-		
-		
-		
-		WekaMatchingRule<Player, Attribute> matchingRule = new WekaMatchingRule<>(0.01, modelType, options);
+
+		WekaMatchingRule<Player, Attribute> matchingRule = new WekaMatchingRule<>(0.3, modelType, options);
 		matchingRule.activateDebugReport("data/output/debugResultsMatchingRule.csv", 1000, gsTraining);
 		
 		// add comparators

@@ -76,7 +76,7 @@ public class IR_using_linear_combination
 		
 		// add comparators
 //		matchingRule.addComparator(new PlayerNameComparatorJaccard(), 0.45);
-		matchingRule.addComparator(new PlayerNameComparatorMongeElkan(), 0.5);
+		matchingRule.addComparator(new PlayerNameComparatorMongeElkan(), 0.45);
 //		matchingRule.addComparator(new PlayerClubComparatorLowerCaseJaccard(), 0.1);
 //		matchingRule.addComparator(new PlayerNameComparatorEqual(), 0.3);
 //		matchingRule.addComparator(new PlayerBirthdateComparator2Years(), 1);
@@ -86,7 +86,7 @@ public class IR_using_linear_combination
 //		matchingRule.addComparator(new PlayerNameComparatorLevenshtein());
 //		matchingRule.addComparator(new PlayerBirthdateComparator(3), 0.55);
 //		matchingRule.addComparator(new PlayerJerseyNumberComparatorEqual(), 0.5);
-		matchingRule.addComparator(new PlayerBirthdateComparatorDay(5), 0.5);
+		matchingRule.addComparator(new PlayerBirthdateComparatorDay(5), 0.55);
 		
 
 		// create a blocker (blocking strategy)

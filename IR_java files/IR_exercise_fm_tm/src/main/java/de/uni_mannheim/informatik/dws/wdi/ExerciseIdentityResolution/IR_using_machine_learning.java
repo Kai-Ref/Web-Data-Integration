@@ -77,15 +77,15 @@ public class IR_using_machine_learning {
 		gsTraining.loadFromCSVFile(new File("data/goldstandard/gold_standard_fm_tm_train_v3.csv"));
 
 		// create a matching rule
-//		String options[] = new String[] { "-S" };
-		String options[] = new String[] {};//{ "-S" };
-//		String modelType = "SimpleLogistic"; // use a logistic regression
+		String options[] = new String[] { "-S" };
+//		String options[] = new String[] {};//{ "-S" };
+		String modelType = "SimpleLogistic"; // use a logistic regression
 //		String modelType = "NaiveBayesMultinomial";
 //		String modelType = "NeuralNetwork";
 //		String modelType = "NaiveBayesMultinomial";
-		String modelType = "RandomTree";
+//		String modelType = "RandomTree";
 		
-		WekaMatchingRule<Player, Attribute> matchingRule = new WekaMatchingRule<>(0.9, modelType, options);
+		WekaMatchingRule<Player, Attribute> matchingRule = new WekaMatchingRule<>(0.7, modelType, options);
 		
 		matchingRule.activateDebugReport("data/output/debugResultsMatchingRule.csv", 1000, gsTraining);
 		
@@ -118,9 +118,9 @@ public class IR_using_machine_learning {
 		logger.info(String.format("Matching rule is:\n%s", matchingRule.getModelDescription()));
 		
 		// create a blocker (blocking strategy)
-		StandardRecordBlocker<Player, Attribute> blocker = new StandardRecordBlocker<Player, Attribute>(new PlayerBlockingKeyByNameGenerator(1));
+//		StandardRecordBlocker<Player, Attribute> blocker = new StandardRecordBlocker<Player, Attribute>(new PlayerBlockingKeyByNameGenerator(1));
 
-//		SortedNeighbourhoodBlocker<Player, Attribute, Attribute> blocker = new SortedNeighbourhoodBlocker<>(new PlayerBlockingKeyByNameGenerator(1), 100);
+		SortedNeighbourhoodBlocker<Player, Attribute, Attribute> blocker = new SortedNeighbourhoodBlocker<>(new PlayerBlockingKeyByNameGenerator(1), 110);
 		blocker.collectBlockSizeData("data/output/debugResultsBlocking.csv", 100);
 		
 		// Initialize Matching Engine
