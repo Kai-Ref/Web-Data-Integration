@@ -71,9 +71,16 @@ public class IR_using_machine_learning {
 		gsTraining.loadFromCSVFile(new File("data/goldstandard/gold_standard_fm_ea_train.csv"));
 
 		// create a matching rule
-		String options[] = new String[] { "-S" };
-		String modelType = "SimpleLogistic"; // use a logistic regression
-		WekaMatchingRule<Player, Attribute> matchingRule = new WekaMatchingRule<>(0.7, modelType, options);
+		String options[] = new String[] {};
+//		String options[] = new String[] { "-S" };
+//		String modelType = "SimpleLogistic"; // use a logistic regression
+//		String modelType = "NaiveBayesMultinomial";
+//		String modelType = "NeuralNetwork";
+//		String modelType = "RandomForest";
+		String modelType = "RandomTree";
+		
+		
+		WekaMatchingRule<Player, Attribute> matchingRule = new WekaMatchingRule<>(0.9, modelType, options);
 		matchingRule.activateDebugReport("data/output/debugResultsMatchingRule.csv", 1000, gsTraining);
 		
 		// add comparators
@@ -88,6 +95,7 @@ public class IR_using_machine_learning {
 		matchingRule.addComparator(new PlayerBirthdateComparator(3));
 		matchingRule.addComparator(new PlayerBirthdateComparatorDay(1));
 		matchingRule.addComparator(new PlayerBirthdateComparatorDay(100));
+		matchingRule.addComparator(new PlayerBirthdateComparatorDay(5));
 		matchingRule.addComparator(new PlayerNameComparatorMongeElkan());
 		
 		

@@ -17,6 +17,7 @@ import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.PlayerBirthdateComparator10Years;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.PlayerBirthdateComparator2Years;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.PlayerBirthdateComparatorDay;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.PlayerClubComparatorJaccard;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.PlayerClubComparatorLevenshtein;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.PlayerClubComparatorLowerCaseJaccard;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.PlayerLeagueComparatorEqual;
@@ -76,9 +77,15 @@ public class IR_using_machine_learning {
 		gsTraining.loadFromCSVFile(new File("data/goldstandard/gold_standard_fm_tm_train_v3.csv"));
 
 		// create a matching rule
-		String options[] = new String[] { "-S" };
-		String modelType = "SimpleLogistic"; // use a logistic regression
-		WekaMatchingRule<Player, Attribute> matchingRule = new WekaMatchingRule<>(0.7, modelType, options);
+//		String options[] = new String[] { "-S" };
+		String options[] = new String[] {};//{ "-S" };
+//		String modelType = "SimpleLogistic"; // use a logistic regression
+//		String modelType = "NaiveBayesMultinomial";
+//		String modelType = "NeuralNetwork";
+//		String modelType = "NaiveBayesMultinomial";
+		String modelType = "RandomTree";
+		
+		WekaMatchingRule<Player, Attribute> matchingRule = new WekaMatchingRule<>(0.9, modelType, options);
 		
 		matchingRule.activateDebugReport("data/output/debugResultsMatchingRule.csv", 1000, gsTraining);
 		
@@ -86,18 +93,22 @@ public class IR_using_machine_learning {
 		matchingRule.addComparator(new PlayerNameComparatorJaccard());
 		matchingRule.addComparator(new PlayerNameReverseComparator());
 		matchingRule.addComparator(new PlayerNameComparatorLevenshtein());
+		matchingRule.addComparator(new PlayerNameComparatorEqual());
 		matchingRule.addComparator(new PlayerNameComparatorMongeElkan());
 		
-//		matchingRule.addComparator(new PlayerBirthdateComparator10Years());
+		matchingRule.addComparator(new PlayerBirthdateComparator10Years());
 		matchingRule.addComparator(new PlayerBirthdateComparator2Years());
 		matchingRule.addComparator(new PlayerBirthdateComparatorDay(1));
 		matchingRule.addComparator(new PlayerBirthdateComparatorDay(100));
+		matchingRule.addComparator(new PlayerBirthdateComparator(3));
+		matchingRule.addComparator(new PlayerBirthdateComparatorDay(5));
 		
 		matchingRule.addComparator(new PlayerClubComparatorLowerCaseJaccard());
+		
+		matchingRule.addComparator(new PlayerClubComparatorJaccard());
 		matchingRule.addComparator(new PlayerClubComparatorLevenshtein());
 		
 		matchingRule.addComparator(new PlayerLeagueComparatorEqual());
-		
 		
 		
 		// train the matching rule's model
@@ -107,9 +118,9 @@ public class IR_using_machine_learning {
 		logger.info(String.format("Matching rule is:\n%s", matchingRule.getModelDescription()));
 		
 		// create a blocker (blocking strategy)
-//		StandardRecordBlocker<Player, Attribute> blocker = new StandardRecordBlocker<Player, Attribute>(new PlayerBlockingKeyByNameGenerator(1));
+		StandardRecordBlocker<Player, Attribute> blocker = new StandardRecordBlocker<Player, Attribute>(new PlayerBlockingKeyByNameGenerator(1));
 
-		SortedNeighbourhoodBlocker<Player, Attribute, Attribute> blocker = new SortedNeighbourhoodBlocker<>(new PlayerBlockingKeyByNameGenerator(1), 110);
+//		SortedNeighbourhoodBlocker<Player, Attribute, Attribute> blocker = new SortedNeighbourhoodBlocker<>(new PlayerBlockingKeyByNameGenerator(1), 100);
 		blocker.collectBlockSizeData("data/output/debugResultsBlocking.csv", 100);
 		
 		// Initialize Matching Engine
