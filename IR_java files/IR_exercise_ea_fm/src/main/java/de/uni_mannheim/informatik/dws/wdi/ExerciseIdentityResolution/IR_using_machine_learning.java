@@ -69,8 +69,7 @@ public class IR_using_machine_learning {
 		// load the training set
 		MatchingGoldStandard gsTraining = new MatchingGoldStandard();
 		gsTraining.loadFromCSVFile(new File("data/goldstandard/gold_standard_fm_ea_train.csv"));
-		
-		
+
 		// create a matching rule
 		String options[] = new String[] {};
 //		String options[] = new String[] { "-S" };
@@ -100,7 +99,6 @@ public class IR_using_machine_learning {
 		matchingRule.addComparator(new PlayerNameComparatorMongeElkan());
 		
 		
-		
 		// train the matching rule's model
 		logger.info("*\tLearning matching rule\t*");
 		RuleLearner<Player, Attribute> learner = new RuleLearner<>();
@@ -108,10 +106,8 @@ public class IR_using_machine_learning {
 		logger.info(String.format("Matching rule is:\n%s", matchingRule.getModelDescription()));
 		
 		// create a blocker (blocking strategy)
-//		SortedNeighbourhoodBlocker<Player, Attribute, Attribute> blocker = new SortedNeighbourhoodBlocker<>(new PlayerBlockingKeyByNameGenerator(1), 110);
-		
 		StandardRecordBlocker<Player, Attribute> blocker = new StandardRecordBlocker<Player, Attribute>(new PlayerBlockingKeyByNameGenerator(1));
-//		SortedNeighbourhoodBlocker<Movie, Attribute, Attribute> blocker = new SortedNeighbourhoodBlocker<>(new MovieBlockingKeyByDecadeGenerator(), 1);
+//		SortedNeighbourhoodBlocker<Player, Attribute, Attribute> blocker = new SortedNeighbourhoodBlocker<>(new PlayerBlockingKeyByNameGenerator(1), 110);
 		blocker.collectBlockSizeData("data/output/debugResultsBlocking.csv", 100);
 		
 		// Initialize Matching Engine
@@ -124,7 +120,7 @@ public class IR_using_machine_learning {
 				blocker);
 
 		// write the correspondences to the output file
-		new CSVCorrespondenceFormatter().writeCSV(new File("data/output/ML_ea_2_fm.csv"), correspondences);
+		new CSVCorrespondenceFormatter().writeCSV(new File("data/output/ea_fm_ml_correspondences.csv"), correspondences);
 
 		// load the gold standard (test set)
 		logger.info("*\tLoading gold standard\t*");
@@ -139,7 +135,7 @@ public class IR_using_machine_learning {
 				gsTest);
 		
 		// print the evaluation result
-		logger.info("Academy Awards <-> Actors");
+		logger.info("EA <-> FM");
 		logger.info(String.format(
 				"Precision: %.4f",perfTest.getPrecision()));
 		logger.info(String.format(
@@ -158,11 +154,13 @@ public class IR_using_machine_learning {
 		
 		
 		CorrespondenceSet<Player2, Attribute> correspondences2 = new CorrespondenceSet<>();
-		correspondences2.loadCorrespondences(new File("data/output/ML_ea_2_fm.csv"),ds2, ds3);
+		correspondences2.loadCorrespondences(new File("data/output/ea_fm_ml_correspondences.csv"),ds2, ds3);
 		logger.info("*\tLoading datasets 2\t*");
 		correspondences2.printGroupSizeDistribution();
-		int n1 = correspondences.size();
-//		int n2 = correspondences2.size();
-		logger.info("*\\tCorrespondences:"+ n1);
+		
+		// Get and print the number of correspondences
+		int numberOfCorrespondences = correspondences.size();
+		System.out.println("Number of correspondences: " + numberOfCorrespondences);
+		
     }
 }

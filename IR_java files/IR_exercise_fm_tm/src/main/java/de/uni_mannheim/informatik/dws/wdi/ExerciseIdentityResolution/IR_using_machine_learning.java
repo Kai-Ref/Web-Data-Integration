@@ -76,16 +76,16 @@ public class IR_using_machine_learning {
 		MatchingGoldStandard gsTraining = new MatchingGoldStandard();
 		gsTraining.loadFromCSVFile(new File("data/goldstandard/gold_standard_fm_tm_train_v3.csv"));
 
-		
-//		String options[] = new String[] { "-S" };
-		String options[] = new String[] {};//{ "-S" };
-//		String modelType = "SimpleLogistic"; // use a logistic regression
+		// create a matching rule
+		String options[] = new String[] { "-S" };
+//		String options[] = new String[] {};//{ "-S" };
+		String modelType = "SimpleLogistic"; // use a logistic regression
 //		String modelType = "NaiveBayesMultinomial";
 //		String modelType = "NeuralNetwork";
 //		String modelType = "NaiveBayesMultinomial";
-		String modelType = "RandomTree";
+//		String modelType = "RandomTree";
 		
-		WekaMatchingRule<Player, Attribute> matchingRule = new WekaMatchingRule<>(0.9, modelType, options);
+		WekaMatchingRule<Player, Attribute> matchingRule = new WekaMatchingRule<>(0.7, modelType, options);
 		
 		matchingRule.activateDebugReport("data/output/debugResultsMatchingRule.csv", 1000, gsTraining);
 		
@@ -111,7 +111,6 @@ public class IR_using_machine_learning {
 		matchingRule.addComparator(new PlayerLeagueComparatorEqual());
 		
 		
-		
 		// train the matching rule's model
 		logger.info("*\tLearning matching rule\t*");
 		RuleLearner<Player, Attribute> learner = new RuleLearner<>();
@@ -119,8 +118,9 @@ public class IR_using_machine_learning {
 		logger.info(String.format("Matching rule is:\n%s", matchingRule.getModelDescription()));
 		
 		// create a blocker (blocking strategy)
-		StandardRecordBlocker<Player, Attribute> blocker = new StandardRecordBlocker<Player, Attribute>(new PlayerBlockingKeyByNameGenerator(1));
-//		 SortedNeighbourhoodBlocker<Player, Attribute, Attribute> blocker = new SortedNeighbourhoodBlocker<>(new PlayerBlockingKeyByNameGenerator(1), 100);
+//		StandardRecordBlocker<Player, Attribute> blocker = new StandardRecordBlocker<Player, Attribute>(new PlayerBlockingKeyByNameGenerator(1));
+
+		SortedNeighbourhoodBlocker<Player, Attribute, Attribute> blocker = new SortedNeighbourhoodBlocker<>(new PlayerBlockingKeyByNameGenerator(1), 110);
 		blocker.collectBlockSizeData("data/output/debugResultsBlocking.csv", 100);
 		
 		// Initialize Matching Engine
@@ -133,7 +133,7 @@ public class IR_using_machine_learning {
 				blocker);
 
 		// write the correspondences to the output file
-		new CSVCorrespondenceFormatter().writeCSV(new File("data/output/correspondences_very_good_ml_fm_tm.csv"), correspondences);
+		new CSVCorrespondenceFormatter().writeCSV(new File("data/output/correspondences_ml_fm_tm.csv"), correspondences);
 
 		// load the gold standard (test set)
 		logger.info("*\tLoading gold standard\t*");
@@ -167,11 +167,12 @@ public class IR_using_machine_learning {
 		
 		
 		CorrespondenceSet<Player2, Attribute> correspondences2 = new CorrespondenceSet<>();
-		correspondences2.loadCorrespondences(new File("data/output/correspondences_very_good_ml_fm_tm.csv"),fm23_fusible, tm_fusible);
+		correspondences2.loadCorrespondences(new File("data/output/correspondences_ml_fm_tm.csv"),fm23_fusible, tm_fusible);
 		logger.info("*\tLoading datasets 2\t*");
 		correspondences2.printGroupSizeDistribution();
-		int n1 = correspondences.size();
-//		int n2 = correspondences2.size();
-		logger.info("*\\tCorrespondences:"+ n1);
+		
+		// Get and print the number of correspondences
+		int numberOfCorrespondences = correspondences.size();
+		System.out.println("Number of correspondences: " + numberOfCorrespondences);
     }
 }

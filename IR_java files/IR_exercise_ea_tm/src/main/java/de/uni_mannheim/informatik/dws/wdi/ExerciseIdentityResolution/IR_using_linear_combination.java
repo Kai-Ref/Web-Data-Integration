@@ -76,7 +76,7 @@ public class IR_using_linear_combination
 		
 		// add comparators
 //		matchingRule.addComparator(new PlayerNameComparatorJaccard(), 0.45);
-		matchingRule.addComparator(new PlayerNameComparatorMongeElkan(), 0.5);
+		matchingRule.addComparator(new PlayerNameComparatorMongeElkan(), 0.45);
 //		matchingRule.addComparator(new PlayerClubComparatorLowerCaseJaccard(), 0.1);
 //		matchingRule.addComparator(new PlayerNameComparatorEqual(), 0.3);
 //		matchingRule.addComparator(new PlayerBirthdateComparator2Years(), 1);
@@ -86,7 +86,7 @@ public class IR_using_linear_combination
 //		matchingRule.addComparator(new PlayerNameComparatorLevenshtein());
 //		matchingRule.addComparator(new PlayerBirthdateComparator(3), 0.55);
 //		matchingRule.addComparator(new PlayerJerseyNumberComparatorEqual(), 0.5);
-		matchingRule.addComparator(new PlayerBirthdateComparatorDay(5), 0.5);
+		matchingRule.addComparator(new PlayerBirthdateComparatorDay(5), 0.55);
 		
 
 		// create a blocker (blocking strategy)
@@ -97,9 +97,7 @@ public class IR_using_linear_combination
 //		NoBlocker<Player, Attribute> blocker = new NoBlocker<>();
 		blocker.setMeasureBlockSizes(true);
 		//Write debug results to file:
-		blocker.collectBlockSizeData("data/output/debugResultsBlocking.csv", 100);
-		
-		
+		blocker.collectBlockSizeData("data/output/debugResultsBlocking.csv", 100);	
 		
 		
 		
@@ -154,6 +152,10 @@ public class IR_using_linear_combination
 		correspondences2.loadCorrespondences(new File("data/output/ea_tm_correspondences.csv"),ds3, ds2);
 		logger.info("*\tLoading datasets 2\t*");
 		correspondences2.printGroupSizeDistribution();
+		
+		// Get and print the number of correspondences
+		int numberOfCorrespondences = correspondences.size();
+		System.out.println("Number of correspondences: " + numberOfCorrespondences);
 
     }
 }

@@ -1,21 +1,21 @@
 Dataset;finalThreshold;options;;ML method;Time;Precision;Recall;F1;Group Size Distribution;;Correspondences
-EA_TM;0.7;"{""-S""}";SortedNeighbourhoodBlocker(PlayerBlockingKeyByNameGenerator(1), 110));SimpleLogistic;90 s;0.9808;0.8947;0.9358;"2	| 	6931
+EA_TM;0.7;"{""-S""}";SortedNeighbourhoodBlocker(PlayerBlockingKeyByNameGenerator(1), 110));SimpleLogistic;90s;0.9808;0.8947;0.9358;"2	| 	6931
 3	| 	28
 4	| 	30
 5	| 	3
 6	| 	2";;
-EA_TM;0.9;"{""-S""}";SortedNeighbourhoodBlocker(PlayerBlockingKeyByNameGenerator(1), 110));SimpleLogistic;90 s;1.0;0.7193;0.8367;"2	| 	5144
+EA_TM;0.9;"{""-S""}";SortedNeighbourhoodBlocker(PlayerBlockingKeyByNameGenerator(1), 110));SimpleLogistic;90s;1.0;0.7193;0.8367;"2	| 	5144
 3	| 	4
 4	| 	1";;
 EA_TM;0.5;"{""-S""}";SortedNeighbourhoodBlocker(PlayerBlockingKeyByNameGenerator(1), 110));SimpleLogistic;110s;0.9821;0.9649;0.9735;"2	| 	7477
 3	| 	28
 4	| 	35
 5	| 	4
-6	| 	2";;
+6	| 	2";;7706
 EA_TM;0.3;-;SortedNeighbourhoodBlocker(PlayerBlockingKeyByNameGenerator(1), 110));NaiveBayesMultinomial;120s;0.7857;0.9649;0.8661;;;
-EA_TM;0.3;-;SortedNeighbourhoodBlocker(PlayerBlockingKeyByNameGenerator(1), 110));Random Forest;128s;1.0;0.9649;0.9821;"2	| 	7562
+EA_TM;0.3;-;SortedNeighbourhoodBlocker(PlayerBlockingKeyByNameGenerator(1), 110));Random Forest;1:12min;1.0;0.9649;0.9821;"2	| 	7562
  3	| 	5
- 4	| 	1";;
+ 4	| 	1";;7574
 EA_TM;0.7;-;SortedNeighbourhoodBlocker(PlayerBlockingKeyByNameGenerator(1), 110));RandomForest;120s ;1.0;0.9474;0.9730;"2	| 	7443
  3	| 	4
  4	| 	1";;
@@ -23,7 +23,7 @@ EA_TM;0.9;-;SortedNeighbourhoodBlocker(PlayerBlockingKeyByNameGenerator(1), 110)
  3	| 	3";;
 EA_TM;0.7;-;SortedNeighbourhoodBlocker(PlayerBlockingKeyByNameGenerator(1), 110));RandomTree;105s;1.0;0.9649;0.9821;"2	| 	7457
  3	| 	5
- 4	| 	1";;
+ 4	| 	1";;7471
 EA_TM;0.9;-;SortedNeighbourhoodBlocker(PlayerBlockingKeyByNameGenerator(1), 110));RandomTree;93s;1.0;0.9649;0.9821;"2	| 	7457
  3	| 	5
  4	| 	1";;
@@ -36,7 +36,7 @@ EA_TM;0.01;-;SortedNeighbourhoodBlocker(PlayerBlockingKeyByNameGenerator(1), 110
 EA_TM;0.01;-;SortedNeighbourhoodBlocker(PlayerBlockingKeyByNameGenerator(1), 110));Random Forest;109s;0.8088;0.9649;0.88;"2	| 	2165
  3	| 	393
  4	| 	397
-…
+ï¿½
 5222 | 1";4226 groups!!;
 EA_FM;0.9;"{""-S""}";StandardRecordBlocker(new PlayerBlockingKeyByNameGenerator(1));SimpleLogistic;49s;1.0;0.9275;0.9624;"2	| 	6540
 3	| 	46
@@ -93,9 +93,9 @@ EA_FM;0.9;-;StandardRecordBlocker(new PlayerBlockingKeyByNameGenerator(1));Rando
 FM_TM;0.9;"{""-S""}";SortedNeighbourhoodBlocker(PlayerBlockingKeyByNameGenerator(1), 100));SimpleLogistic;216s;1.0;0.7647;0.8667;"2	| 	6398
 3	| 	6
 4	| 	3";;
-FM_TM;0.7;"{""-S""}";SortedNeighbourhoodBlocker(PlayerBlockingKeyByNameGenerator(1), 100));SimpleLogistic;206s;1.0;0.7745;0.8729;"2	| 	6410
+FM_TM;0.7;"{""-S""}";SortedNeighbourhoodBlocker(PlayerBlockingKeyByNameGenerator(1), 110));SimpleLogistic;206s;1.0;0.7745;0.8729;"2	| 	6410
 3	| 	10
-4	| 	4";;
+4	| 	4";;6444
 FM_TM;0.7;"{""-S""}";StandardRecordBlocker(new PlayerBlockingKeyByNameGenerator(1));SimpleLogistic;75s;1.0;0.7549;0.8603;"2	| 	6399
 3	| 	10
 4	| 	3";;
@@ -118,7 +118,7 @@ FM_TM;0.7;-;StandardRecordBlocker(new PlayerBlockingKeyByNameGenerator(1));Rando
 4	| 	3";;
 FM_TM;0.7;-;StandardRecordBlocker(new PlayerBlockingKeyByNameGenerator(1));RandomTree;151s;0.9873;0.7647;0.8619;" 		2	| 	6105
  		3	| 	150
-	4	| 	100
+		4	| 	100
 		5	| 	19
  		6	| 	11
  		7	| 	4
@@ -129,7 +129,7 @@ FM_TM;0.7;-;StandardRecordBlocker(new PlayerBlockingKeyByNameGenerator(1));Rando
  		16	| 	1";;6920
 FM_TM;0.9;-;StandardRecordBlocker(new PlayerBlockingKeyByNameGenerator(1));RandomTree;69s;0.9873;0.7647;0.8619;" 		2	| 	6105
  		3	| 	150
-	4	| 	100
+		4	| 	100
 		5	| 	19
  		6	| 	11
  		7	| 	4
