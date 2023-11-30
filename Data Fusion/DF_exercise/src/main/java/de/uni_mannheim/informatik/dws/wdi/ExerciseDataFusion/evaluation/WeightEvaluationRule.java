@@ -44,7 +44,7 @@ public class WeightEvaluationRule extends EvaluationRule<Player, Attribute> {
 		double weight1 = (double) record1.getWeight();
 		double weight2 = (double) record2.getWeight();
 		
-		return sim.calculate(weight1, weight2) == 1.0;
+		return sim.calculate(weight1, weight2) >= 0.8;
 	}
 
 	/* (non-Javadoc)

@@ -41,7 +41,7 @@ public class WageEvaluationRule extends EvaluationRule<Player, Attribute> {
 		// matter
 		double wage1 = (double) record1.getWage();
 		double wage2 = (double) record2.getWage();
-		return sim.calculate(wage1, wage2) == 1.0;
+		return sim.calculate(wage1, wage2) >= 0.8;
 	}
 
 	/* (non-Javadoc)

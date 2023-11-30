@@ -41,7 +41,7 @@ public class HeightEvaluationRule extends EvaluationRule<Player, Attribute> {
 		// matter
 		double height1 = (double) record1.getWeight();
 		double height2 = (double) record2.getWeight();
-		return sim.calculate(height1, height2) == 1.0;
+		return sim.calculate(height1, height2) >= 0.8;
 		
 	}
 

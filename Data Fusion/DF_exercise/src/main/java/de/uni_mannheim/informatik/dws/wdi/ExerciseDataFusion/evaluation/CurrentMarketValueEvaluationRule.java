@@ -41,7 +41,7 @@ public class CurrentMarketValueEvaluationRule extends EvaluationRule<Player, Att
 		// matter
 		double currentMarketValue1 = (double) record1.getCurrent_market_value();
 		double currentMarketValue2 = (double) record2.getCurrent_market_value();
-		return sim.calculate(currentMarketValue1,currentMarketValue2) == 1.0;
+		return sim.calculate(currentMarketValue1,currentMarketValue2) >= 0.8;
 	}
 
 	/* (non-Javadoc)
