@@ -76,11 +76,11 @@ public class IR_using_machine_learning {
 //		String modelType = "SimpleLogistic"; // use a logistic regression
 //		String modelType = "NaiveBayesMultinomial";
 //		String modelType = "NeuralNetwork";
-//		String modelType = "RandomForest";
-		String modelType = "RandomTree";
+		String modelType = "RandomForest";
+//		String modelType = "RandomTree";
 		
 		
-		WekaMatchingRule<Player, Attribute> matchingRule = new WekaMatchingRule<>(0.9, modelType, options);
+		WekaMatchingRule<Player, Attribute> matchingRule = new WekaMatchingRule<>(0.7, modelType, options);
 		matchingRule.activateDebugReport("data/output/debugResultsMatchingRule.csv", 1000, gsTraining);
 		
 		// add comparators
