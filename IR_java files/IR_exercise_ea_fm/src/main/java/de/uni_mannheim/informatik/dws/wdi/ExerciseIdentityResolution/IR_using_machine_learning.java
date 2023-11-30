@@ -68,7 +68,7 @@ public class IR_using_machine_learning {
 		
 		// load the training set
 		MatchingGoldStandard gsTraining = new MatchingGoldStandard();
-		gsTraining.loadFromCSVFile(new File("data/goldstandard/gold_standard_fm_ea_train.csv"));
+		gsTraining.loadFromCSVFile(new File("data/goldstandard/gold_standard_ea_fm_train_NEW.csv"));
 
 		// create a matching rule
 		String options[] = new String[] {};
@@ -126,7 +126,7 @@ public class IR_using_machine_learning {
 		logger.info("*\tLoading gold standard\t*");
 		MatchingGoldStandard gsTest = new MatchingGoldStandard();
 		gsTest.loadFromCSVFile(new File(
-				"data/goldstandard/gold_standard_fm_ea_test.csv"));
+				"data/goldstandard/gold_standard_fm_ea.csv"));
 		
 		// evaluate your result
 		logger.info("*\tEvaluating result\t*");
