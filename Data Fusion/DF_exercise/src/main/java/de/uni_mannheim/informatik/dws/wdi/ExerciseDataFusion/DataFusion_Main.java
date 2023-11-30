@@ -10,6 +10,8 @@ import java.util.Locale;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.evaluation.BirthdateEvaluationRule;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.evaluation.ClubEvaluationRule;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.evaluation.CurrentMarketValueEvaluationRule;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.evaluation.PositionsEvaluationRule;
+
 
 
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.evaluation.HeightEvaluationRule;
@@ -34,6 +36,7 @@ import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.fusers.PrefferedFoo
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.fusers.WageMedian;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.fusers.WeightFuserAverage;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.fusers.NameFuserLongestString;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.fusers.PositionsFuserIntersectionKSources;
 
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.model.Player;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.model.PlayerXMLFormatter;
@@ -167,6 +170,8 @@ public class DataFusion_Main
 		strategy.addAttributeFuser(Player.CURRENT_MARKET_VALUE, new CurrentMarketValueMedian(), new CurrentMarketValueEvaluationRule ());
 		strategy.addAttributeFuser(Player.WAGE, new WageMedian(), new WageEvaluationRule());
 		strategy.addAttributeFuser(Player.PREFERRED_FOOT, new PrefferedFootMostRecent(), new PrefferedFootEvaluationRule());
+		strategy.addAttributeFuser(Player.POSITIONS, new PositionsFuserIntersectionKSources(2), new PositionsEvaluationRule());
+		
 
 
 		// create the fusion engine

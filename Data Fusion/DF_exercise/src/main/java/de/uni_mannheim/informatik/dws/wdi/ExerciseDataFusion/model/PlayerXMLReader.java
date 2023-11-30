@@ -57,6 +57,8 @@ dataset.addAttribute(Player.LEAGUE);
 dataset.addAttribute(Player.CURRENT_MARKET_VALUE);
 dataset.addAttribute(Player.WAGE);
 dataset.addAttribute(Player.PREFERRED_FOOT);
+dataset.addAttribute(Player.POSITIONS);
+
 
 
 
@@ -78,7 +80,19 @@ String id = getValueFromChildElement(node, "id");
 	player.setClub(getValueFromChildElement(node, "club"));
 	player.setLeague(getValueFromChildElement(node, "league"));
 	player.setPreferred_foot(getValueFromChildElement(node, "preferred_foot"));
-
+	
+	
+	// load the list of actors
+	List<String> positions = getListFromChildElement(node, "positions");
+    if (positions != null) {
+        try {
+        	player.setPositions(positions);
+        } catch (NumberFormatException e) {
+            // Handle the exception as needed (e.g., log it or throw a more specific exception)
+            e.printStackTrace();
+        }
+    }
+	
 	// convert the date string into a DateTime object
 	String weightString = getValueFromChildElement(node, "weight");
 	
