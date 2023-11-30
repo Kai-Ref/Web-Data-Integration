@@ -73,10 +73,10 @@ public class IR_using_machine_learning {
 //		String modelType = "NaiveBayesMultinomial";
 //		String modelType = "NeuralNetwork";
 		String options[] = new String[] {};//{ "-S" };
-		String modelType = "RandomForest";
-//		String modelType = "RandomTree";
+//		String modelType = "RandomForest";
+		String modelType = "RandomTree";
 
-		WekaMatchingRule<Player, Attribute> matchingRule = new WekaMatchingRule<>(0.3, modelType, options);
+		WekaMatchingRule<Player, Attribute> matchingRule = new WekaMatchingRule<>(0.7, modelType, options);
 		matchingRule.activateDebugReport("data/output/debugResultsMatchingRule.csv", 1000, gsTraining);
 		
 		// add comparators
@@ -148,10 +148,10 @@ public class IR_using_machine_learning {
 		logger.info("*\tLoading datasets\t*");
 		
 		
-//		CorrespondenceSet<Player2, Attribute> correspondences2 = new CorrespondenceSet<>();
-//		correspondences2.loadCorrespondences(new File("data/output/ml_correspondences.csv"),ds3, ds2);
-//		logger.info("*\tLoading datasets\t*");
-//		correspondences2.printGroupSizeDistribution();
+		CorrespondenceSet<Player2, Attribute> correspondences2 = new CorrespondenceSet<>();
+		correspondences2.loadCorrespondences(new File("data/output/ml_correspondences.csv"),ds3, ds2);
+		logger.info("*\tLoading datasets\t*");
+		correspondences2.printGroupSizeDistribution();
 		
 		int n1 = correspondences.size();
 //		int n2 = correspondences2.size();

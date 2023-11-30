@@ -87,7 +87,7 @@
 		<id>eafc_11362</id>
 		<name>Cao Yunding</name>
 		<birthdate>1989-11-22</birthdate>
-		<nationality>China PR</nationality>
+		<nationality>China</nationality>
 		<positions>
 			<position>LM</position>
 			<position>LW</position>
@@ -155,7 +155,7 @@
 		<id>eafc_3783</id>
 		<name>Josh Cullen</name>
 		<birthdate>1996-04-07</birthdate>
-		<nationality>Republic of Ireland</nationality>
+		<nationality>Ireland</nationality>
 		<positions>
 			<position>CDM</position>
 			<position>CM</position>
@@ -186,8 +186,7 @@
 		<nationality>Nigeria</nationality>
 		<positions>
 			<position>LM</position>
-			<position>LWB</position>
-			<position>RWB</position>
+			<position>RM</position>
 		</positions>
 		<jersey_number>14</jersey_number>
 		<club>Rotherham United</club>
