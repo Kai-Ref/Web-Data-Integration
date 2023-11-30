@@ -51,7 +51,7 @@ public class Player extends AbstractRecord<Attribute> implements Serializable {
 	private String name;
 	private LocalDateTime birthdate;
 	private String nationality; 
-	private ArrayList<String> positions;
+	private List<String> positions;
 	private String club; 
 	private int weight;
 	private int height;
@@ -96,12 +96,12 @@ public class Player extends AbstractRecord<Attribute> implements Serializable {
 	}
 
 
-	public ArrayList<String> getPositions() {
+	public List<String> getPositions() {
 		return positions;
 	}
 
-	public void setPositions(ArrayList<String> positions) {
-		this.positions = positions;
+	public void setPositions(List<String> list) {
+		this.positions = list;
 	}
 		
 
@@ -146,6 +146,8 @@ public class Player extends AbstractRecord<Attribute> implements Serializable {
 	public static final Attribute CURRENT_MARKET_VALUE = new Attribute("current_market_value");
 	public static final Attribute WAGE = new Attribute("wage");
 	public static final Attribute PREFERRED_FOOT = new Attribute("preferred_foot");
+	public static final Attribute POSITIONS = new Attribute("positions");
+	
 
 	
 	@Override
@@ -172,6 +174,8 @@ public class Player extends AbstractRecord<Attribute> implements Serializable {
 			return getWage() != 0;
 		else if(attribute==PREFERRED_FOOT)
 			return getPreferred_foot() != null;
+		else if(attribute==POSITIONS)
+			return getPositions() != null;
 			
 			return false;
 	}
