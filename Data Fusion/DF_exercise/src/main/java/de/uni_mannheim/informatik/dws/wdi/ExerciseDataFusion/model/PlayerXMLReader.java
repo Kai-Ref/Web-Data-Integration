@@ -83,9 +83,15 @@ String id = getValueFromChildElement(node, "id");
 	
 	
 	// load the list of positions
-	List<Position> positions = getObjectListFromChildElement(node, "positions",
-		"position", new PositionXMLReader(), provenanceInfo);
-	player.setPositions(positions);
+	List<String> positions = getListFromChildElement(node, "positions");
+	if (positions != null) {
+        try {
+        	player.setPositions(positions);
+        } catch (NumberFormatException e) {
+            // Handle the exception as needed (e.g., log it or throw a more specific exception)
+            e.printStackTrace();
+        }
+    }
 
 
 	// convert the date string into a DateTime object

@@ -45,7 +45,6 @@ public class Player extends AbstractRecord<Attribute> implements Serializable {
 
 	public Player(String identifier, String provenance) {
 		super(identifier, provenance);
-		setPositions(new LinkedList<>());
 
 	}
 
@@ -53,7 +52,7 @@ public class Player extends AbstractRecord<Attribute> implements Serializable {
 	private String name;
 	private LocalDateTime birthdate;
 	private String nationality; 
-	private List<Position> positions;
+	private List<String> positions;
 	private String club; 
 	private int weight;
 	private int height;
@@ -248,12 +247,12 @@ public class Player extends AbstractRecord<Attribute> implements Serializable {
 		this.preferred_foot = preferred_foot;
 	}
 
-	public List<Position> getPositions() {
+	public List<String> getPositions() {
 		return positions;
 	}
 
-	public void setPositions(List<Position> positions) {
-		this.positions = positions;
+	public void setPositions(List<String> list) {
+		this.positions = list;
 	}
 	
 	

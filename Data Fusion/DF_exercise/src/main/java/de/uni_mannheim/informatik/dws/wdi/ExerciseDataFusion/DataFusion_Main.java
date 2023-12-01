@@ -10,7 +10,6 @@ import java.util.Locale;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.evaluation.BirthdateEvaluationRule;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.evaluation.ClubEvaluationRule;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.evaluation.CurrentMarketValueEvaluationRule;
-import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.evaluation.PositionsEvaluationRule;
 
 
 
@@ -21,6 +20,7 @@ import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.evaluation.NameEval
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.evaluation.NationalityEvaluationRule;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.evaluation.PrefferedFootEvaluationRule;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.evaluation.WageEvaluationRule;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.evaluation.PositionsEvaluationRule;
 
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.evaluation.WeightEvaluationRule;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.fusers.BirthdateFuserVoting;

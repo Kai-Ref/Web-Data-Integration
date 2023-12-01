@@ -15,7 +15,6 @@ import java.util.HashSet;
 import java.util.Set;
 
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.model.Player;
-import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.model.Position;
 import de.uni_mannheim.informatik.dws.winter.datafusion.EvaluationRule;
 import de.uni_mannheim.informatik.dws.winter.model.Correspondence;
 import de.uni_mannheim.informatik.dws.winter.model.Matchable;
@@ -37,17 +36,17 @@ public class PositionsEvaluationRule extends EvaluationRule<Player, Attribute> {
 		Set<String> positions2 = new HashSet<>();
 		
 		if (record1.getPositions() != null) {
-			for (Position a : record1.getPositions()) {
+			for (String a : record1.getPositions()) {
 				// note: evaluating using the actor's name only suffices for simple
 				// lists
 				// in your project, you should have actor ids which you use here
 				// (and in the identity resolution)
-				positions1.add(a.getPosition());
+				positions1.add(a);
 			}
 		}
 		if (record2.getPositions() != null) {
-			for (Position a : record2.getPositions()) {
-				positions2.add(a.getPosition());
+			for (String a : record2.getPositions()) {
+				positions2.add(a);
 			}
 		}
 		// NOTE KAI: returns true if one of the lists is completely within another list
