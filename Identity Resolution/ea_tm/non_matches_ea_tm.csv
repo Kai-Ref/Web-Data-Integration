@@ -215,3 +215,504 @@ eafc_10269,tm_4521,S. Fusire,2005-05-31,Amourricho van Axel Dongen,2004-09-29,En
 eafc_1562,tm_5019,A. Yarmolenko,1989-10-23,Pietro Pellegri,2001-03-17,Ukraine,Italy,Dynamo Kyiv,Torino FC,,False
 eafc_3157,tm_7523,O. Okungbowa,1994-05-13,Kenny Tete,1995-10-09,Austria,Netherlands,WSG Tirol,Fulham FC,,False
 eafc_3585,tm_7390,B. Jovičić,1993-03-18,Josan,1989-12-03,Serbia,Spain,LASK Linz,Elche CF,,False
+df1,df2,name1,birthdate1,name2,birthdate2,nat1,nat2,club1,club2,score,match
+eafc_11049,tm_1002,O. Diouf,2003-05-15,Alec Kann,1990-08-08,Senegal,United States,Rizespor,FC Cincinnati,0.0,False
+eafc_2983,tm_1001,R. Hedges,1995-07-08,Evan Louro,1996-01-19,Wales,United States,Blackburn Rovers,FC Cincinnati,0.0,False
+eafc_9479,tm_1176,J. Mina,2004-07-27,Gustavo Bou,1990-02-18,Colombia,Argentina,New York RB,New England Revolution,0.0,False
+eafc_4061,tm_1064,Estevão Candeira,1996-02-29,Marcus Ferkranus,2003-05-10,Brazil,United States,Flamengo,Los Angeles Galaxy,0.0,False
+eafc_11179,tm_1304,Joan Ruiz,2003-02-11,Karifa Yao,2000-09-28,Spain,Canada,Villarreal II,Vancouver Whitecaps FC,0.0,False
+eafc_8160,tm_1010,Alex Millán,1999-11-07,Santiago Arias,1992-01-13,Spain,Colombia,Real Oviedo,FC Cincinnati,0.0,False
+eafc_4550,tm_1004,A. Hadžiahmetović,1997-03-08,Yerson Mosquera,2001-05-02,Bosnia and Herzegovina,Colombia,Beşiktaş,Wolverhampton Wanderers,0.0,False
+eafc_10307,tm_1067,K. Köylü,1999-05-04,Julián Aude,2003-03-24,Turkey,Argentina,İstanbulspor,Los Angeles Galaxy,0.0,False
+eafc_5549,tm_1163,D. Man,1998-08-26,Maciel,2000-01-18,Romania,Brazil,Parma,New England Revolution,0.0,False
+eafc_10011,tm_1026,Stefan Bajcetic,2004-10-22,Arquímides Ordóñez,2003-08-05,Spain,Guatemala,Liverpool,FC Cincinnati,0.0,False
+eafc_5463,tm_1003,Jordi Mboula,1999-03-16,Paul Walters,2004-04-11,Spain,United States,Hellas Verona,FC Cincinnati,0.0,False
+eafc_10228,tm_1008,Mario García,2003-10-02,Joey Akpunonu,2001-12-21,Spain,United States,Racing Santander,FC Cincinnati,0.0,False
+eafc_8255,tm_1002,E. Baggott,2002-10-23,Alec Kann,1990-08-08,Indonesia,United States,Ipswich Town,FC Cincinnati,0.0,False
+eafc_9757,tm_1002,D. Grujčić,1999-05-19,Alec Kann,1990-08-08,Austria,United States,Austria Lustenau,FC Cincinnati,0.0,False
+eafc_9939,tm_1005,A. Tsarenko,2004-06-17,Matt Miazga,1995-07-19,Ukraine,United States,Dynamo Kyiv,FC Cincinnati,0.0,False
+eafc_7717,tm_1003,J. Brooking,2002-09-01,Paul Walters,2004-04-11,England,United States,Chelsea,FC Cincinnati,0.0,False
+eafc_1582,tm_1067,K. Kampl,1990-10-09,Julián Aude,2003-03-24,Slovenia,Argentina,RB Leipzig,Los Angeles Galaxy,0.0,False
+eafc_2731,tm_1163,J. Tah,1996-02-11,Maciel,2000-01-18,Germany,Brazil,Bayer 04 Leverkusen,New England Revolution,0.0,False
+eafc_1450,tm_1002,G. Nauber,1992-04-13,Alec Kann,1990-08-08,Germany,United States,Go Ahead Eagles,FC Cincinnati,0.0,False
+eafc_5900,tm_1001,B. Servania,1999-03-12,Evan Louro,1996-01-19,United States,United States,Toronto,FC Cincinnati,0.0,False
+eafc_3030,tm_1002,G. Nkoudou,1995-02-13,Alec Kann,1990-08-08,Cameroon,United States,Damac,FC Cincinnati,0.0,False
+eafc_5850,tm_1002,Tiago Sá,1995-01-11,Alec Kann,1990-08-08,Portugal,United States,Sporting Braga,FC Cincinnati,0.0,False
+eafc_2355,tm_1006,S. Al Qumayzi,1991-10-30,Nick Hagglund,1992-09-14,Saudi Arabia,United States,Abha,FC Cincinnati,0.0,False
+eafc_4524,tm_1020,D. Kamada,1996-08-05,Yuya Kubo,1993-12-24,Japan,Japan,Lazio,FC Cincinnati,0.0,False
+eafc_5368,tm_1086,Dani Ojeda,1994-12-03,Chicharito,1988-06-01,Spain,Mexico,Burgos,Los Angeles Galaxy,0.0,False
+eafc_10536,tm_1001,T. Buchmann,2005-02-28,Evan Louro,1996-01-19,Germany,United States,FC Bayern München,FC Cincinnati,0.0,False
+eafc_4643,tm_1002,N. Robertha,1998-02-13,Alec Kann,1990-08-08,Curacao,United States,DC United,FC Cincinnati,0.0,False
+eafc_8210,tm_1001,N. Harriel,2001-04-23,Evan Louro,1996-01-19,United States,United States,Philadelphia Union,FC Cincinnati,0.0,False
+eafc_11459,tm_1002,Liu Shibo,1997-05-20,Alec Kann,1990-08-08,China PR,United States,Shandong Taishan,FC Cincinnati,0.0,False
+eafc_7098,tm_1002,K. Piątkowski,2000-06-21,Alec Kann,1990-08-08,Poland,United States,Salzburg,FC Cincinnati,0.0,False
+eafc_1970,tm_1069,J. Bryan,1993-09-17,Calegari,2002-02-27,England,Brazil,Millwall,,0.0,False
+eafc_11630,tm_1069,He Youzu,1998-10-26,Calegari,2002-02-27,China PR,Brazil,Cangzhou Mighty Lions,,0.0,False
+eafc_10443,tm_1087,David Castro,1995-10-09,Preston Judd,1999-05-28,Spain,United States,Racing Ferrol,Los Angeles Galaxy,0.0,False
+eafc_9379,tm_1007,R. Giovannini,2001-09-28,Ian Murphy,2000-01-16,Italy,United States,Modena,FC Cincinnati,0.0,False
+eafc_4771,tm_1002,K. Laifis,1993-05-19,Alec Kann,1990-08-08,Cyprus,United States,Standard Liège,FC Cincinnati,0.0,False
+eafc_9819,tm_1020,I. Nazih,2006-01-25,Yuya Kubo,1993-12-24,Morocco,Japan,FC Volendam,FC Cincinnati,0.0,False
+eafc_9439,tm_1001,S. Saftig,2002-02-05,Evan Louro,1996-01-19,Germany,United States,Elversberg,FC Cincinnati,0.0,False
+eafc_7697,tm_1008,K. Caliskaner,1999-11-03,Joey Akpunonu,2001-12-21,Germany,United States,Eintracht Braunschweig,FC Cincinnati,0.0,False
+eafc_2862,tm_1020,K. Baldé,1995-03-08,Yuya Kubo,1993-12-24,Senegal,Japan,Espanyol,FC Cincinnati,0.0,False
+eafc_5237,tm_1005,P. Cutrone,1998-01-03,Matt Miazga,1995-07-19,Italy,United States,Como,FC Cincinnati,0.0,False
+eafc_11415,tm_1196,Wang Jie,1989-01-14,Judson,1993-05-25,China PR,Brazil,Nantong Zhiyun,San Jose Earthquakes,0.0,False
+eafc_3742,tm_1001,J. Obrian,1995-05-18,Evan Louro,1996-01-19,Colombia,United States,Dallas,FC Cincinnati,0.0,False
+eafc_3585,tm_1001,B. Jovičić,1993-03-18,Evan Louro,1996-01-19,Serbia,United States,LASK Linz,FC Cincinnati,0.0,False
+eafc_8708,tm_1002,E. Utkus,2000-06-22,Alec Kann,1990-08-08,Lithuania,United States,Cercle Brugge,FC Cincinnati,0.0,False
+eafc_3107,tm_1007,J. Bednarek,1996-04-12,Ian Murphy,2000-01-16,Poland,United States,Southampton,FC Cincinnati,0.0,False
+eafc_6491,tm_1020,A. Reyes,1999-09-08,Yuya Kubo,1993-12-24,Colombia,Japan,New York RB,FC Cincinnati,0.0,False
+eafc_5775,tm_1002,M. Forss,1999-06-18,Alec Kann,1990-08-08,Finland,United States,Middlesbrough,FC Cincinnati,0.0,False
+eafc_11351,tm_1026,Cheng Changcheng,1991-03-27,Arquímides Ordóñez,2003-08-05,China PR,Guatemala,Changchun Yatai,FC Cincinnati,0.0,False
+eafc_9157,tm_1001,J. Fazzini,2003-03-16,Evan Louro,1996-01-19,Italy,United States,Empoli,FC Cincinnati,0.0,False
+eafc_8019,tm_1086,S. Sow,2002-07-04,Chicharito,1988-06-01,Guinea,Mexico,Strasbourg,Los Angeles Galaxy,0.0,False
+eafc_10309,tm_1001,H. Endeley,2001-10-09,Evan Louro,1996-01-19,United States,United States,Dallas,FC Cincinnati,0.0,False
+eafc_6478,tm_1001,H. Hassan,2002-02-08,Evan Louro,1996-01-19,France,United States,Sporting Gijón,FC Cincinnati,0.0,False
+eafc_3732,tm_1002,S. Rosted,1994-07-22,Alec Kann,1990-08-08,Norway,United States,Toronto,FC Cincinnati,0.0,False
+eafc_9336,tm_1003,N. Cambiaghi,2000-12-28,Paul Walters,2004-04-11,Italy,United States,Empoli,FC Cincinnati,0.0,False
+eafc_1673,tm_1001,G. Hanley,1991-11-20,Evan Louro,1996-01-19,Scotland,United States,Norwich City,FC Cincinnati,0.0,False
+eafc_6197,tm_1020,T. Bonga,1997-01-10,Yuya Kubo,1993-12-24,Germany,Japan,1860 München,FC Cincinnati,0.0,False
+eafc_7503,tm_1001,A. Uzodimma,1999-04-17,Evan Louro,1996-01-19,Nigeria,United States,Kayserispor,FC Cincinnati,0.0,False
+eafc_10362,tm_1067,C. Talbi,2005-05-09,Julián Aude,2003-03-24,Belgium,Argentina,Club Brugge,Los Angeles Galaxy,0.0,False
+eafc_10610,tm_1006,J. ter Horst,2002-06-19,Nick Hagglund,1992-09-14,Germany,United States,Preußen Münster,FC Cincinnati,0.0,False
+eafc_6118,tm_1020,J. David,2000-01-14,Yuya Kubo,1993-12-24,Canada,Japan,Lille,FC Cincinnati,0.0,False
+eafc_2413,tm_1032,Pacheco,1992-05-18,Nkosi Tafari,1997-03-23,Spain,United States,Espanyol,FC Dallas,0.0,False
+eafc_3927,tm_1003,L. Dickmann,1996-09-24,Paul Walters,2004-04-11,Italy,United States,Brescia,FC Cincinnati,0.0,False
+eafc_2512,tm_1020,A. Maxim,1990-07-08,Yuya Kubo,1993-12-24,Romania,Japan,Gaziantep F.K.,FC Cincinnati,0.0,False
+eafc_3664,tm_1009,A. Cistana,1997-04-01,London Aghedo,2000-05-31,Italy,United States,Brescia,FC Cincinnati,0.0,False
+eafc_10031,tm_1036,Álvaro,2004-07-14,Sam Junqua,1996-11-09,Uruguay,United States,Real Madrid,FC Dallas,0.0,False
+eafc_9274,tm_1002,I. Murphy,2000-01-16,Alec Kann,1990-08-08,United States,United States,Cincinnati,FC Cincinnati,0.0,False
+eafc_5315,tm_1007,L. Weinkauf,1996-07-07,Ian Murphy,2000-01-16,Germany,United States,Hannover 96,FC Cincinnati,0.0,False
+eafc_6111,tm_1006,K. Lewis-Potter,2001-02-22,Nick Hagglund,1992-09-14,England,United States,Brentford,FC Cincinnati,0.0,False
+eafc_3625,tm_1002,David Gil,1994-01-11,Alec Kann,1990-08-08,Spain,United States,Cádiz,FC Cincinnati,0.0,False
+eafc_3820,tm_1001,B. Henrichs,1997-02-23,Evan Louro,1996-01-19,Germany,United States,RB Leipzig,FC Cincinnati,0.0,False
+eafc_1532,tm_1001,O. Baumann,1990-06-02,Evan Louro,1996-01-19,Germany,United States,TSG Hoffenheim,FC Cincinnati,0.0,False
+eafc_7429,tm_1001,H. Kessler,1998-06-25,Evan Louro,1996-01-19,United States,United States,New England,FC Cincinnati,0.0,False
+eafc_4210,tm_1014,Luis Couprins,2000-02-29,Marco Angulo,2002-05-08,Brazil,Ecuador,Athletico Paranaense,FC Cincinnati,0.0,False
+eafc_2683,tm_1002,D. Selke,1995-01-20,Alec Kann,1990-08-08,Germany,United States,FC Köln,FC Cincinnati,0.0,False
+eafc_10407,tm_1060,S. Jarju,2004-10-28,Jalen Neal,2003-08-24,Gambia,United States,Heidenheim,Los Angeles Galaxy,0.0,False
+eafc_5067,tm_1069,D. Rigo,1998-12-11,Calegari,2002-02-27,Belgium,Brazil,Grenoble Foot 38,,0.0,False
+eafc_5504,tm_1001,M. Biankadi,1995-05-09,Evan Louro,1996-01-19,Germany,United States,DSC Arminia Bielefeld,FC Cincinnati,0.0,False
+eafc_3199,tm_1002,L. Acosta,1994-05-31,Alec Kann,1990-08-08,Argentina,United States,Cincinnati,FC Cincinnati,0.0,False
+eafc_10885,tm_1002,D. Castillo,2004-03-24,Alec Kann,1990-08-08,Ecuador,United States,Shakhtar Donetsk,FC Cincinnati,0.0,False
+eafc_2597,tm_1002,M. Thiel,1993-02-03,Alec Kann,1990-08-08,Germany,United States,Erzgebirge Aue,FC Cincinnati,0.0,False
+eafc_5700,tm_1002,M. Payero,1998-09-11,Alec Kann,1990-08-08,Argentina,United States,Udinese,FC Cincinnati,0.0,False
+eafc_3754,tm_1001,G. Giménez,1991-07-27,Evan Louro,1996-01-19,Paraguay,United States,Chicago Fire,FC Cincinnati,0.0,False
+eafc_6079,tm_1002,B. White,1996-02-03,Alec Kann,1990-08-08,United States,United States,Vancouver Whitecaps,FC Cincinnati,0.0,False
+eafc_4143,tm_1003,Andeson Trigo,1988-02-29,Paul Walters,2004-04-11,Brazil,United States,Fluminense,FC Cincinnati,0.0,False
+eafc_11254,tm_1039,Diego Campo,2001-11-16,Ema Twumasi,1997-05-18,Spain,Ghana,Racing Santander,FC Dallas,0.0,False
+eafc_3629,tm_1057,Pere Milla,1992-09-23,Jonathan Bond,1993-05-19,Spain,England,Espanyol,Los Angeles Galaxy,0.0,False
+eafc_1333,tm_1002,U. Eusepi,1989-01-09,Alec Kann,1990-08-08,Italy,United States,Lecco,FC Cincinnati,0.0,False
+eafc_7768,tm_1002,D. Peeters,1999-01-26,Alec Kann,1990-08-08,Belgium,United States,Südtirol,FC Cincinnati,0.0,False
+eafc_8017,tm_1027,Pablo Rodríguez,2001-08-04,Dominique Badji,1992-10-16,Spain,Senegal,Ascoli,FC Cincinnati,0.0,False
+eafc_10579,tm_1005,A. Tessiore,1999-10-01,Matt Miazga,1995-07-19,Italy,United States,Cittadella,FC Cincinnati,0.0,False
+eafc_4334,tm_1009,Fafà Picault,1991-02-23,London Aghedo,2000-05-31,Haiti,United States,Nashville SC,FC Cincinnati,0.0,False
+eafc_3483,tm_1069,R. Kent,1996-11-11,Calegari,2002-02-27,England,Brazil,Fenerbahçe,,0.0,False
+eafc_9824,tm_1020,H. Akman,2004-09-27,Yuya Kubo,1993-12-24,Turkey,Japan,Galatasaray,FC Cincinnati,0.0,False
+eafc_6117,tm_1009,A. Vukotić,1995-07-22,London Aghedo,2000-05-31,Serbia,United States,Wehen Wiesbaden,FC Cincinnati,0.0,False
+eafc_3036,tm_1001,D. Mangni,1993-03-29,Evan Louro,1996-01-19,Italy,United States,Lecco,FC Cincinnati,0.0,False
+eafc_1735,tm_1002,L. Caldirola,1991-02-01,Alec Kann,1990-08-08,Italy,United States,Monza,FC Cincinnati,0.0,False
+eafc_6529,tm_1005,Joaquín,1999-03-10,Matt Miazga,1995-07-19,Spain,United States,Huesca,FC Cincinnati,0.0,False
+eafc_5682,tm_1159,M. Kapı,2002-08-08,Brandon Bye,1995-11-29,Turkey,United States,Adana Demirspor,New England Revolution,0.0,False
+eafc_3009,tm_1002,S. Gigot,1993-10-12,Alec Kann,1990-08-08,France,United States,Olympique de Marseille,FC Cincinnati,0.0,False
+eafc_1487,tm_1002,R. Pereyra,1991-01-07,Alec Kann,1990-08-08,Argentina,United States,Udinese,FC Cincinnati,0.0,False
+eafc_7590,tm_1001,J. Chapman,2000-10-22,Evan Louro,1996-01-19,Australia,United States,Huddersfield Town,FC Cincinnati,0.0,False
+eafc_1562,tm_1005,A. Yarmolenko,1989-10-23,Matt Miazga,1995-07-19,Ukraine,United States,Dynamo Kyiv,FC Cincinnati,0.0,False
+eafc_2470,tm_1069,K. Hause,1995-07-16,Calegari,2002-02-27,England,Brazil,Aston Villa,,0.0,False
+eafc_2022,tm_1001,X. Mercier,1989-07-25,Evan Louro,1996-01-19,France,United States,RWDM,FC Cincinnati,0.0,False
+eafc_10491,tm_1159,M. Pala,2000-08-15,Brandon Bye,1995-11-29,Turkey,United States,Rizespor,New England Revolution,0.0,False
+eafc_7947,tm_1003,N. Innocenti,2002-02-19,Paul Walters,2004-04-11,Burkina Faso,United States,Valenciennes,FC Cincinnati,0.0,False
+eafc_11080,tm_1009,Jajá,2001-04-15,London Aghedo,2000-05-31,Brazil,United States,Casa Pia,FC Cincinnati,0.0,False
+eafc_7961,tm_1001,A. Pembélé,2000-07-04,Evan Louro,1996-01-19,France,United States,Paris,FC Cincinnati,0.0,False
+eafc_6696,tm_1001,T. Schmitt,1997-05-28,Evan Louro,1996-01-19,United States,United States,Houston Dynamo,FC Cincinnati,0.0,False
+eafc_8971,tm_1011,Luiz Henrique,2001-01-02,Alvas Powell,1994-07-18,Brazil,Jamaica,Real Betis,FC Cincinnati,0.0,False
+eafc_11194,tm_1001,I. Gelashvili,2001-04-08,Evan Louro,1996-01-19,Georgia,United States,Spezia,FC Cincinnati,0.0,False
+eafc_1008,tm_1013,A. Lonergan,1983-10-19,Bret Halsey,2000-06-01,England,United States,Everton,FC Cincinnati,0.0,False
+eafc_10728,tm_1066,Jackson Kenio,1999-04-24,Eriq Zavaleta,1992-08-02,Brazil,El Salvador,İstanbulspor,Los Angeles Galaxy,0.0,False
+eafc_7821,tm_1011,G. Infantino,2003-05-19,Alvas Powell,1994-07-18,Argentina,Jamaica,Fiorentina,FC Cincinnati,0.0,False
+eafc_3254,tm_1001,Paulo Azzi,1994-07-15,Evan Louro,1996-01-19,Brazil,United States,Cagliari,FC Cincinnati,0.0,False
+eafc_2941,tm_1005,Abner,1996-05-30,Matt Miazga,1995-07-19,Brazil,United States,RWDM,FC Cincinnati,0.0,False
+eafc_8213,tm_1018,Jeong Sang Bin,2002-04-01,Stiven Jimenez,2007-06-24,Korea Republic,United States,Minnesota United,FC Cincinnati,0.0,False
+eafc_11444,tm_1069,Xu Xin,1994-04-19,Calegari,2002-02-27,China PR,Brazil,Shanghai Port,,0.0,False
+eafc_10832,tm_1001,A. Brambilla,2001-06-16,Evan Louro,1996-01-19,Italy,United States,Cremonese,FC Cincinnati,0.0,False
+eafc_5075,tm_1005,D. Adeniran,1999-01-02,Matt Miazga,1995-07-19,England,United States,Portimonense,FC Cincinnati,0.0,False
+eafc_6885,tm_1000,Sergio Ruiz,1994-12-16,Roman Celentano,2000-09-14,Spain,United States,Granada,FC Cincinnati,0.0,False
+eafc_7017,tm_1023,A. Sayyadmanesh,2001-06-29,Brandon Vazquez,1998-10-14,Iran,United States,Hull City,FC Cincinnati,0.0,False
+eafc_5230,tm_1020,I. Konaté,1999-05-25,Yuya Kubo,1993-12-24,France,Japan,Liverpool,FC Cincinnati,0.0,False
+eafc_7386,tm_1001,J. Thielmann,2002-05-26,Evan Louro,1996-01-19,Germany,United States,FC Köln,FC Cincinnati,0.0,False
+eafc_4570,tm_1002,S. Muroya,1994-04-05,Alec Kann,1990-08-08,Japan,United States,Hannover 96,FC Cincinnati,0.0,False
+eafc_3907,tm_1002,P. Hercher,1996-03-21,Alec Kann,1990-08-08,Germany,United States,Kaiserslautern,FC Cincinnati,0.0,False
+eafc_6608,tm_1004,Í. Jóhannesson,2003-03-23,Yerson Mosquera,2001-05-02,Iceland,Colombia,Fortuna Düsseldorf,Wolverhampton Wanderers,0.0,False
+eafc_4547,tm_1024,J. Latibeaudiere,2000-01-06,Aaron Boupendza,1996-08-07,Jamaica,Gabon,Coventry City,FC Cincinnati,0.0,False
+eafc_9303,tm_1069,P. Judd,1999-05-28,Calegari,2002-02-27,United States,Brazil,LA Galaxy,,0.0,False
+eafc_10940,tm_1012,L. Maronnier,2000-03-09,Raymon Gaddis,1990-01-13,France,United States,Guingamp,FC Cincinnati,0.0,False
+eafc_3613,tm_1004,A. Maitland-Niles,1997-08-29,Yerson Mosquera,2001-05-02,England,Colombia,Olympique Lyonnais,Wolverhampton Wanderers,0.0,False
+eafc_1330,tm_1027,Nélson Oliveira,1991-08-08,Dominique Badji,1992-10-16,Portugal,Senegal,Konyaspor,FC Cincinnati,0.0,False
+eafc_9652,tm_1034,E. Tchato,2002-11-23,Amet Korca,2000-09-16,Cameroon,United States,Montpellier,FC Dallas,0.0,False
+eafc_9704,tm_1060,M. Farsi,1999-12-16,Jalen Neal,2003-08-24,Canada,United States,Columbus Crew,Los Angeles Galaxy,0.0,False
+eafc_1839,tm_1741,H. Van Der Bruggen,1993-04-01,Phillipp Steinhart,1992-07-07,Belgium,Germany,Cercle Brugge,TSV 1860 Munich,0.0,False
+eafc_11434,tm_1067,Zhang Wentao,1993-04-14,Julián Aude,2003-03-24,China PR,Argentina,Wuhan Three Towns,Los Angeles Galaxy,0.0,False
+eafc_1003,tm_1001,L. Butelle,1983-04-03,Evan Louro,1996-01-19,France,United States,Stade de Reims,FC Cincinnati,0.0,False
+eafc_1469,tm_1069,A. Luthe,1987-03-10,Calegari,2002-02-27,Germany,Brazil,Kaiserslautern,,0.0,False
+eafc_5771,tm_1002,R. Ibarra,1994-09-24,Alec Kann,1990-08-08,Ecuador,United States,Real Oviedo,FC Cincinnati,0.0,False
+eafc_2805,tm_1018,Héctor,1995-09-14,Stiven Jimenez,2007-06-24,Spain,United States,Chaves,FC Cincinnati,0.0,False
+eafc_11491,tm_1011,Lin Liangming,1997-06-04,Alvas Powell,1994-07-18,China PR,Jamaica,Dalian Professional,FC Cincinnati,0.0,False
+eafc_5024,tm_1009,N. Mazraoui,1997-11-14,London Aghedo,2000-05-31,Morocco,United States,FC Bayern München,FC Cincinnati,0.0,False
+eafc_6740,tm_1002,K. N'Dri,2000-10-27,Alec Kann,1990-08-08,Côte d'Ivoire,United States,OH Leuven,FC Cincinnati,0.0,False
+eafc_8058,tm_1002,F. Rieder,2002-02-16,Alec Kann,1990-08-08,Switzerland,United States,Rennes,FC Cincinnati,0.0,False
+eafc_1063,tm_1011,E. Viviano,1985-12-01,Alvas Powell,1994-07-18,Italy,Jamaica,Ascoli,FC Cincinnati,0.0,False
+eafc_5824,tm_1005,P. Schuurs,1999-11-26,Matt Miazga,1995-07-19,Netherlands,United States,Torino,FC Cincinnati,0.0,False
+eafc_8605,tm_1006,Z. Farnsworth,2002-07-13,Nick Hagglund,1992-09-14,United States,United States,Real Salt Lake,FC Cincinnati,0.0,False
+eafc_6479,tm_1002,Rober,2001-01-06,Alec Kann,1990-08-08,Spain,United States,NEC,FC Cincinnati,0.0,False
+eafc_1483,tm_1002,R. Nouri,1985-06-07,Alec Kann,1990-08-08,France,United States,Ajaccio,FC Cincinnati,0.0,False
+eafc_3576,tm_1001,H. Kuruçay,1997-08-31,Evan Louro,1996-01-19,Turkey,United States,Eintracht Braunschweig,FC Cincinnati,0.0,False
+eafc_8514,tm_1009,K. Karataş,2003-01-16,London Aghedo,2000-05-31,Turkey,United States,Galatasaray,FC Cincinnati,0.0,False
+eafc_5509,tm_1002,S. Żurkowski,1997-09-25,Alec Kann,1990-08-08,Poland,United States,Spezia,FC Cincinnati,0.0,False
+eafc_1416,tm_1069,L. Sepe,1991-05-08,Calegari,2002-02-27,Italy,Brazil,Lazio,,0.0,False
+eafc_2608,tm_1009,A. Al Jadaani,1991-10-06,London Aghedo,2000-05-31,Saudi Arabia,United States,Al Ittihad,FC Cincinnati,0.0,False
+eafc_9158,tm_1002,C. Wiley,2004-12-22,Alec Kann,1990-08-08,United States,United States,Atlanta United,FC Cincinnati,0.0,False
+eafc_2740,tm_1020,C. Irwin,1989-04-01,Yuya Kubo,1993-12-24,United States,Japan,Minnesota United,FC Cincinnati,0.0,False
+eafc_5372,tm_1009,S. Al Khaibari,1989-09-18,London Aghedo,2000-05-31,Saudi Arabia,United States,Al Fayha,FC Cincinnati,0.0,False
+eafc_3816,tm_1006,A. Rinomhota,1997-04-21,Nick Hagglund,1992-09-14,England,United States,Cardiff City,FC Cincinnati,0.0,False
+eafc_10269,tm_1002,S. Fusire,2005-05-31,Alec Kann,1990-08-08,England,United States,Sheffield Wednesday,FC Cincinnati,0.0,False
+eafc_3588,tm_1069,M. Frey,1996-03-24,Calegari,2002-02-27,Germany,Brazil,1860 München,,0.0,False
+eafc_3245,tm_1005,E. Hansson,1998-06-15,Matt Miazga,1995-07-19,Sweden,United States,Heracles Almelo,FC Cincinnati,0.0,False
+eafc_6860,tm_1028,A. Trubin,2001-08-01,Maarten Paes,1998-05-14,Ukraine,Netherlands,Benfica,FC Dallas,0.0,False
+eafc_6215,tm_1009,F. El Khoumisti,1993-06-01,London Aghedo,2000-05-31,France,United States,Concarneau,FC Cincinnati,0.0,False
+eafc_6825,tm_1011,B. Cabango,2000-05-30,Alvas Powell,1994-07-18,Wales,Jamaica,Swansea City,FC Cincinnati,0.0,False
+eafc_11636,tm_1001,Li Yongjia,2001-07-24,Evan Louro,1996-01-19,China PR,United States,Meizhou Hakka,FC Cincinnati,0.0,False
+eafc_9414,tm_1003,M. Eerdhuijzen,2000-07-13,Paul Walters,2004-04-11,Netherlands,United States,Sparta Rotterdam,FC Cincinnati,0.0,False
+eafc_5084,tm_1028,S. Lukić,1996-08-13,Maarten Paes,1998-05-14,Serbia,Netherlands,Fulham,FC Dallas,0.0,False
+eafc_6340,tm_1020,J. David,2000-03-08,Yuya Kubo,1993-12-24,Germany,Japan,Hansa Rostock,FC Cincinnati,0.0,False
+eafc_7277,tm_1017,A. Szalai,1998-01-20,Malik Pinto,2002-08-09,Hungary,United States,TSG Hoffenheim,FC Cincinnati,0.0,False
+eafc_8450,tm_1007,Ekain,1994-04-29,Ian Murphy,2000-01-16,Spain,United States,Racing Santander,FC Cincinnati,0.0,False
+eafc_10095,tm_1007,João Neves,2004-09-27,Ian Murphy,2000-01-16,Portugal,United States,Benfica,FC Cincinnati,0.0,False
+eafc_9639,tm_1612,F. Di Michele Sanchez,2003-03-14,Adalberto Carrasquilla,1998-11-28,Germany,Panama,Saarbrücken,Houston Dynamo FC,0.0,False
+eafc_2536,tm_1001,D. Cataldi,1994-08-06,Evan Louro,1996-01-19,Italy,United States,Lazio,FC Cincinnati,0.0,False
+eafc_6982,tm_1002,T. Thomas,2002-01-12,Alec Kann,1990-08-08,France,United States,Laval,FC Cincinnati,0.0,False
+eafc_10842,tm_1074,Joan Puig,2002-11-16,Uri Rosell,1992-07-07,Spain,Spain,Espanyol,Los Angeles Galaxy,0.0,False
+eafc_4460,tm_1001,A. Tarbell,1993-10-07,Evan Louro,1996-01-19,United States,United States,Houston Dynamo,FC Cincinnati,0.0,False
+eafc_10939,tm_1003,Z. Bengueddoudj,2000-02-21,Paul Walters,2004-04-11,France,United States,Annecy,FC Cincinnati,0.0,False
+eafc_7343,tm_1008,Migue Leal,1997-02-01,Joey Akpunonu,2001-12-21,Spain,United States,FC Andorra,FC Cincinnati,0.0,False
+eafc_2807,tm_1003,S. Schonlau,1994-08-05,Paul Walters,2004-04-11,Germany,United States,Hamburger SV,FC Cincinnati,0.0,False
+eafc_7018,tm_1163,J. Mary,1993-03-09,Maciel,2000-01-18,Cameroon,Brazil,Rizespor,New England Revolution,0.0,False
+eafc_8420,tm_1027,Carlos Domínguez,2001-02-11,Dominique Badji,1992-10-16,Spain,Senegal,Celta de Vigo,FC Cincinnati,0.0,False
+eafc_8528,tm_1002,K. Ezekwem,2001-06-19,Alec Kann,1990-08-08,Germany,United States,Paderborn,FC Cincinnati,0.0,False
+eafc_2369,tm_1000,P. Vlachodimos,1991-10-12,Roman Celentano,2000-09-14,Greece,United States,Dynamo Dresden,FC Cincinnati,0.0,False
+eafc_2434,tm_1002,T. Pledl,1994-05-23,Alec Kann,1990-08-08,Germany,United States,MSV Duisburg,FC Cincinnati,0.0,False
+eafc_6573,tm_1020,A. Hložek,2002-07-25,Yuya Kubo,1993-12-24,Czech Republic,Japan,Bayer 04 Leverkusen,FC Cincinnati,0.0,False
+eafc_1031,tm_1001,M. Bradley,1987-07-31,Evan Louro,1996-01-19,United States,United States,Toronto,FC Cincinnati,0.0,False
+eafc_10709,tm_1002,G. Nesta,2000-03-01,Alec Kann,1990-08-08,Italy,United States,Lecco,FC Cincinnati,0.0,False
+eafc_11023,tm_1075,B. Mbaye,2004-01-12,Riqui Puig,1999-08-13,Senegal,Spain,Bastia,Los Angeles Galaxy,0.0,False
+eafc_7837,tm_1002,M. Cissé,2002-10-17,Alec Kann,1990-08-08,Guinea,United States,VfB Stuttgart,FC Cincinnati,0.0,False
+eafc_5902,tm_1002,M. Miller,1995-12-02,Alec Kann,1990-08-08,England,United States,Plymouth Argyle,FC Cincinnati,0.0,False
+eafc_4043,tm_1003,Botelhinonsa,2000-02-29,Paul Walters,2004-04-11,Brazil,United States,Athletico Paranaense,FC Cincinnati,0.0,False
+eafc_2107,tm_1034,Djaniny,1991-03-21,Amet Korca,2000-09-16,Cape Verde Islands,United States,Al Fateh,FC Dallas,0.0,False
+eafc_2498,tm_1067,F. Al Johani,1991-10-26,Julián Aude,2003-03-24,Saudi Arabia,Argentina,Damac,Los Angeles Galaxy,0.0,False
+eafc_3122,tm_1001,A. Fulignati,1994-10-31,Evan Louro,1996-01-19,Italy,United States,Catanzaro,FC Cincinnati,0.0,False
+eafc_10881,tm_1006,Pedrinho,2002-07-11,Nick Hagglund,1992-09-14,Brazil,United States,Shakhtar Donetsk,FC Cincinnati,0.0,False
+eafc_1373,tm_1020,De Marcos,1989-04-14,Yuya Kubo,1993-12-24,Spain,Japan,Athletic Club,FC Cincinnati,0.0,False
+eafc_4457,tm_1067,Tony Alfaro,1993-06-15,Julián Aude,2003-03-24,Mexico,Argentina,LA Galaxy,Los Angeles Galaxy,0.0,False
+eafc_10621,tm_1060,Y. Barry,2002-11-25,Jalen Neal,2003-08-24,France,United States,Annecy,Los Angeles Galaxy,0.0,False
+eafc_8716,tm_1028,A. Al Dakhil,2002-03-06,Maarten Paes,1998-05-14,Belgium,Netherlands,Burnley,FC Dallas,0.0,False
+eafc_2758,tm_1002,J. Rothwell,1995-01-11,Alec Kann,1990-08-08,England,United States,AFC Bournemouth,FC Cincinnati,0.0,False
+eafc_5271,tm_1020,E. Löwen,1997-01-28,Yuya Kubo,1993-12-24,Germany,Japan,Saint Louis City,FC Cincinnati,0.0,False
+eafc_5393,tm_1067,A. Koita,1998-09-20,Julián Aude,2003-03-24,Belgium,Argentina,Sint-Truiden,Los Angeles Galaxy,0.0,False
+eafc_5185,tm_1002,E. Louro,1996-01-19,Alec Kann,1990-08-08,United States,United States,Cincinnati,FC Cincinnati,0.0,False
+eafc_5394,tm_1010,H. Al Qahtani,1994-12-20,Santiago Arias,1992-01-13,Saudi Arabia,Colombia,Al Shabab,FC Cincinnati,0.0,False
+eafc_2393,tm_1002,M. Modolo,1989-03-23,Alec Kann,1990-08-08,Italy,United States,Venezia,FC Cincinnati,0.0,False
+eafc_9362,tm_1119,Rodrigo Ribeiro,2005-04-28,Mason Stajduhar,1997-12-02,Portugal,United States,Sporting CP,Orlando City SC,0.0,False
+eafc_2562,tm_1010,A. Ben Mohamed,1994-12-08,Santiago Arias,1992-01-13,Tunisia,Colombia,Guingamp,FC Cincinnati,0.0,False
+eafc_1710,tm_1001,J. Cuffaut,1988-03-15,Evan Louro,1996-01-19,France,United States,Valenciennes,FC Cincinnati,0.0,False
+eafc_9535,tm_1001,D. Huseinbašić,2001-07-03,Evan Louro,1996-01-19,Germany,United States,FC Köln,FC Cincinnati,0.0,False
+eafc_6006,tm_1001,S. Duke-McKenna,2000-08-17,Evan Louro,1996-01-19,Guyana,United States,Queens Park Rangers,FC Cincinnati,0.0,False
+eafc_11519,tm_1013,Xu Yougang,1996-02-09,Bret Halsey,2000-06-01,China PR,United States,Shanghai Shenhua,FC Cincinnati,0.0,False
+eafc_1577,tm_1005,Willian José,1991-11-23,Matt Miazga,1995-07-19,Brazil,United States,Real Betis,FC Cincinnati,0.0,False
+eafc_3128,tm_1003,L. Hernández,1996-02-14,Paul Walters,2004-04-11,France,United States,Paris Saint Germain,FC Cincinnati,0.0,False
+eafc_6850,tm_1087,M. Diaby,1996-09-03,Preston Judd,1999-05-28,France,United States,Sheffield Wednesday,Los Angeles Galaxy,0.0,False
+eafc_2501,tm_1020,A. Ateef,1992-08-03,Yuya Kubo,1993-12-24,Saudi Arabia,Japan,Al Ahli Jeddah,FC Cincinnati,0.0,False
+eafc_4305,tm_1001,A. Hazazi,1994-02-18,Evan Louro,1996-01-19,Saudi Arabia,United States,Al Ettifaq,FC Cincinnati,0.0,False
+eafc_6739,tm_1006,J. Branthwaite,2002-06-27,Nick Hagglund,1992-09-14,England,United States,Everton,FC Cincinnati,0.0,False
+eafc_8879,tm_1057,K. Mizuta,2000-04-08,Jonathan Bond,1993-05-19,Japan,England,DSC Arminia Bielefeld,Los Angeles Galaxy,0.0,False
+eafc_2915,tm_1007,M. Politano,1993-08-03,Ian Murphy,2000-01-16,Italy,United States,Napoli,FC Cincinnati,0.0,False
+eafc_5191,tm_1012,M. Tavernier,1999-03-22,Raymon Gaddis,1990-01-13,England,United States,AFC Bournemouth,FC Cincinnati,0.0,False
+eafc_6729,tm_1005,C. Zady Sery,1999-12-20,Matt Miazga,1995-07-19,Côte d'Ivoire,United States,Caen,FC Cincinnati,0.0,False
+eafc_4231,tm_1023,Fábio Melitinho,1996-02-29,Brandon Vazquez,1998-10-14,Brazil,United States,Fluminense,FC Cincinnati,0.0,False
+eafc_1029,tm_1006,Sergio Ramos,1986-03-30,Nick Hagglund,1992-09-14,Spain,United States,Sevilla,FC Cincinnati,0.0,False
+eafc_1708,tm_1020,G. Xhaka,1992-09-27,Yuya Kubo,1993-12-24,Switzerland,Japan,Bayer 04 Leverkusen,FC Cincinnati,0.0,False
+eafc_2783,tm_1020,S. Azmoun,1995-01-01,Yuya Kubo,1993-12-24,Iran,Japan,Roma,FC Cincinnati,0.0,False
+eafc_4885,tm_1028,C. Kipré,1996-12-09,Maarten Paes,1998-05-14,Côte d'Ivoire,Netherlands,West Bromwich Albion,FC Dallas,0.0,False
+eafc_5464,tm_1009,D. McNamara,1998-12-27,London Aghedo,2000-05-31,Republic of Ireland,United States,Millwall,FC Cincinnati,0.0,False
+eafc_1000,tm_1083,Rúben Fernandes,1986-05-06,Douglas Costa,1990-09-14,Portugal,Brazil,Gil Vicente,Los Angeles Galaxy,0.0,False
+eafc_10069,tm_1001,B. Cremaschi,2005-03-02,Evan Louro,1996-01-19,United States,United States,Inter Miami,FC Cincinnati,0.0,False
+eafc_1101,tm_1001,C. Ansaldi,1986-09-20,Evan Louro,1996-01-19,Argentina,United States,Parma,FC Cincinnati,0.0,False
+eafc_2087,tm_1109,Ruiz de Galarreta,1993-08-06,Sebastián Driussi,1996-02-09,Spain,Argentina,Athletic Club,Austin FC,0.0,False
+eafc_11687,tm_1070,Wang Jianming,1993-07-04,Kelvin Leerdam,1990-06-24,Chinese Taipei,Suriname,Qingdao Hainiu,Los Angeles Galaxy,0.0,False
+eafc_10249,tm_1006,Carlos Álvarez,2003-08-06,Nick Hagglund,1992-09-14,Spain,United States,Levante,FC Cincinnati,0.0,False
+eafc_8110,tm_1011,E. Ferguson,2004-10-19,Alvas Powell,1994-07-18,Republic of Ireland,Jamaica,Brighton & Hove Albion,FC Cincinnati,0.0,False
+eafc_3498,tm_1013,V. Milinković-Savić,1997-02-20,Bret Halsey,2000-06-01,Serbia,United States,Torino,FC Cincinnati,0.0,False
+eafc_3769,tm_1159,M. Sarr,1997-01-05,Brandon Bye,1995-11-29,Senegal,United States,Cremonese,New England Revolution,0.0,False
+eafc_9290,tm_1001,D. Kubatta,2003-10-29,Evan Louro,1996-01-19,Germany,United States,Viktoria Köln,FC Cincinnati,0.0,False
+eafc_9514,tm_1001,M. Serbest,2004-11-23,Evan Louro,1996-01-19,Turkey,United States,İstanbulspor,FC Cincinnati,0.0,False
+eafc_1095,tm_1020,A. Bonnet,1986-10-17,Yuya Kubo,1993-12-24,France,Japan,Quevilly Rouen,FC Cincinnati,0.0,False
+eafc_1952,tm_1002,D. Foulquier,1993-03-23,Alec Kann,1990-08-08,France,United States,Valencia,FC Cincinnati,0.0,False
+eafc_7393,tm_1001,S. Mijnans,2000-03-09,Evan Louro,1996-01-19,Netherlands,United States,AZ Alkmaar,FC Cincinnati,0.0,False
+eafc_7605,tm_1069,D. Luna,2003-05-07,Calegari,2002-02-27,Colombia,Brazil,Mallorca,,0.0,False
+eafc_5398,tm_1003,S. Çiftpınar,1993-01-01,Paul Walters,2004-04-11,Turkey,United States,Kasımpaşa,FC Cincinnati,0.0,False
+eafc_1035,tm_1020,S. Carson,1985-09-03,Yuya Kubo,1993-12-24,England,Japan,Manchester City,FC Cincinnati,0.0,False
+eafc_6333,tm_1069,P. Musa,1998-03-04,Calegari,2002-02-27,Croatia,Brazil,Benfica,,0.0,False
+eafc_9976,tm_1001,R. Smajić,2004-05-02,Evan Louro,1996-01-19,Bosnia and Herzegovina,United States,FC Köln,FC Cincinnati,0.0,False
+eafc_2277,tm_1009,H. Çalhanoğlu,1994-02-08,London Aghedo,2000-05-31,Turkey,United States,Inter,FC Cincinnati,0.0,False
+eafc_4848,tm_1002,N. Siega,1991-02-25,Alec Kann,1990-08-08,Italy,United States,Südtirol,FC Cincinnati,0.0,False
+eafc_8246,tm_1001,H. Al Ali,2002-02-10,Evan Louro,1996-01-19,Saudi Arabia,United States,Abha,FC Cincinnati,0.0,False
+eafc_11520,tm_1162,Yan Zhiyu,1993-02-08,Noel Buck,2005-04-05,China PR,England,Changchun Yatai,New England Revolution,0.0,False
+eafc_8475,tm_1057,Miguel Crespo,1996-09-11,Jonathan Bond,1993-05-19,Portugal,England,Fenerbahçe,Los Angeles Galaxy,0.0,False
+eafc_5127,tm_1010,Cris Salvador,1994-11-20,Santiago Arias,1992-01-13,Spain,Colombia,Elche,FC Cincinnati,0.0,False
+eafc_2516,tm_1001,P. Dybala,1993-11-15,Evan Louro,1996-01-19,Argentina,United States,Roma,FC Cincinnati,0.0,False
+eafc_11312,tm_1007,J. Locadia,1993-11-07,Ian Murphy,2000-01-16,Curacao,United States,Cangzhou Mighty Lions,FC Cincinnati,0.0,False
+eafc_1576,tm_1020,D. Lovren,1989-07-05,Yuya Kubo,1993-12-24,Croatia,Japan,Olympique Lyonnais,FC Cincinnati,0.0,False
+eafc_1019,tm_1002,M. Demir,1992-01-10,Alec Kann,1990-08-08,Turkey,United States,Konyaspor,FC Cincinnati,0.0,False
+eafc_7062,tm_1060,W. Taïbi,2002-03-07,Jalen Neal,2003-08-24,France,United States,Rodez,Los Angeles Galaxy,0.0,False
+eafc_5275,tm_1000,Guridi,1995-02-28,Roman Celentano,2000-09-14,Spain,United States,Deportivo Alavés,FC Cincinnati,0.0,False
+eafc_2786,tm_1002,F. Forte,1993-05-01,Alec Kann,1990-08-08,Italy,United States,Cosenza,FC Cincinnati,0.0,False
+eafc_3818,tm_1002,E. Ávila,1994-02-06,Alec Kann,1990-08-08,Argentina,United States,Osasuna,FC Cincinnati,0.0,False
+eafc_7094,tm_1001,D. Meddah,2002-10-06,Evan Louro,1996-01-19,France,United States,Caen,FC Cincinnati,0.0,False
+eafc_6651,tm_1002,F. Drinkuth,1994-10-20,Alec Kann,1990-08-08,Germany,United States,VfB Lübeck,FC Cincinnati,0.0,False
+eafc_9405,tm_1002,M. Anchor,2004-07-21,Alec Kann,1990-08-08,Canada,United States,Vancouver Whitecaps,FC Cincinnati,0.0,False
+eafc_10843,tm_1002,B. Winter,2004-05-16,Alec Kann,1990-08-08,Germany,United States,St. Pauli,FC Cincinnati,0.0,False
+eafc_8612,tm_1001,L. Breunig,2003-11-14,Evan Louro,1996-01-19,Germany,United States,Jahn Regensburg,FC Cincinnati,0.0,False
+eafc_4037,tm_1039,Diego Essler,2000-02-29,Ema Twumasi,1997-05-18,Brazil,Ghana,Atlético Mineiro,FC Dallas,0.0,False
+eafc_1360,tm_1003,M. Vejinović,1990-02-03,Paul Walters,2004-04-11,Netherlands,United States,Heracles Almelo,FC Cincinnati,0.0,False
+eafc_5730,tm_1075,Fran Manzanara,1996-09-12,Riqui Puig,1999-08-13,Spain,Spain,Racing Ferrol,Los Angeles Galaxy,0.0,False
+eafc_3574,tm_1002,K. Palmer,1996-11-09,Alec Kann,1990-08-08,Jamaica,United States,Coventry City,FC Cincinnati,0.0,False
+eafc_7205,tm_1006,K. Al Blooshi,1999-03-22,Nick Hagglund,1992-09-14,United Arab Emirates,United States,Al Ain,FC Cincinnati,0.0,False
+eafc_4746,tm_1001,B. Dibassy,1989-08-11,Evan Louro,1996-01-19,Mali,United States,Minnesota United,FC Cincinnati,0.0,False
+eafc_11677,tm_1002,Lu Wentao,2002-01-12,Alec Kann,1990-08-08,China PR,United States,Shenzhen,FC Cincinnati,0.0,False
+eafc_8700,tm_1004,T. Gemicibaşı,1996-04-23,Yerson Mosquera,2001-05-02,Turkey,Colombia,Austria Klagenfurt,Wolverhampton Wanderers,0.0,False
+eafc_11340,tm_1029,Shao Puliang,1989-07-06,Jimmy Maurer,1988-10-14,China PR,United States,Cangzhou Mighty Lions,FC Dallas,0.0,False
+eafc_1914,tm_1001,J. Ruffels,1993-10-23,Evan Louro,1996-01-19,England,United States,Huddersfield Town,FC Cincinnati,0.0,False
+eafc_6831,tm_1001,A. Tchaptchet,2001-12-21,Evan Louro,1996-01-19,France,United States,Grenoble Foot 38,FC Cincinnati,0.0,False
+eafc_3412,tm_1069,S. Ojo,1997-06-19,Calegari,2002-02-27,England,Brazil,Kortrijk,,0.0,False
+eafc_5695,tm_1053,Fabio González,1997-02-12,Bernard Kamungo,2002-01-01,Spain,Tanzania,Las Palmas,FC Dallas,0.0,False
+eafc_10255,tm_1020,C. Rindov,2001-10-08,Yuya Kubo,1993-12-24,United States,Japan,Sporting Kansas City,FC Cincinnati,0.0,False
+eafc_2076,tm_1008,Carvajal,1992-01-11,Joey Akpunonu,2001-12-21,Spain,United States,Real Madrid,FC Cincinnati,0.0,False
+eafc_9153,tm_1001,İ. Çokçalış,2000-06-21,Evan Louro,1996-01-19,Turkey,United States,Adana Demirspor,FC Cincinnati,0.0,False
+eafc_6277,tm_1020,C. Vidal,2000-06-18,Yuya Kubo,1993-12-24,France,Japan,Ajaccio,FC Cincinnati,0.0,False
+eafc_8819,tm_1075,Alan Godoy,2003-05-04,Riqui Puig,1999-08-13,Spain,Spain,Mirandés,Los Angeles Galaxy,0.0,False
+eafc_7215,tm_1006,Bruno Duarte,1996-03-24,Nick Hagglund,1992-09-14,Brazil,United States,Farense,FC Cincinnati,0.0,False
+eafc_5924,tm_1001,L. Cacace,2000-09-27,Evan Louro,1996-01-19,New Zealand,United States,Empoli,FC Cincinnati,0.0,False
+eafc_10938,tm_1060,M. Mahop,2000-03-14,Jalen Neal,2003-08-24,Cameroon,United States,Annecy,Los Angeles Galaxy,0.0,False
+eafc_8828,tm_1001,D. Williams,2003-09-13,Evan Louro,1996-01-19,England,United States,Chelsea,FC Cincinnati,0.0,False
+eafc_11282,tm_1069,Yu Dabao,1988-04-18,Calegari,2002-02-27,China PR,Brazil,Beijing Guoan,,0.0,False
+eafc_11658,tm_1034,Lai Jinfeng,1997-12-31,Amet Korca,2000-09-16,China PR,United States,Zhejiang,FC Dallas,0.0,False
+eafc_7693,tm_1008,Fabiano Souza,2000-03-14,Joey Akpunonu,2001-12-21,Brazil,United States,Moreirense,FC Cincinnati,0.0,False
+eafc_8089,tm_1005,C. Lannert,1998-06-08,Matt Miazga,1995-07-19,Germany,United States,DSC Arminia Bielefeld,FC Cincinnati,0.0,False
+eafc_1500,tm_1001,N. Etheridge,1990-02-07,Evan Louro,1996-01-19,Philippines,United States,Birmingham City,FC Cincinnati,0.0,False
+eafc_7794,tm_1011,G. Manzari,2000-09-21,Alvas Powell,1994-07-18,Italy,Jamaica,Ascoli,FC Cincinnati,0.0,False
+eafc_7255,tm_1002,F. Tsadjout,1999-07-28,Alec Kann,1990-08-08,Italy,United States,Cremonese,FC Cincinnati,0.0,False
+eafc_5511,tm_1001,J. Klinsmann,1997-04-08,Evan Louro,1996-01-19,United States,United States,LA Galaxy,FC Cincinnati,0.0,False
+eafc_8402,tm_1006,Metinho,2003-04-23,Nick Hagglund,1992-09-14,Brazil,United States,Sparta Rotterdam,FC Cincinnati,0.0,False
+eafc_5864,tm_1007,M. Facklam,1996-08-22,Ian Murphy,2000-01-16,Germany,United States,VfB Lübeck,FC Cincinnati,0.0,False
+eafc_3098,tm_1020,E. Gyasi,1994-01-11,Yuya Kubo,1993-12-24,Ghana,Japan,Empoli,FC Cincinnati,0.0,False
+eafc_9871,tm_1007,M. De Lima,2004-04-19,Ian Murphy,2000-01-16,France,United States,Bordeaux,FC Cincinnati,0.0,False
+eafc_1713,tm_1032,Ilie Sánchez,1990-11-21,Nkosi Tafari,1997-03-23,Spain,United States,Los Angeles FC,FC Dallas,0.0,False
+eafc_6610,tm_1001,T. Watanabe,1997-02-05,Evan Louro,1996-01-19,Japan,United States,Gent,FC Cincinnati,0.0,False
+eafc_7125,tm_1097,Daniel Bragança,1999-05-27,Adam Lundqvist,1994-03-20,Portugal,Sweden,Sporting CP,Austin FC,0.0,False
+eafc_10102,tm_1069,R. Květ,1997-12-17,Calegari,2002-02-27,Czech Republic,Brazil,Sivasspor,,0.0,False
+eafc_2090,tm_1006,Denis Suárez,1994-01-06,Nick Hagglund,1992-09-14,Spain,United States,Villarreal,FC Cincinnati,0.0,False
+eafc_7984,tm_1002,H. Roberts,2002-05-10,Alec Kann,1990-08-08,England,United States,Bristol City,FC Cincinnati,0.0,False
+eafc_3858,tm_1020,A. Green,1998-07-26,Yuya Kubo,1993-12-24,England,Japan,Rotherham United,FC Cincinnati,0.0,False
+eafc_1850,tm_1002,T. Geyer,1991-03-06,Alec Kann,1990-08-08,Germany,United States,Ulm,FC Cincinnati,0.0,False
+eafc_10884,tm_1060,P. Sakho,1996-12-21,Jalen Neal,2003-08-24,Senegal,United States,Quevilly Rouen,Los Angeles Galaxy,0.0,False
+eafc_8414,tm_1069,B. Ezeh,2001-06-23,Calegari,2002-02-27,Germany,Brazil,Hannover 96,,0.0,False
+eafc_5747,tm_1013,O. Moruțan,1999-04-25,Bret Halsey,2000-06-01,Romania,United States,Ankaragücü,FC Cincinnati,0.0,False
+eafc_1958,tm_1007,B. Assombalonga,1992-12-06,Ian Murphy,2000-01-16,Congo DR,United States,Antalyaspor,FC Cincinnati,0.0,False
+eafc_10147,tm_1007,B. Bilongo,2001-09-15,Ian Murphy,2000-01-16,England,United States,Middlesbrough,FC Cincinnati,0.0,False
+eafc_9590,tm_1002,F. Abiuso,2003-02-02,Alec Kann,1990-08-08,Italy,United States,Modena,FC Cincinnati,0.0,False
+eafc_8365,tm_1002,Y. Cassubie,2000-10-18,Alec Kann,1990-08-08,France,United States,Bordeaux,FC Cincinnati,0.0,False
+eafc_11315,tm_1036,Chow Tim,1994-01-18,Sam Junqua,1996-11-09,Chinese Taipei,United States,Chengdu Rongcheng,FC Dallas,0.0,False
+eafc_9288,tm_1001,O. Fobassam,2003-04-06,Evan Louro,1996-01-19,Germany,United States,SpVgg Greuther Fürth,FC Cincinnati,0.0,False
+eafc_1510,tm_1007,A. Lacazette,1991-05-28,Ian Murphy,2000-01-16,France,United States,Olympique Lyonnais,FC Cincinnati,0.0,False
+eafc_6712,tm_1012,Altube,2000-02-22,Raymon Gaddis,1990-01-13,Spain,United States,Albacete,FC Cincinnati,0.0,False
+eafc_7639,tm_1110,Fali Candé,1998-01-24,CJ Fodrey,2004-02-10,Guinea Bissau,United States,Metz,Austin FC,0.0,False
+eafc_6411,tm_1067,M. Talbi,1998-05-26,Julián Aude,2003-03-24,Tunisia,Argentina,Lorient,Los Angeles Galaxy,0.0,False
+eafc_1932,tm_1002,E. Özbir,1989-10-25,Alec Kann,1990-08-08,Turkey,United States,Adana Demirspor,FC Cincinnati,0.0,False
+eafc_4958,tm_1005,A. Dadakdeniz,1999-08-05,Matt Miazga,1995-07-19,Turkey,United States,Antalyaspor,FC Cincinnati,0.0,False
+eafc_11059,tm_1028,R. Kolli,2005-02-10,Maarten Paes,1998-05-14,Algeria,Netherlands,Queens Park Rangers,FC Dallas,0.0,False
+eafc_5448,tm_1003,Z. Flemming,1998-08-01,Paul Walters,2004-04-11,Netherlands,United States,Millwall,FC Cincinnati,0.0,False
+eafc_3960,tm_1001,J. Duverne,1997-07-12,Evan Louro,1996-01-19,France,United States,Nantes,FC Cincinnati,0.0,False
+eafc_4312,tm_1002,G. Cimirot,1992-12-19,Alec Kann,1990-08-08,Bosnia and Herzegovina,United States,Al Fayha,FC Cincinnati,0.0,False
+eafc_5192,tm_1002,P. Sontheimer,1998-07-03,Alec Kann,1990-08-08,Germany,United States,Saarbrücken,FC Cincinnati,0.0,False
+eafc_11529,tm_1080,Li Shuai,1995-06-18,Tyler Boyd,1994-12-30,China PR,United States,Shanghai Port,Los Angeles Galaxy,0.0,False
+eafc_3119,tm_1005,J. Maddison,1996-11-23,Matt Miazga,1995-07-19,England,United States,Tottenham Hotspur,FC Cincinnati,0.0,False
+eafc_3221,tm_1028,J. Fulton,1994-04-01,Maarten Paes,1998-05-14,Scotland,Netherlands,Swansea City,FC Dallas,0.0,False
+eafc_6121,tm_1005,A. Bayındır,1998-04-14,Matt Miazga,1995-07-19,Turkey,United States,Manchester United,FC Cincinnati,0.0,False
+eafc_9498,tm_1002,E. Tintiş,2004-01-12,Alec Kann,1990-08-08,Turkey,United States,Fatih Karagümrük,FC Cincinnati,0.0,False
+eafc_11132,tm_1006,Rubén de Gea,2000-04-04,Nick Hagglund,1992-09-14,Spain,United States,Burgos,FC Cincinnati,0.0,False
+eafc_4015,tm_1001,L. Nmecha,1998-12-14,Evan Louro,1996-01-19,Germany,United States,VfL Wolfsburg,FC Cincinnati,0.0,False
+eafc_10702,tm_1002,L. Augusto,2000-02-26,Alec Kann,1990-08-08,Angola,United States,Alanyaspor,FC Cincinnati,0.0,False
+eafc_10370,tm_1159,L. Laux,2002-10-14,Brandon Bye,1995-11-29,Germany,United States,Sandhausen,New England Revolution,0.0,False
+eafc_11484,tm_1110,Liu Yang,1995-06-17,CJ Fodrey,2004-02-10,China PR,United States,Shandong Taishan,Austin FC,0.0,False
+eafc_5631,tm_1020,A. Pears,1998-04-23,Yuya Kubo,1993-12-24,England,Japan,Blackburn Rovers,FC Cincinnati,0.0,False
+eafc_5726,tm_1014,Z. Vanheusden,1999-07-29,Marco Angulo,2002-05-08,Belgium,Ecuador,Standard Liège,FC Cincinnati,0.0,False
+eafc_3138,tm_1001,M. Maertens,1995-03-27,Evan Louro,1996-01-19,Belgium,United States,OH Leuven,FC Cincinnati,0.0,False
+eafc_7870,tm_1159,C. Riad,2003-06-17,Brandon Bye,1995-11-29,Morocco,United States,Real Betis,New England Revolution,0.0,False
+eafc_3487,tm_1069,J. Benet,1995-06-24,Calegari,2002-02-27,France,Brazil,Grenoble Foot 38,,0.0,False
+eafc_6070,tm_1011,T. Richards,2000-12-04,Alvas Powell,1994-07-18,England,Jamaica,Queens Park Rangers,FC Cincinnati,0.0,False
+eafc_5421,tm_1007,Vilanova,1997-02-11,Ian Murphy,2000-01-16,Spain,United States,FC Andorra,FC Cincinnati,0.0,False
+eafc_2206,tm_1020,C. Walton,1995-11-09,Yuya Kubo,1993-12-24,England,Japan,Ipswich Town,FC Cincinnati,0.0,False
+eafc_10256,tm_1009,M. Marqués,2001-09-08,London Aghedo,2000-05-31,Sweden,United States,Minnesota United,FC Cincinnati,0.0,False
+eafc_7959,tm_1002,D. Rensch,2003-01-18,Alec Kann,1990-08-08,Netherlands,United States,Ajax,FC Cincinnati,0.0,False
+eafc_9466,tm_1002,S. Seymor,2002-01-04,Alec Kann,1990-08-08,Netherlands,United States,Excelsior,FC Cincinnati,0.0,False
+eafc_9446,tm_1001,S. Voelcke,2002-02-23,Evan Louro,1996-01-19,Germany,United States,Rot-Weiss Essen,FC Cincinnati,0.0,False
+eafc_1704,tm_1006,W. Ben Yedder,1990-08-12,Nick Hagglund,1992-09-14,France,United States,Monaco,FC Cincinnati,0.0,False
+eafc_10386,tm_1002,D. Gebuhr,2003-05-06,Alec Kann,1990-08-08,Germany,United States,Eintracht Frankfurt,FC Cincinnati,0.0,False
+eafc_9366,tm_1005,H. Larsson,2004-06-27,Matt Miazga,1995-07-19,Sweden,United States,Eintracht Frankfurt,FC Cincinnati,0.0,False
+eafc_9756,tm_1001,L. Diabaté,2003-08-21,Evan Louro,1996-01-19,France,United States,Valenciennes,FC Cincinnati,0.0,False
+eafc_3108,tm_1003,A. Lundqvist,1994-03-20,Paul Walters,2004-04-11,Sweden,United States,Austin,FC Cincinnati,0.0,False
+eafc_5657,tm_1002,M. Ojeda,1998-11-27,Alec Kann,1990-08-08,Argentina,United States,Orlando City,FC Cincinnati,0.0,False
+eafc_4785,tm_1001,N. Rieble,1995-08-22,Evan Louro,1996-01-19,Germany,United States,Wehen Wiesbaden,FC Cincinnati,0.0,False
+eafc_9165,tm_1002,F. Feller,2004-01-07,Alec Kann,1990-08-08,Germany,United States,Heidenheim,FC Cincinnati,0.0,False
+eafc_6467,tm_1001,Y. Kitala,1998-04-09,Evan Louro,1996-01-19,France,United States,Almere City,FC Cincinnati,0.0,False
+eafc_7847,tm_1002,I. Grbić,1996-01-18,Alec Kann,1990-08-08,Croatia,United States,Atlético Madrid,FC Cincinnati,0.0,False
+eafc_8391,tm_1020,S. Grehan,2004-01-08,Yuya Kubo,1993-12-24,Republic of Ireland,Japan,Crystal Palace,FC Cincinnati,0.0,False
+eafc_10399,tm_1006,M. Ouro-Tagba,2004-12-17,Nick Hagglund,1992-09-14,United States,United States,1860 München,FC Cincinnati,0.0,False
+eafc_5800,tm_1002,J. Opoku,1998-10-14,Alec Kann,1990-08-08,England,United States,Arouca,FC Cincinnati,0.0,False
+eafc_7550,tm_1001,Y. Keitel,2000-02-15,Evan Louro,1996-01-19,Germany,United States,SC Freiburg,FC Cincinnati,0.0,False
+eafc_4148,tm_1003,Jeffmeirson,1992-02-29,Paul Walters,2004-04-11,Brazil,United States,Bragantino,FC Cincinnati,0.0,False
+eafc_8289,tm_1027,A. Forson,2002-12-31,Dominique Badji,1992-10-16,Ghana,Senegal,Salzburg,FC Cincinnati,0.0,False
+eafc_3638,tm_1002,M. Araujo,1994-10-24,Alec Kann,1990-08-08,Peru,United States,Portland Timbers,FC Cincinnati,0.0,False
+eafc_11489,tm_1020,Dai Weijun,1999-07-25,Yuya Kubo,1993-12-24,China PR,Japan,Shanghai Shenhua,FC Cincinnati,0.0,False
+eafc_8007,tm_1069,I. Kébé,2000-08-01,Calegari,2002-02-27,Mali,Brazil,Girona,,0.0,False
+eafc_3236,tm_1006,Juanma García,1993-02-20,Nick Hagglund,1992-09-14,Spain,United States,Albacete,FC Cincinnati,0.0,False
+eafc_4485,tm_1005,Judson,1993-05-25,Matt Miazga,1995-07-19,Brazil,United States,San Jose Earthquakes,FC Cincinnati,0.0,False
+eafc_11000,tm_1025,Juan Gutiérrez,2000-01-28,Sergio Santos,1994-09-04,Spain,Brazil,Racing Santander,FC Cincinnati,0.0,False
+eafc_1303,tm_1005,N. Nkoulou,1990-03-27,Matt Miazga,1995-07-19,Cameroon,United States,Gaziantep F.K.,FC Cincinnati,0.0,False
+eafc_1795,tm_1005,B. Lecomte,1991-04-26,Matt Miazga,1995-07-19,France,United States,Montpellier,FC Cincinnati,0.0,False
+eafc_5738,tm_1006,Junior Firpo,1996-08-22,Nick Hagglund,1992-09-14,Spain,United States,Leeds United,FC Cincinnati,0.0,False
+eafc_3692,tm_1067,Y. Namli,1994-06-20,Julián Aude,2003-03-24,Denmark,Argentina,PEC Zwolle,Los Angeles Galaxy,0.0,False
+eafc_6250,tm_1005,V. Buyalskyi,1993-01-06,Matt Miazga,1995-07-19,Ukraine,United States,Dynamo Kyiv,FC Cincinnati,0.0,False
+eafc_9956,tm_1007,Hugo Redón,2003-04-19,Ian Murphy,2000-01-16,Spain,United States,Levante,FC Cincinnati,0.0,False
+eafc_5123,tm_1017,B. Kamara,1999-11-23,Malik Pinto,2002-08-09,France,United States,Aston Villa,FC Cincinnati,0.0,False
+eafc_3405,tm_1020,A. Yaşar,1995-03-08,Yuya Kubo,1993-12-24,Turkey,Japan,İstanbulspor,FC Cincinnati,0.0,False
+eafc_6391,tm_1038,M. Al Rubaie,1997-08-14,Geovane Jesus,2001-07-31,Saudi Arabia,Brazil,Al Ahli Jeddah,FC Dallas,0.0,False
+eafc_1144,tm_1008,Varela,1987-11-26,Joey Akpunonu,2001-12-21,Cape Verde Islands,United States,Casa Pia,FC Cincinnati,0.0,False
+eafc_4673,tm_1006,Allan Ardaújo,1988-02-29,Nick Hagglund,1992-09-14,Brazil,United States,Goiás,FC Cincinnati,0.0,False
+eafc_6566,tm_1002,B. Diakité,2001-01-06,Alec Kann,1990-08-08,France,United States,Lille,FC Cincinnati,0.0,False
+eafc_4692,tm_1008,Carlos Soler,1997-01-02,Joey Akpunonu,2001-12-21,Spain,United States,Paris Saint Germain,FC Cincinnati,0.0,False
+eafc_6553,tm_1006,Y. Verschaeren,2001-07-12,Nick Hagglund,1992-09-14,Belgium,United States,Anderlecht,FC Cincinnati,0.0,False
+eafc_5040,tm_1005,Douglas Luiz,1998-05-09,Matt Miazga,1995-07-19,Brazil,United States,Aston Villa,FC Cincinnati,0.0,False
+eafc_3628,tm_1002,R. Oxford,1998-12-16,Alec Kann,1990-08-08,England,United States,FC Augsburg,FC Cincinnati,0.0,False
+eafc_8798,tm_1002,S. Edozie,2003-01-28,Alec Kann,1990-08-08,England,United States,Southampton,FC Cincinnati,0.0,False
+eafc_8423,tm_1086,E. Bove,2002-05-16,Chicharito,1988-06-01,Italy,Mexico,Roma,Los Angeles Galaxy,0.0,False
+eafc_10319,tm_1086,Diogo Fonseca,2002-04-10,Chicharito,1988-06-01,Portugal,Mexico,Sporting Braga,Los Angeles Galaxy,0.0,False
+eafc_6858,tm_1002,N. Ngoumou,2000-03-14,Alec Kann,1990-08-08,France,United States,Borussia Mönchengladbach,FC Cincinnati,0.0,False
+eafc_4399,tm_1012,J. Reichert,1991-07-02,Raymon Gaddis,1990-01-13,Germany,United States,Ulm,FC Cincinnati,0.0,False
+eafc_1621,tm_1005,P. Testroet,1990-09-26,Matt Miazga,1995-07-19,Germany,United States,Ingolstadt,FC Cincinnati,0.0,False
+eafc_1033,tm_1014,H. Herrera,1990-04-19,Marco Angulo,2002-05-08,Mexico,Ecuador,Houston Dynamo,FC Cincinnati,0.0,False
+eafc_6896,tm_1007,O. Erdoğan,1998-09-29,Ian Murphy,2000-01-16,Turkey,United States,İstanbulspor,FC Cincinnati,0.0,False
+eafc_1379,tm_1007,Tomeu Nadal,1989-02-08,Ian Murphy,2000-01-16,Spain,United States,Tenerife,FC Cincinnati,0.0,False
+eafc_4070,tm_1026,Jorge Carvallinho,1996-02-29,Arquímides Ordóñez,2003-08-05,Brazil,Guatemala,América Mineiro,FC Cincinnati,0.0,False
+eafc_5190,tm_1002,Nouhou,1997-06-23,Alec Kann,1990-08-08,Cameroon,United States,Seattle Sounders,FC Cincinnati,0.0,False
+eafc_4279,tm_1020,S. Bakış,1994-04-22,Yuya Kubo,1993-12-24,Turkey,Japan,Real Zaragoza,FC Cincinnati,0.0,False
+eafc_2523,tm_1005,L. Woudenberg,1994-04-25,Matt Miazga,1995-07-19,Netherlands,United States,Valenciennes,FC Cincinnati,0.0,False
+eafc_4254,tm_1011,Fachendinho,1992-02-29,Alvas Powell,1994-07-18,Brazil,Jamaica,Santos,FC Cincinnati,0.0,False
+eafc_1967,tm_1005,J. Lascelles,1993-11-11,Matt Miazga,1995-07-19,England,United States,Newcastle United,FC Cincinnati,0.0,False
+eafc_6128,tm_1005,K. Scherpen,2000-01-23,Matt Miazga,1995-07-19,Netherlands,United States,Sturm Graz,FC Cincinnati,0.0,False
+eafc_10618,tm_1002,J. Milošević,2005-07-31,Alec Kann,1990-08-08,Serbia,United States,VfB Stuttgart,FC Cincinnati,0.0,False
+eafc_5170,tm_1002,Jardel,1997-09-20,Alec Kann,1990-08-08,Portugal,United States,Vizela,FC Cincinnati,0.0,False
+eafc_10142,tm_1009,A. Abdulqader,2002-01-01,London Aghedo,2000-05-31,Saudi Arabia,United States,Al Ettifaq,FC Cincinnati,0.0,False
+eafc_2923,tm_1017,Wendell,1993-07-20,Malik Pinto,2002-08-09,Brazil,United States,Porto,FC Cincinnati,0.0,False
+eafc_2479,tm_1083,Júlio Tavares,1988-11-19,Douglas Costa,1990-09-14,Cape Verde Islands,Brazil,Al Raed,Los Angeles Galaxy,0.0,False
+eafc_9341,tm_1004,A. Salah-Eddine,2002-01-18,Yerson Mosquera,2001-05-02,Netherlands,Colombia,Ajax,Wolverhampton Wanderers,0.0,False
+eafc_3855,tm_1007,A. De Sart,1996-11-12,Ian Murphy,2000-01-16,Belgium,United States,RWDM,FC Cincinnati,0.0,False
+eafc_2194,tm_1011,R. Camacho,1991-03-05,Alvas Powell,1994-07-18,France,Jamaica,Columbus Crew,FC Cincinnati,0.0,False
+eafc_2383,tm_1001,D. Bachmann,1994-07-09,Evan Louro,1996-01-19,Austria,United States,Watford,FC Cincinnati,0.0,False
+eafc_6606,tm_1003,T. Cissokho,2000-02-08,Paul Walters,2004-04-11,France,United States,Quevilly Rouen,FC Cincinnati,0.0,False
+eafc_9198,tm_1001,H. Sargis,2002-05-02,Evan Louro,1996-01-19,United States,United States,DC United,FC Cincinnati,0.0,False
+eafc_9913,tm_1086,Y. Okou,2002-12-23,Chicharito,1988-06-01,France,Mexico,Monaco,Los Angeles Galaxy,0.0,False
+eafc_5693,tm_1108,Junior Messias,1991-05-13,Memo Rodríguez,1995-12-27,Brazil,United States,Genoa,Austin FC,0.0,False
+eafc_6062,tm_1057,B. Mumba,2001-10-08,Jonathan Bond,1993-05-19,England,England,Plymouth Argyle,Los Angeles Galaxy,0.0,False
+eafc_10090,tm_1125,Hernâni Infande,2001-04-03,Thomas Williams,2004-08-15,Portugal,United States,Moreirense,Orlando City SC,0.0,False
+eafc_8836,tm_1028,Diego Moreno,2001-06-21,Maarten Paes,1998-05-14,Spain,Netherlands,Mirandés,FC Dallas,0.0,False
+eafc_1895,tm_1002,S. Zoller,1991-06-26,Alec Kann,1990-08-08,Germany,United States,St. Pauli,FC Cincinnati,0.0,False
+eafc_5972,tm_1020,M. Adams,1996-09-23,Yuya Kubo,1993-12-24,England,Japan,Al Shabab,FC Cincinnati,0.0,False
+eafc_4817,tm_1003,M. Besuschkow,1997-05-01,Paul Walters,2004-04-11,Germany,United States,Hannover 96,FC Cincinnati,0.0,False
+eafc_8707,tm_1002,T. Roufosse,2001-03-28,Alec Kann,1990-08-08,Belgium,United States,AS Eupen,FC Cincinnati,0.0,False
+eafc_4880,tm_1020,D. Jones,1997-03-03,Yuya Kubo,1993-12-24,United States,Japan,Charlotte,FC Cincinnati,0.0,False
+eafc_5826,tm_1067,A. Bamba,1999-07-06,Julián Aude,2003-03-24,Côte d'Ivoire,Argentina,Sporting Gijón,Los Angeles Galaxy,0.0,False
+eafc_6294,tm_1003,O. Boussaid,2000-03-07,Paul Walters,2004-04-11,Belgium,United States,FC Utrecht,FC Cincinnati,0.0,False
+eafc_9735,tm_1001,M. Fuseini,2002-05-16,Evan Louro,1996-01-19,Ghana,United States,Sturm Graz,FC Cincinnati,0.0,False
+eafc_6993,tm_1010,C. De Ketelaere,2001-03-10,Santiago Arias,1992-01-13,Belgium,Colombia,Atalanta,FC Cincinnati,0.0,False
+eafc_10246,tm_1005,Depú,2000-01-08,Matt Miazga,1995-07-19,Angola,United States,Gil Vicente,FC Cincinnati,0.0,False
+eafc_9852,tm_1002,É. Logbo,2004-05-06,Alec Kann,1990-08-08,France,United States,Le Havre,FC Cincinnati,0.0,False
+eafc_10363,tm_1069,K. Sabbe,2005-01-26,Calegari,2002-02-27,Belgium,Brazil,Club Brugge,,0.0,False
+eafc_1883,tm_1002,J. Bonham,1993-09-14,Alec Kann,1990-08-08,Republic of Ireland,United States,Stoke City,FC Cincinnati,0.0,False
+eafc_7022,tm_1018,Francisco Moura,1999-08-16,Stiven Jimenez,2007-06-24,Portugal,United States,Famalicão,FC Cincinnati,0.0,False
+eafc_10342,tm_1011,C. Bonsu Baah,2004-12-14,Alvas Powell,1994-07-18,Ghana,Jamaica,Genk,FC Cincinnati,0.0,False
+eafc_4881,tm_1002,M. Munetsi,1996-06-22,Alec Kann,1990-08-08,Zimbabwe,United States,Stade de Reims,FC Cincinnati,0.0,False
+eafc_11225,tm_1039,Miki Bosch,2001-06-09,Ema Twumasi,1997-05-18,Spain,Ghana,Granada,FC Dallas,0.0,False
+eafc_9576,tm_1003,S. Sserwadda,2002-08-01,Paul Walters,2004-04-11,Uganda,United States,New York RB,FC Cincinnati,0.0,False
+eafc_8066,tm_1010,M. Al Dhulayfi,2000-05-12,Santiago Arias,1992-01-13,Saudi Arabia,Colombia,Al Taawon,FC Cincinnati,0.0,False
+eafc_6375,tm_1000,Stoichkov,1993-11-05,Roman Celentano,2000-09-14,Spain,United States,SD Eibar,FC Cincinnati,0.0,False
+eafc_11153,tm_1091,L. Wurm,2006-03-21,Damian Las,2002-04-11,Germany,United States,Jahn Regensburg,Austin FC,0.0,False
+eafc_6871,tm_1014,A. Mehmeti,2001-01-09,Marco Angulo,2002-05-08,Albania,Ecuador,Bristol City,FC Cincinnati,0.0,False
+eafc_9391,tm_1009,M. Udebuluzor,2004-04-01,London Aghedo,2000-05-31,Hong Kong,United States,Ingolstadt,FC Cincinnati,0.0,False
+eafc_8538,tm_1001,T. Malbec,2001-11-03,Evan Louro,1996-01-19,France,United States,Annecy,FC Cincinnati,0.0,False
+eafc_10707,tm_1060,Hugo Souza,1999-01-31,Jalen Neal,2003-08-24,Brazil,United States,Chaves,Los Angeles Galaxy,0.0,False
+eafc_11440,tm_1006,Romário Baldé,1996-12-25,Nick Hagglund,1992-09-14,Guinea Bissau,United States,Nantong Zhiyun,FC Cincinnati,0.0,False
+eafc_11244,tm_1001,S. Cortese,2005-08-17,Evan Louro,1996-01-19,Italy,United States,Brescia,FC Cincinnati,0.0,False
+eafc_9653,tm_1057,W. Osula,2003-08-04,Jonathan Bond,1993-05-19,Denmark,England,Sheffield United,Los Angeles Galaxy,0.0,False
+eafc_9142,tm_1002,N. Koulis,1999-05-04,Alec Kann,1990-08-08,Germany,United States,Preußen Münster,FC Cincinnati,0.0,False
+eafc_11039,tm_1020,D. Traoré,1998-08-02,Yuya Kubo,1993-12-24,Côte d'Ivoire,Japan,İstanbulspor,FC Cincinnati,0.0,False
+eafc_7333,tm_1001,N. Gioacchini,2000-07-25,Evan Louro,1996-01-19,United States,United States,Saint Louis City,FC Cincinnati,0.0,False
+eafc_2145,tm_1006,D. Stojanović,1993-07-19,Nick Hagglund,1992-09-14,North Macedonia,United States,Rheindorf Altach,FC Cincinnati,0.0,False
+eafc_8907,tm_1001,K. Al Absi,2001-05-28,Evan Louro,1996-01-19,Saudi Arabia,United States,Al Hazem,FC Cincinnati,0.0,False
+eafc_8251,tm_1003,J. Antonisse,2002-03-29,Paul Walters,2004-04-11,Curacao,United States,Moreirense,FC Cincinnati,0.0,False
+eafc_7494,tm_1002,K. Mitoma,1997-05-20,Alec Kann,1990-08-08,Japan,United States,Brighton & Hove Albion,FC Cincinnati,0.0,False
+eafc_5337,tm_1004,S. Vasiliadis,1997-10-04,Yerson Mosquera,2001-05-02,Greece,Colombia,Hansa Rostock,Wolverhampton Wanderers,0.0,False
+eafc_10593,tm_1011,E. Banzuzi,2005-02-16,Alvas Powell,1994-07-18,Netherlands,Jamaica,OH Leuven,FC Cincinnati,0.0,False
+eafc_2111,tm_1001,M. Thiede,1992-05-20,Evan Louro,1996-01-19,Germany,United States,Karlsruher SC,FC Cincinnati,0.0,False
+eafc_3766,tm_1001,R. Wintle,1997-06-13,Evan Louro,1996-01-19,England,United States,Cardiff City,FC Cincinnati,0.0,False
+eafc_8060,tm_1007,D. Vianello,2002-09-14,Ian Murphy,2000-01-16,Netherlands,United States,Sparta Rotterdam,FC Cincinnati,0.0,False
+eafc_2432,tm_1001,A. Majrashi,1991-07-21,Evan Louro,1996-01-19,Saudi Arabia,United States,Al Tai,FC Cincinnati,0.0,False
+eafc_4541,tm_1067,K. Misao,1996-04-16,Julián Aude,2003-03-24,Japan,Argentina,OH Leuven,Los Angeles Galaxy,0.0,False
+eafc_7641,tm_1001,J. Hawkins,2001-06-24,Evan Louro,1996-01-19,United States,United States,Waldhof Mannheim,FC Cincinnati,0.0,False
+eafc_5366,tm_1062,Wilson Manafá,1994-07-23,Maya Yoshida,1988-08-24,Portugal,Japan,Granada,Los Angeles Galaxy,0.0,False
+eafc_9700,tm_1001,T. Geralnik,2003-03-31,Evan Louro,1996-01-19,Argentina,United States,Villarreal II,FC Cincinnati,0.0,False
+eafc_3771,tm_1001,M. Mehlem,1997-09-11,Evan Louro,1996-01-19,Germany,United States,Darmstadt 98,FC Cincinnati,0.0,False
+eafc_1496,tm_1005,V. Le Goff,1989-10-15,Matt Miazga,1995-07-19,France,United States,Lorient,FC Cincinnati,0.0,False
+eafc_2433,tm_1027,Garry Rodrigues,1990-11-27,Dominique Badji,1992-10-16,Cape Verde Islands,Senegal,Ankaragücü,FC Cincinnati,0.0,False
+eafc_4329,tm_1020,A. Filin,1995-06-25,Yuya Kubo,1993-12-24,Ukraine,Japan,AS Eupen,FC Cincinnati,0.0,False
+eafc_4027,tm_1040,Simão Donatinho,1996-02-29,Herbert Endeley,2001-10-09,Brazil,United States,Corinthians,FC Dallas,0.0,False
+eafc_8888,tm_1087,Tiago Araújo,2001-03-27,Preston Judd,1999-05-28,Portugal,United States,Estoril,Los Angeles Galaxy,0.0,False
+eafc_9520,tm_1002,E. Rroca,1993-07-28,Alec Kann,1990-08-08,Albania,United States,İstanbulspor,FC Cincinnati,0.0,False
+eafc_4780,tm_1009,Y. Demoncy,1996-04-07,London Aghedo,2000-05-31,France,United States,Paris,FC Cincinnati,0.0,False
+eafc_2157,tm_1011,Léo Baptistão,1992-08-26,Alvas Powell,1994-07-18,Brazil,Jamaica,Almería,FC Cincinnati,0.0,False
+eafc_11619,tm_1002,K. Ablet,1997-02-05,Alec Kann,1990-08-08,China PR,United States,Dalian Professional,FC Cincinnati,0.0,False
+eafc_11609,tm_1163,Cui Qi,1997-10-26,Maciel,2000-01-18,China PR,Brazil,Changchun Yatai,New England Revolution,0.0,False
+eafc_9024,tm_1001,R. Meissen,2002-02-24,Evan Louro,1996-01-19,Netherlands,United States,Sparta Rotterdam,FC Cincinnati,0.0,False
+eafc_10956,tm_1008,E. Fiemawhle,2004-10-25,Joey Akpunonu,2001-12-21,Netherlands,United States,FC Volendam,FC Cincinnati,0.0,False
+eafc_1608,tm_1007,J. Davidson,1991-06-29,Ian Murphy,2000-01-16,Australia,United States,AS Eupen,FC Cincinnati,0.0,False
+eafc_3516,tm_1006,Grego Sierra,1993-03-05,Nick Hagglund,1992-09-14,Spain,United States,Burgos,FC Cincinnati,0.0,False
+eafc_11177,tm_1002,F. Sylla,2006-04-16,Alec Kann,1990-08-08,France,United States,Lens,FC Cincinnati,0.0,False
+eafc_4660,tm_1003,L. Sernicola,1997-03-30,Paul Walters,2004-04-11,Italy,United States,Cremonese,FC Cincinnati,0.0,False
+eafc_1651,tm_1006,Cláudio Ramos,1991-11-16,Nick Hagglund,1992-09-14,Portugal,United States,Porto,FC Cincinnati,0.0,False
+eafc_8443,tm_1027,R. Oratmangoen,1998-01-21,Dominique Badji,1992-10-16,Netherlands,Senegal,Fortuna Sittard,FC Cincinnati,0.0,False
+eafc_5983,tm_1020,S. Vines,1999-05-31,Yuya Kubo,1993-12-24,United States,Japan,Antwerp,FC Cincinnati,0.0,False
+eafc_8258,tm_1005,E. Bördner,2002-02-18,Matt Miazga,1995-07-19,Germany,United States,Viktoria Köln,FC Cincinnati,0.0,False
+eafc_8145,tm_1182,J. Gal,1993-04-06,Rodrigues,1997-10-10,United States,Brazil,Chicago Fire,,0.0,False
+eafc_2851,tm_1075,Jason,1994-07-06,Riqui Puig,1999-08-13,Spain,Spain,Arouca,Los Angeles Galaxy,0.0,False
+eafc_11309,tm_1182,Tan Long,1988-04-01,Rodrigues,1997-10-10,China PR,Brazil,Changchun Yatai,,0.0,False
+eafc_11601,tm_1048,Yao Xuchen,1999-09-11,Eugene Ansah,1994-12-16,China PR,Ghana,Cangzhou Mighty Lions,FC Dallas,0.0,False
+eafc_8257,tm_1019,Arnau Martínez,2003-04-25,Luciano Acosta,1994-05-31,Spain,Argentina,Girona,FC Cincinnati,0.0,False
+eafc_9481,tm_1038,Dani González,2002-03-18,Geovane Jesus,2001-07-31,Spain,Brazil,Celta de Vigo,FC Dallas,0.0,False
+eafc_2113,tm_1060,A. Lozano,1993-04-25,Jalen Neal,2003-08-24,Honduras,United States,Getafe,Los Angeles Galaxy,0.0,False
+eafc_7532,tm_1003,A. Rodriguez,2002-07-19,Paul Walters,2004-04-11,United States,United States,Colorado Rapids,FC Cincinnati,0.0,False
+eafc_8910,tm_1001,J. McAtee,2002-10-18,Evan Louro,1996-01-19,England,United States,Sheffield United,FC Cincinnati,0.0,False
+eafc_5023,tm_1048,Marc Cardona,1995-07-08,Eugene Ansah,1994-12-16,Spain,Ghana,Las Palmas,FC Dallas,0.0,False
+eafc_1927,tm_1002,M. Crooks,1994-01-20,Alec Kann,1990-08-08,England,United States,Middlesbrough,FC Cincinnati,0.0,False
+eafc_9531,tm_1003,J. Tenkorang,2000-05-26,Paul Walters,2004-04-11,Italy,United States,Lecco,FC Cincinnati,0.0,False
+eafc_10558,tm_1001,S. Feiertag,2001-12-18,Evan Louro,1996-01-19,Austria,United States,Blau-Weiß Linz,FC Cincinnati,0.0,False
+eafc_11544,tm_1001,Zhu Chenjie,2000-08-23,Evan Louro,1996-01-19,China PR,United States,Shanghai Shenhua,FC Cincinnati,0.0,False
+eafc_4413,tm_1002,T. Phete,1994-04-04,Alec Kann,1990-08-08,South Africa,United States,Chaves,FC Cincinnati,0.0,False
