@@ -45,13 +45,15 @@ public class Player extends AbstractRecord<Attribute> implements Serializable {
 
 	public Player(String identifier, String provenance) {
 		super(identifier, provenance);
+		setPositions(new LinkedList<>());
+
 	}
 
 	protected String id;
 	private String name;
 	private LocalDateTime birthdate;
 	private String nationality; 
-	private List<String> positions;
+	private List<Position> positions;
 	private String club; 
 	private int weight;
 	private int height;
@@ -94,16 +96,7 @@ public class Player extends AbstractRecord<Attribute> implements Serializable {
 	public void setClub(String club) {
 		this.club = club;
 	}
-
-
-	public List<String> getPositions() {
-		return positions;
-	}
-
-	public void setPositions(List<String> list) {
-		this.positions = list;
-	}
-		
+	
 
 	private Map<Attribute, Collection<String>> provenance = new HashMap<>();
 	private Collection<String> recordProvenance;
@@ -135,13 +128,13 @@ public class Player extends AbstractRecord<Attribute> implements Serializable {
 		}
 	}
 
-	public static final Attribute NAME = new Attribute("Name");
-	public static final Attribute BIRTHDATE = new Attribute("Birthdate");
-	public static final Attribute NATIONALITY = new Attribute("Nationality");
-	public static final Attribute CLUB = new Attribute("Club");
-	public static final Attribute WEIGHT = new Attribute("Weight");
-	public static final Attribute HEIGHT = new Attribute("Height");
-	public static final Attribute JERSEY_NUMBER = new Attribute("Jersey_number");
+	public static final Attribute NAME = new Attribute("name");
+	public static final Attribute BIRTHDATE = new Attribute("birthdate");
+	public static final Attribute NATIONALITY = new Attribute("nationality");
+	public static final Attribute CLUB = new Attribute("club");
+	public static final Attribute WEIGHT = new Attribute("weight");
+	public static final Attribute HEIGHT = new Attribute("height");
+	public static final Attribute JERSEY_NUMBER = new Attribute("jersey_number");
 	public static final Attribute LEAGUE = new Attribute("league");
 	public static final Attribute CURRENT_MARKET_VALUE = new Attribute("current_market_value");
 	public static final Attribute WAGE = new Attribute("wage");
@@ -253,6 +246,14 @@ public class Player extends AbstractRecord<Attribute> implements Serializable {
 
 	public void setPreferred_foot(String preferred_foot) {
 		this.preferred_foot = preferred_foot;
+	}
+
+	public List<Position> getPositions() {
+		return positions;
+	}
+
+	public void setPositions(List<Position> positions) {
+		this.positions = positions;
 	}
 	
 	
