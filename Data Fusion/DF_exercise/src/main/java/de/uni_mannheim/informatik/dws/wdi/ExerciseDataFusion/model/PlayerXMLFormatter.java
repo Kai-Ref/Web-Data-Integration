@@ -26,6 +26,8 @@ public class PlayerXMLFormatter extends XMLFormatter<Player> {
 
 	PositionsXMLFormatter positionFormatter = new PositionsXMLFormatter();
 
+	PositionXMLFormatter positionformatter = new PositionXMLFormatter();
+
 	@Override
 	public Element createRootElement(Document doc) {
 		return doc.createElement("players");
@@ -34,7 +36,10 @@ public class PlayerXMLFormatter extends XMLFormatter<Player> {
 	@Override
 	public Element createElementFromRecord(Player record, Document doc) {
 		Element player = doc.createElement("player");
+		
+		player.appendChild(createPositionsElement(record, doc));
 
+		
 		player.appendChild(createTextElement("id", record.getIdentifier(), doc));
 		
 		player.appendChild(createPositionsElement(record, doc));
@@ -126,5 +131,19 @@ public class PlayerXMLFormatter extends XMLFormatter<Player> {
 		elem.setAttribute("provenance", provenance);
 		return elem;
 	}
+	
+	protected Element createPositionsElement(Player record, Document doc) {
+		Element positionRoot = positionformatter.createRootElement(doc);
+		positionRoot.setAttribute("provenance",
+				record.getMergedAttributeProvenance(Player.POSITIONS));
+
+		
+		for (Position a : record.getPositions()) {
+			positionRoot.appendChild(positionformatter
+					.createElementFromRecord(a, doc));
+		}
+
+		return positionRoot;
+	}	
 
 }
