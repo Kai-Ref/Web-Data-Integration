@@ -24,7 +24,7 @@ import de.uni_mannheim.informatik.dws.winter.model.io.XMLFormatter;
  */
 public class PlayerXMLFormatter extends XMLFormatter<Player> {
 
-//	ActorXMLFormatter actorFormatter = new ActorXMLFormatter();
+	PositionsXMLFormatter positionFormatter = new PositionsXMLFormatter();
 
 	@Override
 	public Element createRootElement(Document doc) {
@@ -36,6 +36,8 @@ public class PlayerXMLFormatter extends XMLFormatter<Player> {
 		Element player = doc.createElement("player");
 
 		player.appendChild(createTextElement("id", record.getIdentifier(), doc));
+		
+		player.appendChild(createPositionsElement(record, doc));
 
 		player.appendChild(createTextElementWithProvenance("name",
 				record.getName(),
@@ -88,6 +90,19 @@ public class PlayerXMLFormatter extends XMLFormatter<Player> {
 				record.getMergedAttributeProvenance(Player.PREFERRED_FOOT), doc));
 		}
 		return player;
+	}
+	
+	protected Element createPositionsElement(Player record, Document doc) {
+		Element positionsRoot = positionFormatter.createRootElement(doc);
+		positionsRoot.setAttribute("provenance",
+				record.getMergedAttributeProvenance(Player.POSITIONS));
+
+		for (String a : record.getPositions()) {
+			positionsRoot.appendChild(positionFormatter
+					.createElementFromRecord(a, doc));
+		}
+
+		return positionsRoot;
 	}
 
 	protected Element createTextElementWithProvenance(String name,
