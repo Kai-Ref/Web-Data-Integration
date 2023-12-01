@@ -38,12 +38,12 @@ EA_TM;0.01;-;SortedNeighbourhoodBlocker(PlayerBlockingKeyByNameGenerator(1), 110
  4	| 	397
 �
 5222 | 1";4226 groups!!;
-EA_FM;0.9;"{""-S""}";StandardRecordBlocker(new PlayerBlockingKeyByNameGenerator(1));SimpleLogistic;49s;1.0;0.9275;0.9624;"2	| 	6540
-3	| 	46
-4	| 	24
-5	| 	2
-6	| 	2
-8	| 	1";;
+EA_FM;0.9;"{""-S""}";StandardRecordBlocker(new PlayerBlockingKeyByNameGenerator(1));SimpleLogistic;49s;1.0;0.9275;0.9624;"[INFO ] 2023-11-29 19:31:57.606 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		2	| 	6501
+[INFO ] 2023-11-29 19:31:57.610 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		3	| 	22
+[INFO ] 2023-11-29 19:31:57.612 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		4	| 	14
+[INFO ] 2023-11-29 19:31:57.613 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		5	| 	1
+[INFO ] 2023-11-29 19:31:57.613 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		6	| 	1
+[INFO ] 2023-11-29 19:31:57.616 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		8	| 	1";;
 EA_FM;0.7;"{""-S""}";StandardRecordBlocker(new PlayerBlockingKeyByNameGenerator(1));SimpleLogistic;53s;1.0;0.9275;0.9624;"2	| 	6540
 3	| 	46
 4	| 	24
@@ -64,11 +64,11 @@ EA_FM;0.3;-;StandardRecordBlocker(new PlayerBlockingKeyByNameGenerator(1));Rando
 6	| 	4
 7	| 	2
 9	| 	1";;
-EA_FM;0.9;-;StandardRecordBlocker(new PlayerBlockingKeyByNameGenerator(1));RandomForest;56s;1.0;0.8841;0.9385;"2	| 	6417
+EA_FM;0.9;-;StandardRecordBlocker(new PlayerBlockingKeyByNameGenerator(1));RandomForest;56s;1.0;0.8841;0.9385;"2	| 	6420
  3	| 	5";;
-EA_FM;0.7;-;StandardRecordBlocker(new PlayerBlockingKeyByNameGenerator(1));RandomForest;57s;1.0;0.9275;0.9624;"2	| 	6535
- 3	| 	9
-4	| 	8
+EA_FM;0.7;-;StandardRecordBlocker(new PlayerBlockingKeyByNameGenerator(1));RandomForest;57s;1.0;0.9275;0.9624;"2	| 	6538
+ 3	| 	13
+4	| 	10
 5	| 	1
 6	| 	1";;
 EA_FM;0.7;-;StandardRecordBlocker(new PlayerBlockingKeyByNameGenerator(1));RandomTree;41s;1.0;0.9275;0.9624;"2	| 	5985
