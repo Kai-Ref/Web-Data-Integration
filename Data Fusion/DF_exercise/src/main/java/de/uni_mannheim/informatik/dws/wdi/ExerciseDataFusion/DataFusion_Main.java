@@ -25,6 +25,7 @@ import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.evaluation.Position
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.evaluation.WeightEvaluationRule;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.fusers.BirthdateFuserVoting;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.fusers.ClubFuserLongestString;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.fusers.ClubFuserMostRecent;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.fusers.CurrentMarketValueMedian;
 
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.fusers.HeightFuserAverage;
@@ -170,7 +171,10 @@ public class DataFusion_Main
 		strategy.addAttributeFuser(Player.NAME, new NameFuserLongestString(),new NameEvaluationRule()); //Monge Elkan
 		strategy.addAttributeFuser(Player.BIRTHDATE,new BirthdateFuserVoting(), new BirthdateEvaluationRule());
 		strategy.addAttributeFuser(Player.NATIONALITY, new NationalityFuserFavourSources() ,new NationalityEvaluationRule());
+		
+		//Different possibilities to fuse by CLUB
 		strategy.addAttributeFuser(Player.CLUB,new ClubFuserLongestString(),new ClubEvaluationRule());
+//		strategy.addAttributeFuser(Player.CLUB,new ClubFuserMostRecent(),new ClubEvaluationRule());
 		strategy.addAttributeFuser(Player.WEIGHT, new WeightFuserAverage(), new WeightEvaluationRule());
 		strategy.addAttributeFuser(Player.HEIGHT, new HeightFuserAverage(), new HeightEvaluationRule());
 		strategy.addAttributeFuser(Player.JERSEY_NUMBER, new JerseyNumberMostRecent(), new JerseyNumberEvaluationRule());

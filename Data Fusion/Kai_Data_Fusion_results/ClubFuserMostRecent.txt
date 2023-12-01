@@ -1,0 +1,118 @@
+[INFO ] 2023-12-01 18:23:53.600 [de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.DataFusion_Main] - *	Loading datasets	*
+[INFO ] 2023-12-01 18:23:56.216 [de.uni_mannheim.informatik.dws.winter.model.io.XMLMatchableReader] - Loading 10714 elements from eafc_final.xml
+[INFO ] 2023-12-01 18:23:56.864 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - DataSet density: 1,00
+[INFO ] 2023-12-01 18:23:56.864 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - Attributes densities:
+[INFO ] 2023-12-01 18:23:56.932 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	club: 1,00
+[INFO ] 2023-12-01 18:23:56.933 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	jersey_number: 1,00
+[INFO ] 2023-12-01 18:23:56.935 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	nationality: 1,00
+[INFO ] 2023-12-01 18:23:56.937 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	weight: 1,00
+[INFO ] 2023-12-01 18:23:56.938 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	current_market_value: 1,00
+[INFO ] 2023-12-01 18:23:56.939 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	height: 1,00
+[INFO ] 2023-12-01 18:23:56.940 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	wage: 1,00
+[INFO ] 2023-12-01 18:23:56.941 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	preferred_foot: 1,00
+[INFO ] 2023-12-01 18:23:56.943 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	league: 1,00
+[INFO ] 2023-12-01 18:23:56.944 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	positions: 1,00
+[INFO ] 2023-12-01 18:23:56.944 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	name: 1,00
+[INFO ] 2023-12-01 18:23:56.945 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	birthdate: 1,00
+[INFO ] 2023-12-01 18:23:58.380 [de.uni_mannheim.informatik.dws.winter.model.io.XMLMatchableReader] - Loading 17439 elements from fm23_final.xml
+[INFO ] 2023-12-01 18:23:58.953 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - DataSet density: 0,91
+[INFO ] 2023-12-01 18:23:58.953 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - Attributes densities:
+[INFO ] 2023-12-01 18:23:59.013 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	club: 1,00
+[INFO ] 2023-12-01 18:23:59.014 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	jersey_number: 0,00
+[INFO ] 2023-12-01 18:23:59.015 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	nationality: 1,00
+[INFO ] 2023-12-01 18:23:59.016 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	weight: 1,00
+[INFO ] 2023-12-01 18:23:59.017 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	current_market_value: 0,95
+[INFO ] 2023-12-01 18:23:59.018 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	height: 1,00
+[INFO ] 2023-12-01 18:23:59.020 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	wage: 0,99
+[INFO ] 2023-12-01 18:23:59.021 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	preferred_foot: 1,00
+[INFO ] 2023-12-01 18:23:59.021 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	league: 1,00
+[INFO ] 2023-12-01 18:23:59.022 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	positions: 1,00
+[INFO ] 2023-12-01 18:23:59.023 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	name: 1,00
+[INFO ] 2023-12-01 18:23:59.025 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	birthdate: 1,00
+[INFO ] 2023-12-01 18:23:59.508 [de.uni_mannheim.informatik.dws.winter.model.io.XMLMatchableReader] - Loading 9867 elements from tm_final.xml
+[INFO ] 2023-12-01 18:24:00.048 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - DataSet density: 0,58
+[INFO ] 2023-12-01 18:24:00.049 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - Attributes densities:
+[INFO ] 2023-12-01 18:24:00.095 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	club: 0,97
+[INFO ] 2023-12-01 18:24:00.096 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	jersey_number: 1,00
+[INFO ] 2023-12-01 18:24:00.096 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	nationality: 1,00
+[INFO ] 2023-12-01 18:24:00.097 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	weight: 0,00
+[INFO ] 2023-12-01 18:24:00.098 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	current_market_value: 0,98
+[INFO ] 2023-12-01 18:24:00.099 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	height: 0,00
+[INFO ] 2023-12-01 18:24:00.100 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	wage: 0,00
+[INFO ] 2023-12-01 18:24:00.101 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	preferred_foot: 0,00
+[INFO ] 2023-12-01 18:24:00.102 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	league: 0,00
+[INFO ] 2023-12-01 18:24:00.103 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	positions: 1,00
+[INFO ] 2023-12-01 18:24:00.104 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	name: 1,00
+[INFO ] 2023-12-01 18:24:00.105 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	birthdate: 1,00
+[INFO ] 2023-12-01 18:24:00.106 [de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.DataFusion_Main] - *	Loading datasets	*
+[INFO ] 2023-12-01 18:24:00.107 [de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.DataFusion_Main] - *	Loading correspondences	*
+[INFO ] 2023-12-01 18:24:00.313 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - Group Size Distribtion of 9356 groups:
+[INFO ] 2023-12-01 18:24:00.313 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 	Group Size 	| Frequency 
+[INFO ] 2023-12-01 18:24:00.314 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 	————————————————————————————
+[INFO ] 2023-12-01 18:24:00.319 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		2	| 	3348
+[INFO ] 2023-12-01 18:24:00.319 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		3	| 	5976
+[INFO ] 2023-12-01 18:24:00.321 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		4	| 	15
+[INFO ] 2023-12-01 18:24:00.321 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		5	| 	10
+[INFO ] 2023-12-01 18:24:00.321 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		6	| 	7
+[INFO ] 2023-12-01 18:24:00.323 [de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.DataFusion_Main] - *	Evaluating results	*
+[INFO ] 2023-12-01 18:24:00.331 [de.uni_mannheim.informatik.dws.winter.model.io.XMLMatchableReader] - Loading 15 elements from goldstandard.xml
+[INFO ] 2023-12-01 18:24:00.332 [de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.DataFusion_Main] - gs: tm_5752
+[INFO ] 2023-12-01 18:24:00.333 [de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.DataFusion_Main] - gs: eafc_11188
+[INFO ] 2023-12-01 18:24:00.334 [de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.DataFusion_Main] - gs: tm_4251
+[INFO ] 2023-12-01 18:24:00.334 [de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.DataFusion_Main] - gs: eafc_11362
+[INFO ] 2023-12-01 18:24:00.335 [de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.DataFusion_Main] - gs: tm_10744
+[INFO ] 2023-12-01 18:24:00.337 [de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.DataFusion_Main] - gs: eafc_7280
+[INFO ] 2023-12-01 18:24:00.338 [de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.DataFusion_Main] - gs: eafc_3783
+[INFO ] 2023-12-01 18:24:00.339 [de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.DataFusion_Main] - gs: eafc_1000
+[INFO ] 2023-12-01 18:24:00.340 [de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.DataFusion_Main] - gs: eafc_11091
+[INFO ] 2023-12-01 18:24:00.340 [de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.DataFusion_Main] - gs: eafc_1031
+[INFO ] 2023-12-01 18:24:00.341 [de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.DataFusion_Main] - gs: eafc_9451
+[INFO ] 2023-12-01 18:24:00.342 [de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.DataFusion_Main] - gs: fm_1766
+[INFO ] 2023-12-01 18:24:00.343 [de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.DataFusion_Main] - gs: eafc_4762
+[INFO ] 2023-12-01 18:24:00.344 [de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.DataFusion_Main] - gs: tm_6163
+[INFO ] 2023-12-01 18:24:00.344 [de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.DataFusion_Main] - gs: tm_10351
+[INFO ] 2023-12-01 18:24:00.365 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEngine] - Attribute Consistencies:
+[INFO ] 2023-12-01 18:24:01.393 [de.uni_mannheim.informatik.dws.winter.utils.ProgressReporter] - Calculating consistencies: 4.922 / 9.356 elements completed (52,61%) after 0:00:01.001
+[INFO ] 2023-12-01 18:24:02.100 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEngine] - 	birthdate: 1,00
+[INFO ] 2023-12-01 18:24:02.101 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEngine] - 	nationality: 0,64
+[INFO ] 2023-12-01 18:24:02.102 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEngine] - 	league: 0,48
+[INFO ] 2023-12-01 18:24:02.108 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEngine] - 	club: 0,40
+[INFO ] 2023-12-01 18:24:02.112 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEngine] - 	preferred_foot: 0,95
+[INFO ] 2023-12-01 18:24:02.114 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEngine] - 	name: 0,53
+[INFO ] 2023-12-01 18:24:02.115 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEngine] - 	weight: 1,00
+[INFO ] 2023-12-01 18:24:02.116 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEngine] - 	positions: 0,45
+[INFO ] 2023-12-01 18:24:02.119 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEngine] - 	jersey_number: 0,97
+[INFO ] 2023-12-01 18:24:02.123 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEngine] - 	current_market_value: 1,00
+[INFO ] 2023-12-01 18:24:02.126 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEngine] - 	height: 1,00
+[INFO ] 2023-12-01 18:24:02.129 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEngine] - 	wage: 1,00
+[INFO ] 2023-12-01 18:24:03.137 [de.uni_mannheim.informatik.dws.winter.utils.ProgressReporter] - Calculating consistencies: 4.375 / 9.356 elements completed (46,76%) after 0:00:01.001
+[INFO ] 2023-12-01 18:24:04.271 [de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.DataFusion_Main] - *	Running data fusion	*
+[INFO ] 2023-12-01 18:24:07.982 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionStrategy] - Debug results written to file: data/output/debugResultsDatafusion.csv
+[INFO ] 2023-12-01 18:24:09.653 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionStrategy] - Debug results on record level written to file: data/output/debugResultsDatafusion_recordLevel.csv
+[TRACE] 2023-12-01 18:24:11.298 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'club': [Players eafc_3502+fm_15857+tm_5752: Bonke Innocent / Nigeria / Lorient / 1996-01-20T00:00] <> [Players tm_5752: Bonke Innocent / Nigeria / FC Lorient / 1996-01-20T00:00]
+[TRACE] 2023-12-01 18:24:11.299 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'club': [Players eafc_11188+fm_17277+tm_8355: Salomon Abergel / France / Ajaccio / 2004-07-04T00:00] <> [Players eafc_11188: Salomon Abergel / France / AC Ajaccio / 2004-07-04T00:00]
+[TRACE] 2023-12-01 18:24:11.299 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'club': [Players eafc_3177+fm_2970+tm_4251: Thierry Ambrose / Guadeloupe / Kortrijk / 1997-03-28T00:00] <> [Players tm_4251: Thierry Ambrose / France / KV Kortrijk / 1997-03-28T00:00]
+[TRACE] 2023-12-01 18:24:11.300 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'nationality': [Players eafc_3177+fm_2970+tm_4251: Thierry Ambrose / Guadeloupe / Kortrijk / 1997-03-28T00:00] <> [Players tm_4251: Thierry Ambrose / France / KV Kortrijk / 1997-03-28T00:00]
+[TRACE] 2023-12-01 18:24:11.300 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'league': [Players eafc_11362+fm_10240: Cao Yunding / China PR / Shanghai Shenhua / 1989-11-22T00:00] <> [Players eafc_11362: Cao Yunding / China PR / Shanghai Shenhua / 1989-11-22T00:00]
+[TRACE] 2023-12-01 18:24:11.301 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'club': [Players eafc_7280+fm_15083+tm_5994: Yunus Musah / United States / Milan / 2002-11-29T00:00] <> [Players eafc_7280: Yunus Musah / United States / AC Milan / 2002-11-29T00:00]
+[TRACE] 2023-12-01 18:24:11.301 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'club': [Players eafc_3783+fm_11696+tm_7485: Josh Cullen / Ireland / Burnley / 1996-04-07T00:00] <> [Players eafc_3783: Josh Cullen / Republic of Ireland / Burnley FC / 1996-04-07T00:00]
+[TRACE] 2023-12-01 18:24:11.302 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'nationality': [Players eafc_3783+fm_11696+tm_7485: Josh Cullen / Ireland / Burnley / 1996-04-07T00:00] <> [Players eafc_3783: Josh Cullen / Republic of Ireland / Burnley FC / 1996-04-07T00:00]
+[TRACE] 2023-12-01 18:24:11.302 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'club': [Players eafc_1000+fm_15173+tm_5199: Rúben Fernandes / Portugal / Gil Vicente / 1986-05-06T00:00] <> [Players eafc_1000: Rúben Fernandes / Portugal / Gil Vicente FC / 1986-05-06T00:00]
+[TRACE] 2023-12-01 18:24:11.303 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'club': [Players eafc_1031+fm_1020+tm_1553: Michael Bradley / United States / Toronto / 1987-07-31T00:00] <> [Players eafc_1031: Michael Bradley / United States / Toronto FC / 1987-07-31T00:00]
+[TRACE] 2023-12-01 18:24:11.303 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'club': [Players eafc_9451+fm_6664+tm_8780: Nicola Valente / Italy / Palermo / 1991-10-06T00:00] <> [Players eafc_9451: Nicola Valente / Italy / Palermo FC / 1991-10-06T00:00]
+[TRACE] 2023-12-01 18:24:11.304 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'club': [Players eafc_6527+tm_6163: Lucas Beltrán / Argentina / Fiorentina / 2001-03-29T00:00] <> [Players tm_6163: Lucas Beltrán / Argentina / ACF Fiorentina / 2001-03-29T00:00]
+[TRACE] 2023-12-01 18:24:11.305 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'positions': [Players eafc_3165+fm_12217+tm_10351: Fred Onyedinma / Nigeria / Rotherham United / 1996-11-24T00:00] <> [Players tm_10351: Fred Onyedinma / Nigeria / Rotherham United / 1996-11-24T00:00]
+[TRACE] 2023-12-01 18:24:11.306 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Attribute-specific Accuracy:
+[TRACE] 2023-12-01 18:24:11.308 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - 	club: 0,40
+[TRACE] 2023-12-01 18:24:11.308 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - 	jersey_number: 1,00
+[TRACE] 2023-12-01 18:24:11.309 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - 	nationality: 0,87
+[TRACE] 2023-12-01 18:24:11.309 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - 	weight: 1,00
+[TRACE] 2023-12-01 18:24:11.314 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - 	current_market_value: 1,00
+[TRACE] 2023-12-01 18:24:11.315 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - 	height: 1,00
+[TRACE] 2023-12-01 18:24:11.315 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - 	wage: 1,00
+[TRACE] 2023-12-01 18:24:11.315 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - 	preferred_foot: 1,00
+[TRACE] 2023-12-01 18:24:11.316 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - 	league: 0,93
+[TRACE] 2023-12-01 18:24:11.316 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - 	positions: 0,93
+[TRACE] 2023-12-01 18:24:11.316 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - 	name: 1,00
+[TRACE] 2023-12-01 18:24:11.317 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - 	birthdate: 1,00
+[INFO ] 2023-12-01 18:24:11.317 [de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.DataFusion_Main] - *	Accuracy: 0,93
