@@ -92,17 +92,32 @@ public class PlayerXMLFormatter extends XMLFormatter<Player> {
 		return player;
 	}
 	
+//	protected Element createPositionsElement(Player record, Document doc) {
+//		Element positionsRoot = positionFormatter.createRootElement(doc);
+//		positionsRoot.setAttribute("provenance",
+//				record.getMergedAttributeProvenance(Player.POSITIONS));
+//
+//		for (String a : record.getPositions()) {
+//			positionsRoot.appendChild(positionFormatter
+//					.createElementFromRecord(a, doc));
+//		}
+//
+//		return positionsRoot;
+//	}
+	
 	protected Element createPositionsElement(Player record, Document doc) {
-		Element positionsRoot = positionFormatter.createRootElement(doc);
-		positionsRoot.setAttribute("provenance",
-				record.getMergedAttributeProvenance(Player.POSITIONS));
+	    Element positionsRoot = positionFormatter.createRootElement(doc);
+	    positionsRoot.setAttribute("provenance", record.getMergedAttributeProvenance(Player.POSITIONS));
 
-		for (String a : record.getPositions()) {
-			positionsRoot.appendChild(positionFormatter
-					.createElementFromRecord(a, doc));
-		}
+	    for (String position : record.getPositions()) {
+	        if (!position.isEmpty()) {
+	            Element positionElement = positionFormatter.createElementFromRecord(position, doc);
+	            // Append the positionElement directly to the positionsRoot
+	            positionsRoot.appendChild(positionElement.getFirstChild());
+	        }
+	    }
 
-		return positionsRoot;
+	    return positionsRoot;
 	}
 
 	protected Element createTextElementWithProvenance(String name,

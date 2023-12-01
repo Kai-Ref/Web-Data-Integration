@@ -13,6 +13,7 @@ package de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.model;
 
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
+import java.util.List;
 
 import de.uni_mannheim.informatik.dws.winter.model.io.XMLFormatter;
 
@@ -22,20 +23,37 @@ import de.uni_mannheim.informatik.dws.winter.model.io.XMLFormatter;
  * @author Oliver Lehmberg (oli@dwslab.de)
  * 
  */
-public class PositionsXMLFormatter extends XMLFormatter<String> {
+public class PositionsXMLFormatter extends XMLFormatter<List<String>> {
 
-	@Override
-	public Element createRootElement(Document doc) {
-		return doc.createElement("positions");
-	}
+    @Override
+    public Element createRootElement(Document doc) {
+        return doc.createElement("positions");
+    }
 
-	@Override
-	public Element createElementFromRecord(String record, Document doc) {
-		Element position = doc.createElement("position");
+    @Override
+    public Element createElementFromRecord(List<String> positions, Document doc) {
+        Element positionsElement = createRootElement(doc);
 
-		position.appendChild(createTextElement("position", record, doc));
+        for (String position : positions) {
+            if (!position.isEmpty()) {
+                Element positionElement = createTextElement("position", position, doc);
+                positionsElement.appendChild(positionElement);
+            }
+        }
 
-		return position;
-	}
+        return positionsElement;
+    }
 
+    // Overload for handling a single position string
+    public Element createElementFromRecord(String position, Document doc) {
+        Element positionsElement = createRootElement(doc);
+
+        if (!position.isEmpty()) {
+            Element positionElement = createTextElement("position", position, doc);
+            positionsElement.appendChild(positionElement);
+        }
+
+        return positionsElement;
+    }
 }
+
