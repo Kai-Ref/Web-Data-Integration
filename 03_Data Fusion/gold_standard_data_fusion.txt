@@ -8,7 +8,7 @@
 			<position>CB</position>
 		</positions>
 		<jersey_number>26</jersey_number>
-		<club>Gil Vicente FC</club>
+		<club>Gil Vicente</club>
 		<league>Liga Portugal</league>
 		<weight>75</weight>
 		<height>186</height>
@@ -23,7 +23,7 @@
 			<position>ST</position>
 		</positions>
 		<jersey_number>9</jersey_number>
-		<club>ACF Fiorentina</club>
+		<club>Fiorentina</club>
 		<league>Serie A</league>
 		<weight>75</weight>
 		<height>176</height>
@@ -40,7 +40,7 @@
 			<position>CAM</position>
 		</positions>
 		<jersey_number>80</jersey_number>
-		<club>AC Milan</club>
+		<club>Milan</club>
 		<league>Serie A</league>
 		<weight>75</weight>
 		<height>178</height>
@@ -71,7 +71,7 @@
 			<position>CM</position>
 		</positions>
 		<jersey_number>4</jersey_number>
-		<club>Toronto FC</club>
+		<club>Toronto</club>
 		<league>Major League Soccer</league>
 		<weight>87</weight>
 		<height>186</height>
@@ -87,7 +87,7 @@
 			<position>LW</position>
 		</positions>
 		<jersey_number>30</jersey_number>
-		<club>Palermo FC</club>
+		<club>Palermo</club>
 		<league>Serie B</league>
 		<weight>75</weight>
 		<height>170</height>
@@ -150,7 +150,7 @@
 			<position>CM</position>
 		</positions>
 		<jersey_number>8</jersey_number>
-		<club>FC Lorient</club>
+		<club>Lorient</club>
 		<league>Ligue 1</league>
 		<weight>80</weight>
 		<height>178</height>
@@ -165,7 +165,7 @@
 			<position>RB</position>
 		</positions>
 		<jersey_number>39</jersey_number>
-		<club>AC Ajaccio</club>
+		<club>Ajaccio</club>
 		<league>Ligue 2</league>
 		<weight>65</weight>
 		<height>170</height>
@@ -181,7 +181,7 @@
 			<position>CM</position>
 		</positions>
 		<jersey_number>24</jersey_number>
-		<club>Burnley FC</club>
+		<club>Burnley</club>
 		<league>Premier League</league>
 		<weight>70</weight>
 		<height>175</height>
@@ -227,7 +227,7 @@
 			<position>RW</position>
 		</positions>
 		<jersey_number>68</jersey_number>
-		<club>KV Kortrijk</club>
+		<club>Kortrijk</club>
 		<league>Jupiler Pro League</league>
 		<weight>75</weight>
 		<height>178</height>
