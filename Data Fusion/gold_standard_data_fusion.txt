@@ -10,6 +10,8 @@
 		<jersey_number>26</jersey_number>
 		<club>Gil Vicente FC</club>
 		<league>Liga Portugal</league>
+		<weight>75</weight>
+		<height>186</height>
 		<preferred_foot>left</preferred_foot>
 	</player>
 	<player>
@@ -23,6 +25,8 @@
 		<jersey_number>9</jersey_number>
 		<club>ACF Fiorentina</club>
 		<league>Serie A</league>
+		<weight>75</weight>
+		<height>176</height>
 		<preferred_foot>right</preferred_foot>
 	</player>
 	<player>
@@ -38,6 +42,8 @@
 		<jersey_number>80</jersey_number>
 		<club>AC Milan</club>
 		<league>Serie A</league>
+		<weight>75</weight>
+		<height>178</height>
 		<preferred_foot>right</preferred_foot>
 	</player>
 	<player>
@@ -67,6 +73,8 @@
 		<jersey_number>4</jersey_number>
 		<club>Toronto FC</club>
 		<league>Major League Soccer</league>
+		<weight>87</weight>
+		<height>186</height>
 		<preferred_foot>right</preferred_foot>
 	</player>
 	<player>
@@ -81,6 +89,8 @@
 		<jersey_number>30</jersey_number>
 		<club>Palermo FC</club>
 		<league>Serie B</league>
+		<weight>75</weight>
+		<height>170</height>
 		<preferred_foot>right</preferred_foot>
 	</player>
 	<player>
@@ -95,6 +105,8 @@
 		<jersey_number>28</jersey_number>
 		<club>Shanghai Shenhua</club>
 		<league>Chinese Super League</league>
+		<weight>70</weight>
+		<height>173</height>
 		<preferred_foot>right</preferred_foot>
 	</player>
 	<player>
@@ -108,6 +120,8 @@
 		<jersey_number>30</jersey_number>
 		<club>Karlsruher SC</club>
 		<league>2. Bundesliga</league>
+		<weight>60</weight>
+		<height>165</height>
 		<preferred_foot>right</preferred_foot>
 	</player>
 	<player>
@@ -122,6 +136,8 @@
 		<jersey_number>72</jersey_number>
 		<club>Sivasspor</club>
 		<league>Super Lig</league>
+		<weight>72</weight>
+		<height>181</height>
 		<preferred_foot>right</preferred_foot>
 	</player>
 		<player>
@@ -136,6 +152,8 @@
 		<jersey_number>8</jersey_number>
 		<club>FC Lorient</club>
 		<league>Ligue 1</league>
+		<weight>80</weight>
+		<height>178</height>
 		<preferred_foot>right</preferred_foot>
 	</player>
 	<player>
@@ -149,6 +167,8 @@
 		<jersey_number>39</jersey_number>
 		<club>AC Ajaccio</club>
 		<league>Ligue 2</league>
+		<weight>65</weight>
+		<height>170</height>
 		<preferred_foot>right</preferred_foot>
 	</player>
 	<player>
@@ -163,6 +183,8 @@
 		<jersey_number>24</jersey_number>
 		<club>Burnley FC</club>
 		<league>Premier League</league>
+		<weight>70</weight>
+		<height>175</height>
 		<preferred_foot>right</preferred_foot>
 	</player>
 	<player>
@@ -177,6 +199,8 @@
 		<jersey_number>8</jersey_number>
 		<club>Hamburger SV</club>
 		<league>2. Bundesliga</league>
+		<weight>72</weight>
+		<height>181</height>
 		<preferred_foot>left</preferred_foot>
 	</player>
 		<player>
@@ -205,6 +229,8 @@
 		<jersey_number>68</jersey_number>
 		<club>KV Kortrijk</club>
 		<league>Jupiler Pro League</league>
+		<weight>75</weight>
+		<height>178</height>
 		<preferred_foot>right</preferred_foot>
 	</player>
 </players>
