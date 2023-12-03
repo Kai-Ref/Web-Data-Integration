@@ -44,7 +44,7 @@ public class HeightFuserAverage extends
 		// set the value for the fused record
 		double heightDouble = fused.getValue();
 		int heightInt = (int) heightDouble;
-		fusedRecord.setWeight(heightInt);
+		fusedRecord.setHeight(heightInt);
 
 		// add provenance info
 		fusedRecord.setAttributeProvenance(Player.HEIGHT, fused.getOriginalIds());
