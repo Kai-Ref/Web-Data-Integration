@@ -23,21 +23,29 @@ import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.evaluation.WageEval
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.evaluation.PositionsEvaluationRule;
 
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.evaluation.WeightEvaluationRule;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.fusers.BirthdateFuserFavourSources;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.fusers.BirthdateFuserVoting;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.fusers.ClubFuserLongestString;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.fusers.ClubFuserMostRecent;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.fusers.CurrentMarketValueMedian;
 
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.fusers.HeightFuserAverage;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.fusers.HeightFuserMedian;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.fusers.JerseyNumberFavourSources;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.fusers.JerseyNumberMostRecent;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.fusers.LeagueFuserLongestString;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.fusers.LeagueMostRecent;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.fusers.NameFuserFavourSources;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.fusers.NameFuserLongestString;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.fusers.NationalityFuserFavourSources;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.fusers.NationalityFuserLongestString;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.fusers.PositionsFuserIntersection;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.fusers.PrefferedFootMostRecent;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.fusers.WageMedian;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.fusers.WeightFuserAverage;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.fusers.WeightFuserMedian;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.fusers.PositionsFuserIntersectionKSources;
-
+import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.fusers.PrefferedFootFavourSources;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.model.Player;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.model.PlayerXMLFormatter;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.model.PlayerXMLReader;
@@ -168,20 +176,20 @@ public class DataFusion_Main
 		// write debug results to file
 		strategy.activateDebugReport("data/output/debugResultsDatafusion.csv", -1, gs);
 		
-		strategy.addAttributeFuser(Player.NAME, new NameFuserLongestString(),new NameEvaluationRule()); //Monge Elkan
+		strategy.addAttributeFuser(Player.NAME, new NameFuserFavourSources(),new NameEvaluationRule()); //Monge Elkan
 		strategy.addAttributeFuser(Player.BIRTHDATE,new BirthdateFuserVoting(), new BirthdateEvaluationRule());
 		strategy.addAttributeFuser(Player.NATIONALITY, new NationalityFuserFavourSources() ,new NationalityEvaluationRule());
 		
 		//Different possibilities to fuse by CLUB
-		strategy.addAttributeFuser(Player.CLUB,new ClubFuserLongestString(),new ClubEvaluationRule());
+		strategy.addAttributeFuser(Player.CLUB,new ClubFuserMostRecent(),new ClubEvaluationRule());
 //		strategy.addAttributeFuser(Player.CLUB,new ClubFuserMostRecent(),new ClubEvaluationRule());
 		strategy.addAttributeFuser(Player.WEIGHT, new WeightFuserAverage(), new WeightEvaluationRule());
-		strategy.addAttributeFuser(Player.HEIGHT, new HeightFuserAverage(), new HeightEvaluationRule());
+		strategy.addAttributeFuser(Player.HEIGHT, new HeightFuserMedian(), new HeightEvaluationRule());
 		strategy.addAttributeFuser(Player.JERSEY_NUMBER, new JerseyNumberMostRecent(), new JerseyNumberEvaluationRule());
 		strategy.addAttributeFuser(Player.LEAGUE, new LeagueMostRecent(), new LeagueEvaluationRule());
 		strategy.addAttributeFuser(Player.CURRENT_MARKET_VALUE, new CurrentMarketValueMedian(), new CurrentMarketValueEvaluationRule ());
 		strategy.addAttributeFuser(Player.WAGE, new WageMedian(), new WageEvaluationRule());
-		strategy.addAttributeFuser(Player.PREFERRED_FOOT, new PrefferedFootMostRecent(), new PrefferedFootEvaluationRule());
+		strategy.addAttributeFuser(Player.PREFERRED_FOOT, new PrefferedFootFavourSources(), new PrefferedFootEvaluationRule());
 		strategy.addAttributeFuser(Player.POSITIONS, new PositionsFuserIntersectionKSources(2), new PositionsEvaluationRule());
 		
 

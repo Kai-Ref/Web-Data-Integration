@@ -29,11 +29,13 @@ public class BirthdateEvaluationRule extends EvaluationRule<Player, Attribute> {
 	@Override
 	public boolean isEqual(Player record1, Player record2, Attribute schemaElement) {
 		if(record1.getBirthdate()==null && record2.getBirthdate()==null)
-			return true;
+			return false;
 		else if(record1.getBirthdate()==null ^ record2.getBirthdate()==null)
 			return false;
 		else
-			return record1.getBirthdate().getYear() == record2.getBirthdate().getYear();
+			return (record1.getBirthdate().getYear() == record2.getBirthdate().getYear()) && 
+					(record1.getBirthdate().getMonth() == record2.getBirthdate().getMonth()) && 
+					(record1.getBirthdate().getDayOfMonth() == record2.getBirthdate().getDayOfMonth());
 	}
 
 	/* (non-Javadoc)

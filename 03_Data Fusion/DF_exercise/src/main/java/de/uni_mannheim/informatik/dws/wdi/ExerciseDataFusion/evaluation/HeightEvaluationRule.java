@@ -31,7 +31,7 @@ import de.uni_mannheim.informatik.dws.winter.similarity.string.TokenizingJaccard
 public class HeightEvaluationRule extends EvaluationRule<Player, Attribute> {
 	
 	// parameter of AbsoluteDifferenceSimilarity is the maximum difference. Otherwise 0 will be returned
-	SimilarityMeasure<Double> sim = new PercentageSimilarity(5);
+	SimilarityMeasure<Double> sim = new PercentageSimilarity(2);
 
 	//SimilarityMeasure<String> sim = new TokenizingJaccardSimilarity();
 
@@ -39,8 +39,8 @@ public class HeightEvaluationRule extends EvaluationRule<Player, Attribute> {
 	public boolean isEqual(Player record1, Player record2, Attribute schemaElement) {
 		// the title is correct if all tokens are there, but the order does not
 		// matter
-		double height1 = (double) record1.getWeight();
-		double height2 = (double) record2.getWeight();
+		double height1 = (double) record1.getHeight();
+		double height2 = (double) record2.getHeight();
 		return sim.calculate(height1, height2) >= 0.8;
 		
 	}

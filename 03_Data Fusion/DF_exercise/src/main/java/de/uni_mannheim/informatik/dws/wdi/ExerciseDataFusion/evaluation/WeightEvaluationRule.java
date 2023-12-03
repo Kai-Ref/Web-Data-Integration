@@ -31,7 +31,7 @@ import de.uni_mannheim.informatik.dws.winter.similarity.string.TokenizingJaccard
 public class WeightEvaluationRule extends EvaluationRule<Player, Attribute> {
 	
 	// parameter of AbsoluteDifferenceSimilarity is the maximum difference. Otherwise 0 will be returned
-	SimilarityMeasure<Double> sim = new PercentageSimilarity(5);
+	SimilarityMeasure<Double> sim = new PercentageSimilarity(2);
 
 	//SimilarityMeasure<String> sim = new TokenizingJaccardSimilarity();
 
